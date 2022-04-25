@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="content">
+      <div class="top">
+        <input type="number" class="ivesties_langelis" />
+        <button type="button" class="inputNumbers buttons">
+          Įvesti Duomenis
+        </button>
+        <input
+          type="button"
+          value="Įvesti Bendrą Sumą"
+          class="inputTotal buttons"
+        />
+        <input type="button" value="Skaičiuoti" class="calculate buttons" />
+        <input type="button" value="Išvalyti" class="clear buttons" />
+
+        <p>Bendra suma: <span class="bendra-israsas"></span></p>
+      </div>
+      <div class="lists">
+        <div class="left">
+          <ol class="listas-ivesta">
+            <p>Įvesta:</p>
+          </ol>
+        </div>
+        <div class="mid">
+          <ol class="listas-atrinkta">
+            <p>Atrinkta:</p>
+          </ol>
+        </div>
+        <div class="right">
+          <ol class="listas-nepanaudota">
+            <p>Nepanaudota:</p>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

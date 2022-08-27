@@ -22,7 +22,7 @@ export default function GalleryMain(props) {
         photos={props.pictures}
         layout="rows"
         targetRowHeight={300}
-        onClick={(index) => setIndex(index)}
+        onClick={(event, photo, index) => setIndex(index)}
       />
 
       <Lightbox

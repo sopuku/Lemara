@@ -11,7 +11,7 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Navigation(props) {
   const { isOpen, onToggle } = useDisclosure();
@@ -24,7 +24,7 @@ export default function Navigation(props) {
   }
 
   return (
-    <Box>
+    <React.Fragment>
       <Flex
         bg="white"
         color="gray.600"
@@ -82,6 +82,6 @@ export default function Navigation(props) {
       <Collapse in={isOpen} animateOpacity>
         <MobileNav language={language} />
       </Collapse>
-    </Box>
+    </React.Fragment>
   );
 }

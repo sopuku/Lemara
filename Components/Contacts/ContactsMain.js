@@ -26,14 +26,14 @@ import {
   MdOutlinePhone,
 } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
-import { useState } from "react";
+import React, { useState } from "react";
 import Maps from "./Maps";
 import Captcha from "./Captcha";
 
 export default function ContactsMain() {
   const [verify, setVerify] = useState("");
   return (
-    <div>
+    <React.Fragment>
       <Container bg="#9DC4FB" maxW="full" centerContent overflow="hidden">
         <Stack
           direction={{ sm: "column", xl: "row" }}
@@ -153,6 +153,6 @@ export default function ContactsMain() {
           <Maps />
         </Stack>
       </Container>
-    </div>
+    </React.Fragment>
   );
 }

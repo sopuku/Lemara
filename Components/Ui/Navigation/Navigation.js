@@ -28,13 +28,16 @@ export default function Navigation(props) {
       <Flex
         bg="blue.50"
         color="gray.600"
-        minH="60px"
+        h="7rem"
+        w="100%"
         py={{ base: 1 }}
         borderBottom={1}
         borderStyle="solid"
         borderColor="gray.200"
         align="center"
         px={{ base: "5%", xl: "10%" }}
+        position="fixed"
+        zIndex="100"
       >
         <Flex
           flex={{ base: "0", lg: "auto" }}

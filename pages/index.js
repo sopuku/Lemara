@@ -11,7 +11,7 @@ export default function HomePage() {
           content="Lemara - one of the best CNC manufacturers in Lithuania working globally"
         />
       </Head>
-      <div>cia Main Page</div>;
+      <div>cia Main Page</div>
     </Fragment>
   );
 }

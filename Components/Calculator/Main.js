@@ -3,7 +3,7 @@ import Calculations from "./Calculations/Calculations";
 import { v4 as uuidv4 } from "uuid";
 import OutputBox from "./Output/OutputBox";
 import InputTable from "./Input/InputTable";
-import { Box, Flex, Stack, Container } from "@chakra-ui/react";
+import { Box, Flex, Stack } from "@chakra-ui/react";
 import Filter from "./Calculations/Filter";
 
 function MainInput() {

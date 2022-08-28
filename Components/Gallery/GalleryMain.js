@@ -16,7 +16,11 @@ export default function GalleryMain(props) {
   const [index, setIndex] = useState(-1);
 
   return (
-    <Box px={{ base: "5%", xl: "10%" }} minH="71.6vh">
+    <Box
+      px={{ sm: "0rem", md: "2rem", lg: "10%" }}
+      py={{ sm: "0rem", md: "2rem", lg: "5rem" }}
+      minH="71.6vh"
+    >
       <PhotoAlbum
         spacing={6}
         photos={props.pictures}
@@ -26,7 +30,7 @@ export default function GalleryMain(props) {
       />
 
       <Lightbox
-        animation={{ swipe: 100 }}
+        animation={{ fade: 330 }}
         slides={slides}
         open={index >= 0}
         index={index}

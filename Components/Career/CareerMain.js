@@ -15,11 +15,17 @@ import {
 export default function CareerMain() {
   const jobs = Jobs();
   return (
-    <Box w="100%" minH="71.6vh" align="center" py="5rem">
+    <Box
+      align="center"
+      bg="#f2f2f2"
+      borderRadius="xl"
+      py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
+      px={{ sm: "1rem", md: "2rem", lg: "5rem" }}
+    >
       <Heading as="h1" size="3xl">
         Darbo Skelbimai
       </Heading>
-      <Accordion allowToggle w="80%" py="8rem">
+      <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
         {jobs.map((job) => {
           return (
             <AccordionItem>

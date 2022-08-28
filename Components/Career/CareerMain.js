@@ -17,7 +17,6 @@ export default function CareerMain() {
   return (
     <Box
       align="center"
-      bg="#f2f2f2"
       borderRadius="xl"
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
       px={{ sm: "1rem", md: "2rem", lg: "5rem" }}
@@ -31,7 +30,13 @@ export default function CareerMain() {
             <AccordionItem>
               <h2>
                 <AccordionButton>
-                  <Box flex="1" textAlign="left" fontSize="30" fontWeight="500">
+                  <Box
+                    flex="1"
+                    textAlign="left"
+                    fontSize="30"
+                    fontWeight="500"
+                    px="2rem"
+                  >
                     {job.title}
                   </Box>
                   <AccordionIcon />

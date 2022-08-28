@@ -1,3 +1,5 @@
+import CareerMain from "../Components/Career/CareerMain";
+
 export default function Carrier() {
-  return <div>Karjiera</div>;
+  return <CareerMain />;
 }

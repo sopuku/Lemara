@@ -16,7 +16,7 @@ export default function GalleryMain(props) {
   const [index, setIndex] = useState(-1);
 
   return (
-    <Box px={{ base: "5%", xl: "10%" }}>
+    <Box px={{ base: "5%", xl: "10%" }} minH="71.6vh">
       <PhotoAlbum
         spacing={6}
         photos={props.pictures}

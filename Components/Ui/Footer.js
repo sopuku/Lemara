@@ -19,7 +19,7 @@ const ListHeader = ({ children }) => {
 
 export default function LargeWithLogoLeft() {
   return (
-    <Box bg="gray.50" color="gray.700">
+    <Box bg="blue.50" color="gray.700">
       <Container as={Stack} maxW={"8xl"} py={10} align="center">
         <SimpleGrid
           templateColumns={{ sm: "1fr", md: "2fr 1fr 1fr 1fr" }}

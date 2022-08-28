@@ -26,7 +26,7 @@ export default function Navigation(props) {
   return (
     <React.Fragment>
       <Flex
-        bg="white"
+        bg="blue.50"
         color="gray.600"
         minH="60px"
         py={{ base: 1 }}

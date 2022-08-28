@@ -12,12 +12,14 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import React, { useState } from "react";
+import Colors from "../Color";
 
 export default function Navigation(props) {
   const { isOpen, onToggle } = useDisclosure();
   const [language, setLanguage] = useState("LT");
 
   const flagSelect = `/images/${language}_flag.png`;
+  const colors = Colors();
 
   function handleLanguageSelect(e) {
     setLanguage(e.target.value);
@@ -26,14 +28,10 @@ export default function Navigation(props) {
   return (
     <React.Fragment>
       <Flex
-        bg="blue.50"
-        color="gray.600"
+        bg={colors.navigationBg}
         h="7rem"
         w="100%"
         py={{ base: 1 }}
-        borderBottom={1}
-        borderStyle="solid"
-        borderColor="gray.200"
         align="center"
         px={{ base: "5%", xl: "10%" }}
         position="fixed"
@@ -61,7 +59,7 @@ export default function Navigation(props) {
             ml={{ lg: 5, xl: 20 }}
             align="center"
           >
-            <DesktopNav language={language} />
+            <DesktopNav language={language} colors={colors} />
           </Flex>
         </Flex>
 

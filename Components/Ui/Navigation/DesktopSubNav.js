@@ -10,13 +10,13 @@ export default function DesktopSubNav(props) {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: "blue.50" }}
+      _hover={{ bg: props.colors.navigationSubBgHover }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: "orange" }}
+            _groupHover={{ color: props.colors.navigationLinkHover }}
             fontWeight={500}
           >
             {props.label}

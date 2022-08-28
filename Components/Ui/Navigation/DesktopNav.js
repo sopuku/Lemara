@@ -10,9 +10,6 @@ import DesktopSubNav from "./DesktopSubNav";
 import Texts from "../../Language/NavigationTexts";
 
 export default function DesktopNav(props) {
-  const linkColor = "gray.600";
-  const linkHoverColor = "orange";
-  const popoverContentBgColor = "white";
   const navItems = Texts(props.language);
 
   return (
@@ -26,10 +23,10 @@ export default function DesktopNav(props) {
                 p={{ base: "auto" }}
                 fontSize={"xl"}
                 fontWeight={500}
-                color={linkColor}
+                color={props.colors.navigationLinkColor}
                 _hover={{
                   textDecoration: "none",
-                  color: linkHoverColor,
+                  color: props.colors.navigationLinkHover,
                 }}
               >
                 {navItem.label}
@@ -40,7 +37,7 @@ export default function DesktopNav(props) {
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}
-                bg={popoverContentBgColor}
+                bg={props.colors.navigationSubBg}
                 p={4}
                 rounded={"xl"}
                 minW={"sm"}
@@ -51,6 +48,7 @@ export default function DesktopNav(props) {
                       key={child.label}
                       label={child.label}
                       href={child.href}
+                      colors={props.colors}
                       {...child}
                     />
                   ))}

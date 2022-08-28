@@ -8,6 +8,8 @@ import {
   useColorModeValue,
   Image,
 } from "@chakra-ui/react";
+import { colors } from "@mui/material";
+import Colors from "./Color";
 
 const ListHeader = ({ children }) => {
   return (
@@ -18,8 +20,9 @@ const ListHeader = ({ children }) => {
 };
 
 export default function LargeWithLogoLeft() {
+  const colors = Colors();
   return (
-    <Box bg="blue.50" color="gray.700">
+    <Box bg={colors.footerBg} color={colors.footerLinkColor}>
       <Container as={Stack} maxW={"8xl"} py={10} align="center">
         <SimpleGrid
           templateColumns={{ sm: "1fr", md: "2fr 1fr 1fr 1fr" }}

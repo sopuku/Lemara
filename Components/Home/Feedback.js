@@ -20,12 +20,10 @@ const settings = {
 export default function Feedback() {
   return (
     <Box
-      boxShadow="0 0 20px  grey"
       align="center"
-      bg="blue.100"
       w="100%"
-      h={{ base: "22rem", xl: "30rem" }}
-      pt={{ base: "1rem", md: "3rem", xl: "6rem" }}
+      h={{ base: "22rem", xl: "40rem" }}
+      pt={{ base: "1rem", md: "3rem", xl: "10rem" }}
       px={{ base: "2%", md: "5%", xl: "25%" }}
     >
       <Heading size="2xl" pb="2rem">

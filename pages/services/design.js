@@ -1,3 +1,5 @@
+import DesignMain from "../../Components/Design/DesignMain";
+
 export default function Design() {
-  return <div>cia dizainas</div>;
+  return <DesignMain />;
 }

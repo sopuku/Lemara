@@ -1,12 +1,19 @@
-import { Box, Image, Heading, Text, SimpleGrid } from "@chakra-ui/react";
+import {
+  Box,
+  Image,
+  Heading,
+  Text,
+  SimpleGrid,
+  Center,
+} from "@chakra-ui/react";
 import ValuesData from "./ValuesData";
 
 export default function Values() {
   const valuesData = ValuesData();
   return (
-    <Box>
+    <Center>
       <SimpleGrid
-        h={{ base: "80rem", md: "50rem", xl: "30rem" }}
+        h={{ base: "80rem", md: "50rem", xl: "40rem" }}
         columns={{ base: 1, md: 2, xl: 4 }}
         spacing={{ base: 0, md: "2rem", xl: "3rem" }}
       >
@@ -16,6 +23,7 @@ export default function Values() {
               mt={{ base: "1rem", md: "2rem", xl: "7rem" }}
               mb={{ base: "1rem", md: "2rem", xl: "7rem" }}
               w="17rem"
+              h="17rem"
               align="center"
               bg="white"
               borderRadius="xl"
@@ -31,6 +39,6 @@ export default function Values() {
           );
         })}
       </SimpleGrid>
-    </Box>
+    </Center>
   );
 }

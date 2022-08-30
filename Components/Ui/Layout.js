@@ -9,7 +9,13 @@ export default function Layout(props) {
   return (
     <React.Fragment>
       <Navigation />
-      <Box align="start" minH="81.3vh" pt="7rem" bg={colors.background}>
+      <Box
+        align="start"
+        minH="81.3vh"
+        pt="7rem"
+        bg={colors.background}
+        zIndex="-1"
+      >
         {props.children}
       </Box>
       <Footer />

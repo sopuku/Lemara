@@ -103,6 +103,17 @@ function MainInput() {
       overflow="hidden"
     >
       <Box
+        w={"100%"}
+        h={"100vh"}
+        position="fixed"
+        zIndex="0"
+        backgroundSize="cover"
+        backgroundPosition="center"
+        backgroundRepeat="no-repeat"
+        backgroundImage="url('https://images.unsplash.com/photo-1601045378965-58f245425f7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80')"
+      />
+      <Box
+        zIndex={1}
         mx={["auto", "auto", "auto", "auto", "2"]}
         px="auto"
         pt={[10, 10, 10, 10, 20]}
@@ -125,6 +136,7 @@ function MainInput() {
         <OutputBox name="Found Sequences" data={found} />
       </Box>
       <Stack
+        zIndex={1}
         mx={["auto", "auto", "auto", "auto", "0"]}
         w={["100vw", "460px", "512px", "512px", "608px"]}
         align="top"

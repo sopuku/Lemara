@@ -34,7 +34,7 @@ export default function Mashines() {
       revolutions: "75 - 4200 rpm",
       accuracy: "0.002 mm",
       tools: "C ašis (gręžimas, frezavimas)",
-      src: "/images/capabilities/v40.jpg",
+      src: "/images/capabilities/V40.jpg",
     },
     {
       name: "OKUMA LB15",

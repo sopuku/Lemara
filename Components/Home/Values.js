@@ -6,7 +6,7 @@ export default function Values() {
   return (
     <Box>
       <SimpleGrid
-        h={{ base: "70rem", md: "40rem", xl: "30rem" }}
+        h={{ base: "80rem", md: "50rem", xl: "30rem" }}
         columns={{ base: 1, md: 2, xl: 4 }}
         spacing={{ base: 0, md: "2rem", xl: "3rem" }}
       >

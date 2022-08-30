@@ -8,13 +8,13 @@ export default function ValuesData() {
     {
       title: "Greitis",
       description: "Detales pagaminame per trumpą laiką",
-      src: "/images/values/2.png",
+      src: "/images/values/3.png",
     },
     {
       title: "Tikslumas",
       description:
         "Modernios įrangos dėka, gaminiai pasižymi dideliu tikslumu ",
-      src: "/images/values/3.png",
+      src: "/images/values/2.png",
     },
     {
       title: "Atsakingumas",

@@ -43,10 +43,10 @@ export default function CareerMain() {
                 </AccordionButton>
               </h2>
               <AccordionPanel pb="4" textAlign="left" size="sm">
-                <Text fontSize="30" fontWeight="400">
+                <Text fontSize="30" fontWeight="400" pb="0.5rem">
                   Darbo pobūdis
                 </Text>
-                <UnorderedList pb="1rem">
+                <UnorderedList pb="2rem">
                   {job.description.map((item) => {
                     return <ListItem>{item}</ListItem>;
                   })}
@@ -54,7 +54,7 @@ export default function CareerMain() {
                 <Text fontSize="30" fontWeight="400">
                   Reikalavimai darbuotojui
                 </Text>
-                <UnorderedList pb="1rem">
+                <UnorderedList pb="2rem">
                   {job.requirments.map((item) => {
                     return <ListItem>{item}</ListItem>;
                   })}
@@ -62,7 +62,7 @@ export default function CareerMain() {
                 <Text fontSize="30" fontWeight="400">
                   Mes siūlome
                 </Text>
-                <UnorderedList pb="1rem">
+                <UnorderedList pb="2rem">
                   {job.offer.map((item) => {
                     return <ListItem>{item}</ListItem>;
                   })}

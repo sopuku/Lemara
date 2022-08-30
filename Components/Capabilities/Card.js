@@ -1,5 +1,4 @@
 import {
-  Box,
   Stack,
   Image,
   TableContainer,
@@ -7,8 +6,6 @@ import {
   Tr,
   Td,
   Table,
-  Thead,
-  Th,
   Heading,
 } from "@chakra-ui/react";
 
@@ -22,19 +19,19 @@ export default function Card(props) {
       align="center"
       justify="center"
     >
-      <Image w="500px" src={props.data.src} />
+      <Image w="460px" src={props.data.src} />
       <TableContainer>
         <Heading fontSize="24" fontWeight="500" p="1.5rem">
           {props.data.name}
         </Heading>
-        <Table size="md" textAlign={"center"} w="33rem">
+        <Table size="md" textAlign={"center"} w="29rem">
           <Tbody>
             <Tr>
-              <Td>Maksimalus tekinimo ilgis</Td>
+              <Td>Maksimalus ilgis</Td>
               <Td>{props.data.lenght}</Td>
             </Tr>
             <Tr>
-              <Td>Maksimalus tekinimo diametras</Td>
+              <Td>Maksimalus diametras</Td>
               <Td>{props.data.diameter}</Td>
             </Tr>
             <Tr>

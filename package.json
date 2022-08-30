@@ -14,10 +14,8 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/icons-material": "^5.10.2",
-    "@mui/material": "^5.10.2",
     "axios": "^0.27.2",
     "framer-motion": "^7.2.1",
-    "google-photos-album-image-url-fetch": "^2.2.2",
     "mongodb": "^4.8.1",
     "next": "12.2.5",
     "next-hcaptcha": "^1.4.3",
@@ -25,6 +23,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.4.0",
     "react-photo-album": "^1.16.1",
+    "react-slick": "^0.29.0",
     "uuid": "^8.3.2",
     "yet-another-react-lightbox": "^2.0.3"
   },

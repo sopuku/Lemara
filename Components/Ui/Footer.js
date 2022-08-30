@@ -5,11 +5,9 @@ import {
   SimpleGrid,
   Stack,
   Text,
-  useColorModeValue,
   Image,
 } from "@chakra-ui/react";
-import { colors } from "@mui/material";
-import Colors from "./Color";
+import Colors from "./Colors";
 
 const ListHeader = ({ children }) => {
   return (

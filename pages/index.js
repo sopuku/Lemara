@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Fragment } from "react";
+import HomeMain from "../Components/Home/HomeMain";
 
 export default function HomePage() {
   return (
@@ -11,7 +12,7 @@ export default function HomePage() {
           content="Lemara - one of the best CNC manufacturers in Lithuania working globally"
         />
       </Head>
-      <div>cia Main Page</div>
+      <HomeMain />
     </Fragment>
   );
 }

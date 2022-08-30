@@ -12,7 +12,7 @@ import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import React, { useState } from "react";
-import Colors from "../Color";
+import Colors from "../Colors";
 
 export default function Navigation(props) {
   const { isOpen, onToggle } = useDisclosure();

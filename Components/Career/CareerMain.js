@@ -19,7 +19,7 @@ export default function CareerMain() {
       align="center"
       borderRadius="xl"
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
-      px={{ sm: "1rem", md: "2rem", lg: "5rem" }}
+      px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "20%" }}
     >
       <Heading as="h1" size="3xl">
         Darbo Skelbimai

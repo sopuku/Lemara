@@ -1,6 +1,7 @@
 import FeedbackText from "./FeedbackText";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
+import React from "react";
 
 const feedbackText = FeedbackText();
 
@@ -19,12 +20,16 @@ const settings = {
 export default function Feedback() {
   return (
     <Box
+      align="center"
       bg="blue.100"
       w="100%"
       h={{ base: "22rem", xl: "30rem" }}
-      pt={{ base: "3rem", md: "5rem", xl: "8rem" }}
+      pt={{ base: "1rem", md: "3rem", xl: "6rem" }}
       px={{ base: "2%", md: "5%", xl: "25%" }}
     >
+      <Heading size="2xl" pb="2rem">
+        Atsiliepimai
+      </Heading>
       <link
         rel="stylesheet"
         type="text/css"
@@ -39,10 +44,12 @@ export default function Feedback() {
       <Slider {...settings}>
         {feedbackText.map((item) => {
           return (
-            <Box align="center">
-              <Heading pb="1rem">{item.title}</Heading>
+            <React.Fragment>
+              <Heading size="xl" pb="1rem">
+                {item.title}
+              </Heading>
               <Text fontSize="xl">{item.text}</Text>
-            </Box>
+            </React.Fragment>
           );
         })}
       </Slider>

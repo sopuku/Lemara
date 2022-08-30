@@ -16,7 +16,6 @@ export default function Values() {
               mt={{ base: "1rem", md: "2rem", xl: "7rem" }}
               mb={{ base: "1rem", md: "2rem", xl: "7rem" }}
               w="17rem"
-              h="15rem"
               align="center"
               bg="white"
               borderRadius="xl"
@@ -24,7 +23,7 @@ export default function Values() {
               boxShadow="xl"
             >
               <Image src={item.src} h="56px" />
-              <Heading size="lg" py="0.5rem">
+              <Heading size="lg" pt="2rem" pb="1rem">
                 {item.title}
               </Heading>
               <Text fontSize="lg">{item.description}</Text>

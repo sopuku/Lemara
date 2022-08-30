@@ -28,6 +28,7 @@ export default function Navigation(props) {
   return (
     <React.Fragment>
       <Flex
+        boxShadow="0 0 20px  grey"
         bg={colors.navigationBg}
         h="7rem"
         w="100%"

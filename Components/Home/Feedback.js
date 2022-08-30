@@ -20,6 +20,7 @@ const settings = {
 export default function Feedback() {
   return (
     <Box
+      boxShadow="0 0 20px grey"
       align="center"
       bg="blue.100"
       w="100%"

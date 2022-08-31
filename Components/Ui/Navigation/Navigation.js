@@ -1,5 +1,4 @@
 import {
-  Box,
   Flex,
   IconButton,
   Stack,
@@ -11,14 +10,17 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
-import React, { useState } from "react";
+import React from "react";
 import Colors from "../Colors";
+import { CurrentLanguage } from "../../../pages/_app";
 
 export default function Navigation(props) {
   const { isOpen, onToggle } = useDisclosure();
-  const [language, setLanguage] = useState("LT");
+
+  const { language, setLanguage } = React.useContext(CurrentLanguage);
 
   const flagSelect = `/images/${language}_flag.png`;
+
   const colors = Colors();
 
   function handleLanguageSelect(e) {
@@ -60,7 +62,7 @@ export default function Navigation(props) {
             ml={{ lg: 5, xl: 20 }}
             align="center"
           >
-            <DesktopNav language={language} colors={colors} />
+            <DesktopNav colors={colors} />
           </Flex>
         </Flex>
 
@@ -82,7 +84,7 @@ export default function Navigation(props) {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
-        <MobileNav language={language} />
+        <MobileNav />
       </Collapse>
     </React.Fragment>
   );

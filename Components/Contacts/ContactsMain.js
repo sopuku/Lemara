@@ -34,11 +34,8 @@ import Captcha from "./Captcha";
 export default function ContactsMain() {
   const [verify, setVerify] = useState("");
   return (
-    <Center>
-      <Stack
-        direction={{ base: "column", xl: "row" }}
-        py={{ base: 0, md: 10, lg: 20 }}
-      >
+    <Center py={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
+      <Stack direction={{ base: "column", xl: "row" }}>
         <Box
           bg="#02054B"
           color="white"

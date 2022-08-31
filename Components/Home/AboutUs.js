@@ -4,7 +4,7 @@ import AboutUsText from "./AboutUsText";
 export default function AboutUs() {
   const texts = AboutUsText();
   return (
-    <Center>
+    <Center w="100vw">
       <Stack
         direction={{ base: "column", xl: "row" }}
         bg="blue.200"
@@ -12,7 +12,7 @@ export default function AboutUs() {
         w="100%"
         boxShadow="0 0 20px  grey"
         zIndex={1}
-        px={["0", "2%", "5%", "10%", "15%"]}
+        px={["0", "2%", "5%", "10%", "10%", "15%"]}
         align="center"
       >
         <Image src="/images/logo.png" w="30rem" p="3rem" h="30rem" />

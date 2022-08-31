@@ -2,6 +2,7 @@ import FeedbackText from "./FeedbackText";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 
 const feedbackText = FeedbackText();
 
@@ -43,7 +44,7 @@ export default function Feedback() {
       <Slider {...settings}>
         {feedbackText.map((item) => {
           return (
-            <React.Fragment>
+            <React.Fragment key={uuidv4()}>
               <Heading size="xl" pb="1rem">
                 {item.title}
               </Heading>

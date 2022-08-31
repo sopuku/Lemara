@@ -1,4 +1,5 @@
 import Jobs from "./Jobs";
+import { v4 as uuidv4 } from "uuid";
 import {
   Box,
   Heading,
@@ -18,8 +19,8 @@ export default function CareerMain() {
     <Box
       align="center"
       borderRadius="xl"
+      px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
-      px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "20%" }}
     >
       <Heading as="h1" size="3xl">
         Darbo Skelbimai
@@ -27,7 +28,7 @@ export default function CareerMain() {
       <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
         {jobs.map((job) => {
           return (
-            <AccordionItem>
+            <AccordionItem key={uuidv4()}>
               <h2>
                 <AccordionButton>
                   <Box
@@ -48,7 +49,7 @@ export default function CareerMain() {
                 </Text>
                 <UnorderedList pb="2rem">
                   {job.description.map((item) => {
-                    return <ListItem>{item}</ListItem>;
+                    return <ListItem key={uuidv4()}>{item}</ListItem>;
                   })}
                 </UnorderedList>
                 <Text fontSize="30" fontWeight="400">
@@ -56,7 +57,7 @@ export default function CareerMain() {
                 </Text>
                 <UnorderedList pb="2rem">
                   {job.requirments.map((item) => {
-                    return <ListItem>{item}</ListItem>;
+                    return <ListItem key={uuidv4()}>{item}</ListItem>;
                   })}
                 </UnorderedList>
                 <Text fontSize="30" fontWeight="400">
@@ -64,7 +65,7 @@ export default function CareerMain() {
                 </Text>
                 <UnorderedList pb="2rem">
                   {job.offer.map((item) => {
-                    return <ListItem>{item}</ListItem>;
+                    return <ListItem key={uuidv4()}>{item}</ListItem>;
                   })}
                 </UnorderedList>
                 <Text fontSize="30" fontWeight="400">

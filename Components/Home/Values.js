@@ -6,6 +6,7 @@ import {
   SimpleGrid,
   Center,
 } from "@chakra-ui/react";
+import { v4 as uuidv4 } from "uuid";
 import ValuesData from "./ValuesData";
 
 export default function Values() {
@@ -20,6 +21,7 @@ export default function Values() {
         {valuesData.map((item) => {
           return (
             <Box
+              key={uuidv4()}
               mt={{ base: "1rem", md: "2rem", xl: "7rem" }}
               mb={{ base: "1rem", md: "2rem", xl: "7rem" }}
               w="17rem"

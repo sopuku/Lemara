@@ -10,10 +10,8 @@ import {
 } from "@chakra-ui/react";
 
 export default function Card(props) {
-  console.log(props.data.src);
   return (
     <Stack
-      pt={{ base: 0, md: "3rem", lg: "5rem" }}
       spacing="2rem"
       direction={{ base: "column", lg: "row" }}
       align="center"

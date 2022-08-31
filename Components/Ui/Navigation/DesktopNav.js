@@ -7,14 +7,14 @@ import {
 } from "@chakra-ui/react";
 import Links from "./Links";
 import DesktopSubNav from "./DesktopSubNav";
-import Texts from "../../Language/NavigationTexts";
+import Texts from "../../Language/Texts";
 
 export default function DesktopNav(props) {
-  const navItems = Texts(props.language);
+  const navItems = Texts();
 
   return (
     <Stack direction={"row"} spacing={6} align="center" textAlign="center">
-      {navItems.map((navItem) => (
+      {navItems.navigation.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>

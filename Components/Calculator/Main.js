@@ -103,7 +103,7 @@ function MainInput() {
       overflow="hidden"
     >
       <Box
-        w={"100%"}
+        w={"100vw"}
         h={"100vh"}
         position="fixed"
         zIndex="0"
@@ -115,8 +115,6 @@ function MainInput() {
       <Box
         zIndex={1}
         mx={["auto", "auto", "auto", "auto", "2"]}
-        px="auto"
-        pt={[10, 10, 10, 10, 20]}
         w={["100vw", "460px", "512px", "512px", "512px"]}
         align="right"
       >
@@ -142,10 +140,10 @@ function MainInput() {
         align="top"
         direction={["column", "column", "column", "column", "row"]}
       >
-        <Box pt={[5, 5, 5, 5, 20]}>
+        <Box>
           <OutputBox name="Entered Data" data={mainData} delete={DeleteItem} />
         </Box>
-        <Box pt={[5, 5, 5, 5, 20]}>
+        <Box>
           <OutputBox name="Unused" data={unused} />
         </Box>
       </Stack>

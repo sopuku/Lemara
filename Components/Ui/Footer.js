@@ -8,6 +8,7 @@ import {
   Image,
 } from "@chakra-ui/react";
 import Colors from "./Colors";
+import Texts from "../Language/Texts";
 
 const ListHeader = ({ children }) => {
   return (
@@ -17,7 +18,8 @@ const ListHeader = ({ children }) => {
   );
 };
 
-export default function LargeWithLogoLeft() {
+export default function Footer() {
+  const texts = Texts();
   const colors = Colors();
   return (
     <Box bg={colors.footerBg} color={colors.footerLinkColor}>
@@ -39,7 +41,7 @@ export default function LargeWithLogoLeft() {
             <Link>PRIVATUMO POLITIKA</Link>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
-            <ListHeader>Kontaktai</ListHeader>
+            <ListHeader>{texts.footer.contacts}</ListHeader>
             <Link>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Link>
             <Link>info@lemara.lt</Link>
             <Link>+370 646 57845</Link>

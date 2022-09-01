@@ -28,10 +28,6 @@ export default function Texts() {
         ],
       },
       {
-        label: "Gamybiniai Pajėgumai",
-        href: "/capabilities",
-      },
-      {
         label: "Galerija",
         href: "/gallery",
       },
@@ -46,7 +42,13 @@ export default function Texts() {
     ],
     footer: { contacts: "Kontaktai" },
     index: {},
-    turning: {},
+    turning: {
+      t1: {
+        heading: "CNC tekinimas",
+        text: " CNC tekinimas yra viena iš paslaugų, kurias teikiame. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus. Jūs gaunate iš mūsų tikslius CNC (computer numerical control, o lietuviškai kompiuterinis skaitmeninis valdymas) detalių tekinimo darbus  mažomis arba vidutinėmis serijomis savo projektų įgyvendinimui. Priimame ir vienetinius užsakymus, gaminame prototipus. Siūlome detalių tekinimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Mes gaminame varžtus, veržles, velenus, ritinėlius, ratukus, redukcinius perėjimus, ašis, įvores, tarpiklius, kaiščius, įvairias sujungimams skirtas detales ir kt.",
+      },
+      t2: { heading: "Techniniai staklių pajėgumai" },
+    },
     milling: {},
     design: {},
     career: {},
@@ -76,10 +78,7 @@ export default function Texts() {
           },
         ],
       },
-      {
-        label: "Production Capabilities",
-        href: "/capabilities",
-      },
+
       {
         label: "Gallery",
         href: "/gallery",
@@ -125,10 +124,7 @@ export default function Texts() {
           },
         ],
       },
-      {
-        label: "Muligheter",
-        href: "/capabilities",
-      },
+
       {
         label: "Galleri",
         href: "/gallery",

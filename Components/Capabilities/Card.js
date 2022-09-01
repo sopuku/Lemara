@@ -23,28 +23,45 @@ export default function Card(props) {
           {props.data.name}
         </Heading>
         <Table size="md" textAlign={"center"} w="29rem">
-          <Tbody>
-            <Tr>
-              <Td>Maksimalus ilgis</Td>
-              <Td>{props.data.lenght}</Td>
-            </Tr>
-            <Tr>
-              <Td>Maksimalus diametras</Td>
-              <Td>{props.data.diameter}</Td>
-            </Tr>
-            <Tr>
-              <Td>Darbinės apsukos</Td>
-              <Td>{props.data.revolutions}</Td>
-            </Tr>
-            <Tr>
-              <Td>Tikslumas</Td>
-              <Td>{props.data.accuracy}</Td>
-            </Tr>
-            <Tr>
-              <Td>Aktyvūs įrankiai</Td>
-              <Td>{props.data.tools}</Td>
-            </Tr>
-          </Tbody>
+          {props.data.type === "turning" ? (
+            <Tbody>
+              <Tr>
+                <Td>Maksimalus ilgis</Td>
+                <Td>{props.data.lenght}</Td>
+              </Tr>
+              <Tr>
+                <Td>Maksimalus diametras</Td>
+                <Td>{props.data.diameter}</Td>
+              </Tr>
+              <Tr>
+                <Td>Darbinės apsukos</Td>
+                <Td>{props.data.revolutions}</Td>
+              </Tr>
+              <Tr>
+                <Td>Tikslumas</Td>
+                <Td>{props.data.accuracy}</Td>
+              </Tr>
+              <Tr>
+                <Td>Aktyvūs įrankiai</Td>
+                <Td>{props.data.tools}</Td>
+              </Tr>
+            </Tbody>
+          ) : (
+            <Tbody>
+              <Tr>
+                <Td>Darbinė zona</Td>
+                <Td>{props.data.zone}</Td>
+              </Tr>
+              <Tr>
+                <Td>Darbinės apsukos</Td>
+                <Td>{props.data.revolutions}</Td>
+              </Tr>
+              <Tr>
+                <Td>Maksimalus svoris</Td>
+                <Td>{props.data.weight}</Td>
+              </Tr>
+            </Tbody>
+          )}
         </Table>
       </TableContainer>
     </Stack>

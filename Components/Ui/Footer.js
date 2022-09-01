@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   Image,
+  Center,
 } from "@chakra-ui/react";
 import Colors from "./Colors";
 import Texts from "../Language/Texts";
@@ -22,16 +23,20 @@ export default function Footer() {
   const texts = Texts();
   const colors = Colors();
   return (
-    <Box bg={colors.footerBg} color={colors.footerLinkColor}>
+    <Box
+      bg={colors.footerBg}
+      color={colors.footerLinkColor}
+      backgroundImage="/images/navBg1.png"
+    >
       <Container as={Stack} maxW={"8xl"} py={10} align="center">
         <SimpleGrid
           templateColumns={{ sm: "1fr", md: "2fr 1fr 1fr 1fr" }}
           spacing={{ md: 3, lg: 10, xl: 32 }}
         >
           <Stack spacing={6} align="center">
-            <Box>
-              <Image src="/images/logo.png" width="100px" />
-            </Box>
+            <Center>
+              <Image src="/images/logov3.png" width="100px" />
+            </Center>
             <Text fontSize={"sm"}>UAB LEMARA © 2022 Visos teisės saugomos</Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>

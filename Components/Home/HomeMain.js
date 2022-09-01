@@ -18,7 +18,7 @@ import {
 
 export default function HomeMain() {
   return (
-    <VStack spacing="0">
+    <VStack spacing="0" overflow="hidden">
       <Flex
         position="relative"
         direction="column"
@@ -32,6 +32,7 @@ export default function HomeMain() {
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundImage="/images/background/bg1.jpg"
+        boxShadow="0 0 20px 10px grey"
       >
         <Heading color="white" fontSize="6xl" pb="2rem">
           Jums reikalingos CNC detalės jau pakeliui

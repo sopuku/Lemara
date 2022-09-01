@@ -33,12 +33,13 @@ export default function Navigation() {
         boxShadow="0 0 20px black"
         bg={colors.navigationBg}
         h="7rem"
-        w="100%"
+        w="100vw"
         py={{ base: 1 }}
         align="center"
         px={{ base: "5%", xl: "10%" }}
         position="fixed"
         zIndex="100"
+        backgroundImage="/images/navBg1.png"
       >
         <Flex
           flex={{ base: "0", lg: "auto" }}
@@ -55,7 +56,7 @@ export default function Navigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
-          <Image src="/images/logo.png" width="100px" />
+          <Image src="/images/logov3.png" width="100px" />
 
           <Flex
             display={{ base: "none", lg: "flex" }}

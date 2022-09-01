@@ -1,5 +1,5 @@
 import FeedbackText from "./FeedbackText";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
@@ -23,8 +23,8 @@ export default function Feedback() {
     <Box
       align="center"
       w="100%"
-      h={{ base: "22rem", xl: "32rem" }}
-      py={{ base: "2rem", md: "5rem", xl: "10rem" }}
+      h={{ base: "22rem", xl: "35rem" }}
+      py={{ base: "2rem", md: "5rem", xl: "12rem" }}
       px={["2%", "2%", "5%", "10%", "10%", "25%"]}
     >
       <Heading size="2xl" pb="2rem">

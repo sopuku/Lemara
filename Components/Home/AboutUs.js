@@ -24,7 +24,12 @@ export default function AboutUs() {
             {texts.aboutUs}
           </Text>
         </Box>
-        <Image src="/images/aboutUs.jpg" minW="40rem" minH="25rem" />
+        <Image
+          src="/images/aboutUs.jpg"
+          minW="40rem"
+          minH="25rem"
+          boxShadow="0 0 5px black"
+        />
       </Stack>
     </Center>
   );

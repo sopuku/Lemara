@@ -64,7 +64,12 @@ export default function HomeMain() {
           direction={{ base: "column", xl: "row" }}
           px={["2%", "2%", "5%", "10%", "10%", "15%"]}
         >
-          <Image src="/images/whyUs.jpg" minW="40rem" minH="25rem" />
+          <Image
+            src="/images/whyUs.jpg"
+            minW="40rem"
+            minH="25rem"
+            boxShadow="0 0 5px 1px "
+          />
           <Box>
             <Heading py="3rem">Kodėl turėtumėte pasirinkti mus?</Heading>
             <Text fontSize="lg" align="justify">

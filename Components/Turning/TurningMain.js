@@ -20,6 +20,9 @@ export default function TurningMain() {
           <Text>{texts.turning.t1.text}</Text>
         </Box>
       </Stack>
+
+      <box></box>
+
       {mashines.map(
         (item) =>
           item.type === "turning" && <Card data={item} key={item.name} />

@@ -10,6 +10,7 @@ export default function TurningMain() {
       px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
     >
+      <box></box>
       {mashines.map(
         (item) =>
           item.type === "turning" && <Card data={item} key={item.name} />

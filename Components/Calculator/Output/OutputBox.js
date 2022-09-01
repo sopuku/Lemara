@@ -1,17 +1,4 @@
-import {
-  Text,
-  Box,
-  OrderedList,
-  ListItem,
-  IconButton,
-  InputGroup,
-  InputLeftElement,
-  PhoneIcon,
-  FacebookIcon,
-  TwitterIcon,
-  Input,
-} from "@chakra-ui/react";
-
+import { Text, Box, OrderedList, ListItem, IconButton } from "@chakra-ui/react";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 
 function OutputBox(props) {
@@ -70,10 +57,3 @@ function OutputBox(props) {
 }
 
 export default OutputBox;
-
-<InputGroup>
-  <InputLeftElement children={<PhoneIcon color="green" />} />
-  <InputLeftElement children={<FacebookIcon color="blue" />} />
-  <InputLeftElement children={<TwitterIcon color="red" />} />
-  <Input type="tel" placeholder="Phone number" />
-</InputGroup>;

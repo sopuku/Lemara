@@ -8,6 +8,7 @@ import {
 import Links from "./Links";
 import DesktopSubNav from "./DesktopSubNav";
 import Texts from "../../Language/Texts";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function DesktopNav(props) {
   const navItems = Texts();
@@ -20,7 +21,7 @@ export default function DesktopNav(props) {
             <PopoverTrigger>
               <Links
                 href={navItem.href ?? "#"}
-                p={{ base: "auto" }}
+                py="0.5rem"
                 fontSize={"xl"}
                 fontWeight={500}
                 color={props.colors.navigationLinkColor}
@@ -29,6 +30,7 @@ export default function DesktopNav(props) {
                 }}
               >
                 {navItem.label}
+                {navItem.label === "Paslaugos" && <ChevronDownIcon />}
               </Links>
             </PopoverTrigger>
 

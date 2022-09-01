@@ -23,9 +23,9 @@ export default function Feedback() {
     <Box
       align="center"
       w="100%"
-      h={{ base: "22rem", xl: "40rem" }}
-      pt={{ base: "1rem", md: "3rem", xl: "10rem" }}
-      px={{ base: "2%", md: "5%", xl: "25%" }}
+      h={{ base: "22rem", xl: "32rem" }}
+      py={{ base: "2rem", md: "5rem", xl: "10rem" }}
+      px={["2%", "2%", "5%", "10%", "10%", "25%"]}
     >
       <Heading size="2xl" pb="2rem">
         Atsiliepimai

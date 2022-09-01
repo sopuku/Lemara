@@ -1,12 +1,13 @@
 export default function Colors() {
   return {
-    navigationBg: "blue.200",
-    navigationLinkColor: "grey.600",
+    navigationBg: "#04132A",
+    navigationLinkColor: "white",
     navigationLinkHover: "orange",
-    navigationSubBg: "blue.50",
-    navigationSubBgHover: "blue.100",
-    footerBg: "blue.200",
-    footerLinkColor: "gray.700",
+    navigationSubBg: "#04132A",
+    navigationSubColor: "white",
+    navigationSubBgHover: "#04132A",
+    footerBg: "#04132A",
+    footerLinkColor: "white",
     background: "#F8F7F3",
   };
 }

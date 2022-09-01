@@ -25,7 +25,6 @@ export default function DesktopNav(props) {
                 fontWeight={500}
                 color={props.colors.navigationLinkColor}
                 _hover={{
-                  textDecoration: "none",
                   color: props.colors.navigationLinkHover,
                 }}
               >
@@ -38,6 +37,7 @@ export default function DesktopNav(props) {
                 border={0}
                 boxShadow={"xl"}
                 bg={props.colors.navigationSubBg}
+                color={props.colors.navigationSubColor}
                 p={4}
                 rounded={"xl"}
                 minW={"sm"}

@@ -14,7 +14,7 @@ import React from "react";
 import Colors from "../Colors";
 import { CurrentLanguage } from "../../../pages/_app";
 
-export default function Navigation(props) {
+export default function Navigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   const { language, setLanguage } = React.useContext(CurrentLanguage);
@@ -30,7 +30,7 @@ export default function Navigation(props) {
   return (
     <React.Fragment>
       <Flex
-        boxShadow="0 0 20px grey"
+        boxShadow="0 0 20px black"
         bg={colors.navigationBg}
         h="7rem"
         w="100%"
@@ -75,10 +75,27 @@ export default function Navigation(props) {
           ml="10px"
         >
           <Image src={flagSelect} width="30px" />
-          <Select onChange={handleLanguageSelect} width="80px">
-            <option value="LT">LT</option>
-            <option value="EN">EN</option>
-            <option value="NO">NO</option>
+          <Select
+            onChange={handleLanguageSelect}
+            width="80px"
+            border="none"
+            color="white"
+            focusBorderColor="none"
+          >
+            <option
+              style={{
+                backgroundColor: "#04132A",
+              }}
+              value="LT"
+            >
+              LT
+            </option>
+            <option style={{ backgroundColor: "#04132A" }} value="EN">
+              EN
+            </option>
+            <option style={{ backgroundColor: "#04132A" }} value="NO">
+              NO
+            </option>
           </Select>
         </Stack>
       </Flex>

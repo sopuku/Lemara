@@ -1,4 +1,4 @@
-import { Stack, Wrap } from "@chakra-ui/react";
+import { Stack } from "@chakra-ui/react";
 import Texts from "../../Language/Texts";
 import MobileNavItem from "./MobileNavItem";
 

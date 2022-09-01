@@ -38,19 +38,27 @@ export default function Footer() {
             <ListHeader>MB „Lemara“</ListHeader>
             <Link>Įmonės kodas: 304374938</Link>
             <Link>PVM mokėtojo kodas: LT100010561112</Link>
-            <Link>PRIVATUMO POLITIKA</Link>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>{texts.footer.contacts}</ListHeader>
             <Link>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Link>
-            <Link>info@lemara.lt</Link>
-            <Link>+370 646 57845</Link>
+            <Link _hover={{ color: "orange" }}>info@lemara.lt</Link>
+            <Link _hover={{ color: "orange" }}>+370 646 57845</Link>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>Paslaugos</ListHeader>
-            <Link>CNC FREZAVIMAS</Link>
-            <Link>CNC TEKINIMAS</Link>
-            <Link>PROJEKTAVIMAS IR GAMYBA</Link>
+            <Link href="/services/turning" _hover={{ color: "orange" }}>
+              CNC TEKINIMAS
+            </Link>
+            <Link href="/services/milling" _hover={{ color: "orange" }}>
+              CNC FREZAVIMAS
+            </Link>
+            <Link href="/services/design" _hover={{ color: "orange" }}>
+              PROJEKTAVIMAS
+            </Link>
+            <Link href="/privacy" _hover={{ color: "orange" }}>
+              PRIVATUMO POLITIKA
+            </Link>
           </Stack>
         </SimpleGrid>
       </Container>

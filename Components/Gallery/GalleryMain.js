@@ -19,6 +19,8 @@ export default function GalleryMain(props) {
     <Box
       px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
+      bg="#041126"
+      backgroundImage="/images/background/2.png"
     >
       <PhotoAlbum
         spacing={6}

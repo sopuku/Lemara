@@ -52,7 +52,31 @@ export default function Texts() {
     milling: {},
     design: {},
     career: {},
-    contacts: {},
+    contacts: {
+      cards: [
+        {
+          name: "Povilas Vilimas",
+          responsibilities: "Direktorius",
+          email: "povilas@lemara.lt",
+          number: "+370 646 57845",
+          src: "/images/d1.jpg",
+        },
+        {
+          name: "Vytautas Puodžiūnas",
+          responsibilities: "Gamybos Vadovas",
+          email: "vytautas@lemara.lt",
+          number: "+370 674 51761",
+          src: "/images/d2.jpg",
+        },
+        {
+          name: "Tadas Plungė",
+          responsibilities: "Projektuotojas",
+          email: "tadas@lemara.lt",
+          number: "+370 647 64659",
+          src: "/images/d3.jpg",
+        },
+      ],
+    },
   };
 
   const TEXTS_EN = {

@@ -1,154 +1,58 @@
-import {
-  Container,
-  Box,
-  Heading,
-  Button,
-  VStack,
-  Wrap,
-  WrapItem,
-  FormControl,
-  FormLabel,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Textarea,
-  Stack,
-  Text,
-  Flex,
-  Image,
-  Divider,
-  Center,
-} from "@chakra-ui/react";
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdOutlineEmail,
-  MdOutlinePhone,
-} from "react-icons/md";
-import { BsPerson } from "react-icons/bs";
-import React, { useState } from "react";
+import { Box, Flex, Stack, HStack, Heading } from "@chakra-ui/react";
 import Maps from "./Maps";
-import Captcha from "./Captcha";
+import ContactsCard from "./ContactsCard";
+import Form from "./Form";
+import Texts from "../Language/Texts";
+import React from "react";
+import ContactsList from "./ContactsList";
 
 export default function ContactsMain() {
-  const [verify, setVerify] = useState("");
+  const texts = Texts();
   return (
-    <Center py={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
-      <Stack direction={{ base: "column", xl: "row" }}>
-        <Box
-          bg="#02054B"
-          color="white"
-          borderRadius="lg"
-          p={{ sm: 6, md: 14, lg: 14 }}
-        >
-          <Wrap spacing={{ base: 16, sm: 5, md: 5, lg: 16 }} justify="center">
-            <WrapItem>
-              <Box align="left">
-                <Heading>Kontaktai</Heading>
-                <Box py={{ base: 3, sm: 3, md: 6, lg: 6 }}>
-                  <VStack spacing="4" alignItems="left">
-                    <Flex align="center" color="#DCE2FF">
-                      <MdPhone color="#1970F1" size="24px" />
-                      <Text fontSize="18" ml="10px">
-                        +370 646 57845
-                      </Text>
-                    </Flex>
-                    <Flex align="center" color="#DCE2FF">
-                      <MdEmail color="#1970F1" size="24px" />
-                      <Text fontSize="18" ml="10px">
-                        info@lemara.lt
-                      </Text>
-                    </Flex>
-                    <Flex align="center" color="#DCE2FF">
-                      <MdLocationOn color="#1970F1" size="24px" />
-                      <Text fontSize="18" ml="10px" mb="2">
-                        Pasagų g. 4, Riešės k. <br />
-                        LT-14265 Vilniaus r.
-                      </Text>
-                    </Flex>
-                    <Divider />
-                    <Box align="center">
-                      <Image
-                        src="/images/direktorius.jpg"
-                        width="200px"
-                        my="3"
-                      />
-                      <Text mt="10px" fontSize="18">
-                        Povilas Vilimas - Direktorius <br /> povilas@lemara.lt{" "}
-                        <br />
-                        +370 646 57845
-                      </Text>
-                    </Box>
-                  </VStack>
-                </Box>
-              </Box>
-            </WrapItem>
-            <WrapItem>
-              <Box bg="white" borderRadius="lg">
-                <Box m="8" color="#0B0E3F">
-                  <VStack spacing="5">
-                    <FormControl id="name">
-                      <FormLabel>Jūsų vardas</FormLabel>
-                      <InputGroup borderColor="#E0E1E7">
-                        <InputLeftElement
-                          pointerEvents="none"
-                          children={<BsPerson color="gray.800" />}
-                        />
-                        <Input type="text" size="md" />
-                      </InputGroup>
-                    </FormControl>
-                    <FormControl id="email">
-                      <FormLabel>El. paštas</FormLabel>
-                      <InputGroup borderColor="#E0E1E7">
-                        <InputLeftElement
-                          pointerEvents="none"
-                          children={<MdOutlineEmail color="gray.800" />}
-                        />
-                        <Input type="text" size="md" />
-                      </InputGroup>
-                    </FormControl>
-                    <FormControl id="phone">
-                      <FormLabel>Telefono numeris</FormLabel>
-                      <InputGroup borderColor="#E0E1E7">
-                        <InputLeftElement
-                          pointerEvents="none"
-                          children={<MdOutlinePhone color="gray.800" />}
-                        />
-                        <Input type="text" size="md" />
-                      </InputGroup>
-                    </FormControl>
-                    <FormControl id="message">
-                      <FormLabel>Žinutė</FormLabel>
-                      <Textarea
-                        borderColor="gray.300"
-                        _hover={{
-                          borderRadius: "gray.300",
-                        }}
-                        placeholder="Žinutė"
-                      />
-                    </FormControl>
-                    <FormControl>
-                      <Captcha />
-                    </FormControl>
-                    <FormControl>
-                      <Button
-                        variant="solid"
-                        bg="#0D74FF"
-                        color="white"
-                        _hover={{}}
-                      >
-                        Siųsti Žinutę
-                      </Button>
-                    </FormControl>
-                  </VStack>
-                </Box>
-              </Box>
-            </WrapItem>
-          </Wrap>
-        </Box>
-        <Maps />
+    <Box overflow="hidden">
+      <Stack
+        h={{ base: "80rem", md: "35rem", xl: "40rem" }}
+        direction={{ base: "column", md: "row" }}
+        spacing={{ base: "2rem", lg: "4rem", xl: "6rem" }}
+        justify="center"
+        align="center"
+      >
+        {texts.contacts.cards.map((item) => (
+          <ContactsCard
+            name={item.name}
+            responsibilities={item.responsibilities}
+            email={item.email}
+            number={item.number}
+            src={item.src}
+          />
+        ))}
       </Stack>
-    </Center>
+      <Flex
+        direction="column"
+        bg="#08254F"
+        backgroundImage="/images/aboutBg.png"
+        color="white"
+        h={{ base: "76rem", lg: "60rem", xl: "40rem" }}
+        w="100vw"
+        boxShadow="0 0 20px 10px grey"
+        align="center"
+        textAlign="center"
+        spacing="5rem"
+        py="5rem"
+      >
+        <Heading pb="5rem" fontSize="6xl">
+          Susisiekite su mumis
+        </Heading>
+        <Stack
+          direction={{ base: "column", xl: "row" }}
+          spacing="5rem"
+          align="center"
+        >
+          <ContactsList />
+          <Form />
+        </Stack>
+      </Flex>
+      <Maps />
+    </Box>
   );
 }

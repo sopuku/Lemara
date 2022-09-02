@@ -6,7 +6,7 @@ export default function Layout(props) {
   const colors = Colors();
   return (
     <React.Fragment>
-      <Box py="7rem" align="start" minH="81.3vh" bg={colors.background}>
+      <Box pt="7rem" align="start" minH="81.3vh" bg={colors.background}>
         {props.children}
       </Box>
     </React.Fragment>

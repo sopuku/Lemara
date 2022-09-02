@@ -17,6 +17,7 @@ export default function AboutUs() {
         zIndex={1}
         align="center"
         justify="center"
+        spacing="5%"
       >
         <Box w="100%" textAlign="center" py="2rem">
           <Heading>Apie Mus</Heading>

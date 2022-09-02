@@ -27,7 +27,7 @@ export default function Values() {
               bg="white"
               borderRadius="xl"
               p="2rem"
-              boxShadow=" 0px 0px 20px -10px grey"
+              boxShadow=" 0px 4px 10px -2px  grey"
             >
               <Image src={item.src} h="56px" />
               <Heading size="lg" pt="2rem" pb="1rem">

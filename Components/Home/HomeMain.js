@@ -28,6 +28,7 @@ export default function HomeMain() {
         h="50rem"
         filter="auto"
         brightness="50%"
+        boxShadow="0 0 20px 10px grey"
       ></Box>
       <VStack spacing="0" overflow="hidden">
         <Flex
@@ -35,16 +36,19 @@ export default function HomeMain() {
           direction="column"
           align="center"
           justify="center"
-          w="100vw"
+          w="80vw"
           h="50rem"
-          px={{ base: "2rem", sm: "10%", lg: "20%" }}
+          px={{ base: "1%", sm: "1%", lg: "4%", xl: "10%", "2xl": "15%" }}
           mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
-          boxShadow="0 0 20px 10px grey"
         >
-          <Heading color="white" fontSize="6xl" pb="2rem">
+          <Heading
+            color="white"
+            fontSize={{ base: "4xl", md: "5xl" }}
+            pb="2rem"
+          >
             Jums reikalingos CNC detalės jau pakeliui
           </Heading>
-          <Text color="white" fontSize="3xl">
+          <Text color="white" fontSize={{ base: "3xl", md: "4xl" }}>
             Projektuojame ir gaminame tiek pavienes detales, jų prototipus, tiek
             serijas. Išsirinkite tinkamas paslaugas, o jei turite klausimų,{" "}
             <Link color="orange" href="/contacts">
@@ -59,26 +63,25 @@ export default function HomeMain() {
           </Box>
         </Show>
         <Box
-          w="100%"
+          w={["90%", "90%", "80%", "80%", "80%", "70%"]}
           h={["70rem", "70rem", "65rem", "65rem", "45rem"]}
           align="center"
           py="7rem"
         >
           <Stack
-            justify="center"
-            spacing="1rem"
+            justify="start"
+            spacing="5%"
             align="center"
             direction={{ base: "column", xl: "row" }}
-            px={["2%", "2%", "5%", "10%", "10%", "15%"]}
           >
             <Image
               src="/images/whyUs.jpg"
-              minW="40rem"
-              minH="25rem"
+              maxW="40rem"
+              maxH="25rem"
               boxShadow="0 0 5px 1px "
             />
             <Box>
-              <Heading py="3rem">Kodėl turėtumėte pasirinkti mus?</Heading>
+              <Heading py="5%">Kodėl turėtumėte pasirinkti mus?</Heading>
               <Text fontSize="lg" align="justify">
                 Esame jauni ir ambicingi savo srities profesionalai. Nuolatos
                 plečiamės ir keliame darbuotojų kvalifikaciją. Visada

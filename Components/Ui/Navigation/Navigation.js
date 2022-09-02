@@ -47,7 +47,9 @@ export default function Navigation() {
           display={{ base: "flex", lg: "none" }}
         >
           <IconButton
+            _hover={{ background: "#072147" }}
             onClick={onToggle}
+            color="white"
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }

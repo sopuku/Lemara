@@ -38,10 +38,6 @@ export default function Card(props) {
                 <Td>{props.data.revolutions}</Td>
               </Tr>
               <Tr>
-                <Td>Tikslumas</Td>
-                <Td>{props.data.accuracy}</Td>
-              </Tr>
-              <Tr>
                 <Td>Aktyvūs įrankiai</Td>
                 <Td>{props.data.tools}</Td>
               </Tr>

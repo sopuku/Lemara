@@ -7,13 +7,13 @@ export default function MobileNav(props) {
 
   return (
     <Stack
-      bg="white"
+      bg="#04132A"
       p={4}
       display={{ lg: "none" }}
       w="100%"
       position="fixed"
       mt="7rem"
-      zIndex={1}
+      zIndex={100}
     >
       {navItems.navigation.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />

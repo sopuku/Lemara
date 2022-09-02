@@ -14,31 +14,29 @@ export default function MobileNavItem({ label, children, href }) {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Stack spacing={4} onClick={children && onToggle}>
-      <Flex
-        zIndex={1}
-        py={2}
-        as={Link}
+    <Stack align="start" spacing={4} onClick={children && onToggle}>
+      <Links
+        zIndex="1"
+        py="0.5rem"
         href={href ?? "#"}
-        justify={"space-between"}
-        align={"center"}
         _hover={{
           textDecoration: "none",
         }}
       >
-        <Text fontWeight={600} color="gray.600">
+        <Text fontWeight={600} color="gray.200">
           {label}
+          {label === "Paslaugos" && (
+            <Icon
+              as={ChevronDownIcon}
+              transition={"all .25s ease-in-out"}
+              transform={isOpen && "rotate(180deg)"}
+              w={6}
+              h={6}
+            />
+          )}
         </Text>
-        {children && (
-          <Icon
-            as={ChevronDownIcon}
-            transition={"all .25s ease-in-out"}
-            transform={isOpen ? "rotate(180deg)" : ""}
-            w={6}
-            h={6}
-          />
-        )}
-      </Flex>
+        {children && ""}
+      </Links>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
         <Stack
@@ -51,7 +49,12 @@ export default function MobileNavItem({ label, children, href }) {
         >
           {children &&
             children.map((child) => (
-              <Links key={child.label} py={2} href={child.href}>
+              <Links
+                color="gray.200"
+                key={child.label}
+                py={2}
+                href={child.href}
+              >
                 {child.label}
               </Links>
             ))}

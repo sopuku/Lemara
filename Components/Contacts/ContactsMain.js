@@ -1,8 +1,8 @@
-import { Box, Flex, Stack, HStack, Heading } from "@chakra-ui/react";
+import { Box, Flex, Stack, Heading } from "@chakra-ui/react";
 import Maps from "./Maps";
 import ContactsCard from "./ContactsCard";
 import Form from "./Form";
-import Texts from "../Language/Texts";
+import Texts from "../Texts/Texts";
 import React from "react";
 import ContactsList from "./ContactsList";
 

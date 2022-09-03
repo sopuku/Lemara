@@ -1,7 +1,7 @@
 import Mashines from "../Capabilities/Mashines";
 import Card from "../Capabilities/Card";
 import { Box, Image, Stack, Text, Heading } from "@chakra-ui/react";
-import Texts from "../Language/Texts";
+import Texts from "../Texts/Texts";
 import React from "react";
 
 export default function TurningMain() {

@@ -22,7 +22,7 @@ export default function CareerMain() {
       px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
     >
-      <Heading size="3xl" py={{ base: "1rem" }}>
+      <Heading size="3xl" py={{ base: "2rem" }}>
         Darbo Skelbimai
       </Heading>
       <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>

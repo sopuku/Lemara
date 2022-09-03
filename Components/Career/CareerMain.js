@@ -22,7 +22,7 @@ export default function CareerMain() {
       px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
     >
-      <Heading size="3xl" py={{ base: "2rem" }}>
+      <Heading size="2xl" py={{ base: "2rem" }}>
         Darbo Skelbimai
       </Heading>
       <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
@@ -37,20 +37,20 @@ export default function CareerMain() {
                     borderBottomRadius: "8",
                   }}
                 >
-                  <Box flex="1" textAlign="left" fontSize="32" fontWeight="600">
+                  <Box flex="1" textAlign="left" fontSize="30" fontWeight="600">
                     {job.title}
                   </Box>
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
               <AccordionPanel pb="4" textAlign="left" pl="3rem">
-                <Text fontSize="30" fontWeight="500" pb="0.5rem">
+                <Text fontSize="28" fontWeight="500" pb="0.5rem">
                   Darbo pobūdis
                 </Text>
                 <UnorderedList pb="2rem">
                   {job.description.map((item) => {
                     return (
-                      <ListItem fontSize="20" key={uuidv4()}>
+                      <ListItem fontSize="18" key={uuidv4()}>
                         {item}
                       </ListItem>
                     );
@@ -62,7 +62,7 @@ export default function CareerMain() {
                 <UnorderedList pb="2rem">
                   {job.requirments.map((item) => {
                     return (
-                      <ListItem fontSize="20" key={uuidv4()}>
+                      <ListItem fontSize="18" key={uuidv4()}>
                         {item}
                       </ListItem>
                     );
@@ -74,7 +74,7 @@ export default function CareerMain() {
                 <UnorderedList pb="2rem">
                   {job.offer.map((item) => {
                     return (
-                      <ListItem fontSize="20" key={uuidv4()}>
+                      <ListItem fontSize="18" key={uuidv4()}>
                         {item}
                       </ListItem>
                     );
@@ -84,7 +84,7 @@ export default function CareerMain() {
                   Atlyginimas
                 </Text>
                 <UnorderedList pb="1rem">
-                  <ListItem fontSize="20">{job.salary}</ListItem>
+                  <ListItem fontSize="18">{job.salary}</ListItem>
                 </UnorderedList>
               </AccordionPanel>
             </AccordionItem>

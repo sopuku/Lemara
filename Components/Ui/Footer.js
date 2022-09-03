@@ -9,7 +9,7 @@ import {
   Center,
 } from "@chakra-ui/react";
 import Colors from "./Colors";
-import Texts from "../Language/Texts";
+import Texts from "../Texts/Texts";
 
 const ListHeader = ({ children }) => {
   return (

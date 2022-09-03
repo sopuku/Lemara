@@ -23,7 +23,7 @@ export default function Feedback() {
     <Box
       align="center"
       w="100%"
-      h={{ base: "22rem", xl: "35rem" }}
+      h={{ base: "30rem", xl: "35rem" }}
       py={{ base: "2rem", md: "5rem", xl: "12rem" }}
       px={["2%", "2%", "5%", "10%", "10%", "25%"]}
     >

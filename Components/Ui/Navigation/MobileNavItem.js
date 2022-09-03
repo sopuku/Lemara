@@ -1,12 +1,4 @@
-import {
-  Flex,
-  Text,
-  Stack,
-  Collapse,
-  Icon,
-  useDisclosure,
-  Link,
-} from "@chakra-ui/react";
+import { Text, Stack, Collapse, Icon, useDisclosure } from "@chakra-ui/react";
 import Links from "./Links";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 

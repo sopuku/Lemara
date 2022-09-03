@@ -7,7 +7,7 @@ import {
 } from "@chakra-ui/react";
 import Links from "./Links";
 import DesktopSubNav from "./DesktopSubNav";
-import Texts from "../../Language/Texts";
+import Texts from "../../Texts/Texts";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 
 export default function DesktopNav(props) {
@@ -22,7 +22,7 @@ export default function DesktopNav(props) {
               <Links
                 href={navItem.href ?? "#"}
                 py="0.5rem"
-                fontSize={"xl"}
+                fontSize={"2xl"}
                 fontWeight={500}
                 color={props.colors.navigationLinkColor}
                 _hover={{

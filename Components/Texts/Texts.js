@@ -51,7 +51,98 @@ export default function Texts() {
     },
     milling: {},
     design: {},
-    career: {},
+    career: {
+      jobs: [
+        {
+          title: "CNC tekinimo staklių operatorius",
+          description: [
+            "Darbas su CNC tekinimo staklėmis",
+            "Detalių matavimas",
+            "Programų rašymas",
+            "Tvarkos ir švaros palaikymas darbo vietoje",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų patirtis",
+            "Techninių brėžinių skaitymas",
+            "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje, jaunatviškoje įmonėje",
+            "Organizuojami kursai profesiniam tobulėjimui",
+            "Visada laiku mokamą atlyginimą",
+            "Karjeros galimybes",
+          ],
+          salary: "1000-1500 €/mėn. į rankas",
+        },
+        {
+          title: "CNC frezavimo staklių operatorius",
+          description: [
+            "Darbas su CNC frezavimo staklėmis",
+            "Detalių matavimas",
+            "Programų rašymas",
+            "Tvarkos ir švaros palaikymas darbo vietoje",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų patirtis",
+            "Techninių brėžinių skaitymas",
+            "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje, jaunatviškoje įmonėje",
+            "Organizuojamus kursus profesiniam tobulėjimui",
+            "Visada laiku mokamą atlyginimą",
+            "Karjeros galimybes",
+          ],
+          salary: "1000-1500 €/mėn. į rankas",
+        },
+        {
+          title: "Pramonės vadybininkas",
+          description: [
+            "Naujų klientų paieška",
+            "Bendravimas su esamais klientais",
+            "Komercinių pasiūlymš ruošimas",
+            "Apskaitos dokumentų valdymas",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų panašaus darbo patirtis",
+            "Pageidautina inžinerinis aukštesnysis/aukštasis išsilavinimas",
+            "CNC pramonės išmanymas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Noras tobulėti",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje įmonėje",
+            "Galimybes profesiniam tobulėjimui",
+            "Visada laiku mokamą, nuo rezultatų priklausantį atlyginimą",
+          ],
+          salary: "Nuo 1300 €/mėn. į rankas + priedai pagal rezultatus",
+        },
+        {
+          title: "Valytoja",
+          description: [
+            "Darbas dvi dienas per savaitę",
+            "Gamybinių patalpų valymas",
+            "Ofiso patalpų valymas",
+            "Tvarkos palaikymas",
+          ],
+          requirments: [
+            "Panašaus darbo patirtis būtų privalumas",
+            "Punktualumas",
+            "Atsakingumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje įmonėje",
+            "Galimybes profesiniam tobulėjimui",
+            "Visada laiku mokamą",
+          ],
+          salary: "Pagal susitarimą",
+        },
+      ],
+    },
     contacts: {
       cards: [
         {

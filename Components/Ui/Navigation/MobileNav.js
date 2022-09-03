@@ -1,5 +1,5 @@
 import { Stack } from "@chakra-ui/react";
-import Texts from "../../Language/Texts";
+import Texts from "../../Texts/Texts";
 import MobileNavItem from "./MobileNavItem";
 
 export default function MobileNav(props) {

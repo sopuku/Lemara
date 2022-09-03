@@ -49,7 +49,7 @@ export default function Texts() {
       },
       t2: { heading: "Techniniai staklių pajėgumai" },
     },
-    milling: {},
+    milling: { test },
     design: {},
     career: {
       jobs: [

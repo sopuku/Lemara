@@ -23,7 +23,7 @@ export default function CareerMain() {
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
     >
       <Heading size="2xl" py={{ base: "2rem" }}>
-        Darbo Skelbimai
+        Karjeros Galimybės
       </Heading>
       <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
         {texts.career.jobs.map((job) => {
@@ -34,7 +34,6 @@ export default function CareerMain() {
                   _expanded={{
                     bg: "#072248",
                     color: "white",
-                    borderBottomRadius: "8",
                   }}
                 >
                   <Box flex="1" textAlign="left" fontSize="30" fontWeight="600">
@@ -43,7 +42,13 @@ export default function CareerMain() {
                   <AccordionIcon />
                 </AccordionButton>
               </h2>
-              <AccordionPanel pb="4" textAlign="left" pl="3rem">
+              <AccordionPanel
+                pb="4"
+                textAlign="left"
+                pl="3rem"
+                bg="gray.200"
+                roundedBottom="8"
+              >
                 <Text fontSize="28" fontWeight="500" pb="0.5rem">
                   Darbo pobūdis
                 </Text>

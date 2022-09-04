@@ -16,7 +16,7 @@ import React from "react";
 export default function TurningMain() {
   const texts = Texts();
   return (
-    <VStack>
+    <VStack overflow="hidden">
       <Box
         w={["90%", "90%", "80%", "80%", "80%", "70%"]}
         h={["70rem", "70rem", "65rem", "65rem", "45rem"]}
@@ -58,7 +58,7 @@ export default function TurningMain() {
         </Wrap>
         <SimpleGrid
           columns={{ base: 1, lg: 2, "2xl": 3 }}
-          spacing="2rem"
+          spacing="3rem"
           py="5rem"
         >
           {texts.capabilities.mashines.map(

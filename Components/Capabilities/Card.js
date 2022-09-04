@@ -6,13 +6,13 @@ export default function Card(props) {
     <VStack align="center" justify="center">
       <Image w="460px" src={props.data.src} boxShadow="0 0 5px 1px black" />
       <Flex direction="column">
-        <Heading pb="1rem" fontSize="35px">
+        <Heading pb="1rem" fontSize="30px">
           {props.data.name}
         </Heading>
-        <HStack fontSize="lg" minW="26rem" pb="2rem">
+        <HStack fontSize="lg" pb="2rem">
           {props.data.type === "turning" ? (
             <React.Fragment>
-              <VStack align="left" pr="3rem">
+              <VStack align="left" pr={["1rem", "3rem"]}>
                 <Text>Maksimalus ilgis</Text>
                 <Text>Maksimalus diametras</Text>
                 <Text>Darbinės apsukos</Text>
@@ -27,7 +27,7 @@ export default function Card(props) {
             </React.Fragment>
           ) : (
             <React.Fragment>
-              <VStack align="left" pr="3rem">
+              <VStack align="left" pr={["1rem", "3rem"]}>
                 <Text>Darbinė zona</Text>
                 <Text>Darbinės apsukos</Text>
                 <Text>Maksimalus svoris</Text>

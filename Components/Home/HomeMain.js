@@ -63,7 +63,7 @@ export default function HomeMain() {
           </Box>
         </Show>
         <Box
-          w={["90%", "90%", "80%", "80%", "80%", "70%"]}
+          w="100%"
           h={["70rem", "70rem", "65rem", "65rem", "45rem"]}
           align="center"
           py="7rem"
@@ -80,7 +80,7 @@ export default function HomeMain() {
               maxH="25rem"
               boxShadow="0 0 5px 1px "
             />
-            <Box>
+            <Box px={["3%", "3%", "7%", "10%", "10%", "15%"]}>
               <Heading py="5%">Kodėl turėtumėte pasirinkti mus?</Heading>
               <Text fontSize="lg" align="justify">
                 Esame jauni ir ambicingi savo srities profesionalai. Nuolatos
@@ -95,7 +95,6 @@ export default function HomeMain() {
             </Box>
           </Stack>
         </Box>
-
         <AboutUs />
         <Feedback />
       </VStack>

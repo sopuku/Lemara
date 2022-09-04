@@ -24,10 +24,10 @@ export default function Feedback() {
       align="center"
       w="100%"
       h={{ base: "30rem", xl: "35rem" }}
-      py={{ base: "2rem", md: "5rem", xl: "12rem" }}
-      px={["2%", "2%", "5%", "10%", "10%", "25%"]}
+      py={{ base: "4rem", md: "5rem", xl: "6rem" }}
+      px={["3%", "3%", "7%", "10%", "10%", "25%"]}
     >
-      <Heading size="2xl" pb="2rem">
+      <Heading size="2xl" pb="4rem">
         Atsiliepimai
       </Heading>
       <link

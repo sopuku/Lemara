@@ -91,19 +91,19 @@ export default function Navigation() {
             }}
             value="1"
           >
-            spalva1
+            color 1
           </option>
           <option
             style={{ backgroundColor: colors.navigation.selectColors.bg }}
             value="2"
           >
-            spalva2
+            color 2
           </option>
           <option
             style={{ backgroundColor: colors.navigation.selectColors.bg }}
             value="3"
           >
-            spalva3
+            color 3
           </option>
         </Select>
 

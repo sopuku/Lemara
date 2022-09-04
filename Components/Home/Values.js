@@ -7,19 +7,19 @@ import {
   Center,
 } from "@chakra-ui/react";
 import { v4 as uuidv4 } from "uuid";
-import ValuesData from "./ValuesData";
 import Colors from "../Ui/Colors";
+import Texts from "../Texts/Texts";
 
 export default function Values() {
-  const valuesData = ValuesData();
   const colors = Colors();
+  const texts = Texts();
   return (
     <Center>
       <SimpleGrid
         columns={{ base: 0, md: 2, xl: 4 }}
         spacing={{ base: "1rem", md: "2rem", xl: "3rem" }}
       >
-        {valuesData.map((item) => {
+        {texts.values.map((item) => {
           return (
             <Box
               key={uuidv4()}

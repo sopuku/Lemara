@@ -1,11 +1,9 @@
-import FeedbackText from "./FeedbackText";
+import Texts from "../Texts/Texts";
 import { Box, Heading, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
 import Colors from "../Ui/Colors";
-
-const feedbackText = FeedbackText();
 
 const settings = {
   dots: true,
@@ -21,6 +19,7 @@ const settings = {
 
 export default function Feedback() {
   const colors = Colors();
+  const texts = Texts();
   return (
     <Box
       align="center"
@@ -46,7 +45,7 @@ export default function Feedback() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       <Slider {...settings}>
-        {feedbackText.map((item) => {
+        {texts.feedback.map((item) => {
           return (
             <React.Fragment key={uuidv4()}>
               <Heading size="xl" pb="1rem">

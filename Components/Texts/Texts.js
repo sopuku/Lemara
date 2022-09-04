@@ -228,6 +228,53 @@ export default function Texts() {
         },
       ],
     },
+    values: [
+      {
+        title: "Kokybė",
+        description: "Garantuojame aukštą gaminių kokybę",
+        src: "/images/values/1.png",
+      },
+      {
+        title: "Greitis",
+        description: "Detales pagaminame per trumpą laiką",
+        src: "/images/values/3.png",
+      },
+      {
+        title: "Tikslumas",
+        description:
+          "Modernios įrangos dėka, gaminiai pasižymi dideliu tikslumu ",
+        src: "/images/values/2.png",
+      },
+      {
+        title: "Atsakingumas",
+        description: "Atsakingai gaminame net ir mažiausią užsakymą",
+        src: "/images/values/4.png",
+      },
+    ],
+    aboutUs: {
+      text1: {
+        heading: "",
+        text: `MB "Lemara" - metalo apdirbimo įmonė, teikianti CNC tekinimo ir frezavimo paslaugas. Specializuojamės gaminant didelio tikslumo reikalaujančius elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms, konvejeriams. Mes dirbame su aliuminiu, nerūdijančiu plienu, plienu, variu, žalvariu, kitais metalais bei įvairiais plastikais. Bendradarbiaujame su daug partnerių, todėl su jų pagalba galime atlikti praktiškai visas įmanomas medžiagų apdirbimo operacijas, tokias kaip pjovimą viela, pjovimą vandeniu, pjovimą lazeriu, pjovimą plazma, pjovimą elektroerozija, šlifavimą, anodavimą, virinimą, lankstymą. Bendradarbiaujame tiek su Lietuvos, tiek su užsienio gamintojais. 2016 metais įkurta Lemara sparčiai plečiasi ir sėkmingai dirba tarptautiniu mastu.
+ `,
+      },
+    },
+    feedback: [
+      {
+        id: 1,
+        title: "UAB Stelga, Marius",
+        text: "Jauni, ambicingi savo sryties specialistai, puikiai žinanatys ir gebantys patarti ir spręsti iškilusias problemas. Greitas ir operatyvus reagavimas į paklausimus, visi projektai buvo įgyvendinti pagal sutartus gamybinius terminus.:)",
+      },
+      {
+        id: 2,
+        title: "UAB Lematec, Donatas",
+        text: "Pasirinkome Lemara, nes didžioji dalis pamatę reikiamus tikslumus nebetęsia pokalbio, bijo atsakomybės. Reikiami tikslumai buvo išgauti ir preciziškos detalės tilpo į reikiamą vietą. Rekomenduojame Lemara įmonėms, kurioms rūpi kokybė ir žmogiškas bendravimas.",
+      },
+      {
+        id: 3,
+        title: "UAB Vildoma, Virginijus",
+        text: "Esame dėkingi už kokybiškai atliekamus užsakymus ir pažadėtų terminų laikymąsi",
+      },
+    ],
   };
 
   const TEXTS_EN = {

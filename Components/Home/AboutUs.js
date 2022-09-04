@@ -1,9 +1,9 @@
 import { Box, Heading, Text, Image, Stack, Center } from "@chakra-ui/react";
-import AboutUsText from "./AboutUsText";
+import Texts from "../Texts/Texts";
 import Colors from "../Ui/Colors";
 
 export default function AboutUs() {
-  const texts = AboutUsText();
+  const texts = Texts();
   const colors = Colors();
   return (
     <Stack
@@ -23,7 +23,7 @@ export default function AboutUs() {
       <Box w="100%" textAlign="center" py="2rem">
         <Heading>Apie Mus</Heading>
         <Text fontSize="lg" py="2rem" align="justify">
-          {texts.aboutUs}
+          {texts.aboutUs.text1.text}
         </Text>
       </Box>
       <Image

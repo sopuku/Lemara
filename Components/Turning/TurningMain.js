@@ -8,6 +8,7 @@ import {
   VStack,
   SimpleGrid,
   Flex,
+  Wrap,
 } from "@chakra-ui/react";
 import Texts from "../Texts/Texts";
 import React from "react";
@@ -15,7 +16,7 @@ import React from "react";
 export default function TurningMain() {
   const texts = Texts();
   return (
-    <VStack overflow="hidden">
+    <VStack>
       <Box
         w={["90%", "90%", "80%", "80%", "80%", "70%"]}
         h={["70rem", "70rem", "65rem", "65rem", "45rem"]}
@@ -50,9 +51,11 @@ export default function TurningMain() {
         boxShadow="-0 -20px 20px -10px grey"
         zIndex={0}
       >
-        <Heading pt="5rem" fontSize="45px">
-          Techninės galimybės
-        </Heading>
+        <Wrap textAlign="center">
+          <Heading pt="5rem" fontSize="45px">
+            Techninės galimybės
+          </Heading>
+        </Wrap>
         <SimpleGrid
           columns={{ base: 1, lg: 2, "2xl": 3 }}
           spacing="2rem"

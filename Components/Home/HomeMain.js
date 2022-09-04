@@ -26,7 +26,7 @@ export default function HomeMain() {
         backgroundRepeat="no-repeat"
         backgroundImage={colors.home.bgImage}
         w="100%"
-        h="50rem"
+        h={{ base: "35rem", md: "50rem" }}
         filter="auto"
         brightness="60%"
         boxShadow="0 0 20px 10px grey"
@@ -38,9 +38,8 @@ export default function HomeMain() {
           position="relative"
           direction="column"
           align="center"
-          w="80vw"
-          h="50rem"
-          px={{ base: "1%", sm: "1%", lg: "4%", xl: "10%", "2xl": "15%" }}
+          h={{ base: "35rem", md: "50rem" }}
+          px={{ base: "4%", sm: "4%", lg: "10%", xl: "10%", "2xl": "20%" }}
           mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
         >
           <Heading pt="10%" fontSize={{ base: "4xl", md: "5xl" }} pb="2rem">

@@ -12,9 +12,11 @@ import {
 } from "@chakra-ui/react";
 import Texts from "../Texts/Texts";
 import React from "react";
+import Colors from "../Ui/Colors";
 
 export default function TurningMain() {
   const texts = Texts();
+  const colors = Colors();
   return (
     <VStack overflow="hidden">
       <Box
@@ -22,6 +24,8 @@ export default function TurningMain() {
         h={["70rem", "70rem", "65rem", "65rem", "45rem"]}
         align="center"
         py="7rem"
+        color={colors.turning.colorTop}
+        bg={colors.turning.bgTop}
       >
         <Stack
           justify="center"
@@ -30,7 +34,7 @@ export default function TurningMain() {
           direction={{ base: "column", xl: "row" }}
         >
           <Image
-            src="/images/turning/t5.jpg"
+            src={colors.turning.image}
             maxW="40rem"
             maxH="25rem"
             boxShadow="0 0 5px 1px "
@@ -44,10 +48,10 @@ export default function TurningMain() {
         </Stack>
       </Box>
       <VStack
-        bg="#08254F"
-        backgroundImage="/images/background/aboutBg.png"
+        bg={colors.turning.bgBot}
+        backgroundImage={colors.turning.bgTexture}
         w="100%"
-        color="white"
+        color={colors.turning.colorBot}
         boxShadow="-0 -20px 20px -10px grey"
         zIndex={0}
       >

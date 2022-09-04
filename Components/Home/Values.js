@@ -8,9 +8,11 @@ import {
 } from "@chakra-ui/react";
 import { v4 as uuidv4 } from "uuid";
 import ValuesData from "./ValuesData";
+import Colors from "../Ui/Colors";
 
 export default function Values() {
   const valuesData = ValuesData();
+  const colors = Colors();
   return (
     <Center>
       <SimpleGrid
@@ -24,7 +26,8 @@ export default function Values() {
               w="17rem"
               h="17rem"
               align="center"
-              bg="white"
+              bg={colors.home.values.bg}
+              color={colors.home.values.color}
               borderRadius="xl"
               p="2rem"
               boxShadow=" 0px 4px 10px -2px  grey"

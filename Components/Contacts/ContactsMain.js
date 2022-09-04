@@ -5,9 +5,11 @@ import Form from "./Form";
 import Texts from "../Texts/Texts";
 import React from "react";
 import ContactsList from "./ContactsList";
+import Colors from "../Ui/Colors";
 
 export default function ContactsMain() {
   const texts = Texts();
+  const colors = Colors();
   return (
     <Box overflow="hidden">
       <Stack
@@ -29,9 +31,9 @@ export default function ContactsMain() {
       </Stack>
       <Flex
         direction="column"
-        bg="#08254F"
-        backgroundImage="/images/background/aboutBg.png"
-        color="white"
+        bg={colors.contacts.bg}
+        backgroundImage={colors.contacts.bgTexture}
+        color={colors.contacts.color}
         h={{ base: "76rem", lg: "60rem", xl: "40rem" }}
         w="100vw"
         boxShadow="0 0 20px 10px grey"

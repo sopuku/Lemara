@@ -1,10 +1,18 @@
 import { Text, Heading, Box, UnorderedList, ListItem } from "@chakra-ui/react";
 import React from "react";
-import Links from "../Ui/Navigation/Links";
+import Colors from "../Ui/Colors";
 
 export default function PrivacyMain() {
+  const colors = Colors();
   return (
-    <Box mx="auto" w={["90%", "90%", "70%"]} align="left" py="5rem">
+    <Box
+      mx="auto"
+      w={["90%", "90%", "70%"]}
+      align="left"
+      py="5rem"
+      color={colors.privacy.color}
+      bg={colors.privacy.bg}
+    >
       <Heading textAlign="center" pb="4rem">
         PRIVATUMO POLITIKA
       </Heading>

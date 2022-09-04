@@ -3,6 +3,7 @@ import { Box, Heading, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import React from "react";
 import { v4 as uuidv4 } from "uuid";
+import Colors from "../Ui/Colors";
 
 const feedbackText = FeedbackText();
 
@@ -19,6 +20,7 @@ const settings = {
 };
 
 export default function Feedback() {
+  const colors = Colors();
   return (
     <Box
       align="center"
@@ -26,6 +28,8 @@ export default function Feedback() {
       h={{ base: "30rem", xl: "35rem" }}
       py={{ base: "4rem", md: "5rem", xl: "6rem" }}
       px={["3%", "3%", "7%", "10%", "10%", "25%"]}
+      color={colors.home.feedback.color}
+      bg={colors.home.feedback.bg}
     >
       <Heading size="2xl" pb="4rem">
         Atsiliepimai

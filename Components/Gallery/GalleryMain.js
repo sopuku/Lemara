@@ -5,8 +5,10 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import React, { useState } from "react";
 import { Box } from "@chakra-ui/react";
+import Colors from "../Ui/Colors";
 
 export default function GalleryMain(props) {
+  const colors = Colors();
   const slides = props.pictures.map(({ src, width, height }) => ({
     src,
     width,
@@ -19,8 +21,8 @@ export default function GalleryMain(props) {
     <Box
       px={{ sm: "1rem", md: "2rem", lg: "10%", xl: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
-      bg="#041126"
-      backgroundImage="/images/background/galleryBg.png"
+      bg={colors.gallery.bg}
+      backgroundImage={colors.gallery.bgTexture}
     >
       <PhotoAlbum
         spacing={6}

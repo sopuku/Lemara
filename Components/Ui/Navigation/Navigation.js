@@ -13,12 +13,14 @@ import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import React from "react";
 import Colors from "../Colors";
-import { CurrentLanguage } from "../../../pages/_app";
+import { CurrentSettings } from "../../../pages/_app";
 
 export default function Navigation() {
   const { isOpen, onToggle } = useDisclosure();
 
-  const { language, setLanguage } = React.useContext(CurrentLanguage);
+  const { language, setLanguage } = React.useContext(CurrentSettings);
+
+  const { setCurrentColor } = React.useContext(CurrentSettings);
 
   const flagSelect = `/images/flags/${language}_flag.png`;
 
@@ -28,11 +30,15 @@ export default function Navigation() {
     setLanguage(e.target.value);
   }
 
+  function handleColorSelect(e) {
+    setCurrentColor(e.target.value);
+  }
+
   return (
     <React.Fragment>
       <Flex
         boxShadow="0 0 20px black"
-        bg={colors.navigationBg}
+        bg={colors.navigation.bg}
         h="7rem"
         w="100vw"
         py={{ base: 1 }}
@@ -40,7 +46,7 @@ export default function Navigation() {
         px={{ base: "5%", xl: "10%" }}
         position="fixed"
         zIndex="100"
-        backgroundImage="/images/background/navBg1.png"
+        backgroundImage={colors.navigation.bgTexture}
       >
         <Flex
           flex={{ base: "0", lg: "auto" }}
@@ -48,9 +54,9 @@ export default function Navigation() {
           display={{ base: "flex", lg: "none" }}
         >
           <IconButton
-            _hover={{ background: "#072147" }}
+            _hover={{ background: colors.navigation.hamburgerIconBg }}
             onClick={onToggle}
-            color="white"
+            color={colors.navigation.hamburgerIcon}
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
@@ -60,7 +66,7 @@ export default function Navigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
           <Links href="/">
-            <Image src="/images/logo/logo2.png" width="100px" />
+            <Image src={colors.navigation.logo} width="100px" />
           </Links>
 
           <Flex
@@ -71,6 +77,35 @@ export default function Navigation() {
             <DesktopNav colors={colors} />
           </Flex>
         </Flex>
+
+        <Select
+          onChange={handleColorSelect}
+          width="100px"
+          border="none"
+          color={colors.navigation.selectColors.color}
+          focusBorderColor="none"
+        >
+          <option
+            style={{
+              backgroundColor: colors.navigation.selectColors.bg,
+            }}
+            value="1"
+          >
+            spalva1
+          </option>
+          <option
+            style={{ backgroundColor: colors.navigation.selectColors.bg }}
+            value="2"
+          >
+            spalva2
+          </option>
+          <option
+            style={{ backgroundColor: colors.navigation.selectColors.bg }}
+            value="3"
+          >
+            spalva3
+          </option>
+        </Select>
 
         <Stack
           justify={"flex-end"}
@@ -85,21 +120,27 @@ export default function Navigation() {
             onChange={handleLanguageSelect}
             width="80px"
             border="none"
-            color="white"
+            color={colors.navigation.selectLanguage.color}
             focusBorderColor="none"
           >
             <option
               style={{
-                backgroundColor: "#04132A",
+                backgroundColor: colors.navigation.selectLanguage.bg,
               }}
               value="LT"
             >
               LT
             </option>
-            <option style={{ backgroundColor: "#04132A" }} value="EN">
+            <option
+              style={{ backgroundColor: colors.navigation.selectLanguage.bg }}
+              value="EN"
+            >
               EN
             </option>
-            <option style={{ backgroundColor: "#04132A" }} value="NO">
+            <option
+              style={{ backgroundColor: colors.navigation.selectLanguage.bg }}
+              value="NO"
+            >
               NO
             </option>
           </Select>

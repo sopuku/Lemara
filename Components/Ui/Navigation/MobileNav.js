@@ -1,13 +1,14 @@
 import { Stack } from "@chakra-ui/react";
+import Colors from "../Colors";
 import Texts from "../../Texts/Texts";
 import MobileNavItem from "./MobileNavItem";
 
 export default function MobileNav(props) {
   const navItems = Texts();
-
+  const colors = Colors();
   return (
     <Stack
-      bg="#04132A"
+      bg={colors.navigation.bg}
       p={4}
       display={{ lg: "none" }}
       w="100%"

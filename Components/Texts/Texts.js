@@ -1,8 +1,8 @@
 import { useContext } from "react";
-import { CurrentLanguage } from "../../pages/_app";
+import { CurrentSettings } from "../../pages/_app";
 
 export default function Texts() {
-  const { language } = useContext(CurrentLanguage);
+  const { language } = useContext(CurrentSettings);
 
   const TEXTS_LT = {
     navigation: [

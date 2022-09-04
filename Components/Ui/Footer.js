@@ -6,6 +6,7 @@ import {
   Text,
   Image,
   Center,
+  color,
 } from "@chakra-ui/react";
 import Links from "./Navigation/Links";
 import Colors from "./Colors";
@@ -24,9 +25,9 @@ export default function Footer() {
   const colors = Colors();
   return (
     <Box
-      bg={colors.footerBg}
-      color={colors.footerLinkColor}
-      backgroundImage="/images/background/navBg1.png"
+      bg={colors.footer.bg}
+      color={colors.footer.color}
+      backgroundImage={colors.footer.bgTexture}
     >
       <Container as={Stack} maxW={"8xl"} py={10} align="center">
         <SimpleGrid
@@ -35,9 +36,11 @@ export default function Footer() {
         >
           <Stack spacing={6} align="center">
             <Center>
-              <Image src="/images/logo/logo2.png" width="100px" />
+              <Image src={colors.footer.logo} width="100px" />
             </Center>
-            <Text fontSize={"sm"}>UAB LEMARA © 2022 Visos teisės saugomos</Text>
+            <Text fontSize="sm" color={colors.footer.color}>
+              UAB LEMARA © 2022 Visos teisės saugomos
+            </Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>MB „Lemara“</ListHeader>
@@ -52,16 +55,25 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>Paslaugos</ListHeader>
-            <Links href="/services/turning" _hover={{ color: "orange" }}>
+            <Links
+              href="/services/turning"
+              _hover={{ color: colors.footer.colorHover }}
+            >
               CNC TEKINIMAS
             </Links>
-            <Links href="/services/milling" _hover={{ color: "orange" }}>
+            <Links
+              href="/services/milling"
+              _hover={{ color: colors.footer.colorHover }}
+            >
               CNC FREZAVIMAS
             </Links>
-            <Links href="/services/design" _hover={{ color: "orange" }}>
+            <Links
+              href="/services/design"
+              _hover={{ color: colors.footer.colorHover }}
+            >
               PROJEKTAVIMAS
             </Links>
-            <Links href="/privacy" _hover={{ color: "orange" }}>
+            <Links href="/privacy" _hover={{ color: colors.footer.colorHover }}>
               PRIVATUMO POLITIKA
             </Links>
           </Stack>

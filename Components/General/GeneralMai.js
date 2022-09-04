@@ -1,10 +1,19 @@
 import Texts from "../../Components/Texts/Texts";
 import { Box, Text, Heading, UnorderedList, ListItem } from "@chakra-ui/react";
+import Colors from "../Ui/Colors";
 
 export default function GeneralMain() {
   const texts = Texts();
+  const colors = Colors();
   return (
-    <Box mx="auto" w={["90%", "90%", "70%"]} align="justify" py="5rem">
+    <Box
+      mx="auto"
+      w={["90%", "90%", "70%"]}
+      align="justify"
+      py="5rem"
+      bg={colors.general.bg}
+      color={colors.general.color}
+    >
       <Heading textAlign="center" fontSize="50" as="h1" pb="2rem">
         Bendra informacija
       </Heading>

@@ -1,13 +1,15 @@
 import { Heading, Avatar, Box, Flex, Text, Stack } from "@chakra-ui/react";
+import Colors from "../Ui/Colors";
 import React from "react";
 
 export default function ContactsCard(props) {
+  const colors = Colors();
   return (
     <React.Fragment>
       <Box
         maxW="280px"
         w="full"
-        bg="white"
+        bg={colors.contacts.card.bgBot}
         boxShadow="0 0 20px 1px grey"
         rounded="md"
         overflow="hidden"
@@ -15,8 +17,8 @@ export default function ContactsCard(props) {
         <Box
           h="7rem"
           w="full"
-          bg="#072248"
-          backgroundImage="/images/background/aboutBg.png"
+          bg={colors.contacts.card.bgTop}
+          backgroundImage={colors.contacts.card.bgTopTexture}
         />
         <Flex justify="center" mt={-12}>
           <Avatar
@@ -24,7 +26,8 @@ export default function ContactsCard(props) {
             src={props.src}
             alt="image of Lemara director"
             css={{
-              border: "2px solid #072248",
+              border: "2px solid ",
+              borderColor: colors.contacts.card.border,
             }}
           />
         </Flex>
@@ -32,7 +35,7 @@ export default function ContactsCard(props) {
           <Heading fontSize="24px" fontWeight={500} fontFamily="body">
             {props.name}
           </Heading>
-          <Text fontSize="18px" color="gray.500">
+          <Text fontSize="18px" color={colors.contacts.card.color}>
             {props.responsibilities}
           </Text>
           <Text fontSize="18px" fontWeight="600">

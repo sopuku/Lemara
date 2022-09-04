@@ -10,9 +10,11 @@ import {
   Image,
   Wrap,
 } from "@chakra-ui/react";
+import Colors from "../Ui/Colors";
 
 export default function MillingMain() {
   const texts = Texts();
+  const colors = Colors();
   return (
     <VStack overflow="hidden">
       <Box
@@ -20,6 +22,8 @@ export default function MillingMain() {
         h={["70rem", "70rem", "65rem", "65rem", "45rem"]}
         align="center"
         py="7rem"
+        color={colors.milling.colorTop}
+        bg={colors.milling.bgTop}
       >
         <Stack
           justify="center"
@@ -28,7 +32,7 @@ export default function MillingMain() {
           direction={{ base: "column", xl: "row" }}
         >
           <Image
-            src="/images/milling/m1.jpg"
+            src={colors.milling.image}
             maxW="40rem"
             maxH="25rem"
             boxShadow="0 0 5px 1px "
@@ -42,10 +46,10 @@ export default function MillingMain() {
         </Stack>
       </Box>
       <VStack
-        bg="#08254F"
-        backgroundImage="/images/background/aboutBg.png"
+        bg={colors.milling.bgBot}
+        backgroundImage={colors.milling.bgTexture}
         w="100%"
-        color="white"
+        color={colors.milling.colorBot}
         boxShadow="-0 -20px 20px -10px grey"
         zIndex={0}
       >

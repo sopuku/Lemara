@@ -1,9 +1,11 @@
 import { Text, Stack, Collapse, Icon, useDisclosure } from "@chakra-ui/react";
 import Links from "./Links";
 import { ChevronDownIcon } from "@chakra-ui/icons";
+import Colors from "../Colors";
 
 export default function MobileNavItem({ label, children, href }) {
   const { isOpen, onToggle } = useDisclosure();
+  const colors = Colors();
 
   return (
     <Stack align="start" spacing={4} onClick={children && onToggle}>
@@ -15,7 +17,7 @@ export default function MobileNavItem({ label, children, href }) {
           textDecoration: "none",
         }}
       >
-        <Text fontWeight={600} color="gray.200">
+        <Text fontWeight={600} color={colors.navigation.color}>
           {label}
           {label === "Paslaugos" && (
             <Icon
@@ -42,7 +44,7 @@ export default function MobileNavItem({ label, children, href }) {
           {children &&
             children.map((child) => (
               <Links
-                color="gray.200"
+                color={colors.navigation.color}
                 key={child.label}
                 py={2}
                 href={child.href}

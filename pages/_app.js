@@ -3,19 +3,22 @@ import React, { useState } from "react";
 import Layout from "../Components/Ui/Layout";
 import Navigation from "../Components/Ui/Navigation/Navigation";
 import Footer from "../Components/Ui/Footer";
-export const CurrentLanguage = React.createContext(null);
+export const CurrentSettings = React.createContext(null);
 
 export default function MyApp({ Component, pageProps }) {
   const [language, setLanguage] = useState("LT");
+  const [currentColor, setCurrentColor] = useState("1");
   return (
     <ChakraProvider>
-      <CurrentLanguage.Provider value={{ language, setLanguage }}>
+      <CurrentSettings.Provider
+        value={{ language, setLanguage, currentColor, setCurrentColor }}
+      >
         <Navigation />
         <Layout>
           <Component {...pageProps} />
         </Layout>
         <Footer />
-      </CurrentLanguage.Provider>
+      </CurrentSettings.Provider>
     </ChakraProvider>
   );
 }

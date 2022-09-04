@@ -3,6 +3,7 @@ import Feedback from "./Feedback";
 import Values from "./Values";
 import AboutUs from "./AboutUs";
 import Links from "../Ui/Navigation/Links";
+import Colors from "../Ui/Colors";
 import {
   Box,
   VStack,
@@ -15,6 +16,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function HomeMain() {
+  const colors = Colors();
   return (
     <React.Fragment>
       <Box
@@ -22,7 +24,7 @@ export default function HomeMain() {
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
-        backgroundImage="/images/background/main.jpg"
+        backgroundImage={colors.home.bgImage}
         w="100%"
         h="50rem"
         filter="auto"
@@ -31,6 +33,8 @@ export default function HomeMain() {
       ></Box>
       <VStack spacing="0" overflow="hidden">
         <Flex
+          color={colors.home.color}
+          bg={colors.home.bg}
           position="relative"
           direction="column"
           align="center"
@@ -39,16 +43,11 @@ export default function HomeMain() {
           px={{ base: "1%", sm: "1%", lg: "4%", xl: "10%", "2xl": "15%" }}
           mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
         >
-          <Heading
-            pt="10%"
-            color="white"
-            fontSize={{ base: "4xl", md: "5xl" }}
-            pb="2rem"
-          >
+          <Heading pt="10%" fontSize={{ base: "4xl", md: "5xl" }} pb="2rem">
             Kokybiškos, preciziškai ištekintos detalės jūsų konstrukciniams
             sumanymams: greitai ir už protingą kainą
           </Heading>
-          <Text color="white" fontSize={{ base: "3xl", md: "4xl" }}>
+          <Text fontSize={{ base: "2xl", md: "3xl" }}>
             Projektuojame ir gaminame tiek pavienes detales, jų prototipus, tiek
             serijas. Išsirinkite tinkamas paslaugas, o jei turite klausimų,{" "}
             <Links color="orange" href="/contacts">
@@ -76,12 +75,12 @@ export default function HomeMain() {
             direction={{ base: "column", xl: "row" }}
           >
             <Image
-              src="/images/home/whyUs.jpg"
+              src={colors.home.image}
               maxW="40rem"
               maxH="25rem"
               boxShadow="0 0 5px 1px "
             />
-            <Box>
+            <Box color={colors.home.whyUs.color} bg={colors.home.whyUs.bg}>
               <Heading py="5%">Kodėl turėtumėte pasirinkti mus?</Heading>
               <Text fontSize="lg" align="justify">
                 Esame jauni ir ambicingi savo srities profesionalai. Nuolatos

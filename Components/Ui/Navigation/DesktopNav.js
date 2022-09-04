@@ -24,9 +24,9 @@ export default function DesktopNav(props) {
                 py="0.5rem"
                 fontSize={"2xl"}
                 fontWeight={500}
-                color={props.colors.navigationLinkColor}
+                color={props.colors.navigation.color}
                 _hover={{
-                  color: props.colors.navigationLinkHover,
+                  color: props.colors.navigation.colorHover,
                 }}
               >
                 {navItem.label}
@@ -38,8 +38,8 @@ export default function DesktopNav(props) {
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}
-                bg={props.colors.navigationSubBg}
-                color={props.colors.navigationSubColor}
+                bg={props.colors.navigation.subBg}
+                color={props.colors.navigation.subColor}
                 p={4}
                 rounded={"xl"}
                 minW={"sm"}

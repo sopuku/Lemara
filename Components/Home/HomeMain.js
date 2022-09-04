@@ -26,7 +26,7 @@ export default function HomeMain() {
         w="100%"
         h="50rem"
         filter="auto"
-        brightness="80%"
+        brightness="60%"
         boxShadow="0 0 20px 10px grey"
       ></Box>
       <VStack spacing="0" overflow="hidden">

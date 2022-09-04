@@ -1,3 +1,5 @@
+import PrivacyMain from "../Components/Privacy/PrivacyMain";
+
 export default function Privacy() {
-  return <div>Privacy</div>;
+  return <PrivacyMain />;
 }

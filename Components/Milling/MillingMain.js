@@ -51,7 +51,7 @@ export default function MillingMain() {
       >
         <Wrap textAlign="center">
           <Heading pt="5rem" fontSize="45px">
-            Techninės galimybės
+            Techniniai staklių pajėgumai
           </Heading>
         </Wrap>
         <SimpleGrid

@@ -1,13 +1,13 @@
 import {
   Box,
   Container,
-  Link,
   SimpleGrid,
   Stack,
   Text,
   Image,
   Center,
 } from "@chakra-ui/react";
+import Links from "./Navigation/Links";
 import Colors from "./Colors";
 import Texts from "../Texts/Texts";
 
@@ -41,29 +41,29 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>MB „Lemara“</ListHeader>
-            <Link>Įmonės kodas: 304374938</Link>
-            <Link>PVM mokėtojo kodas: LT100010561112</Link>
+            <Text>Įmonės kodas: 304374938</Text>
+            <Text>PVM mokėtojo kodas: LT100010561112</Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>{texts.footer.contacts}</ListHeader>
-            <Link>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Link>
-            <Link _hover={{ color: "orange" }}>info@lemara.lt</Link>
-            <Link _hover={{ color: "orange" }}>+370 646 57845</Link>
+            <Text>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Text>
+            <Text>info@lemara.lt</Text>
+            <Text>+370 646 57845</Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>Paslaugos</ListHeader>
-            <Link href="/services/turning" _hover={{ color: "orange" }}>
+            <Links href="/services/turning" _hover={{ color: "orange" }}>
               CNC TEKINIMAS
-            </Link>
-            <Link href="/services/milling" _hover={{ color: "orange" }}>
+            </Links>
+            <Links href="/services/milling" _hover={{ color: "orange" }}>
               CNC FREZAVIMAS
-            </Link>
-            <Link href="/services/design" _hover={{ color: "orange" }}>
+            </Links>
+            <Links href="/services/design" _hover={{ color: "orange" }}>
               PROJEKTAVIMAS
-            </Link>
-            <Link href="/privacy" _hover={{ color: "orange" }}>
+            </Links>
+            <Links href="/privacy" _hover={{ color: "orange" }}>
               PRIVATUMO POLITIKA
-            </Link>
+            </Links>
           </Stack>
         </SimpleGrid>
       </Container>

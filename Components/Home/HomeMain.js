@@ -2,13 +2,13 @@ import React from "react";
 import Feedback from "./Feedback";
 import Values from "./Values";
 import AboutUs from "./AboutUs";
+import Links from "../Ui/Navigation/Links";
 import {
   Box,
   VStack,
   Heading,
   Text,
   Flex,
-  Link,
   Image,
   Stack,
   Show,
@@ -34,25 +34,26 @@ export default function HomeMain() {
           position="relative"
           direction="column"
           align="center"
-          justify="center"
           w="80vw"
           h="50rem"
           px={{ base: "1%", sm: "1%", lg: "4%", xl: "10%", "2xl": "15%" }}
           mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
         >
           <Heading
+            pt="10%"
             color="white"
             fontSize={{ base: "4xl", md: "5xl" }}
             pb="2rem"
           >
-            Jums reikalingos CNC detalės jau pakeliui
+            Kokybiškos, preciziškai ištekintos detalės jūsų konstrukciniams
+            sumanymams: greitai ir už protingą kainą
           </Heading>
           <Text color="white" fontSize={{ base: "3xl", md: "4xl" }}>
             Projektuojame ir gaminame tiek pavienes detales, jų prototipus, tiek
             serijas. Išsirinkite tinkamas paslaugas, o jei turite klausimų,{" "}
-            <Link color="orange" href="/contacts">
+            <Links color="orange" href="/contacts">
               susisiekite su mumis
-            </Link>
+            </Links>
             .
           </Text>
         </Flex>

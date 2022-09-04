@@ -53,7 +53,7 @@ export default function TurningMain() {
       >
         <Wrap textAlign="center">
           <Heading pt="5rem" fontSize="45px">
-            Techninės galimybės
+            Techniniai staklių pajėgumai
           </Heading>
         </Wrap>
         <SimpleGrid

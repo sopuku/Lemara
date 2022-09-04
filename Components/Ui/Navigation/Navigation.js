@@ -8,6 +8,7 @@ import {
   Select,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import Links from "./Links";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import React from "react";
@@ -58,7 +59,9 @@ export default function Navigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
-          <Image src="/images/logo/logo2.png" width="100px" />
+          <Links href="/">
+            <Image src="/images/logo/logo2.png" width="100px" />
+          </Links>
 
           <Flex
             display={{ base: "none", lg: "flex" }}

@@ -26,7 +26,7 @@ export default function Footer() {
     <Box
       bg={colors.footerBg}
       color={colors.footerLinkColor}
-      backgroundImage="/images/navBg1.png"
+      backgroundImage="/images/background/navBg1.png"
     >
       <Container as={Stack} maxW={"8xl"} py={10} align="center">
         <SimpleGrid
@@ -35,7 +35,7 @@ export default function Footer() {
         >
           <Stack spacing={6} align="center">
             <Center>
-              <Image src="/images/logov3.png" width="100px" />
+              <Image src="/images/logo/logo2.png" width="100px" />
             </Center>
             <Text fontSize={"sm"}>UAB LEMARA © 2022 Visos teisės saugomos</Text>
           </Stack>

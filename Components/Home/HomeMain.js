@@ -10,7 +10,6 @@ import {
   Flex,
   Link,
   Image,
-  Wrap,
   Stack,
   Show,
 } from "@chakra-ui/react";
@@ -23,7 +22,7 @@ export default function HomeMain() {
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
-        backgroundImage="/images/background/bg1.jpg"
+        backgroundImage="/images/background/main.jpg"
         w="100%"
         h="50rem"
         filter="auto"
@@ -75,7 +74,7 @@ export default function HomeMain() {
             direction={{ base: "column", xl: "row" }}
           >
             <Image
-              src="/images/whyUs.jpg"
+              src="/images/home/whyUs.jpg"
               maxW="40rem"
               maxH="25rem"
               boxShadow="0 0 5px 1px "

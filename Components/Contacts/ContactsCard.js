@@ -16,7 +16,7 @@ export default function ContactsCard(props) {
           h="7rem"
           w="full"
           bg="#072248"
-          backgroundImage="/images/navBg1.png"
+          backgroundImage="/images/background/aboutBg.png"
         />
         <Flex justify="center" mt={-12}>
           <Avatar

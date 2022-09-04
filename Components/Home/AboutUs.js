@@ -9,7 +9,7 @@ export default function AboutUs() {
         px={["3%", "3%", "7%", "10%", "10%", "15%"]}
         direction={{ base: "column", xl: "row" }}
         bg="#08254F"
-        backgroundImage="/images/aboutBg.png"
+        backgroundImage="/images/background/aboutBg.png"
         color="whiteAlpha.800"
         minH="50rem"
         w="100%"
@@ -26,7 +26,7 @@ export default function AboutUs() {
           </Text>
         </Box>
         <Image
-          src="/images/aboutUs.jpg"
+          src="/images/home/aboutUs.jpg"
           minW="40rem"
           minH="25rem"
           boxShadow="0 0 5px black"

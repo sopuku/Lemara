@@ -19,7 +19,7 @@ export default function Navigation() {
 
   const { language, setLanguage } = React.useContext(CurrentLanguage);
 
-  const flagSelect = `/images/${language}_flag.png`;
+  const flagSelect = `/images/flags/${language}_flag.png`;
 
   const colors = Colors();
 
@@ -39,7 +39,7 @@ export default function Navigation() {
         px={{ base: "5%", xl: "10%" }}
         position="fixed"
         zIndex="100"
-        backgroundImage="/images/navBg1.png"
+        backgroundImage="/images/background/navBg1.png"
       >
         <Flex
           flex={{ base: "0", lg: "auto" }}
@@ -58,7 +58,7 @@ export default function Navigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
-          <Image src="/images/logov3.png" width="100px" />
+          <Image src="/images/logo/logo2.png" width="100px" />
 
           <Flex
             display={{ base: "none", lg: "flex" }}

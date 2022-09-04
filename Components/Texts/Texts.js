@@ -92,11 +92,17 @@ export default function Texts() {
     turning: {
       t1: {
         heading: "CNC tekinimas",
-        text: " CNC tekinimas yra viena iš paslaugų, kurias teikiame. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus. Jūs gaunate iš mūsų tikslius CNC (computer numerical control, o lietuviškai kompiuterinis skaitmeninis valdymas) detalių tekinimo darbus  mažomis arba vidutinėmis serijomis savo projektų įgyvendinimui. Priimame ir vienetinius užsakymus, gaminame prototipus. Siūlome detalių tekinimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Mes gaminame varžtus, veržles, velenus, ritinėlius, ratukus, redukcinius perėjimus, ašis, įvores, tarpiklius, kaiščius, įvairias sujungimams skirtas detales ir kt.",
+        text: " CNC tekinimas yra viena iš paslaugų, kurias teikiame. Mes atliekame ištekinimą (kai apdirbami vidiniai detalės paviršiai), aptekinimą (kai apdirbami išoriniai detalės paviršiai), nutekinimas (kai apdirbami galiniai detalės paviršiai). Siūlome detalių tekinimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Mes gaminame varžtus, veržles, velenus, ritinėlius, ratukus, redukcinius perėjimus, ašis, įvores, tarpiklius, kaiščius, įvairias sujungimams skirtas detales ir kt. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
       },
       t2: { heading: "Techniniai staklių pajėgumai" },
     },
-    milling: {},
+    milling: {
+      t1: {
+        heading: "CNC frezavimas",
+        text: " CNC frezavimas yra viena iš paslaugų, kurias teikiame. Mes atliekame plokštumų frezavimą (kai tiesialinijine pastūma frezuojami plokšti paviršiai), apvalųjį frezavimą (kai apskritimine pastūma frezuojami cilindriniai paviršiai), sriegių frezavimą (kai sraigtine pastūma frezuojami sraigtiniai paviršiai), fasoninį frezavimą (kai frezos profilis išpjaunamas ruošinyje), kontūrinį frezavimą (kai formuojami tiek paprasti kontūrai tiek sudėtingi erdviniai paviršiai suteikiant staklėms valdomą pastūmą). Siūlome detalių frezavimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
+      },
+      t2: { heading: "Techniniai staklių pajėgumai" },
+    },
     design: {},
     career: {
       jobs: [
@@ -197,21 +203,21 @@ export default function Texts() {
           responsibilities: "Direktorius",
           email: "povilas@lemara.lt",
           number: "+370 646 57845",
-          src: "/images/d1.jpg",
+          src: "/images/contacts/povilas.jpg",
         },
         {
           name: "Vytautas Puodžiūnas",
           responsibilities: "Gamybos Vadovas",
           email: "vytautas@lemara.lt",
           number: "+370 674 51761",
-          src: "/images/d2.jpg",
+          src: "/images/contacts/vytautas.jpg",
         },
         {
           name: "Tadas Plungė",
           responsibilities: "Projektuotojas",
           email: "tadas@lemara.lt",
           number: "+370 647 64659",
-          src: "/images/d3.jpg",
+          src: "/images/contacts/tadas.jpg",
         },
       ],
     },

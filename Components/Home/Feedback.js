@@ -1,5 +1,5 @@
 import FeedbackText from "./FeedbackText";
-import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Box, Heading, Text } from "@chakra-ui/react";
 import Slider from "react-slick";
 import React from "react";
 import { v4 as uuidv4 } from "uuid";

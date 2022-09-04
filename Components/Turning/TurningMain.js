@@ -45,7 +45,7 @@ export default function TurningMain() {
       </Box>
       <VStack
         bg="#08254F"
-        backgroundImage="/images/aboutBg.png"
+        backgroundImage="/images/background/aboutBg.png"
         w="100%"
         color="white"
         boxShadow="-0 -20px 20px -10px grey"

@@ -30,7 +30,7 @@ export default function ContactsMain() {
       <Flex
         direction="column"
         bg="#08254F"
-        backgroundImage="/images/aboutBg.png"
+        backgroundImage="/images/background/aboutBg.png"
         color="white"
         h={{ base: "76rem", lg: "60rem", xl: "40rem" }}
         w="100vw"

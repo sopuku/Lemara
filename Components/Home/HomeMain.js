@@ -26,7 +26,7 @@ export default function HomeMain() {
         w="100%"
         h="50rem"
         filter="auto"
-        brightness="50%"
+        brightness="80%"
         boxShadow="0 0 20px 10px grey"
       ></Box>
       <VStack spacing="0" overflow="hidden">
@@ -63,6 +63,7 @@ export default function HomeMain() {
           </Box>
         </Show>
         <Box
+          px={["3%", "3%", "7%", "10%", "10%", "15%"]}
           w="100%"
           h={["70rem", "70rem", "65rem", "65rem", "45rem"]}
           align="center"
@@ -80,7 +81,7 @@ export default function HomeMain() {
               maxH="25rem"
               boxShadow="0 0 5px 1px "
             />
-            <Box px={["3%", "3%", "7%", "10%", "10%", "15%"]}>
+            <Box>
               <Heading py="5%">Kodėl turėtumėte pasirinkti mus?</Heading>
               <Text fontSize="lg" align="justify">
                 Esame jauni ir ambicingi savo srities profesionalai. Nuolatos

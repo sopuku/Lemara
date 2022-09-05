@@ -12,6 +12,23 @@ export default function ContactsMain() {
   const colors = Colors();
   return (
     <Box overflow="hidden">
+      <Stack
+        h={{ base: "80rem", md: "35rem", xl: "40rem" }}
+        direction={{ base: "column", md: "row" }}
+        spacing={{ base: "2rem", lg: "4rem", xl: "6rem" }}
+        justify="center"
+        align="center"
+      >
+        {texts.contacts.cards.map((item) => (
+          <ContactsCard
+            name={item.name}
+            responsibilities={item.responsibilities}
+            email={item.email}
+            number={item.number}
+            src={item.src}
+          />
+        ))}
+      </Stack>
       <Flex
         direction="column"
         bg={colors.contacts.bg}
@@ -37,26 +54,6 @@ export default function ContactsMain() {
           <Form />
         </Stack>
       </Flex>
-      <Box>
-        <Stack
-          h={{ base: "80rem", md: "35rem", xl: "40rem" }}
-          direction={{ base: "column", md: "row" }}
-          spacing={{ base: "2rem", lg: "4rem", xl: "6rem" }}
-          justify="center"
-          align="center"
-        >
-          {texts.contacts.cards.map((item) => (
-            <ContactsCard
-              name={item.name}
-              responsibilities={item.responsibilities}
-              email={item.email}
-              number={item.number}
-              src={item.src}
-            />
-          ))}
-        </Stack>
-      </Box>
-
       <Maps />
     </Box>
   );

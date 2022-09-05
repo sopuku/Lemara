@@ -25,6 +25,7 @@ export default function HomeMain() {
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundImage={colors.home.bgImage}
+        bg={colors.home.bg}
         w="100%"
         h={{ base: "35rem", md: "50rem" }}
         boxShadow="0 0 20px 10px grey"
@@ -32,7 +33,6 @@ export default function HomeMain() {
       <VStack spacing="0" overflow="hidden">
         <Flex
           color={colors.home.color}
-          bg={colors.home.bg}
           position="relative"
           direction="column"
           align="center"

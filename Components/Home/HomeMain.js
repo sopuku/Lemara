@@ -47,7 +47,7 @@ export default function HomeMain() {
           <Text fontSize={{ base: "2xl", md: "3xl" }}>
             Projektuojame ir gaminame tiek pavienes detales, jų prototipus, tiek
             serijas. Išsirinkite tinkamas paslaugas, o jei turite klausimų,{" "}
-            <Links color="orange" href="/contacts">
+            <Links color={colors.home.colorLink} href="/contacts">
               susisiekite su mumis
             </Links>
             .

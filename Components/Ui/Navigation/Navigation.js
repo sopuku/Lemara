@@ -92,19 +92,19 @@ export default function Navigation() {
             }}
             value="1"
           >
-            color 1
+            dark
           </option>
           <option
             style={{ backgroundColor: colors.navigation.selectColors.bg }}
             value="2"
           >
-            color 2
+            darker
           </option>
           <option
             style={{ backgroundColor: colors.navigation.selectColors.bg }}
             value="3"
           >
-            color 3
+            light
           </option>
         </Select>
 

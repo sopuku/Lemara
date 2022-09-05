@@ -296,7 +296,7 @@ export default function Colors() {
       subIcon: "orange",
       hamburgerIcon: "black",
       hamburgerIconBg: "#E3E8EB",
-      selectColors: { color: "black", bg: "##F5F5F5" },
+      selectColors: { color: "black", bg: "#F5F5F5" },
       selectLanguage: { color: "black", bg: "#F5F5F5" },
     },
     footer: {

@@ -17,26 +17,26 @@ export default function Values() {
     <Center>
       <SimpleGrid
         columns={{ base: 0, md: 2, xl: 4 }}
-        spacing={{ base: "1rem", md: "5rem", xl: "8rem" }}
+        spacing={{ base: "1rem", md: "2rem", xl: "3rem" }}
       >
         {texts.values.map((item) => {
           return (
             <Box
               key={uuidv4()}
-              w="12rem"
-              h="12rem"
+              w="17rem"
+              h="17rem"
               align="center"
               bg={colors.home.values.bg}
               color={colors.home.values.color}
               borderRadius="xl"
-              p="1rem"
-              boxShadow=" 0px 0px 0 5px  orange"
+              p="2rem"
+              boxShadow=" 0px 4px 10px -2px  grey"
             >
-              <Image src={item.src} h="30px" />
-              <Heading size="md" pt="1rem" pb="1rem">
+              <Image src={item.src} h="56px" />
+              <Heading size="lg" pt="2rem" pb="1rem">
                 {item.title}
               </Heading>
-              <Text fontSize="md">{item.description}</Text>
+              <Text fontSize="lg">{item.description}</Text>
             </Box>
           );
         })}

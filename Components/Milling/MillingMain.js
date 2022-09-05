@@ -39,7 +39,7 @@ export default function MillingMain() {
           />
           <Box>
             <Heading pb="1rem">{texts.milling.t1.heading}</Heading>
-            <Text fontSize="lg" align="justify">
+            <Text lineHeight={1.8} fontSize="lg" align="justify">
               {texts.milling.t1.text}
             </Text>
           </Box>

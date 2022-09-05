@@ -119,6 +119,12 @@ export default function Navigation() {
           >
             brown
           </option>
+          <option
+            style={{ backgroundColor: colors.navigation.selectColors.bg }}
+            value="6"
+          >
+            grey
+          </option>
         </Select>
 
         <Stack

@@ -433,7 +433,7 @@ export default function Colors() {
     home: {
       bgImage: "/images/background/main2.jpg",
       image: "/images/home/whyUs.jpg",
-      color: "white",
+      color: "#b5b5b5",
       colorLink: "#0B54D6",
       bg: "",
       whyUs: { color: "black", bg: "" },
@@ -467,6 +467,99 @@ export default function Colors() {
     privacy: { color: "black", bg: "" },
   };
 
+  const COLORS_6 = {
+    background: "#FFFFFF",
+    navigation: {
+      logo: "/images/logo/logo2.png",
+      bgTexture: "",
+      bg: "#272B37",
+      color: "white",
+      colorHover: "orange",
+      bgHover: "#2F3340",
+      subBg: "#272B37",
+      subColor: "white",
+      subBgHover: "#2F3340",
+      subIcon: "orange",
+      hamburgerIcon: "white",
+      hamburgerIconBg: "#E3E8EB",
+      selectColors: { color: "white", bg: "#272B37" },
+      selectLanguage: { color: "white", bg: "#272B37" },
+    },
+    footer: {
+      logo: "/images/logo/logo2.png",
+      bgTexture: "",
+      bg: "#272B37",
+      color: "white",
+      colorHover: "orange",
+    },
+
+    career: {
+      color: "black",
+      bg: "",
+      colorExpanded: "black",
+      bgExpanded: "white",
+      button: {
+        color: "black",
+        bg: "",
+        colorHover: "black",
+        bgHover: "#F8F9F9",
+        colorExpanded: "white",
+        bgExpanded: "#2F3340",
+      },
+    },
+    contacts: {
+      card: {
+        bgTop: "#272B37",
+        bgBot: "White",
+        color: "#1A202C",
+        bgTopTexture: "",
+        border: "#2F3340",
+      },
+      form: { color: "black", bg: "white", colorIcon: "black" },
+      button: { bg: "#2F3340", color: "white", colorHover: "orange" },
+      bg: "#2F3340",
+      bgTexture: "",
+      color: "white",
+      colorIcon: "#1970F1",
+    },
+    gallery: { bg: "#2F3340", bgTexture: "" },
+    home: {
+      bgImage: "/images/background/main2.jpg",
+      image: "/images/home/whyUs.jpg",
+      color: "white",
+      colorLink: "#0B54D6",
+      bg: "",
+      whyUs: { color: "black", bg: "" },
+      aboutUs: {
+        image: "/images/home/aboutUs.jpg",
+        color: "white",
+        bg: "#2F3340",
+        bgTexture: "",
+      },
+      feedback: { color: "black", bg: "" },
+      values: { color: "black", bg: "white" },
+    },
+    turning: {
+      image: "/images/turning/t5.jpg",
+      bgTexture: "",
+      bgBot: "#2F3340",
+      colorBot: "white",
+      bgTop: "",
+      colorTop: "black",
+    },
+    milling: {
+      image: "/images/milling/m1.jpg",
+      bgTexture: "",
+      bgBot: "#2F3340",
+      colorBot: "white",
+      bgTop: "",
+      colorTop: "black",
+    },
+    design: { image: "/images/design/d1.jpg", color: "black", bg: "#F8F9F9" },
+    general: { color: "black", bg: "" },
+    privacy: { color: "black", bg: "" },
+  };
+
   switch (currentColor) {
     case "1":
       return COLORS_1;
@@ -478,6 +571,8 @@ export default function Colors() {
       return COLORS_4;
     case "5":
       return COLORS_5;
+    case "6":
+      return COLORS_6;
     default:
       return TEXTS_LT;
   }

@@ -101,7 +101,7 @@ export default function Colors() {
     navigation: {
       logo: "/images/logo/logo2.png",
       bgTexture: "/images/background/navBg1.png",
-      bg: "#061c3d",
+      bg: "#051732",
       color: "white",
       colorHover: "orange",
       bgHover: "#072146",

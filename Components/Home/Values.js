@@ -23,20 +23,20 @@ export default function Values() {
           return (
             <Box
               key={uuidv4()}
-              w="17rem"
-              h="17rem"
+              w="12rem"
+              h="12rem"
               align="center"
               bg={colors.home.values.bg}
               color={colors.home.values.color}
               borderRadius="xl"
-              p="2rem"
+              p="1rem"
               boxShadow=" 0px 0px 0 5px  orange"
             >
-              <Image src={item.src} h="56px" />
-              <Heading size="lg" pt="2rem" pb="1rem">
+              <Image src={item.src} h="30px" />
+              <Heading size="md" pt="1rem" pb="1rem">
                 {item.title}
               </Heading>
-              <Text fontSize="lg">{item.description}</Text>
+              <Text fontSize="md">{item.description}</Text>
             </Box>
           );
         })}

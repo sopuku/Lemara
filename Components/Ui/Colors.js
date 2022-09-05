@@ -154,7 +154,7 @@ export default function Colors() {
     },
     gallery: { bg: "#082450", bgTexture: "/images/background/galleryBg.png" },
     home: {
-      bgImage: "/images/background/main1b.jpg",
+      bgImage: "/images/background/main1a.jpg",
       image: "/images/home/whyUs.jpg",
       color: "white",
       colorLink: "orange",

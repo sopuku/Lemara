@@ -9,6 +9,7 @@ export default function MobileNav(props) {
   return (
     <Stack
       bg={colors.navigation.bg}
+      backgroundImage={colors.navigation.bgTexture}
       p={4}
       display={{ lg: "none" }}
       w="100%"

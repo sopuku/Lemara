@@ -39,6 +39,7 @@ export default function DesktopNav(props) {
                 border={0}
                 boxShadow={"xl"}
                 bg={props.colors.navigation.subBg}
+                backgroundImage={props.colors.navigation.subBgTexture}
                 color={props.colors.navigation.subColor}
                 p={4}
                 rounded={"xl"}

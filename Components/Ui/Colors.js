@@ -104,7 +104,7 @@ export default function Colors() {
       color: "white",
       colorHover: "orange",
       bgHover: "#072146",
-      subBg: "#04132A",
+      subBg: "#082656",
       subColor: "white",
       subBgHover: "#072146",
       subIcon: "orange",

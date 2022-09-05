@@ -22,7 +22,7 @@ export default function DesktopNav(props) {
               <Links
                 href={navItem.href ?? "#"}
                 py="0.5rem"
-                fontSize={"2xl"}
+                fontSize={"xl"}
                 fontWeight={500}
                 color={props.colors.navigation.color}
                 _hover={{

@@ -281,6 +281,99 @@ export default function Colors() {
     privacy: { color: "black", bg: "" },
   };
 
+  const COLORS_4 = {
+    background: "#FFFFFF",
+    navigation: {
+      logo: "/images/logo/logo.png",
+      bgTexture: "",
+      bg: "#FFFFFF",
+      color: "Black",
+      colorHover: "orange",
+      bgHover: "#072146",
+      subBg: "#F8F9F9",
+      subColor: "black",
+      subBgHover: "#eaeaea",
+      subIcon: "orange",
+      hamburgerIcon: "black",
+      hamburgerIconBg: "#E3E8EB",
+      selectColors: { color: "black", bg: "##F5F5F5" },
+      selectLanguage: { color: "black", bg: "#F5F5F5" },
+    },
+    footer: {
+      logo: "/images/logo/logo.png",
+      bgTexture: "",
+      bg: "white",
+      color: "black",
+      colorHover: "orange",
+    },
+
+    career: {
+      color: "black",
+      bg: "",
+      colorExpanded: "black",
+      bgExpanded: "white",
+      button: {
+        color: "black",
+        bg: "",
+        colorHover: "black",
+        bgHover: "#F8F9F9",
+        colorExpanded: "black",
+        bgExpanded: "#F8F9F9",
+      },
+    },
+    contacts: {
+      card: {
+        bgTop: "#F8F9F9",
+        bgBot: "White",
+        color: "#1A202C",
+        bgTopTexture: "",
+        border: "#d7dee2",
+      },
+      form: { color: "black", bg: "white", colorIcon: "black" },
+      button: { bg: "#0C5AD0", color: "white", colorHover: "orange" },
+      bg: "#F8F9F9",
+      bgTexture: "",
+      color: "black",
+      colorIcon: "#1970F1",
+    },
+    gallery: { bg: "#F8F9F9", bgTexture: "" },
+    home: {
+      bgImage: "/images/background/main2.jpg",
+      image: "/images/home/whyUs.jpg",
+      color: "black",
+      colorLink: "#0B54D6",
+      bg: "whiteAlpha.500",
+      whyUs: { color: "black", bg: "" },
+      aboutUs: {
+        image: "/images/home/aboutUs.jpg",
+        color: "black",
+        bg: "#F8F9F9",
+        bgTexture: "",
+      },
+      feedback: { color: "black", bg: "" },
+      values: { color: "black", bg: "white" },
+    },
+    turning: {
+      image: "/images/turning/t5.jpg",
+      bgTexture: "",
+      bgBot: "#F8F9F9",
+      colorBot: "black",
+      bgTop: "",
+      colorTop: "black",
+    },
+    milling: {
+      image: "/images/milling/m1.jpg",
+      bgTexture: "",
+      bgBot: "#F8F9F9",
+      colorBot: "black",
+      bgTop: "",
+      colorTop: "black",
+    },
+    design: { image: "/images/design/d1.jpg", color: "black", bg: "#F8F9F9" },
+    general: { color: "black", bg: "" },
+    privacy: { color: "black", bg: "" },
+  };
+
   switch (currentColor) {
     case "1":
       return COLORS_1;
@@ -288,6 +381,8 @@ export default function Colors() {
       return COLORS_2;
     case "3":
       return COLORS_3;
+    case "4":
+      return COLORS_4;
     default:
       return TEXTS_LT;
   }

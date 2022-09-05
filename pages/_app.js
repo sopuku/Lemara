@@ -7,7 +7,7 @@ export const CurrentSettings = React.createContext(null);
 
 export default function MyApp({ Component, pageProps }) {
   const [language, setLanguage] = useState("LT");
-  const [currentColor, setCurrentColor] = useState("3");
+  const [currentColor, setCurrentColor] = useState("1");
   return (
     <ChakraProvider>
       <CurrentSettings.Provider

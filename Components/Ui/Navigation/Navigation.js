@@ -104,6 +104,12 @@ export default function Navigation() {
             style={{ backgroundColor: colors.navigation.selectColors.bg }}
             value="3"
           >
+            lighter
+          </option>
+          <option
+            style={{ backgroundColor: colors.navigation.selectColors.bg }}
+            value="4"
+          >
             light
           </option>
         </Select>

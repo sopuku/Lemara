@@ -73,7 +73,7 @@ export default function Colors() {
         bgTexture: "/images/background/aboutBg.png",
       },
       feedback: { color: "black", bg: "" },
-      values: { color: "black", bg: "white" },
+      values: { color: "black", bg: "orange" },
     },
     turning: {
       image: "/images/turning/t5.jpg",

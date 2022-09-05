@@ -31,8 +31,9 @@ export default function HomeMain() {
       ></Box>
       <VStack spacing="0" overflow="hidden">
         <Flex
-          color={colors.home.color}
+          zIndex={0}
           bg={colors.home.bg}
+          color={colors.home.color}
           position="relative"
           direction="column"
           align="center"

@@ -20,7 +20,7 @@ export default function HomeMain() {
         color={colors.home.color}
         bg={colors.home.bg}
         w="100%"
-        h={{ base: "35rem", md: "50rem" }}
+        h={{ base: "35rem", md: "35rem" }}
         align="justify"
         px={{ base: "4%", sm: "4%", lg: "10%", xl: "10%", "2xl": "20%" }}
         mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
@@ -39,7 +39,7 @@ export default function HomeMain() {
         </Text>
       </Box>
       <Show above="md">
-        <Box position="absolute" top="50rem">
+        <Box position="absolute" top="38rem">
           <Values />
         </Box>
       </Show>

@@ -30,7 +30,7 @@ export default function Values() {
               color={colors.home.values.color}
               borderRadius="xl"
               p="2rem"
-              boxShadow=" 0px 4px 10px -2px  grey"
+              boxShadow=" 0px 4px 20px -2px  orange"
             >
               <Image src={item.src} h="56px" />
               <Heading size="lg" pt="2rem" pb="1rem">

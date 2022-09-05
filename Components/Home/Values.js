@@ -17,7 +17,7 @@ export default function Values() {
     <Center>
       <SimpleGrid
         columns={{ base: 0, md: 2, xl: 4 }}
-        spacing={{ base: "1rem", md: "2rem", xl: "3rem" }}
+        spacing={{ base: "1rem", md: "3rem", xl: "6rem" }}
       >
         {texts.values.map((item) => {
           return (

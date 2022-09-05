@@ -60,9 +60,10 @@ export default function Colors() {
     },
     gallery: { bg: "#041126", bgTexture: "/images/background/galleryBg.png" },
     home: {
-      bgImage: "/images/background/main1.jpg",
+      bgImage: "/images/background/main1a.jpg",
       image: "/images/home/whyUs.jpg",
       color: "white",
+      colorLink: "orange",
       bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
@@ -156,6 +157,7 @@ export default function Colors() {
       bgImage: "/images/background/main1.jpg",
       image: "/images/home/whyUs.jpg",
       color: "white",
+      colorLink: "orange",
       bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
@@ -248,7 +250,7 @@ export default function Colors() {
       bgImage: "/images/background/main2.jpg",
       image: "/images/home/whyUs.jpg",
       color: "black",
-      colorLink: "#0B54D6",
+      colorLink: "blue",
       bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
@@ -341,7 +343,7 @@ export default function Colors() {
       bgImage: "/images/background/main2.jpg",
       image: "/images/home/whyUs.jpg",
       color: "black",
-      colorLink: "#0B54D6",
+      colorLink: "blue",
       bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
@@ -433,8 +435,8 @@ export default function Colors() {
     home: {
       bgImage: "/images/background/main2.jpg",
       image: "/images/home/whyUs.jpg",
-      color: "#b5b5b5",
-      colorLink: "#0B54D6",
+      color: "black",
+      colorLink: "blue",
       bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
@@ -526,8 +528,8 @@ export default function Colors() {
     home: {
       bgImage: "/images/background/main2.jpg",
       image: "/images/home/whyUs.jpg",
-      color: "white",
-      colorLink: "#0B54D6",
+      color: "black",
+      colorLink: "blue",
       bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {

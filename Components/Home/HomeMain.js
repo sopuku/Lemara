@@ -27,8 +27,6 @@ export default function HomeMain() {
         backgroundImage={colors.home.bgImage}
         w="100%"
         h={{ base: "35rem", md: "50rem" }}
-        filter="auto"
-        brightness="60%"
         boxShadow="0 0 20px 10px grey"
       ></Box>
       <VStack spacing="0" overflow="hidden">

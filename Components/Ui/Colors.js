@@ -100,7 +100,7 @@ export default function Colors() {
     navigation: {
       logo: "/images/logo/logo2.png",
       bgTexture: "/images/background/navBg1.png",
-      bg: "#04132A",
+      bg: "#082450",
       color: "white",
       colorHover: "orange",
       bgHover: "#072146",
@@ -116,7 +116,7 @@ export default function Colors() {
     footer: {
       logo: "/images/logo/logo2.png",
       bgTexture: "/images/background/navBg1.png",
-      bg: "#04132A",
+      bg: "#082450",
       color: "white",
       colorHover: "orange",
     },
@@ -155,12 +155,12 @@ export default function Colors() {
       bgImage: "/images/background/main.jpg",
       image: "/images/home/whyUs.jpg",
       color: "white",
-      bg: "",
+      bg: "whiteAlpha.200",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
         image: "/images/home/aboutUs.jpg",
         color: "white",
-        bg: "#08254F",
+        bg: "#0b306b",
         bgTexture: "/images/background/aboutBg.png",
       },
       feedback: { color: "black", bg: "" },

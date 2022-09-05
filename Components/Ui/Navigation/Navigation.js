@@ -20,7 +20,7 @@ export default function Navigation() {
 
   const { language, setLanguage } = React.useContext(CurrentSettings);
 
-  const { setCurrentColor } = React.useContext(CurrentSettings);
+  const { currentColor, setCurrentColor } = React.useContext(CurrentSettings);
 
   const flagSelect = `/images/flags/${language}_flag.png`;
 
@@ -84,6 +84,7 @@ export default function Navigation() {
           border="none"
           color={colors.navigation.selectColors.color}
           focusBorderColor="none"
+          defaultValue={currentColor}
         >
           <option
             style={{
@@ -122,6 +123,7 @@ export default function Navigation() {
             border="none"
             color={colors.navigation.selectLanguage.color}
             focusBorderColor="none"
+            defaultValue={language}
           >
             <option
               style={{

@@ -156,7 +156,7 @@ export default function Colors() {
       bgImage: "/images/background/main1.jpg",
       image: "/images/home/whyUs.jpg",
       color: "white",
-      bg: "whiteAlpha.100",
+      bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
         image: "/images/home/aboutUs.jpg",
@@ -249,7 +249,7 @@ export default function Colors() {
       image: "/images/home/whyUs.jpg",
       color: "black",
       colorLink: "#0B54D6",
-      bg: "whiteAlpha.500",
+      bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
         image: "/images/home/aboutUs.jpg",
@@ -342,7 +342,7 @@ export default function Colors() {
       image: "/images/home/whyUs.jpg",
       color: "black",
       colorLink: "#0B54D6",
-      bg: "whiteAlpha.500",
+      bg: "",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
         image: "/images/home/aboutUs.jpg",

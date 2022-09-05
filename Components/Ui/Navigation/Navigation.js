@@ -100,6 +100,7 @@ export default function Navigation() {
           >
             darker
           </option>
+
           <option
             style={{ backgroundColor: colors.navigation.selectColors.bg }}
             value="3"

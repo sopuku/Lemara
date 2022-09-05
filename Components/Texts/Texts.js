@@ -316,11 +316,191 @@ export default function Texts() {
     ],
     footer: { contacts: "Contacts" },
     index: {},
-    turning: {},
-    milling: {},
-    design: {},
-    career: {},
-    contacts: {},
+    turning: {
+      t1: {
+        heading: "CNC tekinimas",
+        text: " CNC tekinimas yra viena iš paslaugų, kurias teikiame. Mes atliekame ištekinimą (kai apdirbami vidiniai detalės paviršiai), aptekinimą (kai apdirbami išoriniai detalės paviršiai), nutekinimas (kai apdirbami galiniai detalės paviršiai). Siūlome detalių tekinimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Mes gaminame varžtus, veržles, velenus, ritinėlius, ratukus, redukcinius perėjimus, ašis, įvores, tarpiklius, kaiščius, įvairias sujungimams skirtas detales ir kt. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
+      },
+      t2: { heading: "Techniniai staklių pajėgumai" },
+    },
+    milling: {
+      t1: {
+        heading: "CNC frezavimas",
+        text: " CNC frezavimas yra viena iš paslaugų, kurias teikiame. Mes atliekame plokštumų frezavimą (kai tiesialinijine pastūma frezuojami plokšti paviršiai), apvalųjį frezavimą (kai apskritimine pastūma frezuojami cilindriniai paviršiai), sriegių frezavimą (kai sraigtine pastūma frezuojami sraigtiniai paviršiai), fasoninį frezavimą (kai frezos profilis išpjaunamas ruošinyje), kontūrinį frezavimą (kai formuojami tiek paprasti kontūrai tiek sudėtingi erdviniai paviršiai suteikiant staklėms valdomą pastūmą). Siūlome detalių frezavimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
+      },
+      t2: { heading: "Techniniai staklių pajėgumai" },
+    },
+    design: {
+      t1: {
+        heading: "Projektavimas",
+        text: "Projektavimas yra viena iš paslaugų, kurias teikiame. Projektuojame pagal detalės pavyzdį (kai turima detalė labai tiksliai išmatuojama, padaromi jos brėžiniai, sukuriamas kompiuterinis modelis),pagal pateiktą užduotį ir aprašymą, pagal Jūsų atsiūstą brėžinį. Brėžiniai turi atitikti vieną iš reikalingų formatų (step, dxf, dwg, x_t, x_b), turi būti nurodyta medžiaga, iš kurios bus gaminama detalė, naudojamas 1:1 mastelis, pjovimo kontūras pateiktas tiesioginio atsispindėjimo būdu, objektai pervesti į kreives, matmenys nurodyti milimerais. Brėžinyje negali būti susiliejimų, persidengimų, dvigubų linijų, nereikalingų taškų ir pan. Jei neturite brėžinio, mūsų projektuotojai tai atliks kokybiškai ir atsakingai. Kadangi net ir mažiausia klaida gali būti nekokybiško rezultato priežastis, todėl gautus failus mūsų specialistai visada patikrina.",
+      },
+    },
+    general: { t1: {} },
+    career: {
+      jobs: [
+        {
+          title: "CNC tekinimo staklių operatorius",
+          description: [
+            "Darbas su CNC tekinimo staklėmis",
+            "Detalių matavimas",
+            "Programų rašymas",
+            "Tvarkos ir švaros palaikymas darbo vietoje",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų patirtis",
+            "Techninių brėžinių skaitymas",
+            "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje, jaunatviškoje įmonėje",
+            "Organizuojami kursai profesiniam tobulėjimui",
+            "Visada laiku mokamą atlyginimą",
+            "Karjeros galimybes",
+          ],
+          salary: "1000-1500 €/mėn. į rankas",
+        },
+        {
+          title: "CNC frezavimo staklių operatorius",
+          description: [
+            "Darbas su CNC frezavimo staklėmis",
+            "Detalių matavimas",
+            "Programų rašymas",
+            "Tvarkos ir švaros palaikymas darbo vietoje",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų patirtis",
+            "Techninių brėžinių skaitymas",
+            "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje, jaunatviškoje įmonėje",
+            "Organizuojamus kursus profesiniam tobulėjimui",
+            "Visada laiku mokamą atlyginimą",
+            "Karjeros galimybes",
+          ],
+          salary: "1000-1500 €/mėn. į rankas",
+        },
+        {
+          title: "Pramonės vadybininkas",
+          description: [
+            "Naujų klientų paieška",
+            "Bendravimas su esamais klientais",
+            "Komercinių pasiūlymš ruošimas",
+            "Apskaitos dokumentų valdymas",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų panašaus darbo patirtis",
+            "Pageidautina inžinerinis aukštesnysis/aukštasis išsilavinimas",
+            "CNC pramonės išmanymas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Noras tobulėti",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje įmonėje",
+            "Galimybes profesiniam tobulėjimui",
+            "Visada laiku mokamą, nuo rezultatų priklausantį atlyginimą",
+          ],
+          salary: "Nuo 1300 €/mėn. į rankas + priedai pagal rezultatus",
+        },
+        {
+          title: "Valytoja",
+          description: [
+            "Darbas dvi dienas per savaitę",
+            "Gamybinių patalpų valymas",
+            "Ofiso patalpų valymas",
+            "Tvarkos palaikymas",
+          ],
+          requirments: [
+            "Panašaus darbo patirtis būtų privalumas",
+            "Punktualumas",
+            "Atsakingumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje įmonėje",
+            "Galimybes profesiniam tobulėjimui",
+            "Visada laiku mokamą",
+          ],
+          salary: "Pagal susitarimą",
+        },
+      ],
+    },
+    contacts: {
+      cards: [
+        {
+          name: "Povilas Vilimas",
+          responsibilities: "Direktorius",
+          email: "povilas@lemara.lt",
+          number: "+370 646 57845",
+          src: "/images/contacts/povilas.jpg",
+        },
+        {
+          name: "Vytautas Puodžiūnas",
+          responsibilities: "Gamybos Vadovas",
+          email: "vytautas@lemara.lt",
+          number: "+370 674 51761",
+          src: "/images/contacts/vytautas.jpg",
+        },
+        {
+          name: "Tadas Plungė",
+          responsibilities: "Projektuotojas",
+          email: "tadas@lemara.lt",
+          number: "+370 647 64659",
+          src: "/images/contacts/tadas.jpg",
+        },
+      ],
+    },
+    values: [
+      {
+        title: "Kokybė",
+        description: "Garantuojame aukštą gaminių kokybę",
+        src: "/images/values/1.png",
+      },
+      {
+        title: "Greitis",
+        description: "Detales pagaminame per trumpą laiką",
+        src: "/images/values/3.png",
+      },
+      {
+        title: "Tikslumas",
+        description:
+          "Modernios įrangos dėka, gaminiai pasižymi dideliu tikslumu ",
+        src: "/images/values/2.png",
+      },
+      {
+        title: "Atsakingumas",
+        description: "Atsakingai gaminame net ir mažiausią užsakymą",
+        src: "/images/values/4.png",
+      },
+    ],
+    aboutUs: {
+      text1: {
+        heading: "",
+        text: `MB "Lemara" - metalo apdirbimo įmonė, teikianti CNC tekinimo ir frezavimo paslaugas. Specializuojamės gaminant didelio tikslumo reikalaujančius elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms, konvejeriams. Mes dirbame su aliuminiu, nerūdijančiu plienu, plienu, variu, žalvariu, kitais metalais bei įvairiais plastikais. Bendradarbiaujame su daug partnerių, todėl su jų pagalba galime atlikti praktiškai visas įmanomas medžiagų apdirbimo operacijas, tokias kaip pjovimą viela, pjovimą vandeniu, pjovimą lazeriu, pjovimą plazma, pjovimą elektroerozija, šlifavimą, anodavimą, virinimą, lankstymą. Bendradarbiaujame tiek su Lietuvos, tiek su užsienio gamintojais. 2016 metais įkurta Lemara sparčiai plečiasi ir sėkmingai dirba tarptautiniu mastu.
+ `,
+      },
+    },
+    feedback: [
+      {
+        id: 1,
+        title: "UAB Stelga, Marius",
+        text: "Jauni, ambicingi savo sryties specialistai, puikiai žinanatys ir gebantys patarti ir spręsti iškilusias problemas. Greitas ir operatyvus reagavimas į paklausimus, visi projektai buvo įgyvendinti pagal sutartus gamybinius terminus.:)",
+      },
+      {
+        id: 2,
+        title: "UAB Lematec, Donatas",
+        text: "Pasirinkome Lemara, nes didžioji dalis pamatę reikiamus tikslumus nebetęsia pokalbio, bijo atsakomybės. Reikiami tikslumai buvo išgauti ir preciziškos detalės tilpo į reikiamą vietą. Rekomenduojame Lemara įmonėms, kurioms rūpi kokybė ir žmogiškas bendravimas.",
+      },
+      {
+        id: 3,
+        title: "UAB Vildoma, Virginijus",
+        text: "Esame dėkingi už kokybiškai atliekamus užsakymus ir pažadėtų terminų laikymąsi",
+      },
+    ],
   };
 
   const TEXTS_NO = {
@@ -362,11 +542,191 @@ export default function Texts() {
     ],
     footer: { contacts: "Kontakter" },
     index: {},
-    turning: {},
-    milling: {},
-    design: {},
-    career: {},
-    contacts: {},
+    turning: {
+      t1: {
+        heading: "CNC tekinimas",
+        text: " CNC tekinimas yra viena iš paslaugų, kurias teikiame. Mes atliekame ištekinimą (kai apdirbami vidiniai detalės paviršiai), aptekinimą (kai apdirbami išoriniai detalės paviršiai), nutekinimas (kai apdirbami galiniai detalės paviršiai). Siūlome detalių tekinimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Mes gaminame varžtus, veržles, velenus, ritinėlius, ratukus, redukcinius perėjimus, ašis, įvores, tarpiklius, kaiščius, įvairias sujungimams skirtas detales ir kt. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
+      },
+      t2: { heading: "Techniniai staklių pajėgumai" },
+    },
+    milling: {
+      t1: {
+        heading: "CNC frezavimas",
+        text: " CNC frezavimas yra viena iš paslaugų, kurias teikiame. Mes atliekame plokštumų frezavimą (kai tiesialinijine pastūma frezuojami plokšti paviršiai), apvalųjį frezavimą (kai apskritimine pastūma frezuojami cilindriniai paviršiai), sriegių frezavimą (kai sraigtine pastūma frezuojami sraigtiniai paviršiai), fasoninį frezavimą (kai frezos profilis išpjaunamas ruošinyje), kontūrinį frezavimą (kai formuojami tiek paprasti kontūrai tiek sudėtingi erdviniai paviršiai suteikiant staklėms valdomą pastūmą). Siūlome detalių frezavimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
+      },
+      t2: { heading: "Techniniai staklių pajėgumai" },
+    },
+    design: {
+      t1: {
+        heading: "Projektavimas",
+        text: "Projektavimas yra viena iš paslaugų, kurias teikiame. Projektuojame pagal detalės pavyzdį (kai turima detalė labai tiksliai išmatuojama, padaromi jos brėžiniai, sukuriamas kompiuterinis modelis),pagal pateiktą užduotį ir aprašymą, pagal Jūsų atsiūstą brėžinį. Brėžiniai turi atitikti vieną iš reikalingų formatų (step, dxf, dwg, x_t, x_b), turi būti nurodyta medžiaga, iš kurios bus gaminama detalė, naudojamas 1:1 mastelis, pjovimo kontūras pateiktas tiesioginio atsispindėjimo būdu, objektai pervesti į kreives, matmenys nurodyti milimerais. Brėžinyje negali būti susiliejimų, persidengimų, dvigubų linijų, nereikalingų taškų ir pan. Jei neturite brėžinio, mūsų projektuotojai tai atliks kokybiškai ir atsakingai. Kadangi net ir mažiausia klaida gali būti nekokybiško rezultato priežastis, todėl gautus failus mūsų specialistai visada patikrina.",
+      },
+    },
+    general: { t1: {} },
+    career: {
+      jobs: [
+        {
+          title: "CNC tekinimo staklių operatorius",
+          description: [
+            "Darbas su CNC tekinimo staklėmis",
+            "Detalių matavimas",
+            "Programų rašymas",
+            "Tvarkos ir švaros palaikymas darbo vietoje",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų patirtis",
+            "Techninių brėžinių skaitymas",
+            "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje, jaunatviškoje įmonėje",
+            "Organizuojami kursai profesiniam tobulėjimui",
+            "Visada laiku mokamą atlyginimą",
+            "Karjeros galimybes",
+          ],
+          salary: "1000-1500 €/mėn. į rankas",
+        },
+        {
+          title: "CNC frezavimo staklių operatorius",
+          description: [
+            "Darbas su CNC frezavimo staklėmis",
+            "Detalių matavimas",
+            "Programų rašymas",
+            "Tvarkos ir švaros palaikymas darbo vietoje",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų patirtis",
+            "Techninių brėžinių skaitymas",
+            "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje, jaunatviškoje įmonėje",
+            "Organizuojamus kursus profesiniam tobulėjimui",
+            "Visada laiku mokamą atlyginimą",
+            "Karjeros galimybes",
+          ],
+          salary: "1000-1500 €/mėn. į rankas",
+        },
+        {
+          title: "Pramonės vadybininkas",
+          description: [
+            "Naujų klientų paieška",
+            "Bendravimas su esamais klientais",
+            "Komercinių pasiūlymš ruošimas",
+            "Apskaitos dokumentų valdymas",
+          ],
+          requirments: [
+            "Ne mažesnė kaip 1 metų panašaus darbo patirtis",
+            "Pageidautina inžinerinis aukštesnysis/aukštasis išsilavinimas",
+            "CNC pramonės išmanymas",
+            "Geri darbo kompiuteriu įgūdžiai",
+            "Noras tobulėti",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje įmonėje",
+            "Galimybes profesiniam tobulėjimui",
+            "Visada laiku mokamą, nuo rezultatų priklausantį atlyginimą",
+          ],
+          salary: "Nuo 1300 €/mėn. į rankas + priedai pagal rezultatus",
+        },
+        {
+          title: "Valytoja",
+          description: [
+            "Darbas dvi dienas per savaitę",
+            "Gamybinių patalpų valymas",
+            "Ofiso patalpų valymas",
+            "Tvarkos palaikymas",
+          ],
+          requirments: [
+            "Panašaus darbo patirtis būtų privalumas",
+            "Punktualumas",
+            "Atsakingumas",
+          ],
+          offer: [
+            "Įdomų darbą pažangioje įmonėje",
+            "Galimybes profesiniam tobulėjimui",
+            "Visada laiku mokamą",
+          ],
+          salary: "Pagal susitarimą",
+        },
+      ],
+    },
+    contacts: {
+      cards: [
+        {
+          name: "Povilas Vilimas",
+          responsibilities: "Direktorius",
+          email: "povilas@lemara.lt",
+          number: "+370 646 57845",
+          src: "/images/contacts/povilas.jpg",
+        },
+        {
+          name: "Vytautas Puodžiūnas",
+          responsibilities: "Gamybos Vadovas",
+          email: "vytautas@lemara.lt",
+          number: "+370 674 51761",
+          src: "/images/contacts/vytautas.jpg",
+        },
+        {
+          name: "Tadas Plungė",
+          responsibilities: "Projektuotojas",
+          email: "tadas@lemara.lt",
+          number: "+370 647 64659",
+          src: "/images/contacts/tadas.jpg",
+        },
+      ],
+    },
+    values: [
+      {
+        title: "Kokybė",
+        description: "Garantuojame aukštą gaminių kokybę",
+        src: "/images/values/1.png",
+      },
+      {
+        title: "Greitis",
+        description: "Detales pagaminame per trumpą laiką",
+        src: "/images/values/3.png",
+      },
+      {
+        title: "Tikslumas",
+        description:
+          "Modernios įrangos dėka, gaminiai pasižymi dideliu tikslumu ",
+        src: "/images/values/2.png",
+      },
+      {
+        title: "Atsakingumas",
+        description: "Atsakingai gaminame net ir mažiausią užsakymą",
+        src: "/images/values/4.png",
+      },
+    ],
+    aboutUs: {
+      text1: {
+        heading: "",
+        text: `MB "Lemara" - metalo apdirbimo įmonė, teikianti CNC tekinimo ir frezavimo paslaugas. Specializuojamės gaminant didelio tikslumo reikalaujančius elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms, konvejeriams. Mes dirbame su aliuminiu, nerūdijančiu plienu, plienu, variu, žalvariu, kitais metalais bei įvairiais plastikais. Bendradarbiaujame su daug partnerių, todėl su jų pagalba galime atlikti praktiškai visas įmanomas medžiagų apdirbimo operacijas, tokias kaip pjovimą viela, pjovimą vandeniu, pjovimą lazeriu, pjovimą plazma, pjovimą elektroerozija, šlifavimą, anodavimą, virinimą, lankstymą. Bendradarbiaujame tiek su Lietuvos, tiek su užsienio gamintojais. 2016 metais įkurta Lemara sparčiai plečiasi ir sėkmingai dirba tarptautiniu mastu.
+ `,
+      },
+    },
+    feedback: [
+      {
+        id: 1,
+        title: "UAB Stelga, Marius",
+        text: "Jauni, ambicingi savo sryties specialistai, puikiai žinanatys ir gebantys patarti ir spręsti iškilusias problemas. Greitas ir operatyvus reagavimas į paklausimus, visi projektai buvo įgyvendinti pagal sutartus gamybinius terminus.:)",
+      },
+      {
+        id: 2,
+        title: "UAB Lematec, Donatas",
+        text: "Pasirinkome Lemara, nes didžioji dalis pamatę reikiamus tikslumus nebetęsia pokalbio, bijo atsakomybės. Reikiami tikslumai buvo išgauti ir preciziškos detalės tilpo į reikiamą vietą. Rekomenduojame Lemara įmonėms, kurioms rūpi kokybė ir žmogiškas bendravimas.",
+      },
+      {
+        id: 3,
+        title: "UAB Vildoma, Virginijus",
+        text: "Esame dėkingi už kokybiškai atliekamus užsakymus ir pažadėtų terminų laikymąsi",
+      },
+    ],
   };
 
   switch (language) {

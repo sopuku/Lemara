@@ -288,7 +288,7 @@ export default function Colors() {
     navigation: {
       logo: "/images/logo/logo2.png",
       bgTexture: "/images/background/navBg1.png",
-      bg: "#051938",
+      bg: "#0b182d",
       color: "white",
       colorHover: "orange",
       bgHover: "#072146",
@@ -381,7 +381,7 @@ export default function Colors() {
     navigation: {
       logo: "/images/logo/logo2.png",
       bgTexture: "/images/background/navBg1.png",
-      bg: "#061d40",
+      bg: "#0e192a",
       color: "white",
       colorHover: "orange",
       bgHover: "#072146",

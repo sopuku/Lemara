@@ -156,7 +156,7 @@ export default function Colors() {
       bgImage: "/images/background/main1.jpg",
       image: "/images/home/whyUs.jpg",
       color: "white",
-      bg: "whiteAlpha.200",
+      bg: "whiteAlpha.100",
       whyUs: { color: "black", bg: "" },
       aboutUs: {
         image: "/images/home/aboutUs.jpg",

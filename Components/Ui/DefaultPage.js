@@ -24,7 +24,7 @@ export default function DefaultPage(props) {
         overflow="hidden"
         px={{ base: "4%", md: "6%", "2xl": "15%" }}
         // pt={{ base: "5%", md: props.name === "whyUs" && "8rem", xl: "5%" }}
-        py="5%"
+        // py="5%"
         align="center"
         justify="center"
       >

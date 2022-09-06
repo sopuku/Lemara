@@ -26,7 +26,7 @@ export default function Feedback() {
       w="100%"
       h={{ base: "30rem", xl: "35rem" }}
       py={{ base: "4rem", md: "5rem", xl: "6rem" }}
-      px={["3%", "3%", "7%", "10%", "10%", "25%"]}
+      px={["3%", "3%", "7%", "10%", "10%", "30%"]}
       color={colors.home.feedback.color}
       bg={colors.home.feedback.bg}
     >

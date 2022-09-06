@@ -41,87 +41,6 @@ const IMAGES = [
   },
 
   {
-    src: `/images/galleryImages/10.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-
-  {
-    src: `/images/galleryImages/12.jpg`,
-    width: 1920,
-    height: 1080,
-  },
-
-  {
-    src: `/images/galleryImages/16.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/17.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-
-  {
-    src: `/images/galleryImages/21.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/22.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/23.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/24.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/25.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-
-  {
-    src: `/images/galleryImages/27.jpg`,
-    width: 1920,
-    height: 1080,
-  },
-  {
-    src: `/images/galleryImages/28.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/29.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/30.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-  {
-    src: `/images/galleryImages/31.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-
-  {
-    src: `/images/galleryImages/34.jpg`,
-    width: 1080,
-    height: 1920,
-  },
-
-  {
     src: `/images/galleryImages/36.jpg`,
     width: 1080,
     height: 1920,
@@ -165,12 +84,6 @@ const IMAGES = [
   },
   {
     src: `/images/galleryImages/54.jpg`,
-    width: 1920,
-    height: 1080,
-  },
-
-  {
-    src: `/images/galleryImages/57.jpg`,
     width: 1920,
     height: 1080,
   },

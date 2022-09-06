@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Card(props) {
   return (
-    <VStack align="center" justify="center">
+    <VStack align="center" justify="top">
       <Image w="460px" src={props.data.src} boxShadow="0 0 5px 1px black" />
       <Flex direction="column">
         <Heading pb="1rem" fontSize="28px">

@@ -25,13 +25,13 @@ export default function HomeMain() {
         px={{ base: "4%", sm: "4%", lg: "10%", xl: "10%", "2xl": "20%" }}
         mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
       >
-        <Heading pt="10%" fontSize={{ base: "4xl", md: "5xl" }} pb="2rem">
-          Kokybiškos, preciziškai ištekintos detalės jūsų konstrukciniams
-          sumanymams: greitai ir už protingą kainą
+        <Heading pt="10%" fontSize={{ base: "35px", md: "45px" }} pb="2rem">
+          Lemara - preciziškai ištekintos detalės jūsų konstrukciniams
+          sumanymams
         </Heading>
         <Text fontSize={{ base: "2xl", md: "3xl" }}>
-          Projektuojame ir gaminame tiek pavienes detales, jų prototipus, tiek
-          serijas. Išsirinkite tinkamas paslaugas, o jei turite klausimų,{" "}
+          Projektuojame ir gaminame pavienes detales, prototipus, serijas.
+          Išsirinkite tinkamas paslaugas, o jei turite klausimų,{" "}
           <Links color={colors.home.colorLink} href="/contacts">
             susisiekite su mumis
           </Links>

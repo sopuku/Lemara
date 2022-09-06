@@ -13,7 +13,7 @@ export default function ContactsMain() {
   return (
     <Box overflow="hidden">
       <Stack
-        h={{ base: "80rem", md: "35rem", xl: "40rem" }}
+        h={{ base: "80rem", md: "30rem", xl: "35rem" }}
         direction={{ base: "column", md: "row" }}
         spacing={{ base: "2rem", lg: "4rem", xl: "6rem" }}
         justify="center"

@@ -11,7 +11,7 @@ export default function Texts() {
         href: "/",
       },
       {
-        label: "Paslaugos",
+        label: "Gamyba",
         children: [
           {
             label: "CNC Tekinimas",
@@ -27,6 +27,10 @@ export default function Texts() {
           },
           { label: "Bendra informacija", href: "/services/general" },
         ],
+      },
+      {
+        label: "įranga",
+        href: "/capabilities",
       },
       {
         label: "Galerija",
@@ -46,7 +50,7 @@ export default function Texts() {
     capabilities: {
       mashines: [
         {
-          name: "DOOSAN LYNX 2100LMB",
+          name: "Doosan LYNX 2100LMB",
           type: "turning",
           lenght: "510 mm",
           diameter: "300 mm",
@@ -55,13 +59,22 @@ export default function Texts() {
           src: "/images/capabilities/2100LM.jpg",
         },
         {
-          name: "DOOSAN LYNX 2100LYB",
+          name: "Doosan LYNX 2100LYB",
           type: "turning",
           lenght: "510 mm",
           diameter: "300 mm",
           revolutions: "4500 rpm",
           tools: "C ašis (frezavimas)",
           src: "/images/capabilities/2100LY.jpg",
+        },
+        {
+          name: "Okuma LB15",
+          type: "turning",
+          lenght: "500 mm",
+          diameter: "250mm",
+          revolutions: "4200 rpm",
+          tools: "-",
+          src: "/images/capabilities/LB15.jpg",
         },
         {
           name: "Doosan DNM 4500",
@@ -78,15 +91,6 @@ export default function Texts() {
           weight: "800 kg",
           revolutions: "8000 rpm",
           src: "/images/capabilities/V40.jpg",
-        },
-        {
-          name: "OKUMA LB15",
-          type: "turning",
-          lenght: "500 mm",
-          diameter: "250mm",
-          revolutions: "4200 rpm",
-          tools: "-",
-          src: "/images/capabilities/LB15.jpg",
         },
       ],
     },
@@ -232,23 +236,23 @@ export default function Texts() {
       {
         title: "Kokybė",
         description: "Garantuojame aukštą gaminių kokybę",
-        src: "/images/values/1.png",
+        src: "/images/values/1a.png",
       },
       {
         title: "Greitis",
         description: "Detales pagaminame per trumpą laiką",
-        src: "/images/values/3.png",
+        src: "/images/values/3a.png",
       },
       {
         title: "Tikslumas",
         description:
           "Modernios įrangos dėka, gaminiai pasižymi dideliu tikslumu ",
-        src: "/images/values/2.png",
+        src: "/images/values/2a.png",
       },
       {
-        title: "Atsakingumas",
-        description: "Atsakingai gaminame net ir mažiausią užsakymą",
-        src: "/images/values/4.png",
+        title: "Tvarumas",
+        description: "Tausojame gamtą",
+        src: "/images/values/4a.png",
       },
     ],
     aboutUs: {
@@ -287,6 +291,10 @@ export default function Texts() {
         label: "Services",
         children: [
           {
+            label: "Equipment",
+            href: "/capabilities",
+          },
+          {
             label: "CNC Turning",
             href: "/services/turning",
           },
@@ -298,6 +306,7 @@ export default function Texts() {
             label: "Design",
             href: "/services/design",
           },
+          { label: "General information", href: "/services/general" },
         ],
       },
 

@@ -6,6 +6,7 @@ import {
   useDisclosure,
   Image,
   Select,
+  Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Links from "./Links";
@@ -19,8 +20,6 @@ export default function Navigation() {
   const { isOpen, onToggle } = useDisclosure();
 
   const { language, setLanguage } = React.useContext(CurrentSettings);
-
-  const { currentColor, setCurrentColor } = React.useContext(CurrentSettings);
 
   const flagSelect = `/images/flags/${language}_flag.png`;
 
@@ -77,55 +76,11 @@ export default function Navigation() {
             <DesktopNav colors={colors} />
           </Flex>
         </Flex>
-
-        <Select
-          onChange={handleColorSelect}
-          width="100px"
-          border="none"
-          color={colors.navigation.selectColors.color}
-          focusBorderColor="none"
-          defaultValue={currentColor}
-        >
-          <option
-            style={{
-              backgroundColor: colors.navigation.selectColors.bg,
-            }}
-            value="1"
-          >
-            dark
-          </option>
-          <option
-            style={{ backgroundColor: colors.navigation.selectColors.bg }}
-            value="2"
-          >
-            darker
-          </option>
-
-          <option
-            style={{ backgroundColor: colors.navigation.selectColors.bg }}
-            value="3"
-          >
-            blue1
-          </option>
-          <option
-            style={{ backgroundColor: colors.navigation.selectColors.bg }}
-            value="4"
-          >
-            blue2
-          </option>
-          <option
-            style={{ backgroundColor: colors.navigation.selectColors.bg }}
-            value="5"
-          >
-            blue3
-          </option>
-          <option
-            style={{ backgroundColor: colors.navigation.selectColors.bg }}
-            value="6"
-          >
-            brown
-          </option>
-        </Select>
+        {language === "NO" && (
+          <Text fontWeight={500} fontSize="18px" color="orange" pr="0.5rem">
+            +370 646 57845
+          </Text>
+        )}
 
         <Stack
           justify={"flex-end"}

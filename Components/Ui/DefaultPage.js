@@ -22,8 +22,8 @@ export default function DefaultPage(props) {
         direction={{ base: "column", xl: "row" }}
         spacing="5%"
         overflow="hidden"
-        // px={{ base: "4%", md: "6%", "2xl": "15%" }}
-        // pt={{ base: "5%", md: props.name === "whyUs" && "8rem", xl: "5%" }}
+        px="4%"
+        pt={{ base: "5%", md: props.name === "whyUs" && "8rem", xl: "5%" }}
         py="5%"
         align="center"
         justify="center"

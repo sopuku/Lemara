@@ -47,11 +47,12 @@ export default function Footer() {
             <Text>Įmonės kodas: 304374938</Text>
             <Text>PVM mokėtojo kodas: LT100010561112</Text>
           </Stack>
+
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>{texts.footer.contacts}</ListHeader>
             <Text>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Text>
-            <Text textColor="orange">info@lemara.lt</Text>
-            <Text textColor="orange">+370 646 57845</Text>
+            <Text>info@lemara.lt</Text>
+            <Text>+370 646 57845</Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>Paslaugos</ListHeader>

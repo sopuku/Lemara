@@ -291,6 +291,11 @@ export default function Texts() {
         title: "UAB Vildoma, Virginijus",
         text: "Esame dėkingi už kokybiškai atliekamus užsakymus ir pažadėtų terminų laikymąsi",
       },
+      {
+        id: 4,
+        title: "UAB Roteksas, Viktorija",
+        text: "Ieškojome CNC tekinimo- frezavimo mažų detalių gamybai. Radau tiesiog internetu ieškodama CNC mechaninio apdirbimo, pasirinkau, nes pagamino kelių detalių pavyzdukus- kokybės įvertinimui. Kokybė nenuvylė ir toliau užsakant tekinimo- frezavimo apdirbimą.",
+      },
     ],
   };
 

@@ -8,6 +8,7 @@ import {
   InputLeftElement,
   Textarea,
 } from "@chakra-ui/react";
+import { SmallAddIcon } from "@chakra-ui/icons";
 
 function InputField(props) {
   const [isActive, setIsActive] = useState(false);
@@ -18,10 +19,19 @@ function InputField(props) {
         <FormControl>
           <InputGroup>
             <InputLeftElement pointerEvents="none" children={props.icon} />
+            {props.type === "number" && isActive && (
+              <InputLeftElement
+                pl="43px"
+                pointerEvents="none"
+                children={<SmallAddIcon />}
+              />
+            )}
+
             {props.name !== "Žinutė" ? (
               <Input
+                type={props.type}
                 p="5"
-                pl="2.5rem"
+                pl="3rem"
                 outline="1px solid #041126"
                 onFocus={() => setIsActive(true)}
                 onBlur={() =>

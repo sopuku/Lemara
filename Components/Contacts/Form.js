@@ -33,18 +33,21 @@ export default function Form(props) {
       <Stack>
         <InputField
           name="Jūsų vardas"
+          type="text"
           onChange={handleName}
           value={props.name}
           icon={<BsPerson color={colors.contacts.form.colorIcon} />}
         />
         <InputField
           name="El. paštas"
+          type="email"
           onChange={handleEmail}
           value={props.email}
           icon={<MdOutlineEmail color={colors.contacts.form.colorIcon} />}
         />
         <InputField
           name="Telefono numeris"
+          type="number"
           onChange={handleNumber}
           value={props.number}
           icon={<MdOutlinePhone color={colors.contacts.form.colorIcon} />}
@@ -53,6 +56,7 @@ export default function Form(props) {
       <VStack>
         <InputField
           name="Žinutė"
+          type="textarea"
           value={props.message}
           onChange={handleMessage}
         />

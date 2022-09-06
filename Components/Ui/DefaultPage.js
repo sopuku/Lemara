@@ -28,14 +28,13 @@ export default function DefaultPage(props) {
         align="center"
         justify="center"
       >
-        {props.name !== "aboutUs" && (
-          <Image
-            src={props.src}
-            maxW="40rem"
-            maxH="25rem"
-            boxShadow="0 0 5px 1px black"
-          />
-        )}
+        <Image
+          src={props.src}
+          maxW="40rem"
+          maxH="25rem"
+          boxShadow="0 0 5px 1px black"
+        />
+
         <VStack spacing="5">
           <Heading>{props.heading}</Heading>
           <Text
@@ -47,21 +46,21 @@ export default function DefaultPage(props) {
             {props.text}
           </Text>
         </VStack>
-        {props.name === "aboutUs" && (
+        {/* {props.name === "aboutUs" && (
           <Image
             src={props.src}
             maxW="40rem"
             maxH="25rem"
             boxShadow="0 0 5px 1px black"
           />
-        )}
+        )} */}
       </Stack>
-      {props.name === "turning" && language === "EN" && (
+      {/* {props.name === "turning" && language === "EN" && (
         <CapabilitiesMain name="turning" />
       )}
       {props.name === "milling" && language === "EN" && (
         <CapabilitiesMain name="milling" />
-      )}
+      )} */}
     </Box>
   );
 }

@@ -39,7 +39,7 @@ export default function Footer() {
               <Image src={colors.footer.logo} width="100px" />
             </Center>
             <Text fontSize="sm" color={colors.footer.color}>
-              UAB LEMARA © 2022 Visos teisės saugomos
+              MB „Lemara“ © 2022 Visos teisės saugomos
             </Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>

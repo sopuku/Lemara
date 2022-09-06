@@ -304,10 +304,6 @@ export default function Texts() {
         label: "Services",
         children: [
           {
-            label: "Equipment",
-            href: "/capabilities",
-          },
-          {
             label: "CNC Turning",
             href: "/services/turning",
           },
@@ -321,6 +317,10 @@ export default function Texts() {
           },
           { label: "General information", href: "/services/general" },
         ],
+      },
+      {
+        label: "Equipment",
+        href: "/capabilities",
       },
 
       {

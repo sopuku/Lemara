@@ -23,26 +23,15 @@ export default function Contacts(props) {
       message: message,
     };
 
-    emailjs
-      .send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY)
-      .then(() =>
-        toast({
-          title: "Žinutė sėkmingai išsiūsta",
-          status: "success",
-          position: "top",
-          duration: 2000,
-          isClosable: true,
-        })
-      )
-      .catch((err) =>
-        toast({
-          title: "Žinutė neišsiūsta 😯",
-          status: "error",
-          position: "top",
-          duration: 2000,
-          isClosable: true,
-        })
-      );
+    emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY).then(
+      toast({
+        title: "Žinutė sėkmingai išsiūsta",
+        status: "success",
+        position: "top",
+        duration: 2000,
+        isClosable: true,
+      })
+    );
 
     setName("");
     setEmail("");

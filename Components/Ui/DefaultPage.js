@@ -19,7 +19,7 @@ export default function DefaultPage(props) {
       color={props.name === "aboutUs" && colors.home.aboutUs.color}
     >
       <Stack
-        direction={["column", "column", "column", "column", "row"]}
+        direction={"row"}
         spacing="5%"
         overflow="hidden"
         px={{ base: "4%", md: "6%", "2xl": "15%" }}
@@ -28,13 +28,14 @@ export default function DefaultPage(props) {
         align="center"
         justify="center"
       >
-        <Image
-          src={props.src}
-          maxW="40rem"
-          maxH="25rem"
-          boxShadow="0 0 5px 1px black"
-        />
-
+        {props.name !== "aboutUs" && (
+          <Image
+            src={props.src}
+            maxW="40rem"
+            maxH="25rem"
+            boxShadow="0 0 5px 1px black"
+          />
+        )}
         <VStack spacing="5">
           <Heading>{props.heading}</Heading>
           <Text
@@ -46,21 +47,21 @@ export default function DefaultPage(props) {
             {props.text}
           </Text>
         </VStack>
-        {/* {props.name === "aboutUs" && (
+        {props.name === "aboutUs" && (
           <Image
             src={props.src}
             maxW="40rem"
             maxH="25rem"
             boxShadow="0 0 5px 1px black"
           />
-        )} */}
+        )}
       </Stack>
-      {/* {props.name === "turning" && language === "EN" && (
+      {props.name === "turning" && language === "EN" && (
         <CapabilitiesMain name="turning" />
       )}
       {props.name === "milling" && language === "EN" && (
         <CapabilitiesMain name="milling" />
-      )} */}
+      )}
     </Box>
   );
 }

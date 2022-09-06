@@ -1,8 +1,6 @@
 import React from "react";
 import Feedback from "./Feedback";
 import Values from "./Values";
-import AboutUs from "./AboutUs";
-import WhyUs from "./WhyUs";
 import Links from "../Ui/Navigation/Links";
 import Colors from "../Ui/Colors";
 import { Box, VStack, Heading, Text, Show, Flex } from "@chakra-ui/react";

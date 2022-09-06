@@ -51,7 +51,7 @@ function InputField(props) {
         </FormControl>
 
         <Text
-          top={isActive ? "-20%" : "50%"}
+          top={isActive ? "-10px" : "50%"}
           left={isActive ? "5px" : "50%"}
           transform={
             isActive

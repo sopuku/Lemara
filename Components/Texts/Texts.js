@@ -236,23 +236,23 @@ export default function Texts() {
       {
         title: "Kokybė",
         description: "Garantuojame aukštą gaminių kokybę",
-        src: "/images/values/1a.png",
+        src: "/images/values/1.png",
       },
       {
         title: "Greitis",
         description: "Detales pagaminame per trumpą laiką",
-        src: "/images/values/3a.png",
+        src: "/images/values/3.png",
       },
       {
         title: "Tikslumas",
         description:
           "Modernios įrangos dėka, gaminiai pasižymi dideliu tikslumu ",
-        src: "/images/values/2a.png",
+        src: "/images/values/2.png",
       },
       {
         title: "Tvarumas",
         description: "Tausojame gamtą",
-        src: "/images/values/4a.png",
+        src: "/images/values/4.png",
       },
     ],
     whyUs: {

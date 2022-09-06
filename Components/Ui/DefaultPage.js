@@ -1,12 +1,8 @@
-import { useContext } from "react";
-import { CurrentSettings } from "../../pages/_app";
 import { Image, Stack, Text, Heading, VStack, Box } from "@chakra-ui/react";
 import React from "react";
 import Colors from "../Ui/Colors";
-import CapabilitiesMain from "../Capabilities/CapabilitiesMain";
 
 export default function DefaultPage(props) {
-  const { language } = useContext(CurrentSettings);
   const colors = Colors();
 
   return (
@@ -56,12 +52,6 @@ export default function DefaultPage(props) {
           />
         )}
       </Stack>
-      {props.name === "turning" && language === "EN" && (
-        <CapabilitiesMain name="turning" />
-      )}
-      {props.name === "milling" && language === "EN" && (
-        <CapabilitiesMain name="milling" />
-      )}
     </Box>
   );
 }

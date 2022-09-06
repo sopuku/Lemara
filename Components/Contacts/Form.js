@@ -4,8 +4,22 @@ import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import Colors from "../Ui/Colors";
 
-export default function Form() {
+export default function Form(props) {
   const colors = Colors();
+
+  function handleName(e) {
+    props.setName(e.target.value);
+  }
+  function handleEmail(e) {
+    props.setEmail(e.target.value);
+  }
+  function handleNumber(e) {
+    props.setNumber(e.target.value);
+  }
+  function handleMessage(e) {
+    props.setMessage(e.target.value);
+  }
+
   return (
     <Stack
       direction={{ base: "column", lg: "row" }}
@@ -19,20 +33,32 @@ export default function Form() {
       <Stack>
         <InputField
           name="Jūsų vardas"
+          onChange={handleName}
+          value={props.name}
           icon={<BsPerson color={colors.contacts.form.colorIcon} />}
         />
         <InputField
           name="El. paštas"
+          onChange={handleEmail}
+          value={props.email}
           icon={<MdOutlineEmail color={colors.contacts.form.colorIcon} />}
         />
         <InputField
           name="Telefono numeris"
+          onChange={handleNumber}
+          value={props.number}
           icon={<MdOutlinePhone color={colors.contacts.form.colorIcon} />}
         />
       </Stack>
       <VStack>
-        <InputField name="Žinutė" />
+        <InputField
+          name="Žinutė"
+          value={props.message}
+          onChange={handleMessage}
+        />
+
         <Button
+          onClick={props.sendMessage}
           type="submit"
           w="100%"
           bg={colors.contacts.button.bg}

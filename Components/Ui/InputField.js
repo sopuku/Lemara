@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Box,
   FormControl,
@@ -8,15 +9,9 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 
-import { useState } from "react";
-
 function InputField(props) {
-  const [value, setValue] = useState("");
   const [isActive, setIsActive] = useState(false);
-  function handleChange(e) {
-    const text = e.target.value;
-    setValue(text);
-  }
+
   return (
     <Box py="10px" w="20rem">
       <Box pos="relative">
@@ -30,10 +25,10 @@ function InputField(props) {
                 outline="1px solid #041126"
                 onFocus={() => setIsActive(true)}
                 onBlur={() =>
-                  value === "" ? setIsActive(false) : setIsActive(true)
+                  props.value === "" ? setIsActive(false) : setIsActive(true)
                 }
-                value={value}
-                onChange={handleChange}
+                value={props.value}
+                onChange={props.onChange}
               />
             ) : (
               <Textarea
@@ -41,10 +36,10 @@ function InputField(props) {
                 outline="1px solid #041126"
                 onFocus={() => setIsActive(true)}
                 onBlur={() =>
-                  value === "" ? setIsActive(false) : setIsActive(true)
+                  props.value === "" ? setIsActive(false) : setIsActive(true)
                 }
-                value={value}
-                onChange={handleChange}
+                value={props.value}
+                onChange={props.onChange}
               />
             )}
           </InputGroup>

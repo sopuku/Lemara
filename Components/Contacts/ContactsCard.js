@@ -38,7 +38,7 @@ export default function ContactsCard(props) {
           <Text fontSize="18px" color={colors.contacts.card.color}>
             {props.responsibilities}
           </Text>
-          <Text fontSize="18px" fontWeight="600">
+          <Text fontWeight="600" fontSize="18px">
             {props.email}
           </Text>
           <Text fontSize="18px" fontWeight="600">

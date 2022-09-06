@@ -17,7 +17,7 @@ export default function GeneralMain() {
       <Heading textAlign="center" fontSize="50" as="h1" pb="2rem">
         Bendra informacija
       </Heading>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Maksimalus ir minimalus užsakomas detalių kiekis
       </Heading>
       <Text>
@@ -34,7 +34,7 @@ export default function GeneralMain() {
         detales „kepti“, bet ir taisyti / restauruoti senas, taip pat gaminti
         prototipus.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Per kiek laiko gausite savo detales?
       </Heading>
       <Text>
@@ -44,7 +44,7 @@ export default function GeneralMain() {
         jau turimų ir vykdomų užsakymų kiekio, medžiagų tiekimo grafiko ir
         serijos dydžio.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Detalių medžiagos: iš ko mes jas gaminame?
       </Heading>
       <Text>
@@ -59,7 +59,7 @@ export default function GeneralMain() {
         medžiaga. Ją lengva formuoti, ji lengva, nerūdijanti, atspari drėgmei,
         gali būti įvairių spalvų ir pan.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Nuo ko priklauso galutinė kaina?
       </Heading>
       <Text>
@@ -73,7 +73,7 @@ export default function GeneralMain() {
         ekonomiškiau užsakyti kuo didesnį kiekį. Mes rekomenduojame, kad jis
         būtų ne mažesnis nei 10 vienetų.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Kaip atsiimti pagamintas detales?
       </Heading>
       <Text>
@@ -81,7 +81,7 @@ export default function GeneralMain() {
         visos Lietuvos ir iš kitų valstybių. Detales siunčiame, o siuntimo kaina
         priklauso nuo atstumo bei užsakymo skubumo.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Protingas medžiagų likučių panaudojimas
       </Heading>
       <Text>
@@ -179,7 +179,7 @@ export default function GeneralMain() {
         Visi šie privalumai nulėmė, jog CNC frezavimas šiuo metu yra vienas
         populiariausių metalo apdirbimo metodų.{" "}
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Kaip vyksta CNC frezavimas?
       </Heading>
       <Text pb="1rem">
@@ -197,7 +197,7 @@ export default function GeneralMain() {
         – viskas priklauso nuo gaminio sudėtingumo.
       </Text>
 
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Kokių detalių frezavimo paslaugas siūlome
       </Heading>
       <Text pb="1rem">
@@ -220,7 +220,7 @@ export default function GeneralMain() {
       <Heading as="h1" pt="5rem" pb="2rem">
         CNC dalys: jų projektavimas ir gamyba{" "}
       </Heading>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Detalės projektuojamos ir gaminamos mūsų ceche
       </Heading>
       <Text>
@@ -231,7 +231,7 @@ export default function GeneralMain() {
         užduotys ir įvairios medžiagos. Populiariausia metalinių ir plastikinių
         detalių gamyba, tačiau gali būti naudojamos ir kitokios medžiagos.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Skirtingų gamybos procesų ir technologijų reikalaujančios detalės
         gaminamos keliais etapais
       </Heading>
@@ -243,7 +243,7 @@ export default function GeneralMain() {
         abrazyvinėmis granulėmis. Visi šie gamybiniai etapai turi būti atliekami
         teisingu, iš anksto numatytu eiliškumu ir kontroliuojami.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Kaip vyksta CNC detalių projektavimas?
       </Heading>
       <Text>
@@ -254,7 +254,7 @@ export default function GeneralMain() {
         nėra galimybių (negalima išmontuoti), jos apžiūrėti ir išmatuoti -
         keliaujame patys.
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Kaip greitai paruošiamas gaminio projektas ir pagaminamas pats gaminys?
       </Heading>
       <Text>
@@ -263,7 +263,7 @@ export default function GeneralMain() {
         sudėtingumo ir nuo mūsų staklių užimtumo. Taigi viskas gali užtrukti ir
         vieną valandą ir keletą savaičių.{" "}
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         Ar galima pagaminti tik vieną detalę (prototipą) ir kiek tai kainuoja?
       </Heading>
       <Text>
@@ -273,7 +273,7 @@ export default function GeneralMain() {
         Suprantama, vienos detalės gamyba visada bus brangesnė, nei dviejų tokių
         pačių.{" "}
       </Text>
-      <Heading as="h2" fontSize="22px" py="1rem">
+      <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">
         O jei konkrečios detalės gamybai neturime reikiamų apdirbimo priemonių?
       </Heading>
       <Text>

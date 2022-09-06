@@ -7,7 +7,7 @@ import React from "react";
 import ContactsList from "./ContactsList";
 import Colors from "../Ui/Colors";
 
-export default function ContactsMain() {
+export default function ContactsMain(props) {
   const texts = Texts();
   const colors = Colors();
   return (
@@ -21,6 +21,7 @@ export default function ContactsMain() {
       >
         {texts.contacts.cards.map((item) => (
           <ContactsCard
+            key={item.name}
             name={item.name}
             responsibilities={item.responsibilities}
             email={item.email}
@@ -51,7 +52,17 @@ export default function ContactsMain() {
           align="center"
         >
           <ContactsList />
-          <Form />
+          <Form
+            name={props.name}
+            setName={props.setName}
+            email={props.email}
+            setEmail={props.setEmail}
+            number={props.number}
+            setNumber={props.setNumber}
+            message={props.message}
+            setMessage={props.setMessage}
+            sendMessage={props.sendMessage}
+          />
         </Stack>
       </Flex>
       <Maps />

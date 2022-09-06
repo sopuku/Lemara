@@ -56,7 +56,6 @@ export default function Form(props) {
       <VStack>
         <InputField
           name="Žinutė"
-          type="textarea"
           value={props.message}
           onChange={handleMessage}
         />

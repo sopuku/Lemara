@@ -14,7 +14,7 @@ import Texts from "../Texts/Texts";
 
 const ListHeader = ({ children }) => {
   return (
-    <Text fontWeight={"500"} fontSize={"lg"} mb={2}>
+    <Text textColor="orange" fontWeight={"500"} fontSize={"lg"} mb={2}>
       {children}
     </Text>
   );
@@ -47,7 +47,6 @@ export default function Footer() {
             <Text>Įmonės kodas: 304374938</Text>
             <Text>PVM mokėtojo kodas: LT100010561112</Text>
           </Stack>
-
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>{texts.footer.contacts}</ListHeader>
             <Text>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Text>

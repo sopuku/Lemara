@@ -1,6 +1,14 @@
 import { useContext } from "react";
 import { CurrentSettings } from "../../pages/_app";
-import { Image, Stack, Text, Heading, VStack, Box } from "@chakra-ui/react";
+import {
+  Image,
+  Stack,
+  Text,
+  Heading,
+  VStack,
+  Box,
+  Flex,
+} from "@chakra-ui/react";
 import React from "react";
 import Colors from "../Ui/Colors";
 import CapabilitiesMain from "../Capabilities/CapabilitiesMain";
@@ -18,7 +26,7 @@ export default function DefaultPage(props) {
       }
       color={props.name === "aboutUs" && colors.home.aboutUs.color}
     >
-      <Stack
+      <Flex
         direction={{ base: "column", xl: "row" }}
         spacing="5%"
         overflow="hidden"
@@ -55,7 +63,7 @@ export default function DefaultPage(props) {
             boxShadow="0 0 5px 1px black"
           />
         )}
-      </Stack>
+      </Flex>
       {props.name === "turning" && language === "EN" && (
         <CapabilitiesMain name="turning" />
       )}

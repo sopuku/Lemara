@@ -11,7 +11,7 @@ export default function Texts() {
         href: "/",
       },
       {
-        label: "Gamyba",
+        label: "Paslaugos",
         children: [
           {
             label: "CNC Tekinimas",
@@ -29,7 +29,7 @@ export default function Texts() {
         ],
       },
       {
-        label: "įranga",
+        label: "Įrengimai",
         href: "/capabilities",
       },
       {

@@ -2,7 +2,6 @@ import Card from "../Capabilities/Card";
 import { useContext } from "react";
 import { CurrentSettings } from "../../pages/_app";
 import {
-  Box,
   Image,
   Stack,
   Text,
@@ -39,7 +38,7 @@ export default function TurningMain() {
           maxH="25rem"
           boxShadow="0 0 5px 1px "
         />
-        <VStack spacing="3">
+        <VStack spacing="5">
           <Heading>{texts.turning.t1.heading}</Heading>
           <Text
             maxW="40rem"

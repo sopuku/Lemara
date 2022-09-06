@@ -4,7 +4,7 @@ import Texts from "../Texts/Texts";
 import React from "react";
 import Colors from "../Ui/Colors";
 
-export default function CapabilitiesMain() {
+export default function CapabilitiesMain(props) {
   const texts = Texts();
   const colors = Colors();
   return (

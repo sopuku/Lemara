@@ -3,7 +3,6 @@ import Card from "../Capabilities/Card";
 import React, { useContext } from "react";
 import { CurrentSettings } from "../../pages/_app";
 import {
-  Box,
   VStack,
   Stack,
   Heading,

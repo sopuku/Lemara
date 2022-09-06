@@ -5,10 +5,14 @@ import AboutUs from "./AboutUs";
 import WhyUs from "./WhyUs";
 import Links from "../Ui/Navigation/Links";
 import Colors from "../Ui/Colors";
-import { Box, VStack, Heading, Text, Show } from "@chakra-ui/react";
+import { Box, VStack, Heading, Text, Show, Flex } from "@chakra-ui/react";
+import Texts from "../../Components/Texts/Texts";
+import DefaultPage from "../Ui/DefaultPage";
 
 export default function HomeMain() {
   const colors = Colors();
+
+  const texts = Texts();
   return (
     <VStack spacing="0" overflow="hidden">
       <Box
@@ -20,12 +24,12 @@ export default function HomeMain() {
         color={colors.home.color}
         bg={colors.home.bg}
         w="100%"
-        h={{ base: "35rem", md: "35rem" }}
-        align="justify"
+        h="35rem"
+        align="center"
         px={{ base: "4%", sm: "4%", lg: "10%", xl: "10%", "2xl": "20%" }}
         mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
       >
-        <Heading pt="10%" fontSize={{ base: "35px", md: "45px" }} pb="2rem">
+        <Heading pt="7%" fontSize={{ base: "35px", md: "45px" }} pb="2rem">
           Lemara - preciziškai ištekintos detalės jūsų konstrukciniams
           sumanymams
         </Heading>
@@ -39,12 +43,24 @@ export default function HomeMain() {
         </Text>
       </Box>
       <Show above="md">
-        <Box position="absolute" top="38rem">
+        <Flex position="absolute" top="35rem">
           <Values />
-        </Box>
+        </Flex>
       </Show>
-      <WhyUs />
-      <AboutUs />
+      <DefaultPage
+        name="whyUs"
+        src={colors.home.image}
+        heading={texts.whyUs.text1.heading}
+        text={texts.whyUs.text1.text}
+        py="8rem"
+      />
+      <DefaultPage
+        name="aboutUs"
+        src={colors.home.aboutUs.image}
+        heading={texts.aboutUs.text1.heading}
+        text={texts.aboutUs.text1.text}
+      />
+
       <Feedback />
     </VStack>
   );

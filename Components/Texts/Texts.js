@@ -255,9 +255,22 @@ export default function Texts() {
         src: "/images/values/4a.png",
       },
     ],
+    whyUs: {
+      text1: {
+        heading: "Kodėl turėtumėte pasirinkti mus?",
+        text: `Esame jauni ir ambicingi savo srities profesionalai. Nuolatos
+          plečiamės ir keliame darbuotojų kvalifikaciją. Visada užtikriname
+          aukščiausios kokybės produktą, kurį atliekame per trumpiausią įmanomą
+          laiką. pecializuojamės gaminant didelio tikslumo reikalaujančius
+          elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms,
+          konvejeriams, tačiau atliekame ir kitus darbus. nuo 2016 metų
+          sėkmingai gaminame detales didelėms Lietuvos ir užsienio kompanijoms.
+ `,
+      },
+    },
     aboutUs: {
       text1: {
-        heading: "",
+        heading: "Apie mus",
         text: `MB "Lemara" - metalo apdirbimo įmonė, teikianti CNC tekinimo ir frezavimo paslaugas. Specializuojamės gaminant didelio tikslumo reikalaujančius elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms, konvejeriams. Mes dirbame su aliuminiu, nerūdijančiu plienu, plienu, variu, žalvariu, kitais metalais bei įvairiais plastikais. Bendradarbiaujame su daug partnerių, todėl su jų pagalba galime atlikti praktiškai visas įmanomas medžiagų apdirbimo operacijas, tokias kaip pjovimą viela, pjovimą vandeniu, pjovimą lazeriu, pjovimą plazma, pjovimą elektroerozija, šlifavimą, anodavimą, virinimą, lankstymą. Bendradarbiaujame tiek su Lietuvos, tiek su užsienio gamintojais. 2016 metais įkurta Lemara sparčiai plečiasi ir sėkmingai dirba tarptautiniu mastu.
  `,
       },
@@ -533,9 +546,22 @@ export default function Texts() {
         src: "/images/values/4.png",
       },
     ],
+    whyUs: {
+      text1: {
+        heading: "Kodėl turėtumėte pasirinkti mus?",
+        text: `Esame jauni ir ambicingi savo srities profesionalai. Nuolatos
+          plečiamės ir keliame darbuotojų kvalifikaciją. Visada užtikriname
+          aukščiausios kokybės produktą, kurį atliekame per trumpiausią įmanomą
+          laiką. pecializuojamės gaminant didelio tikslumo reikalaujančius
+          elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms,
+          konvejeriams, tačiau atliekame ir kitus darbus. nuo 2016 metų
+          sėkmingai gaminame detales didelėms Lietuvos ir užsienio kompanijoms.
+ `,
+      },
+    },
     aboutUs: {
       text1: {
-        heading: "",
+        heading: "Apie mus",
         text: `MB "Lemara" - metalo apdirbimo įmonė, teikianti CNC tekinimo ir frezavimo paslaugas. Specializuojamės gaminant didelio tikslumo reikalaujančius elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms, konvejeriams. Mes dirbame su aliuminiu, nerūdijančiu plienu, plienu, variu, žalvariu, kitais metalais bei įvairiais plastikais. Bendradarbiaujame su daug partnerių, todėl su jų pagalba galime atlikti praktiškai visas įmanomas medžiagų apdirbimo operacijas, tokias kaip pjovimą viela, pjovimą vandeniu, pjovimą lazeriu, pjovimą plazma, pjovimą elektroerozija, šlifavimą, anodavimą, virinimą, lankstymą. Bendradarbiaujame tiek su Lietuvos, tiek su užsienio gamintojais. 2016 metais įkurta Lemara sparčiai plečiasi ir sėkmingai dirba tarptautiniu mastu.
  `,
       },
@@ -806,9 +832,22 @@ export default function Texts() {
         src: "/images/values/4.png",
       },
     ],
+    whyUs: {
+      text1: {
+        heading: "Kodėl turėtumėte pasirinkti mus?",
+        text: `Esame jauni ir ambicingi savo srities profesionalai. Nuolatos
+          plečiamės ir keliame darbuotojų kvalifikaciją. Visada užtikriname
+          aukščiausios kokybės produktą, kurį atliekame per trumpiausią įmanomą
+          laiką. pecializuojamės gaminant didelio tikslumo reikalaujančius
+          elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms,
+          konvejeriams, tačiau atliekame ir kitus darbus. nuo 2016 metų
+          sėkmingai gaminame detales didelėms Lietuvos ir užsienio kompanijoms.
+ `,
+      },
+    },
     aboutUs: {
       text1: {
-        heading: "",
+        heading: "Apie mus",
         text: `MB "Lemara" - metalo apdirbimo įmonė, teikianti CNC tekinimo ir frezavimo paslaugas. Specializuojamės gaminant didelio tikslumo reikalaujančius elementus automatinėms ir robotizuotoms gamybos, apdirbimo linijoms, konvejeriams. Mes dirbame su aliuminiu, nerūdijančiu plienu, plienu, variu, žalvariu, kitais metalais bei įvairiais plastikais. Bendradarbiaujame su daug partnerių, todėl su jų pagalba galime atlikti praktiškai visas įmanomas medžiagų apdirbimo operacijas, tokias kaip pjovimą viela, pjovimą vandeniu, pjovimą lazeriu, pjovimą plazma, pjovimą elektroerozija, šlifavimą, anodavimą, virinimą, lankstymą. Bendradarbiaujame tiek su Lietuvos, tiek su užsienio gamintojais. 2016 metais įkurta Lemara sparčiai plečiasi ir sėkmingai dirba tarptautiniu mastu.
  `,
       },

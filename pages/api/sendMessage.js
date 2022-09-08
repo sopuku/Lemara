@@ -54,6 +54,12 @@ export default async function handler(req, res) {
         }
        */
       if (captchaValidation.success) {
+        const form = {
+          name: name,
+          email: email,
+          number: number,
+          message: message,
+        };
         emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
         await sleep();
 

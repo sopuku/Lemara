@@ -1,31 +1,9 @@
 import fetch from "node-fetch";
-import emailjs from "@emailjs/browser";
-
-const sleep = () =>
-  new Promise((resolve) => {
-    setTimeout(() => {
-      resolve();
-    }, 350);
-  });
 
 export default async function handler(req, res) {
   const { body, method } = req;
 
-  const { name, email, number, message, captcha } = body;
-
-  const SERVICE_ID = "service_dk5mr2k";
-  const TEMPLATE_ID = "template_6juxtrk";
-  const KEY = "AKeemSzyhhC8W76gf";
-  const form = {
-    name: name,
-    email: email,
-    number: number,
-    message: message,
-  };
-
-  async function sendMessage() {
-    await emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
-  }
+  const { captcha } = body;
 
   if (method === "POST") {
     if (!captcha) {
@@ -45,17 +23,8 @@ export default async function handler(req, res) {
         }
       );
       const captchaValidation = await response.json();
-      /**
-       * The structure of response from the veirfy API is
-       * {
-       *  "success": true|false,
-       *  "challenge_ts": timestamp,  // timestamp of the challenge load (ISO format yyyy-MM-dd'T'HH:mm:ssZZ)
-       *  "hostname": string,         // the hostname of the site where the reCAPTCHA was solved
-       *  "error-codes": [...]        // optional
-        }
-       */
+
       if (captchaValidation.success) {
-        sendMessage();
         return res.status(200).send("OK");
       }
 

@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 
 export default function Contacts(props) {
   async function sendMessage(form) {
-    // await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
+    await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
   }
 
   return (

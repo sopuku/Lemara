@@ -51,10 +51,6 @@ export default function Form(props) {
       const response = await fetch("/api/sendMessage", {
         method: "POST",
         body: JSON.stringify({
-          name,
-          email,
-          number,
-          message,
           captcha: captchaCode,
         }),
         headers: {
@@ -82,7 +78,13 @@ export default function Form(props) {
         throw new Error(error.message);
       }
     } catch (error) {
-      alert(error?.message || "Something went wrong");
+      toast({
+        title: "Error 😮",
+        status: "error",
+        position: "top",
+        duration: 2000,
+        isClosable: true,
+      });
     } finally {
       recaptchaRef.current.reset();
       setEmail("");

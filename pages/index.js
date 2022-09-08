@@ -1,10 +1,9 @@
 import Head from "next/head";
-import { Fragment } from "react";
 import HomeMain from "../Components/Home/HomeMain";
 
 export default function HomePage() {
   return (
-    <Fragment>
+    <React.Fragment>
       <Head>
         <title>Lemara</title>
         <meta
@@ -13,6 +12,6 @@ export default function HomePage() {
         />
       </Head>
       <HomeMain />
-    </Fragment>
+    </React.Fragment>
   );
 }

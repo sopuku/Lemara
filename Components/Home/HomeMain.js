@@ -3,7 +3,7 @@ import Feedback from "./Feedback";
 import Values from "./Values";
 import Links from "../Ui/Navigation/Links";
 import Colors from "../Ui/Colors";
-import { Box, VStack, Heading, Text, Show, Flex } from "@chakra-ui/react";
+import { VStack, Heading, Text, Show, Flex, Container } from "@chakra-ui/react";
 import Texts from "../../Components/Texts/Texts";
 import DefaultPage from "../Ui/DefaultPage";
 
@@ -13,7 +13,7 @@ export default function HomeMain() {
   const texts = Texts();
   return (
     <VStack spacing="0" overflow="hidden">
-      <Box
+      <Container
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
@@ -21,7 +21,7 @@ export default function HomeMain() {
         boxShadow="0 0 20px 10px grey"
         color={colors.home.color}
         bg={colors.home.bg}
-        w="100%"
+        maxW="100%"
         h="35rem"
         align="center"
         px={{ base: "4%", sm: "4%", lg: "10%", xl: "10%", "2xl": "20%" }}
@@ -39,7 +39,7 @@ export default function HomeMain() {
           </Links>
           .
         </Text>
-      </Box>
+      </Container>
       <Show above="md">
         <Flex position="absolute" top="35rem">
           <Values />
@@ -58,7 +58,6 @@ export default function HomeMain() {
         heading={texts.aboutUs.text1.heading}
         text={texts.aboutUs.text1.text}
       />
-
       <Feedback />
     </VStack>
   );

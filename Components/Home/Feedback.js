@@ -1,8 +1,7 @@
 import Texts from "../Texts/Texts";
-import { Box, Heading, Text } from "@chakra-ui/react";
+import { Heading, Text, Container } from "@chakra-ui/react";
 import Slider from "react-slick";
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
 import Colors from "../Ui/Colors";
 
 const settings = {
@@ -21,16 +20,14 @@ export default function Feedback() {
   const colors = Colors();
   const texts = Texts();
   return (
-    <Box
+    <Container
       align="center"
-      w="100%"
-      h={{ base: "30rem", xl: "35rem" }}
-      py={{ base: "4rem", md: "5rem", xl: "6rem" }}
-      px={["3%", "3%", "7%", "10%", "10%", "30%"]}
+      maxW="3xl"
+      py={{ base: "4rem", md: "6rem", lg: "8rem", xl: "9rem" }}
       color={colors.home.feedback.color}
       bg={colors.home.feedback.bg}
     >
-      <Heading size="2xl" pb="4rem">
+      <Heading size="2xl" pb="2rem">
         Atsiliepimai
       </Heading>
       <link
@@ -47,15 +44,17 @@ export default function Feedback() {
       <Slider {...settings}>
         {texts.feedback.map((item) => {
           return (
-            <React.Fragment key={uuidv4()}>
+            <React.Fragment key={item.title}>
               <Heading size="xl" pb="1rem">
                 {item.title}
               </Heading>
-              <Text fontSize="xl">{item.text}</Text>
+              <Text lineHeight={{ base: "1.5", lg: "1.8" }} fontSize="xl">
+                {item.text}
+              </Text>
             </React.Fragment>
           );
         })}
       </Slider>
-    </Box>
+    </Container>
   );
 }

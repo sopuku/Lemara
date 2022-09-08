@@ -1,11 +1,4 @@
-import {
-  Box,
-  Image,
-  Heading,
-  Text,
-  SimpleGrid,
-  Center,
-} from "@chakra-ui/react";
+import { Image, Heading, Text, SimpleGrid, Container } from "@chakra-ui/react";
 import { v4 as uuidv4 } from "uuid";
 import Colors from "../Ui/Colors";
 import Texts from "../Texts/Texts";
@@ -16,14 +9,13 @@ export default function Values() {
   return (
     <SimpleGrid
       columns={{ base: 0, md: 2, xl: 4 }}
-      spacing={{ base: "1rem", md: "3rem", xl: "6rem" }}
+      spacing={{ md: "3rem", xl: "5rem" }}
     >
       {texts.values.map((item) => {
         return (
-          <Box
+          <Container
+            maxW="17rem"
             key={uuidv4()}
-            w="16rem"
-            h="17rem"
             align="center"
             bg={colors.home.values.bg}
             color={colors.home.values.color}
@@ -36,7 +28,7 @@ export default function Values() {
               {item.title}
             </Heading>
             <Text fontSize="lg">{item.description}</Text>
-          </Box>
+          </Container>
         );
       })}
     </SimpleGrid>

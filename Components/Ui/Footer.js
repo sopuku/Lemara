@@ -6,11 +6,11 @@ import {
   Text,
   Image,
   Center,
-  color,
 } from "@chakra-ui/react";
 import Links from "./Navigation/Links";
 import Colors from "./Colors";
 import Texts from "../Texts/Texts";
+import React from "react";
 
 const ListHeader = ({ children }) => {
   return (
@@ -24,12 +24,17 @@ export default function Footer() {
   const texts = Texts();
   const colors = Colors();
   return (
-    <Box
-      bg={colors.footer.bg}
-      color={colors.footer.color}
-      backgroundImage={colors.footer.bgTexture}
-    >
-      <Container as={Stack} maxW={"8xl"} py={10} align="center">
+    <React.Fragment>
+      <Container
+        overflow="hidden"
+        bg={colors.footer.bg}
+        color={colors.footer.color}
+        backgroundImage={colors.footer.bgTexture}
+        as={Stack}
+        maxW="100%"
+        py={10}
+        align="center"
+      >
         <SimpleGrid
           templateColumns={{ sm: "1fr", md: "2fr 1fr 1fr 1fr" }}
           spacing={{ md: 3, lg: 10, xl: 32 }}
@@ -79,6 +84,6 @@ export default function Footer() {
           </Stack>
         </SimpleGrid>
       </Container>
-    </Box>
+    </React.Fragment>
   );
 }

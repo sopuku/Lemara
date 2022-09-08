@@ -1,12 +1,19 @@
-import { Image, Heading, Flex, HStack, VStack, Text } from "@chakra-ui/react";
+import {
+  Image,
+  Heading,
+  HStack,
+  VStack,
+  Text,
+  Container,
+} from "@chakra-ui/react";
 import React from "react";
 
 export default function Card(props) {
   return (
-    <VStack align="center" justify="top">
-      <Image w="460px" src={props.data.src} boxShadow="0 0 5px 1px black" />
-      <Flex direction="column">
-        <Heading pb="1rem" fontSize="28px">
+    <Container centerContent maxW="lg">
+      <Image src={props.data.src} boxShadow="0 0 5px 1px black" />
+      <Container centerContent>
+        <Heading py="1rem" fontSize="28px">
           {props.data.name}
         </Heading>
         <HStack fontSize="lg">
@@ -40,7 +47,7 @@ export default function Card(props) {
             </React.Fragment>
           )}
         </HStack>
-      </Flex>
-    </VStack>
+      </Container>
+    </Container>
   );
 }

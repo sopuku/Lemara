@@ -1,4 +1,11 @@
-import { Image, Stack, Text, Heading, VStack, Box } from "@chakra-ui/react";
+import {
+  Stack,
+  Text,
+  Heading,
+  VStack,
+  Container,
+  Square,
+} from "@chakra-ui/react";
 import React from "react";
 import Colors from "../Ui/Colors";
 
@@ -6,7 +13,8 @@ export default function DefaultPage(props) {
   const colors = Colors();
 
   return (
-    <Box
+    <Container
+      maxW="100%"
       w="100%"
       bg={props.name === "aboutUs" && colors.home.aboutUs.bg}
       backgroundImage={
@@ -17,22 +25,17 @@ export default function DefaultPage(props) {
       <Stack
         direction={{ base: "column", xl: "row" }}
         spacing="5%"
-        overflow="hidden"
-        px="4%"
-        pt={{ base: "5%", md: props.name === "whyUs" && "8rem", xl: "5%" }}
-        py="5%"
+        pt={{ base: "5%", md: props.name === "whyUs" && "8rem", xl: "6%" }}
+        pb="6%"
         align="center"
         justify="center"
       >
         {props.name !== "aboutUs" && (
-          <Image
-            src={props.src}
-            maxW="40rem"
-            maxH="25rem"
-            boxShadow="0 0 5px 1px black"
-          />
+          <Square maxW="40rem" boxShadow="0 0 5px 1px black">
+            <img src={props.src} />
+          </Square>
         )}
-        <VStack spacing="5">
+        <VStack spacing="8">
           <Heading>{props.heading}</Heading>
           <Text
             maxW="40rem"
@@ -44,14 +47,11 @@ export default function DefaultPage(props) {
           </Text>
         </VStack>
         {props.name === "aboutUs" && (
-          <Image
-            src={props.src}
-            maxW="40rem"
-            maxH="25rem"
-            boxShadow="0 0 5px 1px black"
-          />
+          <Square maxW="40rem" boxShadow="0 0 5px 1px black">
+            <img src={props.src} />
+          </Square>
         )}
       </Stack>
-    </Box>
+    </Container>
   );
 }

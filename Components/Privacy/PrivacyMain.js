@@ -1,15 +1,22 @@
-import { Text, Heading, Box, UnorderedList, ListItem } from "@chakra-ui/react";
+import {
+  Text,
+  Heading,
+  Box,
+  UnorderedList,
+  ListItem,
+  Container,
+} from "@chakra-ui/react";
 import React from "react";
 import Colors from "../Ui/Colors";
 
 export default function PrivacyMain() {
   const colors = Colors();
   return (
-    <Box
-      mx="auto"
-      w={["90%", "90%", "70%"]}
-      align="left"
+    <Container
+      maxW="100%"
       py="5rem"
+      px={{ base: "5%", lg: "15%" }}
+      align="justify"
       color={colors.privacy.color}
       bg={colors.privacy.bg}
     >
@@ -167,6 +174,6 @@ export default function PrivacyMain() {
         politiką ar jos dalį be advokatų kontoros Glimstedt rašytinio sutikimo
         draudžiama.
       </Text>
-    </Box>
+    </Container>
   );
 }

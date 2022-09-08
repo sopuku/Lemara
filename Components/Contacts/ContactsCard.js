@@ -7,15 +7,15 @@ export default function ContactsCard(props) {
   return (
     <React.Fragment>
       <Box
-        maxW="280px"
-        w="full"
+        maxW="290px"
+        w="100%"
         bg={colors.contacts.card.bgBot}
         boxShadow="0 0 20px 1px grey"
-        rounded="md"
-        overflow="hidden"
+        rounded="6px"
       >
         <Box
           h="7rem"
+          roundedTop="6px"
           w="full"
           bg={colors.contacts.card.bgTop}
           backgroundImage={colors.contacts.card.bgTopTexture}

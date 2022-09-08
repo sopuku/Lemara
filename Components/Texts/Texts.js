@@ -138,7 +138,7 @@ export default function Texts() {
             "Visada laiku mokamą atlyginimą",
             "Karjeros galimybes",
           ],
-          salary: "1000-1500 €/mėn. į rankas",
+          salary: ["1000-1400 €/mėn. į rankas"],
         },
         {
           title: "CNC frezavimo staklių operatorius",
@@ -161,7 +161,7 @@ export default function Texts() {
             "Visada laiku mokamą atlyginimą",
             "Karjeros galimybes",
           ],
-          salary: "1000-1500 €/mėn. į rankas",
+          salary: ["1000-1400 €/mėn. į rankas"],
         },
         {
           title: "Pramonės vadybininkas",
@@ -183,7 +183,7 @@ export default function Texts() {
             "Galimybes profesiniam tobulėjimui",
             "Visada laiku mokamą, nuo rezultatų priklausantį atlyginimą",
           ],
-          salary: "Nuo 1300 €/mėn. į rankas + priedai pagal rezultatus",
+          salary: ["Nuo 1300 €/mėn. į rankas + priedai pagal rezultatus"],
         },
         {
           title: "Valytoja",
@@ -203,7 +203,7 @@ export default function Texts() {
             "Galimybes profesiniam tobulėjimui",
             "Visada laiku mokamą",
           ],
-          salary: "Pagal susitarimą",
+          salary: ["Pagal susitarimą"],
         },
       ],
     },

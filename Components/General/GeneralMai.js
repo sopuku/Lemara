@@ -1,16 +1,22 @@
 import Texts from "../../Components/Texts/Texts";
-import { Box, Text, Heading, UnorderedList, ListItem } from "@chakra-ui/react";
+import {
+  Container,
+  Text,
+  Heading,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
 import Colors from "../Ui/Colors";
 
 export default function GeneralMain() {
   const texts = Texts();
   const colors = Colors();
   return (
-    <Box
-      mx="auto"
-      w={["90%", "90%", "70%"]}
-      align="justify"
+    <Container
+      maxW="100%"
       py="5rem"
+      px={{ base: "5%", lg: "15%" }}
+      align="justify"
       bg={colors.general.bg}
       color={colors.general.color}
     >
@@ -284,6 +290,6 @@ export default function GeneralMain() {
         plazma, pjovimą elektroerozija, šlifavimą, anodavimą, virinimą,
         lankstymą ir kt.
       </Text>
-    </Box>
+    </Container>
   );
 }

@@ -6,7 +6,6 @@ import {
   useDisclosure,
   Image,
   Select,
-  Text,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Links from "./Links";
@@ -29,17 +28,13 @@ export default function Navigation() {
     setLanguage(e.target.value);
   }
 
-  function handleColorSelect(e) {
-    setCurrentColor(e.target.value);
-  }
-
   return (
     <React.Fragment>
       <Flex
         boxShadow="0 0 20px black"
         bg={colors.navigation.bg}
         h="7rem"
-        w="100vw"
+        w="100%"
         py={{ base: 1 }}
         align="center"
         px={{ base: "5%", xl: "10%" }}
@@ -76,11 +71,6 @@ export default function Navigation() {
             <DesktopNav colors={colors} />
           </Flex>
         </Flex>
-        {language === "NO" && (
-          <Text fontWeight={500} fontSize="18px" color="orange" pr="0.5rem">
-            +370 646 57845
-          </Text>
-        )}
 
         <Stack
           justify={"flex-end"}

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import {
   Box,
-  FormControl,
   Input,
   Text,
   InputGroup,
@@ -14,46 +13,44 @@ function InputField(props) {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <Box py="10px" w="20rem">
+    <Box py="15px" w="20rem">
       <Box pos="relative">
-        <FormControl>
-          <InputGroup>
-            <InputLeftElement pointerEvents="none" children={props.icon} />
-            {props.type === "number" && isActive && (
-              <InputLeftElement
-                pl="43px"
-                pointerEvents="none"
-                children={<SmallAddIcon />}
-              />
-            )}
+        <InputGroup>
+          <InputLeftElement pointerEvents="none" children={props.icon} />
+          {props.type === "number" && isActive && (
+            <InputLeftElement
+              pl="43px"
+              pointerEvents="none"
+              children={<SmallAddIcon />}
+            />
+          )}
 
-            {props.name !== "Žinutė" ? (
-              <Input
-                type={props.type}
-                p="5"
-                pl="3rem"
-                outline="1px solid #041126"
-                onFocus={() => setIsActive(true)}
-                onBlur={() =>
-                  props.value === "" ? setIsActive(false) : setIsActive(true)
-                }
-                value={props.value}
-                onChange={props.onChange}
-              />
-            ) : (
-              <Textarea
-                minH="125px"
-                outline="1px solid #041126"
-                onFocus={() => setIsActive(true)}
-                onBlur={() =>
-                  props.value === "" ? setIsActive(false) : setIsActive(true)
-                }
-                value={props.value}
-                onChange={props.onChange}
-              />
-            )}
-          </InputGroup>
-        </FormControl>
+          {props.name !== "Žinutė" ? (
+            <Input
+              type={props.type}
+              p="5"
+              pl="3rem"
+              outline="1px solid #041126"
+              onFocus={() => setIsActive(true)}
+              onBlur={() =>
+                props.value === "" ? setIsActive(false) : setIsActive(true)
+              }
+              value={props.value}
+              onChange={props.onChange}
+            />
+          ) : (
+            <Textarea
+              minH="125px"
+              outline="1px solid #041126"
+              onFocus={() => setIsActive(true)}
+              onBlur={() =>
+                props.value === "" ? setIsActive(false) : setIsActive(true)
+              }
+              value={props.value}
+              onChange={props.onChange}
+            />
+          )}
+        </InputGroup>
 
         <Text
           top={isActive ? "-10px" : "50%"}

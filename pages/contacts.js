@@ -13,8 +13,19 @@ export default function Contacts(props) {
 
   const toast = useToast();
 
+  const recaptchaRef = React.createRef();
+
+  const onReCAPTCHAChange = (captchaCode) => {
+    if (!captchaCode) {
+      return;
+    }
+    alert(`works`);
+    recaptchaRef.current.reset();
+  };
+
   function sendMessage(e) {
     e.preventDefault();
+    recaptchaRef.current.execute();
     const form = {
       name: name,
       email: email,
@@ -48,6 +59,8 @@ export default function Contacts(props) {
         />
       </Head>
       <ContactsMain
+        onReCAPTCHAChange={onReCAPTCHAChange}
+        recaptchaRef={recaptchaRef}
         name={name}
         setName={setName}
         email={email}

@@ -9,6 +9,8 @@ export default function ContactsMain(props) {
     <Container maxW="100%" px="0">
       <ContactsTop />
       <ContactsMid
+        onReCAPTCHAChange={props.onReCAPTCHAChange}
+        recaptchaRef={props.recaptchaRef}
         name={props.name}
         setName={props.setName}
         email={props.email}

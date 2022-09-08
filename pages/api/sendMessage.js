@@ -11,9 +11,10 @@ export default async function handler(req, res) {
         message: "Unproccesable request, please provide the required fields",
       });
     }
+
     try {
       const response = await fetch(
-        `https://www.google.com/recaptcha/api/siteverify?secret=6LflocohAAAAAICd3XuhHcO0V4NY3BsE4mZ3jsi&response=${captcha}`,
+        `https://www.google.com/recaptcha/api/siteverify?secret=6LflocohAAAAAICd3XuhHcO0V4NY3BsE4mZ3jsiw&response=${captcha}`,
         {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",

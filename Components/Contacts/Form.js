@@ -48,7 +48,7 @@ export default function Form(props) {
       return;
     }
     try {
-      const response = await fetch("/api/verification", {
+      const response = await fetch("/api/sendMessage", {
         method: "POST",
         body: JSON.stringify({
           captcha: captchaCode,
@@ -99,7 +99,7 @@ export default function Form(props) {
       <ReCAPTCHA
         ref={recaptchaRef}
         size="invisible"
-        sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
+        sitekey="6LflocohAAAAAAe0A8FuFtVxmDtXX1S3FGb_pQSK"
         onChange={onReCAPTCHAChange}
       />
       <HStack

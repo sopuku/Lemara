@@ -16,38 +16,42 @@ export default function Contacts(props) {
 
   const toast = useToast();
 
-  function onLoad() {
-    captchaRef.current.execute();
-  }
+  const form = {
+    name: name,
+    email: email,
+    number: number,
+    message: message,
+  };
 
   async function sendMessage(e) {
     e.preventDefault();
     await captchaRef.current.execute();
-    const form = {
-      name: name,
-      email: email,
-      number: number,
-      message: message,
-    };
-    token &&
-      (await emailjs.send(
-        props.SERVICE_ID,
-        props.TEMPLATE_ID,
-        form,
-        props.KEY
-      ));
-    toast({
-      title: "Žinutė sėkmingai išsiūsta",
-      status: "success",
-      position: "top",
-      duration: 2000,
-      isClosable: true,
-    });
 
-    setName("");
-    setEmail("");
-    setNumber("");
-    setMessage("");
+    token
+      ? emailjs
+          .send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY)
+          .then(
+            toast({
+              title: "Žinutė sėkmingai išsiūsta",
+              status: "success",
+              position: "top",
+              duration: 2000,
+              isClosable: true,
+            })
+          )
+          .then(() => {
+            setName("");
+            setEmail("");
+            setNumber("");
+            setMessage("");
+          })
+      : toast({
+          title: "Žinutė neišsiūsta",
+          status: "error",
+          position: "top",
+          duration: 2000,
+          isClosable: true,
+        });
   }
 
   return (
@@ -60,7 +64,6 @@ export default function Contacts(props) {
         />
       </Head>
       <ContactsMain
-        onLoad={onLoad}
         setToken={setToken}
         captchaRef={captchaRef}
         name={name}

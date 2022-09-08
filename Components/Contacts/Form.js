@@ -26,7 +26,6 @@ export default function Form(props) {
     <form onSubmit={props.sendMessage}>
       <HCaptcha
         sitekey="2478aa4d-eac5-471b-8cf5-1fb9ef6254c8"
-        onLoad={props.onLoad}
         onVerify={props.setToken}
         ref={props.captchaRef}
         size="invisible"

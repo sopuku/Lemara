@@ -9,7 +9,6 @@ export default function ContactsMain(props) {
     <Container maxW="100%" px="0">
       <ContactsTop />
       <ContactsMid
-        onLoad={props.onLoad}
         setToken={props.setToken}
         captchaRef={props.captchaRef}
         name={props.name}

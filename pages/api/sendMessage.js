@@ -52,8 +52,12 @@ export default async function handler(req, res) {
           message: message,
         };
 
-        emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
-
+        // emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
+        console.log("veikia");
+        console.log(name);
+        console.log(email);
+        console.log(number);
+        console.log(message);
         return res.status(200).send("OK");
       }
 

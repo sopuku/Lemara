@@ -6,44 +6,20 @@ import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
 
 export default function Contacts(props) {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [number, setNumber] = useState("");
-  const [message, setMessage] = useState("");
+  // const toast = useToast();
 
-  const [token, setToken] = useState(null);
-  const captchaRef = useRef(null);
+  // function sendMessage() {
+  //   console.log("asdf");
+  //   emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
 
-  const toast = useToast();
-
-  const form = {
-    name: name,
-    email: email,
-    number: number,
-    message: message,
-  };
-  function sendMessage() {
-    console.log("asdf");
-    emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
-
-    toast({
-      title: "Žinutė sėkmingai išsiūsta",
-      status: "success",
-      position: "top",
-      duration: 2000,
-      isClosable: true,
-    });
-
-    setName("");
-    setEmail("");
-    setNumber("");
-    setMessage("");
-  }
-
-  function onSubmit(e) {
-    e.preventDefault();
-    captchaRef.current.execute();
-  }
+  //   toast({
+  //     title: "Žinutė sėkmingai išsiūsta",
+  //     status: "success",
+  //     position: "top",
+  //     duration: 2000,
+  //     isClosable: true,
+  //   });
+  // }
 
   return (
     <React.Fragment>
@@ -54,20 +30,7 @@ export default function Contacts(props) {
           content="Lemara - one of the best CNC manufacturers in Lithuania working globally"
         />
       </Head>
-      <ContactsMain
-        sendMessage={sendMessage}
-        setToken={setToken}
-        captchaRef={captchaRef}
-        name={name}
-        setName={setName}
-        email={email}
-        setEmail={setEmail}
-        number={number}
-        setNumber={setNumber}
-        message={message}
-        setMessage={setMessage}
-        onSubmit={onSubmit}
-      />
+      <ContactsMain />
     </React.Fragment>
   );
 }

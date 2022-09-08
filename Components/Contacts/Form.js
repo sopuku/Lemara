@@ -4,34 +4,57 @@ import InputField from "../Ui/InputField";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import Colors from "../Ui/Colors";
-import HCaptcha from "@hcaptcha/react-hcaptcha";
+import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
+const recaptchaRef = React.createRef();
 
 export default function Form(props) {
   const colors = Colors();
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [number, setNumber] = useState("");
+  const [message, setMessage] = useState("");
+
+  const form = {
+    name: name,
+    email: email,
+    number: number,
+    message: message,
+  };
 
   function handleName(e) {
-    props.setName(e.target.value);
+    setName(e.target.value);
   }
   function handleEmail(e) {
-    props.setEmail(e.target.value);
+    setEmail(e.target.value);
   }
   function handleNumber(e) {
-    props.setNumber(e.target.value);
+    setNumber(e.target.value);
   }
   function handleMessage(e) {
-    props.setMessage(e.target.value);
+    setMessage(e.target.value);
   }
 
+  async function onSubmit(e) {
+    e.preventDefault();
+    recaptchaRef.current.execute();
+  }
+
+  const onReCAPTCHAChange = (captchaCode) => {
+    if (!captchaCode) {
+      return;
+    }
+    alert(`Hey, ${email}`);
+    recaptchaRef.current.reset();
+  };
+
   return (
-    <form onSubmit={props.onSubmit}>
-      {" "}
-      <HCaptcha
-        sitekey="2478aa4d-eac5-471b-8cf5-1fb9ef6254c8"
-        onVerify={() => {
-          props.setToken, props.sendMessage;
-        }}
-        ref={props.captchaRef}
+    <form onSubmit={onSubmit}>
+      <ReCAPTCHA
+        ref={recaptchaRef}
         size="invisible"
+        sitekey="6LflocohAAAAAAe0A8FuFtVxmDtXX1S3FGb_pQSK"
+        onChange={onReCAPTCHAChange}
       />
       <HStack
         direction={{ base: "column", lg: "row" }}
@@ -47,30 +70,26 @@ export default function Form(props) {
             name="Jūsų vardas"
             type="text"
             onChange={handleName}
-            value={props.name}
+            value={name}
             icon={<BsPerson color={colors.contacts.form.colorIcon} />}
           />
           <InputField
             name="El. paštas"
             type="email"
             onChange={handleEmail}
-            value={props.email}
+            value={email}
             icon={<MdOutlineEmail color={colors.contacts.form.colorIcon} />}
           />
           <InputField
             name="Telefono numeris"
             type="number"
             onChange={handleNumber}
-            value={props.number}
+            value={number}
             icon={<MdOutlinePhone color={colors.contacts.form.colorIcon} />}
           />
         </VStack>
         <VStack>
-          <InputField
-            name="Žinutė"
-            value={props.message}
-            onChange={handleMessage}
-          />
+          <InputField name="Žinutė" value={message} onChange={handleMessage} />
           <Button
             type="submit"
             className="h-captcha"

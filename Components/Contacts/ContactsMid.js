@@ -25,20 +25,7 @@ export default function ContactsMid(props) {
         align="center"
       >
         <ContactsList />
-        <Form
-          sendMessage={props.sendMessage}
-          setToken={props.setToken}
-          captchaRef={props.captchaRef}
-          name={props.name}
-          setName={props.setName}
-          email={props.email}
-          setEmail={props.setEmail}
-          number={props.number}
-          setNumber={props.setNumber}
-          message={props.message}
-          setMessage={props.setMessage}
-          onSubmit={props.onSubmit}
-        />
+        <Form />
       </Stack>
     </Container>
   );

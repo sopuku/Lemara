@@ -1,5 +1,5 @@
 import { Image, Heading, Text, SimpleGrid, Container } from "@chakra-ui/react";
-import { v4 as uuidv4 } from "uuid";
+
 import Colors from "../Ui/Colors";
 import Texts from "../Texts/Texts";
 
@@ -15,7 +15,7 @@ export default function Values() {
         return (
           <Container
             maxW="17rem"
-            key={uuidv4()}
+            key={item.title}
             align="center"
             bg={colors.home.values.bg}
             color={colors.home.values.color}

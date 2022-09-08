@@ -8,20 +8,7 @@ export default function ContactsMain(props) {
   return (
     <Container maxW="100%" px="0">
       <ContactsTop />
-      <ContactsMid
-        sendMessage={props.sendMessage}
-        setToken={props.setToken}
-        captchaRef={props.captchaRef}
-        name={props.name}
-        setName={props.setName}
-        email={props.email}
-        setEmail={props.setEmail}
-        number={props.number}
-        setNumber={props.setNumber}
-        message={props.message}
-        setMessage={props.setMessage}
-        onSubmit={props.onSubmit}
-      />
+      <ContactsMid />
       <Maps />
     </Container>
   );

@@ -117,7 +117,6 @@ export default function Form(props) {
           <InputField name="Žinutė" value={message} onChange={handleMessage} />
           <Button
             type="submit"
-            className="h-captcha"
             w="100%"
             bg={colors.contacts.button.bg}
             color={colors.contacts.button.color}

@@ -2,10 +2,10 @@ import React from "react";
 import Head from "next/head";
 import ContactsMain from "../Components/Contacts/ContactsMain";
 import emailjs from "@emailjs/browser";
-import { useToast } from "@chakra-ui/react";
+// import { useToast } from "@chakra-ui/react";
 
 export default function Contacts(props) {
-  const toast = useToast();
+  // const toast = useToast();
 
   async function sendMessage(form) {
     await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
@@ -35,9 +35,9 @@ export default function Contacts(props) {
 export async function getStaticProps() {
   return {
     props: {
-      SERVICE_ID: "service_lemara",
-      TEMPLATE_ID: "template_lemara",
-      KEY: "SEEgDE7p6N_iBx4yL",
+      SERVICE_ID: "service_dk5mr2k",
+      TEMPLATE_ID: "template_6juxtrk",
+      KEY: "AKeemSzyhhC8W76gf",
     },
   };
 }

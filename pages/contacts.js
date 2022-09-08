@@ -4,7 +4,6 @@ import ContactsMain from "../Components/Contacts/ContactsMain";
 import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
-import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function Contacts(props) {
   const [name, setName] = useState("");

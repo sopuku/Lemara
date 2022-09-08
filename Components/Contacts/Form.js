@@ -29,6 +29,7 @@ export default function Form(props) {
         onLoad={props.onLoad}
         onVerify={props.setToken}
         ref={props.captchaRef}
+        size="invisible"
       />
       <HStack
         direction={{ base: "column", lg: "row" }}

@@ -77,7 +77,7 @@ export default function Contacts(props) {
       </Head>
       <ContactsMain
         onReCAPTCHAChange={onReCAPTCHAChange}
-        recaptchaRef={recaptchaRef}
+        recaptchaRef={hcaptchaRef}
         name={name}
         setName={setName}
         email={email}

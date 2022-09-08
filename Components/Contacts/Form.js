@@ -99,7 +99,7 @@ export default function Form(props) {
       <ReCAPTCHA
         ref={recaptchaRef}
         size="invisible"
-        sitekey={process.env.SITE_KEY}
+        sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
         onChange={onReCAPTCHAChange}
       />
       <HStack

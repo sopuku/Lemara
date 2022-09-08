@@ -20,28 +20,29 @@ export default function Contacts(props) {
     captchaRef.current.execute();
   }
 
-  useEffect(() => {
-    if (token) console.log(`hCaptcha Token: ${token}`);
-  }, [token]);
-
-  function sendMessage(e) {
+  async function sendMessage(e) {
     e.preventDefault();
+    await captchaRef.current.execute();
     const form = {
       name: name,
       email: email,
       number: number,
       message: message,
     };
-
-    emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY).then(
-      toast({
-        title: "Žinutė sėkmingai išsiūsta",
-        status: "success",
-        position: "top",
-        duration: 2000,
-        isClosable: true,
-      })
-    );
+    token &&
+      (await emailjs.send(
+        props.SERVICE_ID,
+        props.TEMPLATE_ID,
+        form,
+        props.KEY
+      ));
+    toast({
+      title: "Žinutė sėkmingai išsiūsta",
+      status: "success",
+      position: "top",
+      duration: 2000,
+      isClosable: true,
+    });
 
     setName("");
     setEmail("");

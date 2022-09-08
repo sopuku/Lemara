@@ -4,7 +4,7 @@ import InputField from "../Ui/InputField";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import Colors from "../Ui/Colors";
-import ReCAPTCHA from "react-google-recaptcha";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function Form(props) {
   const colors = Colors();
@@ -24,11 +24,12 @@ export default function Form(props) {
 
   return (
     <form onSubmit={props.sendMessage}>
-      <ReCAPTCHA
-        ref={props.recaptchaRef}
+      <HCaptcha
+        id="test"
         size="invisible"
-        sitekey="6LflocohAAAAAAe0A8FuFtVxmDtXX1S3FGb_pQSK"
-        onChange={props.onReCAPTCHAChange}
+        ref={props.hcaptchaRef}
+        sitekey="2478aa4d-eac5-471b-8cf5-1fb9ef6254c8"
+        onVerify={props.onReCAPTCHAChange}
       />
       <HStack
         direction={{ base: "column", lg: "row" }}

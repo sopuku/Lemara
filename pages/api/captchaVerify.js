@@ -10,11 +10,9 @@ const sleep = () =>
 export default async function handler(req, res) {
   const { body, method } = req;
 
-  // Extract the email and captcha code from the request body
   const { captcha } = body;
 
   if (method === "POST") {
-    // If email or captcha are missing return an error
     if (!captcha) {
       return res.status(422).json({
         message: "Unproccesable request, please provide the required fields",
@@ -22,31 +20,19 @@ export default async function handler(req, res) {
     }
 
     try {
-      // Ping the google recaptcha verify API to verify the captcha code you received
-      const response = await fetch(
-        `https://www.google.com/recaptcha/api/siteverify?secret="6LflocohAAAAAICd3XuhHcO0V4NY3BsE4mZ3jsiw"&response=${captcha}`,
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
-          },
-          method: "POST",
-        }
-      );
+      const response = await fetch(`https://hcaptcha.com/siteverify`, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
+        },
+        body: `response=${captcha}&secret=0x8962e437cb7a4964bc5fe613b38a966f46228529`,
+        method: "POST",
+      });
       const captchaValidation = await response.json();
-      /**
-       * The structure of response from the veirfy API is
-       * {
-       *  "success": true|false,
-       *  "challenge_ts": timestamp,  // timestamp of the challenge load (ISO format yyyy-MM-dd'T'HH:mm:ssZZ)
-       *  "hostname": string,         // the hostname of the site where the reCAPTCHA was solved
-       *  "error-codes": [...]        // optional
-        }
-       */
+
       if (captchaValidation.success) {
         // Replace this with the API that will save the data received
         // to your backend
         await sleep();
-        // Return 200 if everything is successful
         return res.status(200).send("OK");
       }
 

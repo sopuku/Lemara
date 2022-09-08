@@ -13,9 +13,12 @@ export default function Contacts(props) {
 
   const toast = useToast();
 
-  const recaptchaRef = React.createRef();
+  const hcaptchaRef = React.createRef();
 
   const onReCAPTCHAChange = async (captchaCode) => {
+    if (!captchaCode) {
+      return;
+    }
     try {
       const response = await fetch("/api/captchaVerify", {
         method: "POST",
@@ -25,26 +28,21 @@ export default function Contacts(props) {
         },
       });
       if (response.ok) {
-        // If the response is ok than show the success alert
         alert("Email registered successfully");
       } else {
-        // Else throw an error with the message returned
-        // from the API
         const error = await response.json();
         throw new Error(error.message);
       }
     } catch (error) {
       alert(error?.message || "Something went wrong");
     } finally {
-      // Reset the reCAPTCHA when the request has failed or succeeeded
-      // so that it can be executed again if user submits another email.
-      recaptchaRef.current.reset();
+      setEmail("");
     }
   };
 
   function sendMessage(e) {
     e.preventDefault();
-    recaptchaRef.current.execute();
+    hcaptchaRef.current.execute();
     const form = {
       name: name,
       email: email,

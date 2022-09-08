@@ -48,10 +48,6 @@ export default function Form(props) {
       const response = await fetch("/api/sendMessage", {
         method: "POST",
         body: JSON.stringify({
-          name,
-          email,
-          number,
-          message,
           captcha: captchaCode,
         }),
         headers: {
@@ -59,7 +55,7 @@ export default function Form(props) {
         },
       });
       if (response.ok) {
-        // If the response is ok than show the success alert
+        props.sendMessage(form);
         alert("Email registered successfully");
       } else {
         // Else throw an error with the message returned

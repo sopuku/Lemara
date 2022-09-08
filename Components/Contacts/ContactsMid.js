@@ -25,7 +25,7 @@ export default function ContactsMid(props) {
         align="center"
       >
         <ContactsList />
-        <Form />
+        <Form sendMessage={props.sendMessage} />
       </Stack>
     </Container>
   );

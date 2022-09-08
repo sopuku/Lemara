@@ -11,7 +11,7 @@ const sleep = () =>
 export default async function handler(req, res) {
   const { body, method } = req;
 
-  const { name, email, number, message, captcha } = body;
+  const { captcha } = body;
 
   if (method === "POST") {
     if (!captcha) {
@@ -41,23 +41,6 @@ export default async function handler(req, res) {
         }
        */
       if (captchaValidation.success) {
-        const SERVICE_ID = "service_lemara";
-        const TEMPLATE_ID = "template_lemara";
-        const KEY = "SEEgDE7p6N_iBx4yL";
-
-        const form = {
-          name: name,
-          email: email,
-          number: number,
-          message: message,
-        };
-
-        // emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
-        console.log("veikia");
-        console.log(name);
-        console.log(email);
-        console.log(number);
-        console.log(message);
         return res.status(200).send("OK");
       }
 

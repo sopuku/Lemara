@@ -13,6 +13,20 @@ export default async function handler(req, res) {
 
   const { name, email, number, message, captcha } = body;
 
+  const SERVICE_ID = "service_dk5mr2k";
+  const TEMPLATE_ID = "template_6juxtrk";
+  const KEY = "AKeemSzyhhC8W76gf";
+  const form = {
+    name: name,
+    email: email,
+    number: number,
+    message: message,
+  };
+
+  async function sendMessage() {
+    await emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
+  }
+
   if (method === "POST") {
     if (!captcha) {
       return res.status(422).json({
@@ -41,17 +55,7 @@ export default async function handler(req, res) {
         }
        */
       if (captchaValidation.success) {
-        const SERVICE_ID = "service_dk5mr2k";
-        const TEMPLATE_ID = "template_6juxtrk";
-        const KEY = "AKeemSzyhhC8W76gf";
-        const form = {
-          name: name,
-          email: email,
-          number: number,
-          message: message,
-        };
-        await emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
-        sleep();
+        sendMessage();
         return res.status(200).send("OK");
       }
 

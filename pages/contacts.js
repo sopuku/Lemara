@@ -15,12 +15,31 @@ export default function Contacts(props) {
 
   const recaptchaRef = React.createRef();
 
-  const onReCAPTCHAChange = (captchaCode) => {
-    if (!captchaCode) {
-      return;
+  const onReCAPTCHAChange = async (captchaCode) => {
+    try {
+      const response = await fetch("/api/captchaVerify", {
+        method: "POST",
+        body: JSON.stringify({ captcha: captchaCode }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      if (response.ok) {
+        // If the response is ok than show the success alert
+        alert("Email registered successfully");
+      } else {
+        // Else throw an error with the message returned
+        // from the API
+        const error = await response.json();
+        throw new Error(error.message);
+      }
+    } catch (error) {
+      alert(error?.message || "Something went wrong");
+    } finally {
+      // Reset the reCAPTCHA when the request has failed or succeeeded
+      // so that it can be executed again if user submits another email.
+      recaptchaRef.current.reset();
     }
-    alert(`works`);
-    recaptchaRef.current.reset();
   };
 
   function sendMessage(e) {

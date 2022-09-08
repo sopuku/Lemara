@@ -4,6 +4,7 @@ import InputField from "../Ui/InputField";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import Colors from "../Ui/Colors";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function Form(props) {
   const colors = Colors();
@@ -25,7 +26,9 @@ export default function Form(props) {
     <form onSubmit={props.sendMessage}>
       <HCaptcha
         sitekey="2478aa4d-eac5-471b-8cf5-1fb9ef6254c8"
-        onVerify={(token, ekey) => handleVerificationSuccess(token, ekey)}
+        onLoad={props.onLoad}
+        onVerify={props.setToken}
+        ref={props.captchaRef}
       />
       <HStack
         direction={{ base: "column", lg: "row" }}
@@ -37,12 +40,6 @@ export default function Form(props) {
         shadow="0 0 10px black"
       >
         <VStack>
-          <div
-            id="hcaptcha"
-            data-sitekey="your_site_key"
-            data-callback="onSubmit"
-            data-size="invisible"
-          ></div>
           <InputField
             name="Jūsų vardas"
             type="text"

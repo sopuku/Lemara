@@ -1,9 +1,10 @@
 import React from "react";
 import Head from "next/head";
 import ContactsMain from "../Components/Contacts/ContactsMain";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function Contacts(props) {
   const [name, setName] = useState("");
@@ -11,7 +12,18 @@ export default function Contacts(props) {
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
 
+  const [token, setToken] = useState(null);
+  const captchaRef = useRef(null);
+
   const toast = useToast();
+
+  function onLoad() {
+    captchaRef.current.execute();
+  }
+
+  useEffect(() => {
+    if (token) console.log(`hCaptcha Token: ${token}`);
+  }, [token]);
 
   function sendMessage(e) {
     e.preventDefault();
@@ -48,6 +60,9 @@ export default function Contacts(props) {
         />
       </Head>
       <ContactsMain
+        onLoad={onLoad}
+        setToken={setToken}
+        captchaRef={captchaRef}
         name={name}
         setName={setName}
         email={email}

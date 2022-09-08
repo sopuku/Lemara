@@ -26,8 +26,9 @@ export default function ContactsMid(props) {
       >
         <ContactsList />
         <Form
-          onReCAPTCHAChange={props.onReCAPTCHAChange}
-          recaptchaRef={props.recaptchaRef}
+          onLoad={props.onLoad}
+          setToken={props.setToken}
+          captchaRef={props.captchaRef}
           name={props.name}
           setName={props.setName}
           email={props.email}

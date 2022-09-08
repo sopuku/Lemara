@@ -24,36 +24,29 @@ export default function Contacts(props) {
   };
 
   useEffect(() => {
-    token
-      ? emailjs
-          .send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY)
-          .then(
-            toast({
-              title: "Žinutė sėkmingai išsiūsta",
-              status: "success",
-              position: "top",
-              duration: 2000,
-              isClosable: true,
-            })
-          )
-          .then(() => {
-            setName("");
-            setEmail("");
-            setNumber("");
-            setMessage("");
-          })
-      : toast({
-          title: "Žinutė neišsiūsta",
-          status: "error",
-          position: "top",
-          duration: 2000,
-          isClosable: true,
-        });
+    token && messageSend;
   }, [token]);
 
-  async function sendMessage(e) {
+  function messageSend() {
+    emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
+
+    toast({
+      title: "Žinutė sėkmingai išsiūsta",
+      status: "success",
+      position: "top",
+      duration: 2000,
+      isClosable: true,
+    });
+
+    setName("");
+    setEmail("");
+    setNumber("");
+    setMessage("");
+  }
+
+  function sendMessage(e) {
     e.preventDefault();
-    await captchaRef.current.execute();
+    captchaRef.current.execute();
   }
 
   return (

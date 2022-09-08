@@ -6,10 +6,13 @@ import { BsPerson } from "react-icons/bs";
 import Colors from "../Ui/Colors";
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-const recaptchaRef = React.createRef();
+import { useToast } from "@chakra-ui/react";
 
 export default function Form(props) {
+  const recaptchaRef = React.createRef();
   const colors = Colors();
+  const toast = useToast();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
@@ -48,6 +51,10 @@ export default function Form(props) {
       const response = await fetch("/api/sendMessage", {
         method: "POST",
         body: JSON.stringify({
+          name,
+          email,
+          number,
+          message,
           captcha: captchaCode,
         }),
         headers: {
@@ -56,20 +63,32 @@ export default function Form(props) {
       });
       if (response.ok) {
         props.sendMessage(form);
-        alert("Email registered successfully");
+        toast({
+          title: "Žinutė sėkmingai išsiūsta",
+          status: "success",
+          position: "top",
+          duration: 2000,
+          isClosable: true,
+        });
       } else {
-        // Else throw an error with the message returned
-        // from the API
+        toast({
+          title: "Žinutė neišsiūsta 🤔",
+          status: "error",
+          position: "top",
+          duration: 2000,
+          isClosable: true,
+        });
         const error = await response.json();
         throw new Error(error.message);
       }
     } catch (error) {
       alert(error?.message || "Something went wrong");
     } finally {
-      // Reset the reCAPTCHA when the request has failed or succeeeded
-      // so that it can be executed again if user submits another email.
       recaptchaRef.current.reset();
       setEmail("");
+      setName("");
+      setNumber("");
+      setMessage("");
     }
   }
 

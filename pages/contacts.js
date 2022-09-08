@@ -2,21 +2,10 @@ import React from "react";
 import Head from "next/head";
 import ContactsMain from "../Components/Contacts/ContactsMain";
 import emailjs from "@emailjs/browser";
-// import { useToast } from "@chakra-ui/react";
 
 export default function Contacts(props) {
-  // const toast = useToast();
-
   async function sendMessage(form) {
-    await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
-
-    // toast({
-    //   title: "Žinutė sėkmingai išsiūsta",
-    //   status: "success",
-    //   position: "top",
-    //   duration: 2000,
-    //   isClosable: true,
-    // });
+    // await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
   }
 
   return (

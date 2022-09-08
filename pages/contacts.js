@@ -23,10 +23,7 @@ export default function Contacts(props) {
     message: message,
   };
 
-  async function sendMessage(e) {
-    e.preventDefault();
-    await captchaRef.current.execute();
-
+  useEffect(() => {
     token
       ? emailjs
           .send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY)
@@ -52,6 +49,11 @@ export default function Contacts(props) {
           duration: 2000,
           isClosable: true,
         });
+  }, [token]);
+
+  async function sendMessage(e) {
+    e.preventDefault();
+    await captchaRef.current.execute();
   }
 
   return (

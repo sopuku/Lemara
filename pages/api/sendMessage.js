@@ -1,4 +1,5 @@
 import fetch from "node-fetch";
+import emailjs from "@emailjs/browser";
 
 const sleep = () =>
   new Promise((resolve) => {
@@ -7,11 +8,21 @@ const sleep = () =>
     }, 350);
   });
 
+const SERVICE_ID = "service_lemara";
+const TEMPLATE_ID = "template_lemara";
+const KEY = "SEEgDE7p6N_iBx4yL";
+
 export default async function handler(req, res) {
   const { body, method } = req;
 
   // Extract the email and captcha code from the request body
   const { name, email, number, message, captcha } = body;
+  const form = {
+    name: name,
+    email: email,
+    number: number,
+    message: message,
+  };
 
   if (method === "POST") {
     // If email or captcha are missing return an error
@@ -43,10 +54,9 @@ export default async function handler(req, res) {
         }
        */
       if (captchaValidation.success) {
-        // Replace this with the API that will save the data received
-        // to your backend
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
         await sleep();
-        // Return 200 if everything is successful
+
         return res.status(200).send("OK");
       }
 

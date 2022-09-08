@@ -1,16 +1,14 @@
 import React from "react";
 import Head from "next/head";
 import ContactsMain from "../Components/Contacts/ContactsMain";
-import { useState, useRef, useEffect } from "react";
-import emailjs from "@emailjs/browser";
-import { useToast } from "@chakra-ui/react";
+// import emailjs from "@emailjs/browser";
+// import { useToast } from "@chakra-ui/react";
 
 export default function Contacts(props) {
   // const toast = useToast();
 
   // function sendMessage() {
-  //   console.log("asdf");
-  //   emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
+  // emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
 
   //   toast({
   //     title: "Žinutė sėkmingai išsiūsta",
@@ -34,12 +32,12 @@ export default function Contacts(props) {
     </React.Fragment>
   );
 }
-export async function getStaticProps() {
-  return {
-    props: {
-      SERVICE_ID: "service_lemara",
-      TEMPLATE_ID: "template_lemara",
-      KEY: "SEEgDE7p6N_iBx4yL",
-    },
-  };
-}
+// export async function getStaticProps() {
+//   return {
+//     props: {
+//       SERVICE_ID: "service_lemara",
+//       TEMPLATE_ID: "template_lemara",
+//       KEY: "SEEgDE7p6N_iBx4yL",
+//     },
+//   };
+// }

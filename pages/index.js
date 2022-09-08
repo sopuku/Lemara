@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from "react";
 import HomeMain from "../Components/Home/HomeMain";
 
 export default function HomePage() {

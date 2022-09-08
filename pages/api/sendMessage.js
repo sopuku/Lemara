@@ -51,6 +51,7 @@ export default async function handler(req, res) {
           message: message,
         };
         await emailjs.send(SERVICE_ID, TEMPLATE_ID, form, KEY);
+        sleep();
         return res.status(200).send("OK");
       }
 

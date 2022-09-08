@@ -4,6 +4,7 @@ import ContactsMain from "../Components/Contacts/ContactsMain";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
+import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function Contacts(props) {
   const [name, setName] = useState("");
@@ -77,7 +78,7 @@ export default function Contacts(props) {
       </Head>
       <ContactsMain
         onReCAPTCHAChange={onReCAPTCHAChange}
-        recaptchaRef={hcaptchaRef}
+        recaptchaRef={recaptchaRef}
         name={name}
         setName={setName}
         email={email}

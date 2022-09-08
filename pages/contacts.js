@@ -22,12 +22,8 @@ export default function Contacts(props) {
     number: number,
     message: message,
   };
-
-  useEffect(() => {
-    token && messageSend;
-  }, [token]);
-
-  function messageSend() {
+  function sendMessage() {
+    console.log("asdf");
     emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
 
     toast({
@@ -44,7 +40,7 @@ export default function Contacts(props) {
     setMessage("");
   }
 
-  function sendMessage(e) {
+  function onSubmit(e) {
     e.preventDefault();
     captchaRef.current.execute();
   }
@@ -59,6 +55,7 @@ export default function Contacts(props) {
         />
       </Head>
       <ContactsMain
+        sendMessage={sendMessage}
         setToken={setToken}
         captchaRef={captchaRef}
         name={name}
@@ -69,7 +66,7 @@ export default function Contacts(props) {
         setNumber={setNumber}
         message={message}
         setMessage={setMessage}
-        sendMessage={sendMessage}
+        onSubmit={onSubmit}
       />
     </React.Fragment>
   );

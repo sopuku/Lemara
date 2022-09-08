@@ -26,6 +26,7 @@ export default function ContactsMid(props) {
       >
         <ContactsList />
         <Form
+          sendMessage={props.sendMessage}
           setToken={props.setToken}
           captchaRef={props.captchaRef}
           name={props.name}
@@ -36,7 +37,7 @@ export default function ContactsMid(props) {
           setNumber={props.setNumber}
           message={props.message}
           setMessage={props.setMessage}
-          sendMessage={props.sendMessage}
+          onSubmit={props.onSubmit}
         />
       </Stack>
     </Container>

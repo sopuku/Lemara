@@ -22,6 +22,7 @@
     "mongodb": "^4.8.1",
     "next": "12.2.5",
     "next-hcaptcha": "^1.4.3",
+    "node-fetch": "^3.2.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-google-recaptcha": "^2.1.0",

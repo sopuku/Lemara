@@ -7,8 +7,8 @@ import { useToast } from "@chakra-ui/react";
 export default function Contacts(props) {
   const toast = useToast();
 
-  function sendMessage(form) {
-    emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
+  async function sendMessage(form) {
+    await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
 
     // toast({
     //   title: "Žinutė sėkmingai išsiūsta",

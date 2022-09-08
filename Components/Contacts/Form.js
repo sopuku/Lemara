@@ -48,7 +48,7 @@ export default function Form(props) {
       return;
     }
     try {
-      const response = await fetch("/api/sendMessage", {
+      const response = await fetch("/api/captcha", {
         method: "POST",
         body: JSON.stringify({
           captcha: captchaCode,

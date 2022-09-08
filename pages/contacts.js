@@ -4,7 +4,6 @@ import ContactsMain from "../Components/Contacts/ContactsMain";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useToast } from "@chakra-ui/react";
-import HCaptcha from "@hcaptcha/react-hcaptcha";
 
 export default function Contacts(props) {
   const [name, setName] = useState("");
@@ -14,36 +13,8 @@ export default function Contacts(props) {
 
   const toast = useToast();
 
-  const hcaptchaRef = React.createRef();
-
-  const onReCAPTCHAChange = async (captchaCode) => {
-    if (!captchaCode) {
-      return;
-    }
-    try {
-      const response = await fetch("/api/captchaVerify", {
-        method: "POST",
-        body: JSON.stringify({ captcha: captchaCode }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      if (response.ok) {
-        alert("Email registered successfully");
-      } else {
-        const error = await response.json();
-        throw new Error(error.message);
-      }
-    } catch (error) {
-      alert(error?.message || "Something went wrong");
-    } finally {
-      setEmail("");
-    }
-  };
-
   function sendMessage(e) {
     e.preventDefault();
-    hcaptchaRef.current.execute();
     const form = {
       name: name,
       email: email,
@@ -77,8 +48,6 @@ export default function Contacts(props) {
         />
       </Head>
       <ContactsMain
-        onReCAPTCHAChange={onReCAPTCHAChange}
-        recaptchaRef={recaptchaRef}
         name={name}
         setName={setName}
         email={email}

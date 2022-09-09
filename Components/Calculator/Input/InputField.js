@@ -6,8 +6,7 @@ import {
   Icon,
   Hide,
 } from "@chakra-ui/react";
-import BackspaceIcon from "@mui/icons-material/Backspace";
-import ContentPasteGoIcon from "@mui/icons-material/ContentPasteGo";
+import { DeleteIcon, CalendarIcon } from "@chakra-ui/icons";
 
 function InputField(props) {
   function inputHandler(event) {
@@ -18,7 +17,7 @@ function InputField(props) {
     <InputGroup w={["90%", "25rem"]} m="auto">
       <Hide below="sm">
         <InputLeftAddon
-          children={<Icon as={ContentPasteGoIcon} w="8" h="8" />}
+          children={<Icon as={CalendarIcon} w="6" h="6" />}
           color="blue.400"
           bg="white"
           data-id="inp"
@@ -37,7 +36,7 @@ function InputField(props) {
       />
       <Hide below="sm">
         <InputRightElement
-          children={<Icon as={BackspaceIcon} w={6} h={6} />}
+          children={<Icon as={DeleteIcon} w={6} h={6} />}
           borderRadius="6"
           color="red"
           data-id="inp"

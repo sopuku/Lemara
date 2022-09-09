@@ -1,5 +1,5 @@
 import { Text, Box, OrderedList, ListItem, IconButton } from "@chakra-ui/react";
-import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
+import { DeleteIcon, CalendarIcon } from "@chakra-ui/icons";
 
 function OutputBox(props) {
   const width =
@@ -12,7 +12,13 @@ function OutputBox(props) {
       : ["298px", "298px", "298px", "298px", "615px"];
 
   return (
-    <Box borderRadius="12" minH={height} w={width} bg="whiteAlpha.800">
+    <Box
+      borderRadius="12"
+      minH={height}
+      w={width}
+      bg="whiteAlpha.800"
+      my={[5, 5, 5, 5, 8]}
+    >
       <Text
         bg="blue.500"
         color="white"
@@ -43,7 +49,7 @@ function OutputBox(props) {
             {props.name === "Entered Data" && (
               <IconButton
                 bg="none"
-                icon={<DeleteForeverIcon />}
+                icon={<DeleteIcon />}
                 color="red"
                 onClick={props.delete}
                 data-id={item.id}

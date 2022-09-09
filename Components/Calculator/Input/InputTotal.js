@@ -5,9 +5,8 @@ import {
   InputRightElement,
   InputLeftAddon,
   Hide,
-} from '@chakra-ui/react';
-import BackspaceIcon from '@mui/icons-material/Backspace';
-import ContentPasteGoIcon from '@mui/icons-material/ContentPasteGo';
+} from "@chakra-ui/react";
+import { DeleteIcon, CalendarIcon } from "@chakra-ui/icons";
 
 function InputTotal(props) {
   function totalHandler(event) {
@@ -15,15 +14,15 @@ function InputTotal(props) {
   }
 
   return (
-    <InputGroup w={['90%', '25rem']} m="auto" mt="1">
+    <InputGroup w={["90%", "25rem"]} m="auto" mt="1">
       <Hide below="sm">
         <InputLeftAddon
-          children={<Icon as={ContentPasteGoIcon} w={8} h={8} />}
+          children={<Icon as={CalendarIcon} w={6} h={6} />}
           color="blue.400"
           w={14}
           mb={1}
           data-id="ttl"
-          _hover={{ bg: 'blue.400', color: 'white' }}
+          _hover={{ bg: "blue.400", color: "white" }}
           onClick={props.paste}
         />
       </Hide>
@@ -33,16 +32,16 @@ function InputTotal(props) {
         border="2px"
         borderRadius="6"
         value={props.value}
-        _hover={{ borderColor: 'blue.400' }}
+        _hover={{ borderColor: "blue.400" }}
         onChange={totalHandler}
       />
       <Hide below="sm">
         <InputRightElement
-          children={<Icon as={BackspaceIcon} w={6} h={6} />}
+          children={<Icon as={DeleteIcon} w={6} h={6} />}
           borderRadius="6"
           color="red"
           data-id="ttl"
-          _hover={{ bg: 'red.500', color: 'white' }}
+          _hover={{ bg: "red.500", color: "white" }}
           onClick={props.clear}
         />
       </Hide>

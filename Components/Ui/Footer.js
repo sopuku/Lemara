@@ -51,6 +51,9 @@ export default function Footer() {
             <ListHeader>MB „Lemara“</ListHeader>
             <Text>Įmonės kodas: 304374938</Text>
             <Text>PVM mokėtojo kodas: LT100010561112</Text>
+            <Links href="/privacy" _hover={{ color: colors.footer.colorHover }}>
+              PRIVATUMO POLITIKA
+            </Links>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>{texts.footer.contacts}</ListHeader>
@@ -77,9 +80,6 @@ export default function Footer() {
               _hover={{ color: colors.footer.colorHover }}
             >
               PROJEKTAVIMAS
-            </Links>
-            <Links href="/privacy" _hover={{ color: colors.footer.colorHover }}>
-              PRIVATUMO POLITIKA
             </Links>
           </Stack>
         </SimpleGrid>

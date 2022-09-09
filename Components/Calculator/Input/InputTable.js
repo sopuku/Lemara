@@ -1,15 +1,15 @@
-import InputField from '../Input/InputField';
-import Buttons from '../Input/Buttons';
-import { Box, Text } from '@chakra-ui/react';
-import InputTotal from '../Input/InputTotal';
+import InputField from "../Input/InputField";
+import Buttons from "../Input/Buttons";
+import { Box, Text } from "@chakra-ui/react";
+import InputTotal from "../Input/InputTotal";
 
 function InputTable(props) {
   return (
     <Box
       bg="whiteAlpha.800"
       borderRadius="12"
-      w={['100vw', '460px', '512px']}
-      mb={[5, 5, 5, 5, 8]}
+      w={["100vw", "460px", "512px"]}
+      my={[5, 5, 5, 5, 8]}
       align="center"
     >
       <Text
@@ -22,7 +22,7 @@ function InputTable(props) {
       >
         {props.name}
       </Text>
-      <Box px={[6, 6, 14, 14]} py="9">
+      <Box py="9">
         <InputField
           handler={props.enteredDataHandler}
           value={props.enteredData}
@@ -46,7 +46,7 @@ function InputTable(props) {
           color="red"
           fontSize="3xl"
           h="26px"
-          w={['20rem', '25rem']}
+          w={["20rem", "25rem"]}
         >
           {props.error}
         </Text>

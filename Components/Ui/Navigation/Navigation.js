@@ -5,7 +5,6 @@ import {
   Collapse,
   useDisclosure,
   Image,
-  Select,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Links from "./Links";
@@ -14,17 +13,16 @@ import MobileNav from "./MobileNav";
 import React from "react";
 import Colors from "../Colors";
 import { CurrentSettings } from "../../../pages/_app";
+import SelectLanguage from "./SelectLanguage/SeletLanguage";
 
 export default function Navigation() {
   const { isOpen, onToggle } = useDisclosure();
-
   const { language, setLanguage } = React.useContext(CurrentSettings);
-
-  const flagSelect = `/images/flags/${language}_flag.png`;
 
   const colors = Colors();
 
   function handleLanguageSelect(e) {
+    console.log(e.target);
     setLanguage(e.target.value);
   }
 
@@ -80,36 +78,10 @@ export default function Navigation() {
           align="center"
           ml="10px"
         >
-          <Image src={flagSelect} width="30px" />
-          <Select
-            onChange={handleLanguageSelect}
-            width="80px"
-            border="none"
-            color={colors.navigation.selectLanguage.color}
-            focusBorderColor="none"
-            defaultValue={language}
-          >
-            <option
-              style={{
-                backgroundColor: colors.navigation.selectLanguage.bg,
-              }}
-              value="LT"
-            >
-              LT
-            </option>
-            <option
-              style={{ backgroundColor: colors.navigation.selectLanguage.bg }}
-              value="EN"
-            >
-              EN
-            </option>
-            <option
-              style={{ backgroundColor: colors.navigation.selectLanguage.bg }}
-              value="NO"
-            >
-              NO
-            </option>
-          </Select>
+          <SelectLanguage
+            language={language}
+            handleLanguageSelect={handleLanguageSelect}
+          />
         </Stack>
       </Flex>
 

@@ -1,4 +1,4 @@
-import { VStack, HStack, Button } from "@chakra-ui/react";
+import { VStack, Stack, Button } from "@chakra-ui/react";
 import React from "react";
 import InputField from "../Ui/InputField";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
@@ -96,8 +96,8 @@ export default function Form(props) {
 
   return (
     <form onSubmit={onSubmit}>
-      <HStack
-        direction={{ base: "column", sm: "column", lg: "row" }}
+      <Stack
+        direction={{ base: "column", lg: "row" }}
         spacing="3rem"
         bg={colors.contacts.form.bg}
         color={colors.contacts.form.color}
@@ -140,7 +140,7 @@ export default function Form(props) {
             Siūsti žinutę
           </Button>
         </VStack>
-      </HStack>
+      </Stack>
       <ReCAPTCHA
         ref={recaptchaRef}
         size="invisible"

@@ -303,7 +303,7 @@ export default function Texts() {
             "Techninių brėžinių skaitymas",
             "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
             "Geri darbo kompiuteriu įgūdžiai",
-            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens / Fanuc valdymo pultais privalumas",
           ],
           offer: [
             "Įdomų darbą pažangioje, jaunatviškoje įmonėje",
@@ -326,7 +326,7 @@ export default function Texts() {
             "Techninių brėžinių skaitymas",
             "Pageidautina profesinis/aukštesnysis techninis inžinerinis išsilavinimas",
             "Geri darbo kompiuteriu įgūdžiai",
-            "Darbo patirtis su Fusion 365, Solidworks, Siemens controlas privalumas",
+            "Darbo patirtis su Fusion 365, Solidworks, Siemens / Fanuc valdymo pultais privalumas",
           ],
           offer: [
             "Įdomų darbą pažangioje, jaunatviškoje įmonėje",

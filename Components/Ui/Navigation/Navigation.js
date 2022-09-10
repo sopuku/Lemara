@@ -1,29 +1,25 @@
-import {
-  Flex,
-  IconButton,
-  Stack,
-  Collapse,
-  useDisclosure,
-  Image,
-} from "@chakra-ui/react";
+import { Flex, IconButton, Stack, Collapse, Image } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Links from "./Links";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
-import React from "react";
+import React, { useState } from "react";
 import Colors from "../Colors";
 import { CurrentSettings } from "../../../pages/_app";
 import SelectLanguage from "./SelectLanguage/SeletLanguage";
 
 export default function Navigation() {
-  const { isOpen, onToggle } = useDisclosure();
   const { language, setLanguage } = React.useContext(CurrentSettings);
+  const [isOpen, setOpen] = useState(false);
 
   const colors = Colors();
 
   function handleLanguageSelect(e) {
-    console.log(e.target);
     setLanguage(e.target.value);
+  }
+
+  function closeMenu() {
+    setOpen(false);
   }
 
   return (
@@ -47,7 +43,7 @@ export default function Navigation() {
         >
           <IconButton
             _hover={{ background: colors.navigation.hamburgerIconBg }}
-            onClick={onToggle}
+            onClick={() => setOpen((prev) => !prev)}
             color={colors.navigation.hamburgerIcon}
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
@@ -86,7 +82,7 @@ export default function Navigation() {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
-        <MobileNav />
+        <MobileNav closeMenu={closeMenu} />
       </Collapse>
     </React.Fragment>
   );

@@ -18,7 +18,11 @@ export default function MobileNav(props) {
       zIndex={100}
     >
       {navItems.navigation.map((navItem) => (
-        <MobileNavItem key={navItem.label} {...navItem} />
+        <MobileNavItem
+          closeMenu={props.closeMenu}
+          key={navItem.label}
+          {...navItem}
+        />
       ))}
     </Stack>
   );

@@ -3,13 +3,14 @@ import Links from "./Links";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import Colors from "../Colors";
 
-export default function MobileNavItem({ label, children, href }) {
+export default function MobileNavItem({ closeMenu, label, children, href }) {
   const { isOpen, onToggle } = useDisclosure();
   const colors = Colors();
 
   return (
     <Stack align="start" spacing={4} onClick={children && onToggle}>
       <Links
+        onClick={href && closeMenu}
         zIndex="1"
         py="0.5rem"
         href={href ?? "#"}
@@ -44,6 +45,7 @@ export default function MobileNavItem({ label, children, href }) {
           {children &&
             children.map((child) => (
               <Links
+                onClick={closeMenu}
                 color={colors.navigation.color}
                 key={child.label}
                 py={2}

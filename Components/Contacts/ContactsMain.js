@@ -6,7 +6,7 @@ import ContactsMid from "./ContactsMid";
 
 export default function ContactsMain(props) {
   return (
-    <Container maxW="100%" px="0">
+    <Container maxW="100%" px="0" overflow="hidden">
       <ContactsTop />
       <ContactsMid sendMessage={props.sendMessage} />
       <Maps />

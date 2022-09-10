@@ -20,17 +20,19 @@ export default function CapabilitiesMain(props) {
       <Container
         centerContent
         maxW="100%"
-        bg={colors.navigation.bg}
-        backgroundImage={colors.navigation.bgTexture}
+        // bg={colors.navigation.bg}
+        // backgroundImage={colors.navigation.bgTexture}
         py="1rem"
       >
-        <Heading>Tekinimo staklės</Heading>
+        <Heading pt="3rem" color="orange">
+          {texts.capabilities.text1}
+        </Heading>
       </Container>
       <SimpleGrid
         columns={{ base: 1, lg: 2, "2xl": 3 }}
         spacing="3rem"
-        py="1rem"
-        my="5rem"
+        mt="3rem"
+        pb="5rem"
       >
         {texts.capabilities.mashines.map(
           (item) =>
@@ -40,13 +42,20 @@ export default function CapabilitiesMain(props) {
       <Container
         centerContent
         maxW="100%"
-        bg={colors.navigation.bg}
-        backgroundImage={colors.navigation.bgTexture}
+        color="orange"
+        // bg={colors.navigation.bg}
+        // backgroundImage={colors.navigation.bgTexture}
+        borderTop="5px solid grey"
         py="1rem"
       >
-        <Heading>Frezavimo staklės</Heading>
+        <Heading pt="1rem">{texts.capabilities.text2}</Heading>
       </Container>
-      <SimpleGrid columns={{ base: 1, lg: 2 }} spacing="3rem" py="5rem">
+      <SimpleGrid
+        columns={{ base: 1, lg: 2 }}
+        spacing="3rem"
+        pt="3rem"
+        pb="5rem"
+      >
         {texts.capabilities.mashines.map(
           (item) =>
             item.type === "milling" && <Card data={item} key={item.name} />

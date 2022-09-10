@@ -11,7 +11,7 @@ export default function Values() {
       columns={{ base: 0, md: 2, xl: 4 }}
       spacing={{ md: "3rem", xl: "5rem" }}
     >
-      {texts.values.map((item) => {
+      {texts.index.values.map((item) => {
         return (
           <Container
             maxW="17rem"

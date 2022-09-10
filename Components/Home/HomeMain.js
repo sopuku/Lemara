@@ -28,14 +28,12 @@ export default function HomeMain() {
         mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
       >
         <Heading pt="7%" fontSize={{ base: "35px", md: "45px" }} pb="2rem">
-          Lemara - preciziškai ištekintos detalės jūsų konstrukciniams
-          sumanymams
+          {texts.index.text1}
         </Heading>
         <Text fontSize={{ base: "2xl", md: "3xl" }}>
-          Projektuojame ir gaminame pavienes detales, prototipus, serijas.
-          Išsirinkite tinkamas paslaugas, o jei turite klausimų,{" "}
+          {texts.index.text2}{" "}
           <Links color={colors.home.colorLink} href="/contacts">
-            susisiekite su mumis
+            {texts.index.text3}
           </Links>
           .
         </Text>
@@ -48,15 +46,15 @@ export default function HomeMain() {
       <DefaultPage
         name="whyUs"
         src={colors.home.image}
-        heading={texts.whyUs.text1.heading}
-        text={texts.whyUs.text1.text}
+        heading={texts.index.whyUs.text1.heading}
+        text={texts.index.whyUs.text1.text}
         py="8rem"
       />
       <DefaultPage
         name="aboutUs"
         src={colors.home.aboutUs.image}
-        heading={texts.aboutUs.text1.heading}
-        text={texts.aboutUs.text1.text}
+        heading={texts.index.aboutUs.text1.heading}
+        text={texts.index.aboutUs.text1.text}
       />
       <Feedback />
     </VStack>

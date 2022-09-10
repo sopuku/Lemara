@@ -24,7 +24,7 @@ export default function CareerMain() {
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
     >
       <Heading size="2xl" py="2rem">
-        Karjeros galimybės
+        {texts.career.text1}
       </Heading>
       <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
         {texts.career.jobs.map((job) => {

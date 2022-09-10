@@ -42,7 +42,7 @@ export default function Feedback() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       <Slider {...settings}>
-        {texts.feedback.map((item) => {
+        {texts.index.feedback.map((item) => {
           return (
             <React.Fragment key={item.title}>
               <Heading size="xl" pb="1rem">

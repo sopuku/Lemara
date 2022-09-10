@@ -1,5 +1,4 @@
 import {
-  Box,
   Container,
   SimpleGrid,
   Stack,
@@ -44,15 +43,15 @@ export default function Footer() {
               <Image src={colors.footer.logo} width="100px" />
             </Center>
             <Text fontSize="sm" color={colors.footer.color}>
-              MB „Lemara“ © 2022 Visos teisės saugomos
+              {texts.footer.rights}
             </Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>MB „Lemara“</ListHeader>
-            <Text>Įmonės kodas: 304374938</Text>
-            <Text>PVM mokėtojo kodas: LT100010561112</Text>
+            <Text>{texts.footer.code}</Text>
+            <Text>{texts.footer.pvmCode}</Text>
             <Links href="/privacy" _hover={{ color: colors.footer.colorHover }}>
-              PRIVATUMO POLITIKA
+              {texts.footer.privacy}
             </Links>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
@@ -62,24 +61,24 @@ export default function Footer() {
             <Text>+370 646 57845</Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
-            <ListHeader>Paslaugos</ListHeader>
+            <ListHeader>{texts.footer.services}</ListHeader>
             <Links
               href="/services/turning"
               _hover={{ color: colors.footer.colorHover }}
             >
-              CNC TEKINIMAS
+              {texts.footer.turning}
             </Links>
             <Links
               href="/services/milling"
               _hover={{ color: colors.footer.colorHover }}
             >
-              CNC FREZAVIMAS
+              {texts.footer.milling}
             </Links>
             <Links
               href="/services/design"
               _hover={{ color: colors.footer.colorHover }}
             >
-              PROJEKTAVIMAS
+              {texts.footer.design}
             </Links>
           </Stack>
         </SimpleGrid>

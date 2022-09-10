@@ -96,14 +96,8 @@ export default function Form(props) {
 
   return (
     <form onSubmit={onSubmit}>
-      <ReCAPTCHA
-        ref={recaptchaRef}
-        size="invisible"
-        sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
-        onChange={onReCAPTCHAChange}
-      />
       <HStack
-        direction={{ base: "column", lg: "row" }}
+        direction={{ base: "column", sm: "column", lg: "row" }}
         spacing="3rem"
         bg={colors.contacts.form.bg}
         color={colors.contacts.form.color}
@@ -147,6 +141,12 @@ export default function Form(props) {
           </Button>
         </VStack>
       </HStack>
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        size="invisible"
+        sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
+        onChange={onReCAPTCHAChange}
+      />
     </form>
   );
 }

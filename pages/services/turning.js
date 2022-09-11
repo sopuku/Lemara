@@ -1,18 +1,24 @@
 import DefaultPage from "../../Components/Ui/DefaultPage";
-import Colors from "../../Components/Ui/Colors";
+import Head from "next/head";
+import React from "react";
 import Texts from "../../Components/Texts/Texts";
 
 export default function Turning() {
-  const colors = Colors();
   const texts = Texts();
 
   return (
-    <DefaultPage
-      name="turning"
-      src={texts.images.turningImage}
-      alt={texts.images.turningImageAlt}
-      heading={texts.turning.heading}
-      text={texts.turning.text}
-    />
+    <React.Fragment>
+      <Head>
+        <title>{texts.meta.text3}</title>
+        <meta name="description" content={texts.meta.text4} />
+      </Head>
+      <DefaultPage
+        name="turning"
+        src={texts.images.turningImage}
+        alt={texts.images.turningImageAlt}
+        heading={texts.turning.heading}
+        text={texts.turning.text}
+      />
+    </React.Fragment>
   );
 }

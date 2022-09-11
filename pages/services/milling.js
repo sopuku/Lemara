@@ -1,18 +1,24 @@
 import DefaultPage from "../../Components/Ui/DefaultPage";
-import Colors from "../../Components/Ui/Colors";
+import Head from "next/head";
+import React from "react";
 import Texts from "../../Components/Texts/Texts";
 
 export default function Milling() {
-  const colors = Colors();
   const texts = Texts();
 
   return (
-    <DefaultPage
-      name="milling"
-      src={texts.images.millingImage}
-      alt={texts.images.millingImageAlt}
-      heading={texts.milling.heading}
-      text={texts.milling.text}
-    />
+    <React.Fragment>
+      <Head>
+        <title>{texts.meta.text5}</title>
+        <meta name="description" content={texts.meta.text6} />
+      </Head>
+      <DefaultPage
+        name="milling"
+        src={texts.images.millingImage}
+        alt={texts.images.millingImageAlt}
+        heading={texts.milling.heading}
+        text={texts.milling.text}
+      />
+    </React.Fragment>
   );
 }

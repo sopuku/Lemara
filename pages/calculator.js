@@ -1,10 +1,14 @@
 import { Box } from "@chakra-ui/react";
+import Head from "next/head";
 import React from "react";
 import Main from "../Components/Calculator/Main";
 
 export default function calculator() {
   return (
     <React.Fragment>
+      <Head>
+        <title>Lemara Invoice Checker</title>
+      </Head>
       <Box
         w={"100%"}
         h={"100vh"}

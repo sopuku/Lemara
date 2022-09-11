@@ -1,9 +1,21 @@
 import galleryImages from "../Components/Gallery/Images";
 import GalleryMain from "../Components/Gallery/GalleryMain";
+import React from "react";
+import Head from "next/head";
+import Texts from "../Components/Texts/Texts";
 // import axios from "axios";
 
 export default function Galery(props) {
-  return <GalleryMain pictures={props.pictures} />;
+  const texts = Texts();
+  return (
+    <React.Fragment>
+      <Head>
+        <title>{texts.meta.text13}</title>
+        <meta name="description" content={texts.meta.text14} />
+      </Head>
+      <GalleryMain pictures={props.pictures} />;
+    </React.Fragment>
+  );
 }
 
 export async function getStaticProps() {

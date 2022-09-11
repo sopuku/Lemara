@@ -1,18 +1,24 @@
 import DefaultPage from "../../Components/Ui/DefaultPage";
-import Colors from "../../Components/Ui/Colors";
+import Head from "next/head";
 import Texts from "../../Components/Texts/Texts";
+import React from "react";
 
 export default function Design() {
-  const colors = Colors();
   const texts = Texts();
 
   return (
-    <DefaultPage
-      name="design"
-      src={texts.images.designImage}
-      alt={texts.images.designImageAlt}
-      heading={texts.design.heading}
-      text={texts.design.text}
-    />
+    <React.Fragment>
+      <Head>
+        <title>{texts.meta.text7}</title>
+        <meta name="description" content={texts.meta.text8} />
+      </Head>
+      <DefaultPage
+        name="design"
+        src={texts.images.designImage}
+        alt={texts.images.designImageAlt}
+        heading={texts.design.heading}
+        text={texts.design.text}
+      />
+    </React.Fragment>
   );
 }

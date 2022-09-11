@@ -8,18 +8,18 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Colors from "../Ui/Colors";
+import Texts from "../Texts/Texts";
 
 export default function DefaultPage(props) {
   const colors = Colors();
+  const texts = Texts();
 
   return (
     <Container
       maxW="100%"
       w="100%"
       bg={props.name === "aboutUs" && colors.home.aboutUs.bg}
-      backgroundImage={
-        props.name === "aboutUs" && colors.home.aboutUs.bgTexture
-      }
+      backgroundImage={props.name === "aboutUs" && texts.images.bgTexture}
       color={props.name === "aboutUs" && colors.home.aboutUs.color}
     >
       <Stack
@@ -32,7 +32,7 @@ export default function DefaultPage(props) {
       >
         {props.name !== "aboutUs" && (
           <Square maxW="40rem" boxShadow="0 0 5px 1px black">
-            <img src={props.src} />
+            <img src={props.src} alt={props.alt} />
           </Square>
         )}
         <VStack spacing="8">
@@ -48,7 +48,7 @@ export default function DefaultPage(props) {
         </VStack>
         {props.name === "aboutUs" && (
           <Square maxW="40rem" boxShadow="0 0 5px 1px black">
-            <img src={props.src} />
+            <img src={props.src} alt={props.alt} />
           </Square>
         )}
       </Stack>

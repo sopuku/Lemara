@@ -1,9 +1,11 @@
 import { Heading, Avatar, Box, Flex, Text, Stack } from "@chakra-ui/react";
 import Colors from "../Ui/Colors";
 import React from "react";
+import Texts from "../Texts/Texts";
 
 export default function ContactsCard(props) {
   const colors = Colors();
+  const texts = Texts();
   return (
     <React.Fragment>
       <Box
@@ -18,13 +20,13 @@ export default function ContactsCard(props) {
           roundedTop="6px"
           w="full"
           bg={colors.contacts.card.bgTop}
-          backgroundImage={colors.contacts.card.bgTopTexture}
+          backgroundImage={texts.images.bgTexture}
         />
         <Flex justify="center" mt={-12}>
           <Avatar
             size="xl"
+            alt={props.alt}
             src={props.src}
-            alt="image of Lemara director"
             css={{
               border: "2px solid ",
               borderColor: colors.contacts.card.border,

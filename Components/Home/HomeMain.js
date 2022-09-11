@@ -9,7 +9,6 @@ import DefaultPage from "../Ui/DefaultPage";
 
 export default function HomeMain() {
   const colors = Colors();
-
   const texts = Texts();
   return (
     <VStack spacing="0" overflow="hidden">
@@ -17,7 +16,7 @@ export default function HomeMain() {
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
-        backgroundImage={colors.home.bgImage}
+        backgroundImage={texts.images.mainImage}
         boxShadow="0 0 20px 10px grey"
         color={colors.home.color}
         bg={colors.home.bg}
@@ -45,14 +44,16 @@ export default function HomeMain() {
       </Show>
       <DefaultPage
         name="whyUs"
-        src={colors.home.image}
+        src={texts.images.whyUsImage}
+        alt={texts.images.whyUsImageAlt}
         heading={texts.index.whyUs.text1.heading}
         text={texts.index.whyUs.text1.text}
         py="8rem"
       />
       <DefaultPage
         name="aboutUs"
-        src={colors.home.aboutUs.image}
+        src={texts.images.aboutUsImage}
+        alt={texts.images.aboutUsImageAlt}
         heading={texts.index.aboutUs.text1.heading}
         text={texts.index.aboutUs.text1.text}
       />

@@ -9,9 +9,10 @@ export default function Milling() {
   return (
     <DefaultPage
       name="milling"
-      src={colors.milling.image}
-      heading={texts.milling.t1.heading}
-      text={texts.milling.t1.text}
+      src={texts.images.millingImage}
+      alt={texts.images.millingImageAlt}
+      heading={texts.milling.heading}
+      text={texts.milling.text}
     />
   );
 }

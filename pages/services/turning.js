@@ -9,9 +9,10 @@ export default function Turning() {
   return (
     <DefaultPage
       name="turning"
-      src={colors.turning.image}
-      heading={texts.turning.t1.heading}
-      text={texts.turning.t1.text}
+      src={texts.images.turningImage}
+      alt={texts.images.turningImageAlt}
+      heading={texts.turning.heading}
+      text={texts.turning.text}
     />
   );
 }

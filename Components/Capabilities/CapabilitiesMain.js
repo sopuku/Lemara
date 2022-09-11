@@ -17,13 +17,7 @@ export default function CapabilitiesMain(props) {
       color={colors.turning.colorBot}
       boxShadow="-0 -20px 20px -10px grey"
     >
-      <Container
-        centerContent
-        maxW="100%"
-        // bg={colors.navigation.bg}
-        // backgroundImage={colors.navigation.bgTexture}
-        py="1rem"
-      >
+      <Container centerContent maxW="100%" py="1rem">
         <Heading pt="3rem" color="orange">
           {texts.capabilities.text1}
         </Heading>
@@ -43,8 +37,6 @@ export default function CapabilitiesMain(props) {
         centerContent
         maxW="100%"
         color="orange"
-        // bg={colors.navigation.bg}
-        // backgroundImage={colors.navigation.bgTexture}
         borderTop="5px solid grey"
         py="1rem"
       >

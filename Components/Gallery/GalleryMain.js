@@ -6,9 +6,11 @@ import "yet-another-react-lightbox/plugins/thumbnails.css";
 import React, { useState } from "react";
 import { Container } from "@chakra-ui/react";
 import Colors from "../Ui/Colors";
+import Texts from "../Texts/Texts";
 
 export default function GalleryMain(props) {
   const colors = Colors();
+  const texts = Texts();
   const slides = props.pictures.map(({ src, width, height }) => ({
     src,
     width,
@@ -23,7 +25,7 @@ export default function GalleryMain(props) {
       px={{ base: "5%", md: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
       bg={colors.gallery.bg}
-      backgroundImage={colors.gallery.bgTexture}
+      backgroundImage={texts.images.galleryBgTexture}
     >
       <PhotoAlbum
         spacing={6}

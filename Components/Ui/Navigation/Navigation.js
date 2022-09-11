@@ -7,12 +7,14 @@ import React, { useState } from "react";
 import Colors from "../Colors";
 import { CurrentSettings } from "../../../pages/_app";
 import SelectLanguage from "./SelectLanguage/SeletLanguage";
+import Texts from "../../Texts/Texts";
 
 export default function Navigation() {
   const { language, setLanguage } = React.useContext(CurrentSettings);
   const [isOpen, setOpen] = useState(false);
 
   const colors = Colors();
+  const texts = Texts();
 
   function handleLanguageSelect(e) {
     setLanguage(e.target.value);
@@ -34,7 +36,7 @@ export default function Navigation() {
         px={{ base: "5%", xl: "10%" }}
         position="fixed"
         zIndex="100"
-        backgroundImage={colors.navigation.bgTexture}
+        backgroundImage={texts.images.navBgTexture}
       >
         <Flex
           flex={{ base: "0", lg: "auto" }}
@@ -54,7 +56,11 @@ export default function Navigation() {
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
           <Links href="/">
-            <Image src={colors.navigation.logo} width="100px" />
+            <Image
+              src={texts.images.logo}
+              alt={texts.images.logoAlt}
+              width="100px"
+            />
           </Links>
 
           <Flex

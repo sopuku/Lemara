@@ -13,7 +13,11 @@ export default function Card(props) {
   const texts = Texts();
   return (
     <Container centerContent maxW="lg">
-      <Image src={props.data.src} boxShadow="0 0 5px 1px black" />
+      <Image
+        src={props.data.src}
+        alt={props.data.alt}
+        boxShadow="0 0 5px 1px black"
+      />
       <Container centerContent>
         <Heading py="1rem" fontSize="28px">
           {props.data.name}

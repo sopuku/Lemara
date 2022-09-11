@@ -9,9 +9,10 @@ export default function Design() {
   return (
     <DefaultPage
       name="design"
-      src={colors.design.image}
-      heading={texts.design.t1.heading}
-      text={texts.design.t1.text}
+      src={texts.images.designImage}
+      alt={texts.images.designImageAlt}
+      heading={texts.design.heading}
+      text={texts.design.text}
     />
   );
 }

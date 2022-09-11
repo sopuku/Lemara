@@ -68,22 +68,26 @@ export default function Texts() {
           title: "Kokybė",
           description: "Garantuojame aukštą gaminių kokybę",
           src: "/images/values/1.png",
+          alt: "Kokybės ženklo logotipas",
         },
         {
           title: "Greitis",
           description: "Detales pagaminame per trumpą laiką",
           src: "/images/values/3.png",
+          alt: "Greičio ženklo logotipas",
         },
         {
           title: "Tikslumas",
           description:
             "Modernios įrangos dėka, gaminiai pasižymi dideliu tikslumu ",
           src: "/images/values/2.png",
+          alt: "Tikslumo ženklo logotipas",
         },
         {
           title: "Tvarumas",
           description: "Tausojame gamtą",
           src: "/images/values/4.png",
+          alt: "Tvarumo ženklo logotipas",
         },
       ],
       whyUs: {
@@ -150,6 +154,7 @@ export default function Texts() {
           revolutions: "4500 rpm",
           tools: "C ašis (frezavimas)",
           src: "/images/capabilities/2100LM.jpg",
+          alt: "Doosan LYNX 2100LMB tekinimo staklių nuotrauka",
         },
         {
           name: "Doosan LYNX 2100LYB",
@@ -159,6 +164,7 @@ export default function Texts() {
           revolutions: "4500 rpm",
           tools: "C ašis (frezavimas)",
           src: "/images/capabilities/2100LY.jpg",
+          alt: "Doosan LYNX 2100LYB tekinimo staklių nuotrauka",
         },
         {
           name: "Okuma LB15",
@@ -168,6 +174,7 @@ export default function Texts() {
           revolutions: "4200 rpm",
           tools: "-",
           src: "/images/capabilities/LB15.jpg",
+          alt: "Okuma LB15 tekinimo staklių nuotrauka ",
         },
         {
           name: "Doosan DNM 4500",
@@ -176,6 +183,7 @@ export default function Texts() {
           weight: "600 kg",
           revolutions: "12000 rpm",
           src: "/images/capabilities/DMN4500.jpg",
+          alt: "Doosan DNM 4500 frezavimo staklių nuotrauka",
         },
         {
           name: "Leadwell V40M",
@@ -184,28 +192,21 @@ export default function Texts() {
           weight: "800 kg",
           revolutions: "8000 rpm",
           src: "/images/capabilities/V40.jpg",
+          alt: "Leadwell V40M frezavimo staklių nuotrauka",
         },
       ],
     },
     turning: {
-      t1: {
-        heading: "CNC tekinimas",
-        text: " CNC tekinimas yra viena iš paslaugų, kurias teikiame. Mes atliekame ištekinimą (kai apdirbami vidiniai detalės paviršiai), aptekinimą (kai apdirbami išoriniai detalės paviršiai), nutekinimas (kai apdirbami galiniai detalės paviršiai). Siūlome detalių tekinimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Mes gaminame varžtus, veržles, velenus, ritinėlius, ratukus, redukcinius perėjimus, ašis, įvores, tarpiklius, kaiščius, įvairias sujungimams skirtas detales ir kt. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
-      },
-      t2: { heading: "Techniniai staklių pajėgumai" },
+      heading: "CNC tekinimas",
+      text: " CNC tekinimas yra viena iš paslaugų, kurias teikiame. Mes atliekame ištekinimą (kai apdirbami vidiniai detalės paviršiai), aptekinimą (kai apdirbami išoriniai detalės paviršiai), nutekinimas (kai apdirbami galiniai detalės paviršiai). Siūlome detalių tekinimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Mes gaminame varžtus, veržles, velenus, ritinėlius, ratukus, redukcinius perėjimus, ašis, įvores, tarpiklius, kaiščius, įvairias sujungimams skirtas detales ir kt. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
     },
     milling: {
-      t1: {
-        heading: "CNC frezavimas",
-        text: " CNC frezavimas yra viena iš paslaugų, kurias teikiame. Mes atliekame plokštumų frezavimą (kai tiesialinijine pastūma frezuojami plokšti paviršiai), apvalųjį frezavimą (kai apskritimine pastūma frezuojami cilindriniai paviršiai), sriegių frezavimą (kai sraigtine pastūma frezuojami sraigtiniai paviršiai), fasoninį frezavimą (kai frezos profilis išpjaunamas ruošinyje), kontūrinį frezavimą (kai formuojami tiek paprasti kontūrai tiek sudėtingi erdviniai paviršiai suteikiant staklėms valdomą pastūmą). Siūlome detalių frezavimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
-      },
-      t2: { heading: "Techniniai staklių pajėgumai" },
+      heading: "CNC frezavimas",
+      text: " CNC frezavimas yra viena iš paslaugų, kurias teikiame. Mes atliekame plokštumų frezavimą (kai tiesialinijine pastūma frezuojami plokšti paviršiai), apvalųjį frezavimą (kai apskritimine pastūma frezuojami cilindriniai paviršiai), sriegių frezavimą (kai sraigtine pastūma frezuojami sraigtiniai paviršiai), fasoninį frezavimą (kai frezos profilis išpjaunamas ruošinyje), kontūrinį frezavimą (kai formuojami tiek paprasti kontūrai tiek sudėtingi erdviniai paviršiai suteikiant staklėms valdomą pastūmą). Siūlome detalių frezavimo paslaugas iš plastiko, nerūdijančio plieno, aliuminio, vario, bronzos, ir daugelio kitų metalų. Jeigu nėra aišku, kokių parametrų detalės reikalingos jūsų gamybiniam sumanymui, arba nežinote, kokios rūšies metalą ar plastiką geriau naudoti jų gamybai, susisiekite su mūsų specialistais, kurie atsakys į visus klausimus.",
     },
     design: {
-      t1: {
-        heading: "Projektavimas",
-        text: "Projektavimas yra viena iš paslaugų, kurias teikiame. Projektuojame pagal detalės pavyzdį (kai turima detalė labai tiksliai išmatuojama, padaromi jos brėžiniai, sukuriamas kompiuterinis modelis),pagal pateiktą užduotį ir aprašymą, pagal Jūsų atsiūstą brėžinį. Brėžiniai turi atitikti vieną iš reikalingų formatų (step, dxf, dwg, x_t, x_b), turi būti nurodyta medžiaga, iš kurios bus gaminama detalė, naudojamas 1:1 mastelis, pjovimo kontūras pateiktas tiesioginio atsispindėjimo būdu, objektai pervesti į kreives, matmenys nurodyti milimerais. Brėžinyje negali būti susiliejimų, persidengimų, dvigubų linijų, nereikalingų taškų ir pan. Jei neturite brėžinio, mūsų projektuotojai tai atliks kokybiškai ir atsakingai. Kadangi net ir mažiausia klaida gali būti nekokybiško rezultato priežastis, todėl gautus failus mūsų specialistai visada patikrina.",
-      },
+      heading: "Projektavimas",
+      text: "Projektavimas yra viena iš paslaugų, kurias teikiame. Projektuojame pagal detalės pavyzdį (kai turima detalė labai tiksliai išmatuojama, padaromi jos brėžiniai, sukuriamas kompiuterinis modelis),pagal pateiktą užduotį ir aprašymą, pagal Jūsų atsiūstą brėžinį. Brėžiniai turi atitikti vieną iš reikalingų formatų (step, dxf, dwg, x_t, x_b), turi būti nurodyta medžiaga, iš kurios bus gaminama detalė, naudojamas 1:1 mastelis, pjovimo kontūras pateiktas tiesioginio atsispindėjimo būdu, objektai pervesti į kreives, matmenys nurodyti milimerais. Brėžinyje negali būti susiliejimų, persidengimų, dvigubų linijų, nereikalingų taškų ir pan. Jei neturite brėžinio, mūsų projektuotojai tai atliks kokybiškai ir atsakingai. Kadangi net ir mažiausia klaida gali būti nekokybiško rezultato priežastis, todėl gautus failus mūsų specialistai visada patikrina.",
     },
     general: {
       text1: "Bendra informacija",
@@ -401,6 +402,7 @@ export default function Texts() {
           email: "povilas@lemara.lt",
           number: "+370 646 57845",
           src: "/images/contacts/povilas.jpg",
+          alt: "Povilo Vilimo, MB Lemara direktoriaus nuotrauka",
         },
         {
           name: "Vytautas Puodžiūnas",
@@ -408,6 +410,7 @@ export default function Texts() {
           email: "vytautas@lemara.lt",
           number: "+370 674 51761",
           src: "/images/contacts/vytautas.jpg",
+          alt: "Vytauto Puodžiūno, MB Lemara gamybos vadovo nuotrauka",
         },
         {
           name: "Tadas Plungė",
@@ -415,6 +418,7 @@ export default function Texts() {
           email: "tadas@lemara.lt",
           number: "+370 647 64659",
           src: "/images/contacts/tadas.jpg",
+          alt: "Tabo Plungės, MB Lemara projektuotojo nuotrauka",
         },
       ],
     },
@@ -458,6 +462,25 @@ export default function Texts() {
       text23:
         "Ši Privatumo politika sukurta Glimstedt doke. Advokatų kontorai Glimstedt priklauso visos autorių teisės į Privatumo politiką, ji suteikia teisę MB Lemara naudoti Privatumo politiką savo internetinėje svetainėje http://www.lemara.lt. Kopijuoti ar kitaip naudoti Privatumo politiką ar jos dalį be advokatų kontoros Glimstedt rašytinio sutikimo draudžiama.",
     },
+    images: {
+      logo: "/images/logo/logo2.png",
+      logoAlt: "MB Lemara logotipas",
+      navBgTexture: "/images/background/navBg1.png",
+      bgTexture: "/images/background/aboutBg.png",
+      galleryBgTexture: "/images/background/galleryBg.png",
+      mainImage: "/images/background/main1a.jpg",
+      whyUsImage: "/images/home/whyUs.jpg",
+      whyUsImageAlt: "Gaminio, pagaminto CNC frezavimo būdu, nuotrauka",
+      aboutUsImage: "/images/home/aboutUs.jpg",
+      aboutUsImageAlt: "Lemara kolektyvo nuotrauka",
+      turningImage: "/images/turning/t5.jpg",
+      turningImageAlt: "CNC tekinimo staklių nuotrauka",
+      millingImage: "/images/milling/m1.jpg",
+      millingImageAlt: "CNC frezavimo staklių nuotrauka",
+      designImage: "/images/design/d1.jpg",
+      designImageAlt: "Dizainerio nuotrauka",
+    },
+    meta: {},
   };
 
   const TEXTS_EN = {
@@ -523,22 +546,26 @@ export default function Texts() {
           title: "Quality",
           description: "We guarantee high product quality",
           src: "/images/values/1.png",
+          alt: "Quality sign logo",
         },
         {
           title: "Speed",
           description: "We produce parts in a short time",
           src: "/images/values/3.png",
+          alt: "Speed dign logo",
         },
         {
           title: "Accuracy",
           description:
             "Thanks to modern equipment, the products are characterized by high accuracy",
           src: "/images/values/2.png",
+          alt: "Accuracy sign logo",
         },
         {
           title: "Sustainability",
           description: "We protect nature",
           src: "/images/values/4.png",
+          alt: "Sustainability sign logo",
         },
       ],
       whyUs: {
@@ -597,6 +624,7 @@ export default function Texts() {
           revolutions: "4500 rpm",
           tools: "C axis (milling)",
           src: "/images/capabilities/2100LM.jpg",
+          alt: "Photo of Doosan LYNX 2100LMB turning machine",
         },
         {
           name: "Doosan LYNX 2100LYB",
@@ -606,6 +634,7 @@ export default function Texts() {
           revolutions: "4500 rpm",
           tools: "C axis (milling)",
           src: "/images/capabilities/2100LY.jpg",
+          alt: "Photo of Doosan LYNX 2100LYB turning machine",
         },
         {
           name: "Okuma LB15",
@@ -615,6 +644,7 @@ export default function Texts() {
           revolutions: "4200 rpm",
           tools: "-",
           src: "/images/capabilities/LB15.jpg",
+          alt: "Photo of Okuma LB15 turning machine",
         },
         {
           name: "Doosan DNM 4500",
@@ -623,6 +653,7 @@ export default function Texts() {
           weight: "600 kg",
           revolutions: "12000 rpm",
           src: "/images/capabilities/DMN4500.jpg",
+          alt: "Photo of Doosan DNM 4500 milling machine",
         },
         {
           name: "Leadwell V40M",
@@ -631,28 +662,21 @@ export default function Texts() {
           weight: "800 kg",
           revolutions: "8000 rpm",
           src: "/images/capabilities/V40.jpg",
+          alt: "Photo of Leadwell V40M milling machine",
         },
       ],
     },
     turning: {
-      t1: {
-        heading: "CNC Turning",
-        text: " CNC Turning is one of the services we provide. We perform reaming (when the internal surfaces of the part are processed), surfacing (when the external surfaces of the part are processed), draining (when the back surfaces of the part are processed). We offer turning services for parts made of plastic, stainless steel, aluminum, copper, bronze, and many other metals. We manufacture screws, nuts, shafts, rollers, wheels, reducers, axles, bushings, gaskets, pins, various parts for connections, etc. If it is not clear what parameter details are needed for your production idea, or you do not know what kind of metal or plastic is better to use for their production, contact our specialists who will answer all your questions.",
-      },
-      t2: { heading: "Technical capacities of machines" },
+      heading: "CNC Turning",
+      text: " CNC Turning is one of the services we provide. We perform reaming (when the internal surfaces of the part are processed), surfacing (when the external surfaces of the part are processed), draining (when the back surfaces of the part are processed). We offer turning services for parts made of plastic, stainless steel, aluminum, copper, bronze, and many other metals. We manufacture screws, nuts, shafts, rollers, wheels, reducers, axles, bushings, gaskets, pins, various parts for connections, etc. If it is not clear what parameter details are needed for your production idea, or you do not know what kind of metal or plastic is better to use for their production, contact our specialists who will answer all your questions.",
     },
     milling: {
-      t1: {
-        heading: "CNC Milling",
-        text: " CNC Milling is one of the services we provide. We perform plane milling (when flat surfaces are milled with a linear feed), circular milling (when cylindrical surfaces are milled with a circular feed), thread milling (when helical surfaces are milled with a screw feed), shape milling (when the milling cutter profile is cut in the workpiece), contour milling (when forming both simple contours and complex three-dimensional surfaces by providing a controlled feed to the machine tool). We offer detail milling services from plastic, stainless steel, aluminum, copper, bronze, and many other metals. If it is not clear what parameter details are needed for your production idea, or you do not know what kind of metal or plastic is better to use for their production, contact our specialists who will answer all your questions.",
-      },
-      t2: { heading: "Technical capacities of machines" },
+      heading: "CNC Milling",
+      text: " CNC Milling is one of the services we provide. We perform plane milling (when flat surfaces are milled with a linear feed), circular milling (when cylindrical surfaces are milled with a circular feed), thread milling (when helical surfaces are milled with a screw feed), shape milling (when the milling cutter profile is cut in the workpiece), contour milling (when forming both simple contours and complex three-dimensional surfaces by providing a controlled feed to the machine tool). We offer detail milling services from plastic, stainless steel, aluminum, copper, bronze, and many other metals. If it is not clear what parameter details are needed for your production idea, or you do not know what kind of metal or plastic is better to use for their production, contact our specialists who will answer all your questions.",
     },
     design: {
-      t1: {
-        heading: "Designing",
-        text: "Designing is one of the services we provide. We design according to the sample of the part (when the available part is measured very precisely, its drawings are made, a computer model is created), according to the given task and description, according to the drawing sent by you. The drawings must correspond to one of the required formats (step, dxf, dwg, x_t, x_b), the material from which the part will be made must be specified, a scale of 1:1 is used, the cutting contour is provided by direct reflection, objects are converted to curves, dimensions are specified in millimeters. The drawing must not contain merges, overlaps, double lines, unnecessary points, etc. If you don't have a drawing, our designers will do it with quality and responsibility. Since even the smallest error can be the cause of a poor result, the received files are always checked by our specialists.",
-      },
+      heading: "Designing",
+      text: "Designing is one of the services we provide. We design according to the sample of the part (when the available part is measured very precisely, its drawings are made, a computer model is created), according to the given task and description, according to the drawing sent by you. The drawings must correspond to one of the required formats (step, dxf, dwg, x_t, x_b), the material from which the part will be made must be specified, a scale of 1:1 is used, the cutting contour is provided by direct reflection, objects are converted to curves, dimensions are specified in millimeters. The drawing must not contain merges, overlaps, double lines, unnecessary points, etc. If you don't have a drawing, our designers will do it with quality and responsibility. Since even the smallest error can be the cause of a poor result, the received files are always checked by our specialists.",
     },
     general: {
       text1: "General information",
@@ -847,6 +871,7 @@ export default function Texts() {
           email: "povilas@lemara.lt",
           number: "+370 646 57845",
           src: "/images/contacts/povilas.jpg",
+          alt: "Photo of Povilas Vilimas mb Lemara director",
         },
         {
           name: "Vytautas Puodžiūnas",
@@ -854,6 +879,7 @@ export default function Texts() {
           email: "vytautas@lemara.lt",
           number: "+370 674 51761",
           src: "/images/contacts/vytautas.jpg",
+          alt: "Photo of Vytautas Puodžiūnas mb Lemara production manager",
         },
         {
           name: "Tadas Plungė",
@@ -861,6 +887,7 @@ export default function Texts() {
           email: "tadas@lemara.lt",
           number: "+370 647 64659",
           src: "/images/contacts/tadas.jpg",
+          alt: "Photo of Tadas Plungė mb Lemara designer",
         },
       ],
     },
@@ -903,6 +930,25 @@ export default function Texts() {
         "You are responsible for ensuring that the data you provide to us is accurate, correct and complete. If the data you provided changes, you must immediately inform us about it by e-mail. by post In no case will we be liable for any damage caused to you due to the fact that you have provided incorrect or incomplete personal data or have not informed us when they have changed. Privacy policy updated in 2021. December 10",
       text23:
         "This Privacy Policy has been developed by Glimstedt Dock. The Glimstedt law firm owns all copyrights to the Privacy Policy, and grants MB Lemara the right to use the Privacy Policy on its website http://www.lemara.lt. Copying or otherwise using the Privacy Policy or its part is prohibited without the written consent of the law firm Glimstedt.",
+    },
+    images: {
+      logo: "/images/logo/logo2.png",
+      logoAlt: "MB Lemara logo",
+      navBgTexture: "/images/background/navBg1.png",
+      bgTexture: "/images/background/aboutBg.png",
+      galleryBgTexture: "/images/background/galleryBg.png",
+      mainImage: "/images/background/main1a.jpg",
+      mainImageAlt: "Image of CNC machine in manufacturing progress",
+      whyUsImage: "/images/home/whyUs.jpg",
+      whyUsImageAlt: "Photo of a product made by CNC milling",
+      aboutUsImage: "/images/home/aboutUs.jpg",
+      aboutUsImageAlt: "Image of Lemara staff",
+      turningImage: "/images/turning/t5.jpg",
+      turningImageAlt: "image of CNC Turning machine",
+      millingImage: "/images/milling/m1.jpg",
+      millingImageAlt: "image of CNC Milling machine",
+      designImage: "/images/design/d1.jpg",
+      designImageAlt: "image of a designer",
     },
   };
 
@@ -969,22 +1015,26 @@ export default function Texts() {
           title: "Kvalitet",
           description: "Vi garanterer høy produktkvalitet",
           src: "/images/values/1.png",
+          alt: "Kvalitetsskiltlogo",
         },
         {
           title: "Hastighet",
           description: "Vi produserer deler på kort tid",
           src: "/images/values/3.png",
+          alt: "Speed ​​dign logo",
         },
         {
           title: "Nøyaktighet",
           description:
             "Takket være moderne utstyr er produktene preget av høy nøyaktighet",
           src: "/images/values/2.png",
+          alt: "Nøyaktighetsskiltlogo",
         },
         {
           title: "Bærekraft",
           description: "Vi verner om naturen",
           src: "/images/values/4.png",
+          alt: "Bærekraftsskiltlogo",
         },
       ],
       whyUs: {
@@ -1042,6 +1092,7 @@ export default function Texts() {
           revolutions: "4500 rpm",
           tools: "C-akse (fresing)",
           src: "/images/capabilities/2100LM.jpg",
+          alt: "Foto av Doosan LYNX 2100LMB dreiemaskin",
         },
         {
           name: "Doosan LYNX 2100LYB",
@@ -1051,6 +1102,7 @@ export default function Texts() {
           revolutions: "4500 rpm",
           tools: "C-akse (fresing)",
           src: "/images/capabilities/2100LY.jpg",
+          alt: "Foto av Doosan LYNX 2100LYB dreiemaskin",
         },
         {
           name: "Okuma LB15",
@@ -1060,6 +1112,7 @@ export default function Texts() {
           revolutions: "4200 rpm",
           tools: "-",
           src: "/images/capabilities/LB15.jpg",
+          alt: "Foto av Okuma LB15 dreiemaskin",
         },
         {
           name: "Doosan DNM 4500",
@@ -1068,6 +1121,7 @@ export default function Texts() {
           weight: "600 kg",
           revolutions: "12000 rpm",
           src: "/images/capabilities/DMN4500.jpg",
+          alt: "Foto av Doosan DNM 4500 fresemaskin",
         },
         {
           name: "Leadwell V40M",
@@ -1076,6 +1130,7 @@ export default function Texts() {
           weight: "800 kg",
           revolutions: "8000 rpm",
           src: "/images/capabilities/V40.jpg",
+          alt: "Foto av Leadwell V40M fresemaskin",
         },
       ],
     },
@@ -1296,6 +1351,7 @@ export default function Texts() {
           email: "povilas@lemara.lt",
           number: "+370 646 57845",
           src: "/images/contacts/povilas.jpg",
+          alt: "Foto av Povilas Vilimas mb Lemara-regissør",
         },
         {
           name: "Vytautas Puodžiūnas",
@@ -1303,6 +1359,7 @@ export default function Texts() {
           email: "vytautas@lemara.lt",
           number: "+370 674 51761",
           src: "/images/contacts/vytautas.jpg",
+          alt: "Foto av Vytautas Puodžiūnas mb Lemara produksjonssjef",
         },
         {
           name: "Tadas Plungė",
@@ -1310,6 +1367,7 @@ export default function Texts() {
           email: "tadas@lemara.lt",
           number: "+370 647 64659",
           src: "/images/contacts/tadas.jpg",
+          alt: "Foto av Tadas Plungė mb Lemara designer",
         },
       ],
     },
@@ -1351,6 +1409,25 @@ export default function Texts() {
         "Du er ansvarlig for å sikre at dataene du gir oss er nøyaktige, korrekte og fullstendige. Hvis dataene du har oppgitt endres, må du umiddelbart informere oss om det på e-post. per post Vi vil ikke i noe tilfelle være ansvarlige for skader påført deg på grunn av at du har oppgitt uriktige eller ufullstendige personopplysninger eller ikke har informert oss når de har endret seg. Personvernerklæring oppdatert i 2021. 10. desember",
       text23:
         "Denne personvernerklæringen er utviklet av Glimstedt Dock. Advokatfirmaet Glimstedt eier alle opphavsrettigheter til personvernreglene, og gir MB Lemara rett til å bruke personvernreglene på nettstedet http://www.lemara.lt. Kopiering eller på annen måte bruk av personvernerklæringen eller dens del er forbudt uten skriftlig samtykke fra advokatfirmaet Glimstedt.",
+    },
+    images: {
+      logo: "/images/logo/logo2.png",
+      logoAlt: "MB Lemara logo",
+      navBgTexture: "/images/background/navBg1.png",
+      bgTexture: "/images/background/aboutBg.png",
+      galleryBgTexture: "/images/background/galleryBg.png",
+      mainImage: "/images/background/main1a.jpg",
+      mainImageAlt: "Bilde av CNC-maskin under produksjon",
+      whyUsImage: "/images/home/whyUs.jpg",
+      whyUsImageAlt: "Bilde av et produkt laget av CNC-fresing",
+      aboutUsImage: "/images/home/aboutUs.jpg",
+      aboutUsImageAlt: "Bilde av Lemara-ansatte",
+      turningImage: "/images/turning/t5.jpg",
+      turningImageAlt: "bilde av CNC-dreiemaskin",
+      millingImage: "/images/milling/m1.jpg",
+      millingImageAlt: "bilde av CNC-fresemaskin",
+      designImage: "/images/design/d1.jpg",
+      designImageAlt: "bilde av en designer",
     },
   };
 

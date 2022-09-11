@@ -28,7 +28,7 @@ export default function Footer() {
         overflow="hidden"
         bg={colors.footer.bg}
         color={colors.footer.color}
-        backgroundImage={colors.footer.bgTexture}
+        backgroundImage={texts.images.navBgTexture}
         as={Stack}
         maxW="100%"
         py={10}
@@ -40,7 +40,11 @@ export default function Footer() {
         >
           <Stack spacing={6} align="center">
             <Center>
-              <Image src={colors.footer.logo} width="100px" />
+              <Image
+                src={texts.images.logo}
+                alt={texts.images.logoAlt}
+                width="100px"
+              />
             </Center>
             <Text fontSize="sm" color={colors.footer.color}>
               {texts.footer.rights}

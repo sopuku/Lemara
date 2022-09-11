@@ -14,7 +14,7 @@ export default function ContactsMid(props) {
       align="center"
       centerContent
       bg={colors.contacts.bg}
-      backgroundImage={colors.contacts.bgTexture}
+      backgroundImage={texts.images.bgTexture}
       color={colors.contacts.color}
       boxShadow="0 0 20px 10px grey"
     >

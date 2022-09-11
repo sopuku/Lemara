@@ -9,6 +9,7 @@ import {
 import React from "react";
 import Colors from "../Ui/Colors";
 import Texts from "../Texts/Texts";
+import Image from "next/image";
 
 export default function DefaultPage(props) {
   const colors = Colors();
@@ -32,7 +33,12 @@ export default function DefaultPage(props) {
       >
         {props.name !== "aboutUs" && (
           <Square maxW="40rem" boxShadow="0 0 5px 1px black">
-            <img src={props.src} alt={props.alt} width="900px" height="600px" />
+            <Image
+              src={props.src}
+              alt={props.alt}
+              width="900px"
+              height="600px"
+            />
           </Square>
         )}
         <VStack spacing="8">

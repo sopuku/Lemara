@@ -6,6 +6,7 @@ import Colors from "../Ui/Colors";
 import { VStack, Heading, Text, Show, Flex, Container } from "@chakra-ui/react";
 import Texts from "../../Components/Texts/Texts";
 import DefaultPage from "../Ui/DefaultPage";
+import Image from "next/image";
 
 export default function HomeMain() {
   const colors = Colors();
@@ -49,6 +50,8 @@ export default function HomeMain() {
         heading={texts.index.whyUs.text1.heading}
         text={texts.index.whyUs.text1.text}
         py="8rem"
+        w="899px"
+        h="600px"
       />
       <DefaultPage
         name="aboutUs"
@@ -56,6 +59,8 @@ export default function HomeMain() {
         alt={texts.images.aboutUsImageAlt}
         heading={texts.index.aboutUs.text1.heading}
         text={texts.index.aboutUs.text1.text}
+        w="900px"
+        h="600px"
       />
       <Feedback />
     </VStack>

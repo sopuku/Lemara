@@ -18,6 +18,8 @@ export default function Milling() {
         alt={texts.images.millingImageAlt}
         heading={texts.milling.heading}
         text={texts.milling.text}
+        w="1024px"
+        h="683px"
       />
     </React.Fragment>
   );

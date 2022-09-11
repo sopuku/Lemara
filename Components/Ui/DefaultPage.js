@@ -36,8 +36,8 @@ export default function DefaultPage(props) {
             <Image
               src={props.src}
               alt={props.alt}
-              width="900px"
-              height="600px"
+              width={props.w}
+              height={props.h}
             />
           </Square>
         )}
@@ -54,7 +54,12 @@ export default function DefaultPage(props) {
         </VStack>
         {props.name === "aboutUs" && (
           <Square maxW="40rem" boxShadow="0 0 5px 1px black">
-            <img src={props.src} alt={props.alt} width="900px" height="600px" />
+            <img
+              src={props.src}
+              alt={props.alt}
+              width={props.w}
+              height={props.h}
+            />
           </Square>
         )}
       </Stack>

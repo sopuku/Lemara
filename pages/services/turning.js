@@ -18,6 +18,8 @@ export default function Turning() {
         alt={texts.images.turningImageAlt}
         heading={texts.turning.heading}
         text={texts.turning.text}
+        w="645px"
+        h="430px"
       />
     </React.Fragment>
   );

@@ -18,6 +18,8 @@ export default function Design() {
         alt={texts.images.designImageAlt}
         heading={texts.design.heading}
         text={texts.design.text}
+        w="900px"
+        h="600px"
       />
     </React.Fragment>
   );

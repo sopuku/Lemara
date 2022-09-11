@@ -62,6 +62,7 @@ export default function Texts() {
       text2:
         "Projektuojame ir gaminame pavienes detales, prototipus, serijas. Išsirinkite tinkamas paslaugas, o jei turite klausimų,",
       text3: "susisiekite su mumis",
+      text4: "Atsiliepimai",
       values: [
         {
           title: "Kokybė",
@@ -512,6 +513,7 @@ export default function Texts() {
       text2:
         "We design and manufacture individual parts, prototypes, series. Choose the right services, and if you have any questions,",
       text3: "contact us",
+      text4: "Reviews",
       values: [
         {
           title: "Quality",
@@ -953,6 +955,7 @@ export default function Texts() {
       text2:
         "Vi designer og produserer enkeltdeler, prototyper, serier. Velg de riktige tjenestene, og hvis du har spørsmål,",
       text3: "kontakt oss",
+      text4: "Anmeldelser",
       values: [
         {
           title: "Kvalitet",

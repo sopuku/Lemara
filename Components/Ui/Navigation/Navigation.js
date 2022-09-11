@@ -59,7 +59,8 @@ export default function Navigation() {
             <Image
               src={texts.images.logo}
               alt={texts.images.logoAlt}
-              width="100px"
+              w="100px"
+              h="100%"
             />
           </Links>
 

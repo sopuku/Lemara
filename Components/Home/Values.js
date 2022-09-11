@@ -23,7 +23,7 @@ export default function Values() {
             p="2rem"
             boxShadow=" 0px 4px 10px -2px  grey"
           >
-            <Image src={item.src} alt={item.alt} h="56px" />
+            <Image src={item.src} alt={item.alt} h={item.h} w={item.w} />
             <Heading size="lg" pt="2rem" pb="1rem">
               {item.title}
             </Heading>

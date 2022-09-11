@@ -43,7 +43,8 @@ export default function Footer() {
               <Image
                 src={texts.images.logo}
                 alt={texts.images.logoAlt}
-                width="100px"
+                w="100px"
+                h="100%"
               />
             </Center>
             <Text fontSize="sm" color={colors.footer.color}>

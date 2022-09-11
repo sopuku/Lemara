@@ -61,16 +61,13 @@ export default function CareerMain() {
                 color={colors.career.colorExpanded}
                 roundedBottom="8"
               >
-                <CareerList name="Darbo pobūdis" items={job.description} />
+                <CareerList name={texts.career.text2} items={job.description} />
 
-                <CareerList
-                  name="Reikalavimai darbuotojui"
-                  items={job.requirments}
-                />
+                <CareerList name={texts.career.text3} items={job.requirments} />
 
-                <CareerList name="Mes siūlome" items={job.offer} />
+                <CareerList name={texts.career.text4} items={job.offer} />
 
-                <CareerList name="Atlyginimas" items={job.salary} />
+                <CareerList name={texts.career.text5} items={job.salary} />
               </AccordionPanel>
             </AccordionItem>
           );

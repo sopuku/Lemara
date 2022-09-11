@@ -290,6 +290,10 @@ export default function Texts() {
     },
     career: {
       text1: "Karjeros galimybės",
+      text2: "Darbo pobūdis",
+      text3: "Reikalavimai darbuotojui",
+      text4: "Mes siūlome",
+      text5: "Atlyginimas",
       jobs: [
         {
           title: "CNC tekinimo staklių operatorius",
@@ -732,6 +736,10 @@ export default function Texts() {
     },
     career: {
       text1: "Career opportunities",
+      text2: "Job description",
+      text3: "Requirements for the employee",
+      text4: "We offer",
+      text5: "Salary",
       jobs: [
         {
           title: "CNC Turning machine operator",
@@ -1175,6 +1183,10 @@ export default function Texts() {
     },
     career: {
       text1: "Karrieremuligheter",
+      text2: "Stillingsbeskrivelse",
+      text3: "Krav til den ansatte",
+      text4: "Vi tilbyr",
+      text5: "Lønn",
       jobs: [
         {
           title: "CNC Dreiemaskinoperatør",

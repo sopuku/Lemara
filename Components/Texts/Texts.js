@@ -3,7 +3,6 @@ import { CurrentSettings } from "../../pages/_app";
 
 export default function Texts() {
   const { language } = useContext(CurrentSettings);
-
   const TEXTS_LT = {
     navigation: [
       {
@@ -479,6 +478,8 @@ export default function Texts() {
       millingImageAlt: "CNC frezavimo staklių nuotrauka",
       designImage: "/images/design/d1.jpg",
       designImageAlt: "Dizainerio nuotrauka",
+      galleryTurningAlt: "Detalė pagaminta CNC tekinimo arba frezavimo būdu",
+      galleryMillingAlt: "Detalė pagaminta CNC frezavimo būdu",
     },
     meta: {},
   };
@@ -949,6 +950,8 @@ export default function Texts() {
       millingImageAlt: "image of CNC Milling machine",
       designImage: "/images/design/d1.jpg",
       designImageAlt: "image of a designer",
+      galleryTurningAlt: "The part is made by CNC turning or milling",
+      galleryMillingAlt: "The part is made by CNC  milling",
     },
   };
 
@@ -1428,6 +1431,8 @@ export default function Texts() {
       millingImageAlt: "bilde av CNC-fresemaskin",
       designImage: "/images/design/d1.jpg",
       designImageAlt: "bilde av en designer",
+      galleryTurningAlt: "Delen er laget ved CNC-dreiing eller fresing",
+      galleryMillingAlt: "Delen er laget ved CNC-fresing",
     },
   };
 

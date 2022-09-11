@@ -4,12 +4,12 @@ import Texts from "../../Texts/Texts";
 import MobileNavItem from "./MobileNavItem";
 
 export default function MobileNav(props) {
-  const navItems = Texts();
+  const texts = Texts();
   const colors = Colors();
   return (
     <Stack
       bg={colors.navigation.bg}
-      backgroundImage={colors.navigation.bgTexture}
+      backgroundImage={texts.images.navBgTexture}
       p={4}
       display={{ lg: "none" }}
       w="100%"
@@ -17,7 +17,7 @@ export default function MobileNav(props) {
       mt="7rem"
       zIndex={100}
     >
-      {navItems.navigation.map((navItem) => (
+      {texts.navigation.map((navItem) => (
         <MobileNavItem
           closeMenu={props.closeMenu}
           key={navItem.label}

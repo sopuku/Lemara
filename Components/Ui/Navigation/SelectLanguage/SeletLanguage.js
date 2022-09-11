@@ -3,22 +3,24 @@ import Country from "flagit";
 import Colors from "../../Colors";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import SelectLanguageItem from "./SelectLanguageItem";
+import Texts from "../../../Texts/Texts";
 
 export default function SelectLanguage(props) {
   const colors = Colors();
+  const texts = Texts();
   return (
     <Menu>
       <MenuButton
         bg={colors.navigation.selectLanguage.bg}
-        backgroundImage={colors.navigation.bgTexture}
+        backgroundImage={texts.images.navBgTexture}
         border="none"
         _hover={{
           background: colors.navigation.selectLanguage.bg,
-          backgroundImage: colors.navigation.bgTexture,
+          backgroundImage: texts.images.navBgTexture,
         }}
         _active={{
           background: colors.navigation.selectLanguage.bg,
-          backgroundImage: colors.navigation.bgTexture,
+          backgroundImage: texts.images.navBgTexture,
         }}
         color={colors.navigation.selectLanguage.color}
         minW="8rem"
@@ -36,7 +38,7 @@ export default function SelectLanguage(props) {
       <MenuList
         minW="8rem"
         bg={colors.navigation.selectLanguage.bg}
-        backgroundImage={colors.navigation.bgTexture}
+        backgroundImage={texts.images.navBgTexture}
         border="none"
         color={colors.navigation.selectLanguage.color}
       >

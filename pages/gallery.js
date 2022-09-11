@@ -1,4 +1,4 @@
-import IMAGES from "../Components/Gallery/Images";
+import galleryImages from "../Components/Gallery/Images";
 import GalleryMain from "../Components/Gallery/GalleryMain";
 // import axios from "axios";
 
@@ -7,9 +7,10 @@ export default function Galery(props) {
 }
 
 export async function getStaticProps() {
+  const pictures = galleryImages();
   return {
     props: {
-      pictures: IMAGES,
+      pictures: pictures,
     },
   };
 }

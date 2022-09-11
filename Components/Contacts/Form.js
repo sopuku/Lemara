@@ -7,10 +7,12 @@ import Colors from "../Ui/Colors";
 import { useState } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useToast } from "@chakra-ui/react";
+import Texts from "../Texts/Texts";
 
 export default function Form(props) {
   const recaptchaRef = React.createRef();
   const colors = Colors();
+  const texts = Texts();
   const toast = useToast();
 
   const [name, setName] = useState("");
@@ -60,7 +62,7 @@ export default function Form(props) {
       if (response.ok) {
         props.sendMessage(form);
         toast({
-          title: "Žinutė sėkmingai išsiūsta",
+          title: texts.contacts.text2,
           status: "success",
           position: "top",
           duration: 2000,
@@ -68,7 +70,7 @@ export default function Form(props) {
         });
       } else {
         toast({
-          title: "Žinutė neišsiūsta 🤔",
+          title: texts.contacts.text3,
           status: "error",
           position: "top",
           duration: 2000,
@@ -107,21 +109,21 @@ export default function Form(props) {
       >
         <VStack>
           <InputField
-            name="Jūsų vardas"
+            name={texts.contacts.text4}
             type="text"
             onChange={handleName}
             value={name}
             icon={<BsPerson color={colors.contacts.form.colorIcon} />}
           />
           <InputField
-            name="El. paštas"
+            name={texts.contacts.text5}
             type="email"
             onChange={handleEmail}
             value={email}
             icon={<MdOutlineEmail color={colors.contacts.form.colorIcon} />}
           />
           <InputField
-            name="Telefono numeris"
+            name={texts.contacts.text6}
             type="number"
             onChange={handleNumber}
             value={number}
@@ -129,7 +131,11 @@ export default function Form(props) {
           />
         </VStack>
         <VStack>
-          <InputField name="Žinutė" value={message} onChange={handleMessage} />
+          <InputField
+            name={texts.contacts.text7}
+            value={message}
+            onChange={handleMessage}
+          />
           <Button
             type="submit"
             w="100%"
@@ -137,7 +143,7 @@ export default function Form(props) {
             color={colors.contacts.button.color}
             _hover={{ color: colors.contacts.button.colorHover }}
           >
-            Siūsti žinutę
+            {texts.contacts.text8}
           </Button>
         </VStack>
       </Stack>

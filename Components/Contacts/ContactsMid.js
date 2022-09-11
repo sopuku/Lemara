@@ -2,8 +2,10 @@ import { Heading, Stack, Container } from "@chakra-ui/react";
 import Form from "./Form";
 import Colors from "../Ui/Colors";
 import ContactsList from "./ContactsList";
+import Texts from "../Texts/Texts";
 
 export default function ContactsMid(props) {
+  const texts = Texts();
   const colors = Colors();
   return (
     <Container
@@ -17,7 +19,7 @@ export default function ContactsMid(props) {
       boxShadow="0 0 20px 10px grey"
     >
       <Heading pb="5rem" fontSize="6xl">
-        Susisiekite su mumis
+        {texts.contacts.text1}
       </Heading>
       <Stack
         direction={{ base: "column", xl: "row" }}

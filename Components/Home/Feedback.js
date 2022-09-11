@@ -28,7 +28,7 @@ export default function Feedback() {
       bg={colors.home.feedback.bg}
     >
       <Heading size="2xl" pb="2rem">
-        {texts.feedback.text4}
+        {texts.index.text4}
       </Heading>
       <link
         rel="stylesheet"

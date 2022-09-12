@@ -19,6 +19,7 @@ export default function Form(props) {
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   const form = {
     name: name,
@@ -42,6 +43,7 @@ export default function Form(props) {
 
   async function onSubmit(e) {
     e.preventDefault();
+    setLoading(true);
     recaptchaRef.current.execute();
   }
 
@@ -89,6 +91,7 @@ export default function Form(props) {
       });
     } finally {
       recaptchaRef.current.reset();
+      setLoading(false);
       setEmail("");
       setName("");
       setNumber("");

@@ -140,6 +140,7 @@ export default function Form(props) {
             onChange={handleMessage}
           />
           <Button
+            isLoading={loading}
             type="submit"
             w="100%"
             bg={colors.contacts.button.bg}

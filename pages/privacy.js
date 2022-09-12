@@ -1,7 +1,12 @@
 import Head from "next/head";
 import React from "react";
-import PrivacyMain from "../Components/Privacy/PrivacyMain";
 import Texts from "../Components/Texts/Texts";
+import dynamic from "next/dynamic";
+import { Suspense } from "react";
+
+const PrivacyMain = dynamic(() => import("../Components/Privacy/PrivacyMain"), {
+  suspense: true,
+});
 
 export default function Privacy() {
   const texts = Texts();
@@ -11,7 +16,9 @@ export default function Privacy() {
         <title>{texts.meta.text19}</title>
         <meta name="description" content={texts.meta.text20} />
       </Head>
-      <PrivacyMain />;
+      <Suspense>
+        <PrivacyMain fallback={`Loading...`} />
+      </Suspense>
     </React.Fragment>
   );
 }

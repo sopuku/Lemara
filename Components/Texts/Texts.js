@@ -475,7 +475,7 @@ export default function Texts() {
       navBgTexture: "/images/background/navBg1.png",
       bgTexture: "/images/background/aboutBg.png",
       galleryBgTexture: "/images/background/galleryBg.png",
-      mainImage: "/images/background/main1a.webp",
+      mainImage: "/images/background/main1a.jpg",
       whyUsImage: "/images/home/whyUs.jpg",
       whyUsImageAlt: "Gaminio, pagaminto CNC frezavimo būdu, nuotrauka",
       aboutUsImage: "/images/home/aboutUs.jpg",

@@ -1,14 +1,9 @@
 import galleryImages from "../Components/Gallery/Images";
+import GalleryMain from "../Components/Gallery/GalleryMain";
+import React from "react";
 import Head from "next/head";
 import Texts from "../Components/Texts/Texts";
 // import axios from "axios";
-
-import dynamic from "next/dynamic";
-import React, { Suspense } from "react";
-
-const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
-  suspense: true,
-});
 
 export default function Galery(props) {
   const texts = Texts();
@@ -18,9 +13,7 @@ export default function Galery(props) {
         <title>{texts.meta.text13}</title>
         <meta name="description" content={texts.meta.text14} />
       </Head>
-      <Suspense>
-        <GalleryMain pictures={props.pictures} fallback={`Loading...`} />
-      </Suspense>
+      <GalleryMain pictures={props.pictures} />;
     </React.Fragment>
   );
 }
@@ -47,4 +40,3 @@ export async function getStaticProps() {
 //     pictures: links,
 //   },
 // };
-//=====================================================

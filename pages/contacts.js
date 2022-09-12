@@ -1,16 +1,8 @@
+import React from "react";
 import Head from "next/head";
+import ContactsMain from "../Components/Contacts/ContactsMain";
 import emailjs from "@emailjs/browser";
 import Texts from "../Components/Texts/Texts";
-
-import dynamic from "next/dynamic";
-import React, { Suspense } from "react";
-
-const ContactsMain = dynamic(
-  () => import("../Components/Contacts/ContactsMain"),
-  {
-    suspense: true,
-  }
-);
 
 export default function Contacts(props) {
   async function sendMessage(form) {
@@ -23,9 +15,7 @@ export default function Contacts(props) {
         <title>{texts.meta.text17}</title>
         <meta name="description" content={texts.meta.text18} />
       </Head>
-      <Suspense>
-        <ContactsMain sendMessage={sendMessage} fallback={`Loading...`} />
-      </Suspense>
+      <ContactsMain sendMessage={sendMessage} />
     </React.Fragment>
   );
 }

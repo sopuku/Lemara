@@ -19,6 +19,7 @@ export default function Form(props) {
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
+  const [spinner, setSpinner] = useState(false);
 
   const form = {
     name: name,
@@ -42,6 +43,7 @@ export default function Form(props) {
 
   async function onSubmit(e) {
     e.preventDefault();
+    setSpinner(true);
     recaptchaRef.current.execute();
   }
 
@@ -61,6 +63,7 @@ export default function Form(props) {
       });
       if (response.ok) {
         props.sendMessage(form);
+        setSpinner(false);
         toast({
           title: texts.contacts.text2,
           status: "success",
@@ -69,6 +72,7 @@ export default function Form(props) {
           isClosable: true,
         });
       } else {
+        setSpinner(false);
         toast({
           title: texts.contacts.text3,
           status: "error",
@@ -80,6 +84,7 @@ export default function Form(props) {
         throw new Error(error.message);
       }
     } catch (error) {
+      setSpinner(false);
       toast({
         title: "Error 😮",
         status: "error",
@@ -137,6 +142,7 @@ export default function Form(props) {
             onChange={handleMessage}
           />
           <Button
+            isLoading={spinner}
             type="submit"
             w="100%"
             bg={colors.contacts.button.bg}

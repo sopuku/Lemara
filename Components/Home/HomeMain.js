@@ -1,15 +1,11 @@
+import React from "react";
+import Feedback from "./Feedback";
 import Values from "./Values";
 import Links from "../Ui/Navigation/Links";
 import Colors from "../Ui/Colors";
 import { VStack, Heading, Text, Show, Flex, Container } from "@chakra-ui/react";
 import Texts from "../../Components/Texts/Texts";
 import DefaultPage from "../Ui/DefaultPage";
-import dynamic from "next/dynamic";
-import React, { Suspense } from "react";
-
-const Feedback = dynamic(() => import("./Feedback"), {
-  suspense: true,
-});
 
 export default function HomeMain() {
   const colors = Colors();
@@ -53,8 +49,6 @@ export default function HomeMain() {
         heading={texts.index.whyUs.text1.heading}
         text={texts.index.whyUs.text1.text}
         py="8rem"
-        w="899px"
-        h="600px"
       />
       <DefaultPage
         name="aboutUs"
@@ -62,12 +56,8 @@ export default function HomeMain() {
         alt={texts.images.aboutUsImageAlt}
         heading={texts.index.aboutUs.text1.heading}
         text={texts.index.aboutUs.text1.text}
-        w="900px"
-        h="600px"
       />
-      <Suspense>
-        <Feedback fallback={`Loading...`} />
-      </Suspense>
+      <Feedback />
     </VStack>
   );
 }

@@ -1,5 +1,4 @@
 import { Menu, MenuButton, MenuList, Button } from "@chakra-ui/react";
-import Country from "flagit";
 import Colors from "../../Colors";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import SelectLanguageItem from "./SelectLanguageItem";
@@ -26,12 +25,6 @@ export default function SelectLanguage(props) {
         minW="8rem"
         as={Button}
         rightIcon={<ChevronDownIcon />}
-        leftIcon={
-          <Country
-            countryShort={props.language !== "EN" ? props.language : "GD"}
-            size="md"
-          />
-        }
       >
         {props.language}
       </MenuButton>

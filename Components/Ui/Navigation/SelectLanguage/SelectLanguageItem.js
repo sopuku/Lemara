@@ -21,13 +21,6 @@ export default function SelectLanguageItem(props) {
       onClick={props.handleLanguageSelect}
       value={props.currentValue}
     >
-      <Image
-        h="1rem"
-        w="1.5rem"
-        src={`/images/flags/${props.currentValue}_flag.png`}
-        alt="Naudojamos kalbos vėliava"
-        mr="12px"
-      />
       {props.currentValue}
     </MenuItem>
   );

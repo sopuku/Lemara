@@ -32,9 +32,9 @@ export default function Contacts(props) {
 export async function getStaticProps() {
   return {
     props: {
-      SERVICE_ID: process.env.SERVICE_ID,
-      TEMPLATE_ID: process.env.TEMPLATE_ID,
-      KEY: process.env.KEY,
+      SERVICE_ID: "service_dk5mr2k",
+      TEMPLATE_ID: "template_6juxtrk",
+      KEY: "AKeemSzyhhC8W76gf",
     },
   };
 }

@@ -57,10 +57,10 @@ export default function Texts() {
     },
     index: {
       text1:
-        "Lemara - preciziškai ištekintos detalės jūsų konstrukciniams sumanymams",
+        "Lemara - preciziškai pagamintos detalės jūsų konstrukciniams sumanymams",
       text2:
-        "Projektuojame ir gaminame pavienes detales, prototipus, serijas. Išsirinkite tinkamas paslaugas, o jei turite klausimų,",
-      text3: "susisiekite su mumis",
+        "Projektuojame ir gaminame pavienes detales, serijas ir jų prototipus. Išsirinkite tinkamas paslaugas, o jei turite klausimų,",
+      text3: "susisiekite su mūsų specialistais",
       text4: "Atsiliepimai",
       values: [
         {
@@ -574,10 +574,11 @@ export default function Texts() {
       design: "Designing",
     },
     index: {
-      text1: "Lemara - precisely welded details for your construction ideas",
+      text1:
+        "Lemara - precisely manufactured parts for your construction ideas",
       text2:
-        "We design and manufacture individual parts, prototypes, series. Choose the right services, and if you have any questions,",
-      text3: "contact us",
+        "We design and manufacture individual parts, series and their prototypes. Choose the right services, and if you have any questions,",
+      text3: "contact our specialists",
       text4: "Reviews",
       values: [
         {
@@ -1083,10 +1084,10 @@ export default function Texts() {
       design: "Designing",
     },
     index: {
-      text1: "Lemara - nøyaktig sveisede detaljer for dine byggeideer",
+      text1: "Lemara - nøyaktig produserte deler for dine byggeideer",
       text2:
-        "Vi designer og produserer enkeltdeler, prototyper, serier. Velg de riktige tjenestene, og hvis du har spørsmål,",
-      text3: "kontakt oss",
+        "Vi designer og produserer enkeltdeler, serier og deres prototyper. Velg de riktige tjenestene, og hvis du har spørsmål,",
+      text3: "kontakt våre spesialister",
       text4: "Anmeldelser",
       values: [
         {

@@ -32,12 +32,14 @@ export default function DefaultPage(props) {
         justify="center"
       >
         {props.name !== "aboutUs" && (
-          <Image
-            src={props.src}
-            alt={props.alt}
-            width={props.w}
-            height={props.h}
-          />
+          <Square maxW="40rem" boxShadow="0 0 5px 1px black">
+            <Image
+              src={props.src}
+              alt={props.alt}
+              width={props.w}
+              height={props.h}
+            />
+          </Square>
         )}
         <VStack spacing="8">
           <Heading>{props.heading}</Heading>
@@ -51,12 +53,14 @@ export default function DefaultPage(props) {
           </Text>
         </VStack>
         {props.name === "aboutUs" && (
-          <img
-            src={props.src}
-            alt={props.alt}
-            width={props.w}
-            height={props.h}
-          />
+          <Square maxW="40rem" boxShadow="0 0 5px 1px black">
+            <img
+              src={props.src}
+              alt={props.alt}
+              width={props.w}
+              height={props.h}
+            />
+          </Square>
         )}
       </Stack>
     </Container>

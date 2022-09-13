@@ -154,7 +154,7 @@ export default function Form(props) {
       <ReCAPTCHA
         ref={recaptchaRef}
         size="invisible"
-        sitekey="6LflocohAAAAAAe0A8FuFtVxmDtXX1S3FGb_pQSK"
+        sitekey="6Lf3iPYhAAAAAP3WdaE48G0ZIUXIfaosL-zOt1Yn"
         onChange={onReCAPTCHAChange}
       />
     </form>

@@ -53,7 +53,7 @@ export default function HomeMain() {
         heading={texts.index.whyUs.text1.heading}
         text={texts.index.whyUs.text1.text}
         py="8rem"
-        w="800px"
+        w="899px"
         h="600px"
       />
       <DefaultPage

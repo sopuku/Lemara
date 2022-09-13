@@ -476,7 +476,7 @@ export default function Texts() {
       bgTexture: "/images/background/aboutBg.png",
       galleryBgTexture: "/images/background/galleryBg.png",
       mainImage: "/images/background/main1a.webp",
-      whyUsImage: "/images/home/whyUs.jpg",
+      whyUsImage: "/images/home/whyUs2.jpg",
       whyUsImageAlt: "Gaminio, pagaminto CNC frezavimo būdu, nuotrauka",
       aboutUsImage: "/images/home/aboutUs.jpg",
       aboutUsImageAlt: "Lemara kolektyvo nuotrauka",

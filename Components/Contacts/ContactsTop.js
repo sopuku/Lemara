@@ -19,8 +19,10 @@ export default function XContactsTop() {
           responsibilities={item.responsibilities}
           email={item.email}
           number={item.number}
+          tel={item.tel}
           src={item.src}
           alt={item.alt}
+          href={item.href}
         />
       ))}
     </Stack>

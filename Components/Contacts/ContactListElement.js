@@ -1,5 +1,6 @@
 import { HStack, Icon, Text } from "@chakra-ui/react";
 import Colors from "../Ui/Colors";
+import Links from "../Ui/Navigation/Links";
 
 export default function ContactListElement(props) {
   const colors = Colors();
@@ -11,9 +12,21 @@ export default function ContactListElement(props) {
         w="2rem"
         h="2rem"
       />
-      <Text align="left" fontSize="xl">
-        {props.text}
-      </Text>
+
+      {props.href !== "" ? (
+        <Links
+          href={props.href}
+          _hover={{ color: colors.footer.colorHover }}
+          align="left"
+          fontSize="xl"
+        >
+          {props.text}
+        </Links>
+      ) : (
+        <Text align="left" fontSize="xl">
+          {props.text}
+        </Text>
+      )}
     </HStack>
   );
 }

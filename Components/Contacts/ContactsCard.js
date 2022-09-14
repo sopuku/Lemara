@@ -2,6 +2,7 @@ import { Heading, Avatar, Box, Flex, Text, Stack } from "@chakra-ui/react";
 import Colors from "../Ui/Colors";
 import React from "react";
 import Texts from "../Texts/Texts";
+import Links from "../Ui/Navigation/Links";
 
 export default function ContactsCard(props) {
   const colors = Colors();
@@ -40,12 +41,22 @@ export default function ContactsCard(props) {
           <Text fontSize="18px" color={colors.contacts.card.color}>
             {props.responsibilities}
           </Text>
-          <Text fontWeight="600" fontSize="18px">
+          <Links
+            href={props.href}
+            fontWeight="600"
+            fontSize="18px"
+            _hover={{ color: colors.footer.colorHover }}
+          >
             {props.email}
-          </Text>
-          <Text fontSize="18px" fontWeight="600">
+          </Links>
+          <Links
+            href={props.tel}
+            _hover={{ color: colors.footer.colorHover }}
+            fontSize="18px"
+            fontWeight="600"
+          >
             {props.number}
-          </Text>
+          </Links>
         </Stack>
       </Box>
     </React.Fragment>

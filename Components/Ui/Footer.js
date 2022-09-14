@@ -62,8 +62,18 @@ export default function Footer() {
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>{texts.footer.contacts}</ListHeader>
             <Text>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Text>
-            <Text>info@lemara.lt</Text>
-            <Text>+370 646 57845</Text>
+            <Links
+              href="mailto:info@lemara.lt"
+              _hover={{ color: colors.footer.colorHover }}
+            >
+              info@lemara.lt
+            </Links>
+            <Links
+              href="tel:+37064657845"
+              _hover={{ color: colors.footer.colorHover }}
+            >
+              +370 646 57845
+            </Links>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
             <ListHeader>{texts.footer.services}</ListHeader>

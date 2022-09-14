@@ -32,9 +32,9 @@ export default function Contacts(props) {
 export async function getStaticProps() {
   return {
     props: {
-      SERVICE_ID: "service_dk5mr2k",
-      TEMPLATE_ID: "template_6juxtrk",
-      KEY: "AKeemSzyhhC8W76gf",
+      SERVICE_ID: "service_nnxf4e4",
+      TEMPLATE_ID: "template_vu1n99l",
+      KEY: "iVNT9JCWHJMBNgFwD",
     },
   };
 }

@@ -91,7 +91,6 @@ export default function Form(props) {
         isClosable: true,
       });
     } finally {
-      hcaptchaRef.reset("test");
       setLoading(false);
       setEmail("");
       setName("");

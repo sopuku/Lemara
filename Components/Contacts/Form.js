@@ -43,9 +43,10 @@ export default function Form(props) {
   }
 
   async function onSubmit(e) {
+    props.sendMessage(form);
     e.preventDefault();
-    setLoading(true);
-    hcaptchaRef.current.execute();
+    // setLoading(true);
+    // hcaptchaRef.current.execute();
   }
 
   async function onHCaptchaChange(captchaCode) {

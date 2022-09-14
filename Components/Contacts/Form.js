@@ -96,7 +96,6 @@ export default function Form(props) {
       setName("");
       setNumber("");
       setMessage("");
-      hcaptchaRef.current.reset();
     }
   }
 

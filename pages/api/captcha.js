@@ -1,5 +1,12 @@
 import fetch from "node-fetch";
 
+const sleep = () =>
+  new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, 350);
+  });
+
 export default async function handler(req, res) {
   const { body, method } = req;
 
@@ -22,6 +29,7 @@ export default async function handler(req, res) {
       const captchaValidation = await response.json();
 
       if (captchaValidation.success) {
+        await sleep();
         return res.status(200).send("OK");
       }
 

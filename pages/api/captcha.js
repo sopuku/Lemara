@@ -11,17 +11,14 @@ export default async function handler(req, res) {
         message: "Unproccesable request, please provide the required fields",
       });
     }
-
     try {
-      const response = await fetch(
-        `https://www.google.com/recaptcha/api/siteverify?secret=6Lf3iPYhAAAAABaodDHOzwHWZDVKlFNCRqe827Gs&response=${captcha}`,
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
-          },
-          method: "POST",
-        }
-      );
+      const response = await fetch(`https://hcaptcha.com/siteverify`, {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded; charset=utf-8",
+        },
+        body: `response=${captcha}&secret=0x8962e437cb7a4964bc5fe613b38a966f46228529`,
+        method: "POST",
+      });
       const captchaValidation = await response.json();
 
       if (captchaValidation.success) {

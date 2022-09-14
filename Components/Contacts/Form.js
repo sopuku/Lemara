@@ -5,12 +5,13 @@ import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import Colors from "../Ui/Colors";
 import { useState } from "react";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import { useToast } from "@chakra-ui/react";
 import Texts from "../Texts/Texts";
+import HCaptcha from "react-hcaptcha";
 
 export default function Form(props) {
-  const recaptchaRef = React.createRef();
+  const hcaptchaRef = React.createRef();
   const colors = Colors();
   const texts = Texts();
   const toast = useToast();
@@ -44,10 +45,10 @@ export default function Form(props) {
   async function onSubmit(e) {
     e.preventDefault();
     setLoading(true);
-    recaptchaRef.current.execute();
+    hcaptchaRef.current.execute();
   }
 
-  async function onReCAPTCHAChange(captchaCode) {
+  async function onHCaptchaChange(captchaCode) {
     if (!captchaCode) {
       return;
     }
@@ -90,7 +91,7 @@ export default function Form(props) {
         isClosable: true,
       });
     } finally {
-      recaptchaRef.current.reset();
+      hcaptchaRef.current.reset();
       setLoading(false);
       setEmail("");
       setName("");
@@ -151,11 +152,12 @@ export default function Form(props) {
           </Button>
         </VStack>
       </Stack>
-      <ReCAPTCHA
-        ref={recaptchaRef}
+      <HCaptcha
+        id="test"
+        ref={hcaptchaRef}
         size="invisible"
-        sitekey="6Lf3iPYhAAAAAP3WdaE48G0ZIUXIfaosL-zOt1Yn"
-        onChange={onReCAPTCHAChange}
+        sitekey="8f6fc59f-8b70-422f-9e78-0ce325c1fb6f"
+        onVerify={onHCaptchaChange}
       />
     </form>
   );

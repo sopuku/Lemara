@@ -29,7 +29,6 @@ export default async function handler(req, res) {
       const captchaValidation = await response.json();
 
       if (captchaValidation.success) {
-        await sleep();
         return res.status(200).send("OK");
       }
 

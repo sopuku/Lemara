@@ -29,7 +29,7 @@ export default function SelectLanguage(props) {
         leftIcon={
           <Country
             countryShort={props.language !== "EN" ? props.language : "GD"}
-            size="md"
+            size="lg"
           />
         }
       >

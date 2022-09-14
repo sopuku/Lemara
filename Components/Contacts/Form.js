@@ -91,12 +91,12 @@ export default function Form(props) {
         isClosable: true,
       });
     } finally {
-      hcaptchaRef.current.reset();
       setLoading(false);
       setEmail("");
       setName("");
       setNumber("");
       setMessage("");
+      hcaptchaRef.current.reset();
     }
   }
 

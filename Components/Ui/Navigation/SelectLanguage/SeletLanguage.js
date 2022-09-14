@@ -23,7 +23,7 @@ export default function SelectLanguage(props) {
           backgroundImage: texts.images.navBgTexture,
         }}
         color={colors.navigation.selectLanguage.color}
-        minW="8rem"
+        maxW="8rem"
         as={Button}
         rightIcon={<ChevronDownIcon />}
         leftIcon={

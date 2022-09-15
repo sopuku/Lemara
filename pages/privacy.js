@@ -7,7 +7,7 @@ import { Suspense } from "react";
 const PrivacyMain = dynamic(() => import("../Components/Privacy/PrivacyMain"), {
   suspense: true,
 });
-
+//test
 export default function Privacy() {
   const texts = Texts();
   return (

@@ -6,6 +6,7 @@ import Footer from "../Components/Ui/Footer";
 import theme from "../Components/Ui/Theme/theme";
 import "../Components/Ui/Theme/styles.css";
 import Head from "next/head";
+import TagManager from "react-gtm-module";
 
 export const CurrentSettings = React.createContext(null);
 
@@ -16,6 +17,10 @@ export default function MyApp({ Component, pageProps }) {
     document.documentElement.lang = language.toLowerCase();
   }),
     [language];
+
+  useEffect(() => {
+    TagManager.initialize({ gtmId: "G-QPQYS0TKC7" });
+  }, []);
 
   return (
     <React.Fragment>

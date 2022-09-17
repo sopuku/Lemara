@@ -44,7 +44,6 @@ export default function Document() {
         />
 
         <scrip
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}

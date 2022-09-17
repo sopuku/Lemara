@@ -16,7 +16,6 @@ export default function Document() {
       postalCode: "LT-14265",
       addressCountry: "Lietuva",
     },
-    openingHours: "Mo, Tu, We, Th, Fr 08:00-17:00",
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+37064657845",

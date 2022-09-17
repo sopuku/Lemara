@@ -27,15 +27,15 @@ export default function Document() {
               image: "https://lemara.lt/images/logo/logo2.png",
               telephone: "+37064657845",
               email: "info@lemara.lt",
+              url: "https://lemara.lt/",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Pasagų g. 4",
                 addressLocality: ", Riešės k",
                 addressRegion: "Vilniaus r.",
                 addressCountry: "Lietuva",
-                postalCode: "LT-14265",
+                postalCode: "LT-14265"
               },
-              url: "https://lemara.lt/",
             },
           }}
         />

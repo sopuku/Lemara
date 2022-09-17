@@ -35,7 +35,7 @@ export default function ContactsCard(props) {
           />
         </Flex>
         <Stack spacing={2} align="center" mb={8} p="6" textAlign="center">
-          <Heading fontSize="24px" fontWeight={500} fontFamily="body">
+          <Heading as="h1" fontSize="24px" fontWeight={500} fontFamily="body">
             {props.name}
           </Heading>
           <Text fontSize="18px" color={colors.contacts.card.color}>

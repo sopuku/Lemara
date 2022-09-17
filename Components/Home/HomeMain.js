@@ -30,7 +30,12 @@ export default function HomeMain() {
         px={{ base: "4%", sm: "4%", lg: "10%", xl: "10%", "2xl": "20%" }}
         mb={{ base: 0, md: "25rem", lg: "25rem", xl: "10rem" }}
       >
-        <Heading pt="7%" fontSize={{ base: "35px", md: "45px" }} pb="2rem">
+        <Heading
+          as="h1"
+          pt="7%"
+          fontSize={{ base: "35px", md: "45px" }}
+          pb="2rem"
+        >
           {texts.index.text1}
         </Heading>
         <Text fontSize={{ base: "2xl", md: "3xl" }}>

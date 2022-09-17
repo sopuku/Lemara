@@ -21,7 +21,7 @@ export default function PrivacyMain() {
       color={colors.privacy.color}
       bg={colors.privacy.bg}
     >
-      <Heading textAlign="center" pb="4rem">
+      <Heading as="h1" textAlign="center" pb="4rem">
         {texts.privacy.text1}
       </Heading>
       <Text align="justify" fontSize="20px">

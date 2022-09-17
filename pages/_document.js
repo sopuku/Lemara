@@ -35,7 +35,7 @@ export default function Document() {
                 addressRegion: "Vilniaus r.",
                 addressCountry: "Lietuva",
                 postalCode: "LT-14265"
-              },
+              }
             },
           }}
         />

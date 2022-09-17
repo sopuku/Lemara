@@ -26,7 +26,7 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <Script
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />

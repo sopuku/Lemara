@@ -27,7 +27,6 @@ export default function Document() {
     <Html>
       <Head>
         <Script
-          strategy="afterInteractive"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />

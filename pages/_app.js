@@ -28,11 +28,11 @@ export default function MyApp({ Component, pageProps }) {
         src="https://www.googletagmanager.com/gtag/js?id=G-QPQYS0TKC7"
       />
 
-      <script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || []; function gtag()
         {dataLayer.push(arguments)}
         gtag('js', new Date()); gtag('config', 'G-QPQYS0TKC7')`}
-      </script>
+      </Script>
 
       <ChakraProvider theme={theme}>
         <CurrentSettings.Provider value={{ language, setLanguage }}>

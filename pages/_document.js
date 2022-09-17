@@ -1,4 +1,5 @@
-import { Html, Head, Main, NextScript } from "next/document";
+import { Html, Head, Main } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   const schemaData = {
@@ -25,7 +26,8 @@ export default function Document() {
   return (
     <Html>
       <Head>
-        <script
+        <Script
+          strategy="afterInteractive"
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
         />

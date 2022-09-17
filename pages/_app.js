@@ -19,7 +19,7 @@ export default function MyApp({ Component, pageProps }) {
     [language];
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: "G-QPQYS0TKC7" });
+    TagManager.initialize({ gtmId: "GTM-K9JZRQ6" });
   }, []);
 
   return (

@@ -1,0 +1,6 @@
+Sitemap: https://lemara.lt/api/posts-sitemap
+
+User-agent: *
+Allow: /*
+
+Disallow: /api/*

@@ -20,7 +20,7 @@ export default function Document() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: `{
+            __html: {
               "@context": "http://schema.org",
               "@type": "LocalBusiness",
               name: "Lemara",
@@ -36,7 +36,7 @@ export default function Document() {
                 postalCode: "LT-14265",
               },
               url: "https://lemara.lt/",
-            }`,
+            },
           }}
         />
       </Head>

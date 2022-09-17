@@ -56,8 +56,7 @@ export default function Texts() {
       design: "Projektavimas",
     },
     index: {
-      text1:
-        "Lemara - preciziškai pagamintos detalės jūsų konstrukciniams sumanymams",
+      text1: "Lemara - CNC detalių gamyba",
       text2:
         "Projektuojame ir gaminame pavienes detales, serijas ir jų prototipus. Išsirinkite tinkamas paslaugas, o jei turite klausimų,",
       text3: "susisiekite su mūsų specialistais",
@@ -580,8 +579,7 @@ export default function Texts() {
       design: "Designing",
     },
     index: {
-      text1:
-        "Lemara - precisely manufactured parts for your construction ideas",
+      text1: "Lemara - CNC parts production",
       text2:
         "We design and manufacture individual parts, series and their prototypes. Choose the right services, and if you have any questions,",
       text3: "contact our specialists",
@@ -1096,7 +1094,7 @@ export default function Texts() {
       design: "Designing",
     },
     index: {
-      text1: "Lemara - nøyaktig produserte deler for dine byggeideer",
+      text1: "Lemara - CNC deler produksjon",
       text2:
         "Vi designer og produserer enkeltdeler, serier og deres prototyper. Velg de riktige tjenestene, og hvis du har spørsmål,",
       text3: "kontakt våre spesialister",

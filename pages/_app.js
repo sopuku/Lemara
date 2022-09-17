@@ -17,7 +17,6 @@ export default function MyApp({ Component, pageProps }) {
     document.documentElement.lang = language.toLowerCase();
   }),
     [language];
-  Schema();
 
   return (
     <React.Fragment>

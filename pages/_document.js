@@ -23,22 +23,22 @@ export default function Document() {
             __html: {
               "@context": "http://www.schema.org",
               "@type": "Organization",
-              name: "Lemara",
-              url: "https://lemara.lt",
-              logo: "https://lemara.lt/images/logo/logo2.png",
-              description: "Lemara - CNC Tekinimas, Frezavimas, Degalių gamyba",
-              address: {
+              "name": "Lemara",
+              "url": "https://lemara.lt",
+              "logo": "https://lemara.lt/images/logo/logo2.png",
+              "description": "Lemara - CNC Tekinimas, Frezavimas, Degalių gamyba",
+              "address": {
                 "@type": "PostalAddress",
-                streetAddress: "Pasagų g. 4",
-                addressLocality: "Riešės k",
-                addressRegion: "Vilniaus r.",
-                postalCode: "LT-14265",
-                addressCountry: "Lietuva",
+                "streetAddress": "Pasagų g. 4",
+                "addressLocality": "Riešės k",
+                "addressRegion": "Vilniaus r.",
+                "postalCode": "LT-14265",
+                "addressCountry": "Lietuva",
               },
-              openingHours: "Mo, Tu, We, Th, Fr 08:00-17:00",
-              contactPoint: {
+              "openingHours": "Mo, Tu, We, Th, Fr 08:00-17:00",
+              "contactPoint": {
                 "@type": "ContactPoint",
-                telephone: "+37064657845",
+                "telephone": "+37064657845",
               },
             },
           }}

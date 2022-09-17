@@ -27,7 +27,7 @@ export default function Feedback() {
       color={colors.home.feedback.color}
       bg={colors.home.feedback.bg}
     >
-      <Heading size="2xl" pb="2rem">
+      <Heading as="h1" size="2xl" pb="2rem">
         {texts.index.text4}
       </Heading>
       <link
@@ -45,7 +45,7 @@ export default function Feedback() {
         {texts.index.feedback.map((item) => {
           return (
             <React.Fragment key={item.title}>
-              <Heading size="xl" pb="1rem">
+              <Heading as="h2" size="xl" pb="1rem">
                 {item.title}
               </Heading>
               <Text lineHeight={{ base: "1.5", lg: "1.8" }} fontSize="xl">

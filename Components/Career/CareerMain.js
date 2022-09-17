@@ -23,7 +23,7 @@ export default function CareerMain() {
       borderRadius="xl"
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
     >
-      <Heading as="h1" size="2xl" py="2rem">
+      <Heading as="h3" size="2xl" py="2rem">
         {texts.career.text1}
       </Heading>
       <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>

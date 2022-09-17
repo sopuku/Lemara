@@ -18,7 +18,7 @@ export default function ContactsMid(props) {
       color={colors.contacts.color}
       boxShadow="0 0 20px 10px grey"
     >
-      <Heading pb="5rem" fontSize="6xl">
+      <Heading as="h3" pb="5rem" fontSize="6xl">
         {texts.contacts.text1}
       </Heading>
       <Stack

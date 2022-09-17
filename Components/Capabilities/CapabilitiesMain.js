@@ -18,7 +18,7 @@ export default function CapabilitiesMain(props) {
       boxShadow="-0 -20px 20px -10px grey"
     >
       <Container centerContent maxW="100%" py="1rem">
-        <Heading as="h1" pt="3rem" color="orange">
+        <Heading as="h3" pt="3rem" color="orange">
           {texts.capabilities.text1}
         </Heading>
       </Container>

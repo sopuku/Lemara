@@ -20,7 +20,7 @@ export default function GeneralMain() {
       bg={colors.general.bg}
       color={colors.general.color}
     >
-      <Heading textAlign="center" fontSize="50" as="h1" pb="2rem">
+      <Heading textAlign="center" fontSize="50" as="h2" pb="2rem">
         {texts.general.text1}
       </Heading>
       <Heading as="h2" fontSize="22px" pt="1.5rem" pb="0.5rem">

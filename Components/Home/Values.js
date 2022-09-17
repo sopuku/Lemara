@@ -24,7 +24,7 @@ export default function Values() {
             boxShadow=" 0px 4px 10px -2px  grey"
           >
             <Image src={item.src} alt={item.alt} h={item.h} w={item.w} />
-            <Heading as="h4" size="lg" pt="2rem" pb="1rem">
+            <Heading as="h6" size="lg" pt="2rem" pb="1rem">
               {item.title}
             </Heading>
             <Text fontSize="lg">{item.description}</Text>

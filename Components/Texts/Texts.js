@@ -497,32 +497,34 @@ export default function Texts() {
     meta: {
       text1: "Lemara CNC Detalių Gamyba",
       text2:
-        "CNC detalių gamyba: jų projektavimas, tekinimas, frezavimas iš plastiko ir metalo.",
+        "Lemara yra CNC tekinimo ir frezavimo paslaugas teikianti mažoji bendrija. CNC detalių gamyba yra pagrindine Lemara veiklos sritis. Lemara specialistai suprojektuoja detales ir jas pagamina CNC tekinimo arba CNC frezavimo būdu. Detalės yr agaminamos iš plastiko arba metalo.",
       text3: "Lemara CNC Tekinimas",
       text4:
-        "Informacija apie CNC tekinimą, medžiagas, su kuriomis dirbame, detales, kurias galime pagaminti.",
+        "Lemara teikia CNC tekinimo paslaugą. Tekinimą atlieka iš metalo bei plastiko. CNC – angliško žodžių junginio computer numerical control trumpinys. CNC tekinimo būdu iš metalo ar plastiko gaminamos cilindrinės, kūginės, sferinės, fasoninės detalės, apdirbami jų galiniai plokšti paviršiai.",
       text5: "Lemara CNC Frezavimas",
       text6:
-        "Informacija apie CNC frezavimą, medžiagas, su kuriomis dirbame, detales, kurias galime pagaminti.",
+        "Lemara teikia CNC frezavimo paslaugą. Frezavima atlieka iš metalo bei plastiko. CNC – angliško žodžių junginio computer numerical control trumpinys. Frezavimas – vienas iš mechaninio medžiagų apdirbimo būdų, kai darbo įrankis (freza) sukdamasis nupjauna nuo apdorojamo ruošinio paviršiaus nustatyto dydžio drožlę.",
       text7: "Lemara CNC Detalių Projektavimas",
-      text8: "Informacija apie CNC detalų projektavimo paslaugą",
+      text8:
+        "Projektavimas yra viena iš paslaugų, kurias teikiame. Lemara specialistai gali supriojektuoti sudėtingas detales pagal kliento reikalavimus. Taip pat gali patikrinti kliento atsiūstus brėžinius ir pakonsultuoti dėl galimų nesklandumų detalės gamyboje.",
       text9: "Lemara Bendra Informacija",
       text10:
-        "Bendra informacija apie MB Lemara, CNC detalių gamybą, tekinimą, frezavimą, projektavimą, užsakymų reikalavimus, pristatymą ir kt.",
+        "Bendra informacija apie MB Lemara, CNC detalių gamybą, tekinimą, frezavimą, projektavimą, užsakymų reikalavimus, pristatymą. Taip apt galite rasti detalesnę informaciją apie CNC gamybos galimybes, įpatumus ir tipus.",
       text11: "Lemara Įrengimai",
       text12:
-        "Lemara turimos CNC tekinimo ir frezavimo įrangos ir techninių specifikacijų bei techninių galimybių puslapis.",
+        "Lemara turimos CNC tekinimo ir frezavimo įrangos techninių specifikacijų bei techninių galimybių puslapis. Jei nežinote ar turime įrangą, galinčią pagaminti jūsų detalę, gali pasitikrinti šiame puspalyje, arba susisiekti su mūsų specialistais.",
       text13: "Lemara Galerija",
       text14:
-        "Lemara galerijoje galite rasti detalių pavyzdžių,  kurias pagamino Lemara CNC tekinimo ir frezavimo specialistai.",
+        "Lemara galerijoje galite rasti detalių pavyzdžių, kurias pagamino Lemara CNC tekinimo ir frezavimo specialistai. Dėka modernios įrangos, Lemara specialistų pagamintos detalės CNC tekinimo arba CNC frezavimo būdu, turi labai mažą paklaidą.",
       text15: "Lemara Karjeros galimybės",
       text16:
-        "Jei ieškote darbo CNC detalių gamybos srityje - užsukite į Lemara karjeros puslapį",
+        "Lemara nuolatos plečiasi ir nuolatos ieško specialistų savo komandai. Jei esate CNC tekinimo ar CNC frezavimo specialistas ir ieškote darbo CNC detalių gamybos srityje - užsukite į Lemara karjeros puslapį.",
       text17: "Lemara Kontaktai",
       text18:
-        "Jei norite susisiekti su Lemara specialistais - šiame puslapyje rasite visus būtiniausius kontaktus.",
+        "Jei norite susisiekti su Lemara specialistais - šiame puslapyje rasite visus būtiniausius kontaktus. Jei reikia informacijos apie CNC detalių projektavimą - susisiekite su projektuotoju. Jei turite bendrų klausimų apie CNC tekinimą arba CNC frezavimą, susisiekite su gamybos vadovu.",
       text19: "Lemara Privatumo Politika",
-      text20: "Informacija apie MB Lemara privatumo politiką.",
+      text20:
+        "Šioje privatumo politikoje Jums pateikiame informaciją, kaip MB Lemara tvarko Jūsų asmens duomenis https://www.lemara.lt internetinėje svetainėje. Taip pat rasite informaciją apie savo teises ir mūsų įsipareigojimus.",
     },
   };
 
@@ -1012,32 +1014,34 @@ export default function Texts() {
     meta: {
       text1: "Lemara CNC Parts Production",
       text2:
-        "Manufacturing of CNC parts: their designing, turning, milling from plastic and metal.",
+        "Lemara is a small company providing CNC turning and milling services. The production of CNC parts is Lemara's main field of activity. Lemara specialists design the parts and manufacture them by CNC turning or CNC milling. The parts are made of plastic or metal.",
       text3: "Lemara CNC Turning",
       text4:
-        "Information about CNC turning, the materials we work with, the parts we can produce.",
+        "Lemara provides CNC turning service. Turning is performed from metal and plastic. CNC is an abbreviation of the English word combination computer numerical control. Cylindrical, conical, spherical, shaped parts are produced from metal or plastic by CNC turning, and their end flat surfaces are processed.",
       text5: "Lemara CNC Milling",
       text6:
-        "Information about CNC milling, the materials we work with, the parts we can produce.",
+        "Lemara provides CNC milling service. Milling is performed from metal and plastic. CNC is an abbreviation of the English word combination computer numerical control. Milling is one of the methods of mechanical processing of materials, when the working tool (milling machine) rotates to cut a chip of the specified size from the surface of the workpiece to be processed.",
       text7: "Lemara CNC Parts Design",
-      text8: "Information about CNC parts designing service",
+      text8:
+        "Designing is one of the services we provide. Lemara specialists can project complex details according to customer requirements. It can also check the drawings sent by the customer and advise on possible problems in the production of the part.",
       text9: "Lemara General Information",
       text10:
-        "General information about MB Lemara, CNC part manufacturing, turning, milling, design, order requirements, delivery, etc.",
+        "General information about MB Lemara, CNC parts production, turning, milling, design, order requirements, delivery. In this way, you can find more detailed information about the possibilities, features and types of CNC production.",
       text11: "Lemara Equipment",
       text12:
-        "Lemara's available CNC turning and milling equipment and technical specifications and technical capabilities page.",
+        "Page of technical specifications and technical capabilities of Lemara's CNC turning and milling equipment. If you don't know if we have the equipment to manufacture your part, you can check this page or contact our specialists.",
       text13: "Lemara Gallery",
       text14:
-        "In the Lemara gallery you can find examples of parts produced by Lemara's CNC turning and milling specialists.",
+        "In the Lemara gallery, you can find examples of parts produced by Lemara's CNC turning and milling specialists. Thanks to modern equipment, parts made by Lemara specialists by CNC turning or CNC milling have a very small error.",
       text15: "Lemara Career Opportunities",
       text16:
-        "If you are looking for a job in the field of CNC parts production - visit Lemara's career page",
+        "Lemara is constantly expanding and is constantly looking for specialists for its team. If you are a CNC turning or CNC milling specialist and are looking for a job in the field of CNC parts production - visit the Lemara career page.",
       text17: "Lemara Contacts",
       text18:
-        "If you want to contact Lemara specialists - on this page you will find all the necessary contacts.",
+        "If you want to contact Lemara specialists - on this page you will find all the necessary contacts. If you need information about the design of CNC parts - contact the designer. If you have general questions about CNC turning or CNC milling, please contact the production manager.",
       text19: "Lemara Privacy Policy",
-      text20: "Information about MB Lemara's privacy policy.",
+      text20:
+        "In this privacy policy, we provide you with information on how MB Lemara handles your personal data on the https://www.lemara.lt website. You will also find information about your rights and our obligations.",
     },
   };
 
@@ -1537,32 +1541,34 @@ export default function Texts() {
     meta: {
       text1: "Lemara CNC-Delerproduksjon",
       text2:
-        "Produksjon av CNC-deler: deres design, dreiing, fresing fra plast og metall.",
+        "Lemara er et lite selskap som tilbyr CNC-dreiing og -fresetjenester. Produksjon av CNC-deler er Lemaras hovedaktivitetsfelt. Lemara-spesialister designer delene og produserer dem ved CNC-dreiing eller CNC-fresing. Delene er laget av plast eller metall.",
       text3: "Lemara CNC-Dreiing",
       text4:
-        "Informasjon om CNC-dreiing, materialene vi jobber med, delene vi kan produsere.",
+        "Lemara tilbyr CNC-dreietjenester. Dreining utføres av metall og plast. CNC er en forkortelse av den engelske ordkombinasjonen computer numerical control. Sylindriske, koniske, sfæriske, formede deler produseres av metall eller plast ved CNC-dreiing, og deres flate endeflater behandles.",
       text5: "Lemara CNC-Fresing",
       text6:
-        "Informasjon om CNC-fresing, materialene vi jobber med, delene vi kan produsere.",
+        "Lemara tilbyr CNC-fresetjenester. Fresing utføres av metall og plast. CNC er en forkortelse av den engelske ordkombinasjonen computer numerical control. Fresing er en av metodene for mekanisk bearbeiding av materialer, når arbeidsverktøyet (fresemaskinen) roterer for å kutte en spon av spesifisert størrelse fra overflaten av arbeidsstykket som skal behandles.",
       text7: "Lemara CNC Parts Design",
-      text8: "Informasjon om design av CNC-deler",
+      text8:
+        "Design er en av tjenestene vi tilbyr. Lemara-spesialister kan projisere komplekse detaljer i henhold til kundens krav. Den kan også sjekke tegningene sendt av kunden og gi råd om mulige problemer i produksjonen av delen.",
       text9: "Lemara Generell Informasjon",
       text10:
-        "Generell informasjon om MB Lemara, produksjon av CNC-deler, dreiing, fresing, design, ordrekrav, levering, etc.",
+        "Generell informasjon om MB Lemara, produksjon av CNC-deler, dreiing, fresing, design, ordrekrav, levering. På denne måten kan du finne mer detaljert informasjon om mulighetene, funksjonene og typene av CNC-produksjon.",
       text11: "Lemara-Utstyr",
       text12:
-        "Lemaras tilgjengelige CNC-dreie- og freseutstyr og tekniske spesifikasjoner og tekniske muligheter side.",
+        "Side med tekniske spesifikasjoner og tekniske muligheter for Lemaras CNC-dreie- og freseutstyr. Hvis du ikke vet om vi har utstyret til å produsere delen din, kan du sjekke denne siden eller kontakte våre spesialister.",
       text13: "Lemara Gallery",
       text14:
-        "I Lemara-galleriet kan du finne eksempler på deler produsert av Lemaras CNC-drei- og fresespesialister.",
+        "I Lemara-galleriet kan du finne eksempler på deler produsert av Lemaras CNC-drei- og fresespesialister. Takket være moderne utstyr har deler laget av Lemara-spesialister ved CNC-dreiing eller CNC-fres en svært liten feil.",
       text15: "Lemara Karrieremuligheter",
       text16:
-        "Hvis du ser etter en jobb innen produksjon av CNC-deler - besøk Lemaras karriereside",
+        "Lemara ekspanderer stadig og leter stadig etter spesialister til teamet sitt. Hvis du er en spesialist i CNC-dreiing eller CNC-fresing og ser etter en jobb innen produksjon av CNC-deler - besøk Lemaras karriereside.",
       text17: "Lemara-Kontakter",
       text18:
-        "Hvis du vil kontakte Lemara-spesialister - på denne siden finner du alle nødvendige kontakter.",
+        "Hvis du ønsker å kontakte Lemara-spesialister - på denne siden finner du alle nødvendige kontakter. Trenger du informasjon om design av CNC-deler - ta kontakt med designeren. Har du generelle spørsmål om CNC-dreiing eller CNC-fresing, ta kontakt med produksjonssjefen.",
       text19: "Lemaras Retningslinjer For Personvern",
-      text20: "Informasjon om MB Lemaras personvernpolicy.",
+      text20:
+        "I denne personvernerklæringen gir vi deg informasjon om hvordan MB Lemara håndterer dine personopplysninger på nettstedet https://www.lemara.lt. Du finner også informasjon om dine rettigheter og våre plikter.",
     },
   };
 

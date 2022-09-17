@@ -42,6 +42,15 @@ export default function Document() {
           name="keywords"
           content="CNC Tekinimas, Frezavimas, Degalių gamyba"
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-QPQYS0TKC7"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-QPQYS0TKC7')
+        </script>
       </Head>
       <body>
         <Main />

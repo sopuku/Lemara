@@ -6,7 +6,7 @@ import Footer from "../Components/Ui/Footer";
 import theme from "../Components/Ui/Theme/theme";
 import "../Components/Ui/Theme/styles.css";
 import Head from "next/head";
-import Script from "next/script";
+import GoogleAnalytics from "@bradgarropy/next-google-analytics";
 
 export const CurrentSettings = React.createContext(null);
 
@@ -23,17 +23,7 @@ export default function MyApp({ Component, pageProps }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Script
-        strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-QPQYS0TKC7"
-      />
-
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-QPQYS0TKC7')`}
-      </Script>
-
+      <GoogleAnalytics measurementId="G-QPQYS0TKC7" />
       <ChakraProvider theme={theme}>
         <CurrentSettings.Provider value={{ language, setLanguage }}>
           <Navigation />

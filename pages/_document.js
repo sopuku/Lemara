@@ -42,17 +42,22 @@ export default function Document() {
           name="keywords"
           content="CNC Tekinimas, Frezavimas, Degalių gamyba"
         />
+
+        <scrip
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || []; function gtag()
+          {dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-QPQYS0TKC7')`,
+          }}
+        />
       </Head>
       <body>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-QPQYS0TKC7"
-        ></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag()
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', 'G-QPQYS0TKC7')
-        </script>
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html: `<iframe src="https://www.googletagmanager.com/gtag/js?id=G-QPQYS0TKC7" height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+          }}
+        ></noscript>
         <Main />
         <NextScript />
       </body>

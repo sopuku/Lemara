@@ -8,6 +8,7 @@ export default function HomePage() {
   return (
     <main>
       <Head>
+      
         <title>{texts.meta.text1}</title>
         <meta name="description" content={texts.meta.text2} />
       </Head>

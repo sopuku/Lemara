@@ -45,7 +45,7 @@ export default function Feedback() {
         {texts.index.feedback.map((item) => {
           return (
             <React.Fragment key={item.title}>
-              <Heading as="h2" size="xl" pb="1rem">
+              <Heading as="h3" size="xl" pb="1rem">
                 {item.title}
               </Heading>
               <Text lineHeight={{ base: "1.5", lg: "1.8" }} fontSize="xl">

@@ -42,7 +42,7 @@ export default function DefaultPage(props) {
           </Square>
         )}
         <VStack spacing="8">
-          <Heading as="h1">{props.heading}</Heading>
+          <Heading as="h2">{props.heading}</Heading>
           <Text
             maxW="40rem"
             lineHeight={{ md: "1.8" }}

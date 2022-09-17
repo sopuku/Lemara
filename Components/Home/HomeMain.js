@@ -21,6 +21,7 @@ export default function HomeMain() {
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
         backgroundImage={texts.images.mainImage}
+        backgroundImageAlt=""
         boxShadow="0 0 20px 10px grey"
         color={colors.home.color}
         bg={colors.home.bg}

@@ -42,6 +42,8 @@ export default function Document() {
           name="keywords"
           content="CNC Tekinimas, Frezavimas, Degalių gamyba"
         />
+      </Head>
+      <body>
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-QPQYS0TKC7"
@@ -51,8 +53,6 @@ export default function Document() {
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-QPQYS0TKC7')
         </script>
-      </Head>
-      <body>
         <Main />
         <NextScript />
       </body>

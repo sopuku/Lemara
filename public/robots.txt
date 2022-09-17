@@ -1,4 +1,4 @@
-Sitemap: https://lemara.lt/sitemap
+Sitemap: https://lemara.lt/api/sitemap
 
 User-agent: *
 Allow: /*

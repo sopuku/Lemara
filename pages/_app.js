@@ -6,6 +6,7 @@ import Footer from "../Components/Ui/Footer";
 import theme from "../Components/Ui/Theme/theme";
 import "../Components/Ui/Theme/styles.css";
 import Head from "next/head";
+import Schema from "../Components/Ui/schema";
 
 export const CurrentSettings = React.createContext(null);
 
@@ -16,13 +17,14 @@ export default function MyApp({ Component, pageProps }) {
     document.documentElement.lang = language.toLowerCase();
   }),
     [language];
+  Schema();
 
   return (
     <React.Fragment>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      
+
       <ChakraProvider theme={theme}>
         <CurrentSettings.Provider value={{ language, setLanguage }}>
           <Navigation />

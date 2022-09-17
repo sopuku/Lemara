@@ -6,7 +6,6 @@ import Footer from "../Components/Ui/Footer";
 import theme from "../Components/Ui/Theme/theme";
 import "../Components/Ui/Theme/styles.css";
 import Head from "next/head";
-import Schema from "../Components/Ui/schema";
 
 export const CurrentSettings = React.createContext(null);
 

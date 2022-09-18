@@ -1236,24 +1236,16 @@ export default function Texts() {
       ],
     },
     turning: {
-      t1: {
-        heading: "CNC Dreiing",
-        text: " CNC Dreiing er en av tjenestene vi leverer. Vi utfører opprømming (når delens indre overflater behandles), overflatebehandling (når delens ytre overflater behandles), drenering (når delens bakoverflater behandles). Vi tilbyr dreietjenester for deler laget av plast, rustfritt stål, aluminium, kobber, bronse og mange andre metaller. Vi produserer skruer, muttere, aksler, ruller, hjul, reduksjonsstykker, aksler, foringer, pakninger, pinner, ulike deler for koblinger osv. Hvis det ikke er klart hvilke parameterdetaljer som trengs for din produksjonside, eller du ikke vet hva type metall eller plast er bedre å bruke for produksjonen deres, kontakt våre spesialister som vil svare på alle spørsmålene dine.",
-      },
-      t2: { heading: "Maskiners tekniske kapasitet" },
+      heading: "CNC Dreiing",
+      text: " CNC Dreiing er en av tjenestene vi leverer. Vi utfører opprømming (når delens indre overflater behandles), overflatebehandling (når delens ytre overflater behandles), drenering (når delens bakoverflater behandles). Vi tilbyr dreietjenester for deler laget av plast, rustfritt stål, aluminium, kobber, bronse og mange andre metaller. Vi produserer skruer, muttere, aksler, ruller, hjul, reduksjonsstykker, aksler, foringer, pakninger, pinner, ulike deler for koblinger osv. Hvis det ikke er klart hvilke parameterdetaljer som trengs for din produksjonside, eller du ikke vet hva type metall eller plast er bedre å bruke for produksjonen deres, kontakt våre spesialister som vil svare på alle spørsmålene dine.",
     },
     milling: {
-      t1: {
-        heading: "CNC Fresing",
-        text: " CNC Fresing er en av tjenestene vi tilbyr. Vi utfører planfresing (når flate flater freses med lineær mating), sirkulær fresing (når sylindriske flater freses med sirkulær mating), gjengefresing (når spiralformede flater freses med skrumating), formfresing (når fresingen kutterprofil kuttes i arbeidsstykket), konturfresing (ved dannelse av både enkle konturer og komplekse tredimensjonale overflater ved å gi en kontrollert mating til verktøymaskinen). Vi tilbyr detaljfresing fra plast, rustfritt stål, aluminium, kobber, bronse og mange andre metaller. Hvis det ikke er klart hvilke parameterdetaljer som trengs for produksjonsideen din, eller du ikke vet hva slags metall eller plast som er bedre å bruke for produksjonen, kontakt våre spesialister som vil svare på alle spørsmålene dine.",
-      },
-      t2: { heading: "Maskiners tekniske kapasitet" },
+      heading: "CNC Fresing",
+      text: " CNC Fresing er en av tjenestene vi tilbyr. Vi utfører planfresing (når flate flater freses med lineær mating), sirkulær fresing (når sylindriske flater freses med sirkulær mating), gjengefresing (når spiralformede flater freses med skrumating), formfresing (når fresingen kutterprofil kuttes i arbeidsstykket), konturfresing (ved dannelse av både enkle konturer og komplekse tredimensjonale overflater ved å gi en kontrollert mating til verktøymaskinen). Vi tilbyr detaljfresing fra plast, rustfritt stål, aluminium, kobber, bronse og mange andre metaller. Hvis det ikke er klart hvilke parameterdetaljer som trengs for produksjonsideen din, eller du ikke vet hva slags metall eller plast som er bedre å bruke for produksjonen, kontakt våre spesialister som vil svare på alle spørsmålene dine.",
     },
     design: {
-      t1: {
-        heading: "Designing",
-        text: "Design er en av tjenestene vi tilbyr. Vi designer i henhold til prøven av delen (når den tilgjengelige delen er målt veldig nøyaktig, tegningene er laget, en datamaskinmodell opprettes), i henhold til den gitte oppgaven og beskrivelsen, i henhold til tegningen sendt av deg. Tegningene må samsvare med et av de nødvendige formatene (trinn, dxf, dwg, x_t, x_b), materialet som delen skal lages av må spesifiseres, en skala på 1:1 brukes, skjærekonturen er gitt av direkte refleksjon, objekter konverteres til kurver, dimensjoner er spesifisert i millimeter. Tegningen må ikke inneholde sammenslåinger, overlappinger, doble linjer, unødvendige punkter osv. Har du ikke tegning vil våre designere gjøre det med kvalitet og ansvar. Siden selv den minste feil kan være årsaken til et dårlig resultat, blir de mottatte filene alltid sjekket av våre spesialister.",
-      },
+      heading: "Designing",
+      text: "Design er en av tjenestene vi tilbyr. Vi designer i henhold til prøven av delen (når den tilgjengelige delen er målt veldig nøyaktig, tegningene er laget, en datamaskinmodell opprettes), i henhold til den gitte oppgaven og beskrivelsen, i henhold til tegningen sendt av deg. Tegningene må samsvare med et av de nødvendige formatene (trinn, dxf, dwg, x_t, x_b), materialet som delen skal lages av må spesifiseres, en skala på 1:1 brukes, skjærekonturen er gitt av direkte refleksjon, objekter konverteres til kurver, dimensjoner er spesifisert i millimeter. Tegningen må ikke inneholde sammenslåinger, overlappinger, doble linjer, unødvendige punkter osv. Har du ikke tegning vil våre designere gjøre det med kvalitet og ansvar. Siden selv den minste feil kan være årsaken til et dårlig resultat, blir de mottatte filene alltid sjekket av våre spesialister.",
     },
     general: {
       text1: "Generell informasjon",

@@ -17,6 +17,12 @@
           }
         }
       }
+    },
+    "Images": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
     }
   },
   "_cts": {

@@ -1,6 +1,6 @@
-import galleryImages from "../Components/Gallery/Images";
 import Head from "next/head";
-import Texts from "../Components/Texts/Texts";
+import * as prismic from "@prismicio/client";
+import sm from "../sm.json";
 // import axios from "axios";
 
 import dynamic from "next/dynamic";
@@ -11,28 +11,45 @@ const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
 });
 
 export default function Galery(props) {
-  const texts = Texts();
   return (
     <React.Fragment>
       <Head>
-        <title>{texts.meta.text13}</title>
-        <meta name="description" content={texts.meta.text14} />
+        <title>{props.page.data.meta_title}</title>
+        <meta name="description" content={props.page.data.meta_description} />
       </Head>
       <Suspense>
-        <GalleryMain pictures={props.pictures} fallback={`Loading...`} />
+        <GalleryMain
+          pictures={props.pictures}
+          data={props.page.data}
+          fallback={`Loading...`}
+        />
       </Suspense>
     </React.Fragment>
   );
 }
 
 export async function getStaticProps() {
-  const pictures = galleryImages();
+  const client = prismic.createClient(sm.apiEndpoint);
+  const page = await client.getByUID("gallery", "gallery");
+  const picture = [];
+  page.data.slices[0].items.map((item) => {
+    const temp = {
+      src: item.images.url,
+      alt: "Detalės, pagamintos CNC tekinimo arba CNC frezavimo būdu",
+      width: item.images.dimensions.width,
+      height: item.images.dimensions.height,
+    };
+    picture.push(temp);
+  });
+
   return {
     props: {
-      pictures: pictures,
+      pictures: picture,
+      page,
     },
   };
 }
+
 //========== import from google photos ================
 // const url = "https://photos.app.goo.gl/7Zh7P55oAKDmuN2W6";
 // const regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g;

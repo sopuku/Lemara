@@ -5,27 +5,23 @@ import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 import React, { useState } from "react";
 import { Container } from "@chakra-ui/react";
-import Colors from "../Ui/Colors";
-import Texts from "../Texts/Texts";
 
 export default function GalleryMain(props) {
-  const colors = Colors();
-  const texts = Texts();
+  const [index, setIndex] = useState(-1);
   const slides = props.pictures.map(({ src, width, height }) => ({
     src,
     width,
     height,
   }));
 
-  const [index, setIndex] = useState(-1);
-
   return (
     <Container
       maxW="100%"
       px={{ base: "5%", md: "10%" }}
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
-      bg={colors.gallery.bg}
-      backgroundImage={texts.images.galleryBgTexture}
+      bg={props.data.background_color}
+      color={props.data.text_color}
+      backgroundImage={props.data.background_texture.url}
     >
       <PhotoAlbum
         spacing={6}

@@ -11,20 +11,9 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "images": [
-      {
-        "type": "heading1",
-        "text": "Important",
-        "spans": []
-      },
-      {
-        "type": "paragraph",
-        "text": "Fugiat minim duis id velit duis aliquip do aliquip nisi aute anim proident. Officia irure eu deserunt Lorem occaecat proident mollit cupidatat occaecat excepteur laboris excepteur aliquip sit in. Elit veniam ex aliqua incididunt consequat elit anim eu excepteur veniam pariatur dolor.",
-        "spans": []
-      }
-    ],
-    "text_color": "#3f77b9",
-    "background_color": "#291b27",
+    "slices": [],
+    "text_color": "#84f6b3",
+    "background_color": "#6fb724",
     "background_texture": {
       "dimensions": {
         "width": 900,
@@ -32,9 +21,9 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab"
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
     },
-    "meta_title": "ago",
-    "meta_description": "bowl"
+    "meta_title": "where",
+    "meta_description": "language"
   }
 }

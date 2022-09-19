@@ -1,0 +1,42 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "career",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "ability",
+    "description_title": "young",
+    "requirments_title": "shall",
+    "offer_title": "chapter",
+    "salary_title": "express",
+    "slices": [],
+    "text_color": "#44c9ed",
+    "background_color": "#f7fa94",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+    },
+    "expanded_text_color": "#d1a24a",
+    "expanded_background_color": "#4e4f7b",
+    "button_text_color": "#f68141",
+    "button_background_color": "#4badb2",
+    "button_hover_text_color": "#3fe367",
+    "button_hover_background_color": "#f3992c",
+    "button_expanded_text_color": "#d6242e",
+    "button_expanded_background_color": "#285759",
+    "meta_title": "allow",
+    "meta_description": "learn"
+  }
+}

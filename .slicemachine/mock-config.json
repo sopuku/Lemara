@@ -23,6 +23,37 @@
         "primary": {},
         "items": {}
       }
+    },
+    "Jobs": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "requirments": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "offer": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          },
+          "salary": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        },
+        "items": {}
+      }
     }
   },
   "_cts": {
@@ -53,6 +84,7 @@
           "blocks": 1
         }
       }
-    }
+    },
+    "career": {}
   }
 }

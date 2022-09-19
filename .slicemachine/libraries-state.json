@@ -59,6 +59,120 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "jobs": {
+        "library": "slices",
+        "id": "jobs",
+        "name": "Jobs",
+        "description": "Jobs",
+        "model": {
+          "id": "jobs",
+          "type": "SharedSlice",
+          "name": "Jobs",
+          "description": "Jobs",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Jobs",
+              "primary": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "description": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "description",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                },
+                "requirments": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "requirments",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                },
+                "offer": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "offer",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                },
+                "salary": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "salary",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "multi": "paragraph"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": "success",
+              "description": [
+                {
+                  "type": "paragraph",
+                  "text": "Elit duis occaecat occaecat.",
+                  "spans": []
+                }
+              ],
+              "requirments": [
+                {
+                  "type": "paragraph",
+                  "text": "Ipsum elit mollit id occaecat.",
+                  "spans": []
+                }
+              ],
+              "offer": [
+                {
+                  "type": "paragraph",
+                  "text": "Duis magna officia magna aliquip reprehenderit in minim veniam. Dolore ex cupidatat ut voluptate nostrud occaecat voluptate non veniam eu incididunt tempor id.",
+                  "spans": []
+                }
+              ],
+              "salary": [
+                {
+                  "type": "paragraph",
+                  "text": "In ullamco aliquip quis. Laborum ex deserunt in occaecat minim tempor cupidatat velit aliquip pariatur do commodo et magna deserunt. Duis velit culpa irure qui labore aliquip ad labore velit consequat ad id in adipisicing.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "jobs"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   }

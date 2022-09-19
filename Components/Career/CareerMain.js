@@ -11,25 +11,26 @@ import {
 import Colors from "../Ui/Colors";
 import CareerList from "./CareerList";
 
-export default function CareerMain() {
+export default function CareerMain(props) {
   const texts = Texts();
   const colors = Colors();
+
   return (
     <Container
       maxW="8xl"
-      color={colors.career.color}
-      bg={colors.career.bg}
+      color={props.data.text_color}
+      bg={props.data.background_color}
       align="center"
       borderRadius="xl"
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
     >
       <Heading as="h3" size="2xl" py="2rem">
-        {texts.career.text1}
+        {props.data.title}
       </Heading>
       <Accordion allowToggle pt={{ sm: "1rem", md: "2rem", lg: "5rem" }}>
-        {texts.career.jobs.map((job) => {
+        {props.data.slices.map((job) => {
           return (
-            <AccordionItem key={job.title} maxW="60rem">
+            <AccordionItem key={job.id} maxW="60rem">
               <AccordionButton
                 color={colors.career.button.color}
                 bg={colors.career.button.bg}
@@ -48,7 +49,7 @@ export default function CareerMain() {
                   fontSize="30"
                   fontWeight="600"
                 >
-                  {job.title}
+                  {job.primary.title}
                 </Container>
                 <AccordionIcon />
               </AccordionButton>
@@ -61,13 +62,25 @@ export default function CareerMain() {
                 color={colors.career.colorExpanded}
                 roundedBottom="8"
               >
-                <CareerList name={texts.career.text2} items={job.description} />
+                <CareerList
+                  name={props.data.description_title}
+                  items={job.primary.description}
+                />
 
-                <CareerList name={texts.career.text3} items={job.requirments} />
+                <CareerList
+                  name={props.data.requirments_title}
+                  items={job.primary.requirments}
+                />
 
-                <CareerList name={texts.career.text4} items={job.offer} />
+                <CareerList
+                  name={props.data.offer_title}
+                  items={job.primary.offer}
+                />
 
-                <CareerList name={texts.career.text5} items={job.salary} />
+                <CareerList
+                  name={props.data.salary_title}
+                  items={job.primary.salary}
+                />
               </AccordionPanel>
             </AccordionItem>
           );

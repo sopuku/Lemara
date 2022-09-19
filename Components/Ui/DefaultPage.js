@@ -19,9 +19,9 @@ export default function DefaultPage(props) {
     <Container
       maxW="100%"
       w="100%"
-      bg={props.name === "aboutUs" && colors.home.aboutUs.bg}
-      backgroundImage={props.name === "aboutUs" && texts.images.bgTexture}
-      color={props.name === "aboutUs" && colors.home.aboutUs.color}
+      bg={props.bg}
+      backgroundImage={props.bgTexture}
+      color={props.color}
     >
       <Stack
         direction={{ base: "column", xl: "row" }}
@@ -54,7 +54,7 @@ export default function DefaultPage(props) {
         </VStack>
         {props.name === "aboutUs" && (
           <Square maxW="40rem" boxShadow="0 0 5px 1px black">
-            <img
+            <Image
               src={props.src}
               alt={props.alt}
               width={props.w}

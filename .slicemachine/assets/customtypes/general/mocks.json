@@ -1,0 +1,41 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "general",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "his",
+    "text": [
+      {
+        "type": "heading1",
+        "text": "Health",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Dolore laboris minim pariatur consequat dolore occaecat officia voluptate do voluptate reprehenderit ea.",
+        "spans": []
+      }
+    ],
+    "text_color": "#54f754",
+    "background_color": "#88691a",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468"
+    },
+    "meta_title": "thought",
+    "meta_description": "charge"
+  }
+}

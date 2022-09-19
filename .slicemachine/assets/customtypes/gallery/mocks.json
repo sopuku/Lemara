@@ -1,0 +1,40 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "gallery",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "images": [
+      {
+        "type": "heading1",
+        "text": "Important",
+        "spans": []
+      },
+      {
+        "type": "paragraph",
+        "text": "Fugiat minim duis id velit duis aliquip do aliquip nisi aute anim proident. Officia irure eu deserunt Lorem occaecat proident mollit cupidatat occaecat excepteur laboris excepteur aliquip sit in. Elit veniam ex aliqua incididunt consequat elit anim eu excepteur veniam pariatur dolor.",
+        "spans": []
+      }
+    ],
+    "text_color": "#3f77b9",
+    "background_color": "#291b27",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab"
+    },
+    "meta_title": "ago",
+    "meta_description": "bowl"
+  }
+}

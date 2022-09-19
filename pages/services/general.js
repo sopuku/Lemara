@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Texts from "../../Components/Texts/Texts";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
+import * as prismic from "@prismicio/client";
+import sm from "../../sm.json";
 
 const GeneralMain = dynamic(
   () => import("../../Components/General/GeneralMai"),
@@ -10,17 +11,27 @@ const GeneralMain = dynamic(
   }
 );
 
-export default function General() {
-  const texts = Texts();
+export default function General({ page }) {
   return (
     <React.Fragment>
       <Head>
-        <title>{texts.meta.text9}</title>
-        <meta name="description" content={texts.meta.text10} />
+        <title>{page.data.meta_title}</title>
+        <meta name="description" content={page.data.meta_description} />
       </Head>
       <Suspense>
-        <GeneralMain fallback={`Loading...`} />
+        <GeneralMain data={page.data} fallback={`Loading...`} />
       </Suspense>
     </React.Fragment>
   );
+}
+
+export async function getStaticProps() {
+  const client = prismic.createClient(sm.apiEndpoint);
+  const page = await client.getByUID("general", "general");
+
+  return {
+    props: {
+      page,
+    },
+  };
 }

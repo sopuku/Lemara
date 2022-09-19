@@ -1,32 +1,45 @@
 import Head from "next/head";
-import Texts from "../../Components/Texts/Texts";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
+import * as prismic from "@prismicio/client";
+import sm from "../../sm.json";
 
 const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
   suspense: true,
 });
-export default function Design() {
-  const texts = Texts();
-
+export default function Design({ page }) {
   return (
     <React.Fragment>
       <Head>
-        <title>{texts.meta.text7}</title>
-        <meta name="description" content={texts.meta.text8} />
+        <title>{page.data.meta_title}</title>
+        <meta name="description" content={page.data.meta_description} />
       </Head>
       <Suspense>
         <DefaultPage
           name="design"
-          src={texts.images.designImage}
-          alt={texts.images.designImageAlt}
-          heading={texts.design.heading}
-          text={texts.design.text}
-          w="900px"
-          h="600px"
+          src={page.data.image.url}
+          alt={page.data.image.alt}
+          heading={page.data.title}
+          text={page.data.text}
+          w={page.data.image.dimensions.width}
+          h={page.data.image.dimensions.height}
+          bg={page.data.background_color}
+          color={page.data.text_color}
+          bgTexture={page.data.background_texture}
           fallback={`Loading...`}
         />
       </Suspense>
     </React.Fragment>
   );
+}
+
+export async function getStaticProps() {
+  const client = prismic.createClient(sm.apiEndpoint);
+  const page = await client.getByUID("design", "design");
+
+  return {
+    props: {
+      page,
+    },
+  };
 }

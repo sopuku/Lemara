@@ -1,0 +1,51 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "privacy",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "orange",
+    "text": [
+      {
+        "type": "heading2",
+        "text": "Faster",
+        "spans": []
+      },
+      {
+        "type": "image",
+        "url": "https://images.unsplash.com/photo-1544731612-de7f96afe55f",
+        "alt": null,
+        "copyright": null,
+        "dimensions": {
+          "width": 900,
+          "height": 500
+        }
+      },
+      {
+        "type": "paragraph",
+        "text": "Exercitation do reprehenderit minim. Amet elit eu esse nostrud ea consectetur aute aliqua qui aute. Duis sint deserunt ullamco exercitation velit voluptate aliqua officia esse ipsum ut ex magna esse nostrud.",
+        "spans": []
+      }
+    ],
+    "text_color": "#e3a2d5",
+    "background_color": "#1ed4d4",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1579931794097-0ad001e51edb"
+    },
+    "meta_title": "feed",
+    "meta_description": "result"
+  }
+}

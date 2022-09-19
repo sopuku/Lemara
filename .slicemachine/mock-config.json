@@ -54,6 +54,12 @@
         },
         "items": {}
       }
+    },
+    "Machine": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
     }
   },
   "_cts": {
@@ -85,6 +91,7 @@
         }
       }
     },
-    "career": {}
+    "career": {},
+    "equipment": {}
   }
 }

@@ -1,10 +1,9 @@
 import Head from "next/head";
 import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
-// import axios from "axios";
-
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
+// import axios from "axios";
 
 const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
   suspense: true,

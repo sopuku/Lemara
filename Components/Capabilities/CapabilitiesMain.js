@@ -2,24 +2,24 @@ import Card from "../Capabilities/Card";
 import { Heading, SimpleGrid, Container } from "@chakra-ui/react";
 import Texts from "../Texts/Texts";
 import React from "react";
-import Colors from "../Ui/Colors";
 
 export default function CapabilitiesMain(props) {
   const texts = Texts();
-  const colors = Colors();
+  // console.log(props.data);
+
   return (
     <Container
       px="0"
       maxW="100%"
       centerContent
-      bg={colors.turning.bgBot}
-      backgroundImage={colors.turning.bgTexture}
-      color={colors.turning.colorBot}
       boxShadow="-0 -20px 20px -10px grey"
+      bg={props.data.background_color}
+      color={props.data.text_color}
+      backgroundImage={props.data.background_texture}
     >
       <Container centerContent maxW="100%" py="1rem">
-        <Heading as="h3" pt="3rem" color="orange">
-          {texts.capabilities.text1}
+        <Heading color={props.data.title_color} as="h3" pt="3rem">
+          {props.data.title_turning}
         </Heading>
       </Container>
       <SimpleGrid
@@ -28,19 +28,17 @@ export default function CapabilitiesMain(props) {
         mt="3rem"
         pb="5rem"
       >
-        {texts.capabilities.mashines.map(
+        {props.data.slices.map(
           (item) =>
-            item.type === "turning" && <Card data={item} key={item.name} />
+            item.primary.type === "turning" && (
+              <Card data={item} key={item.id} />
+            )
         )}
       </SimpleGrid>
-      <Container
-        centerContent
-        maxW="100%"
-        color="orange"
-        borderTop="5px solid grey"
-        py="1rem"
-      >
-        <Heading pt="1rem">{texts.capabilities.text2}</Heading>
+      <Container centerContent maxW="100%" borderTop="5px solid grey" py="1rem">
+        <Heading color={props.data.title_color} pt="1rem">
+          {props.data.title_milling}
+        </Heading>
       </Container>
       <SimpleGrid
         columns={{ base: 1, lg: 2 }}
@@ -48,9 +46,11 @@ export default function CapabilitiesMain(props) {
         pt="3rem"
         pb="5rem"
       >
-        {texts.capabilities.mashines.map(
+        {props.data.slices.map(
           (item) =>
-            item.type === "milling" && <Card data={item} key={item.name} />
+            item.primary.type === "milling" && (
+              <Card data={item} key={item.id} />
+            )
         )}
       </SimpleGrid>
     </Container>

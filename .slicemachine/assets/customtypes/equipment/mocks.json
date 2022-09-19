@@ -1,0 +1,32 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "equipment",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title_turning": "wrong",
+    "title_milling": "social",
+    "slices": [],
+    "text_color": "#d923e2",
+    "background_color": "#d23ffa",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+    },
+    "title_color": "#31920b",
+    "meta_title": "species",
+    "meta_description": "gas"
+  }
+}

@@ -173,6 +173,99 @@
           "extension": "js"
         },
         "screenshotPaths": {}
+      },
+      "machine": {
+        "library": "slices",
+        "id": "machine",
+        "name": "Machine",
+        "description": "Machine",
+        "model": {
+          "id": "machine",
+          "type": "SharedSlice",
+          "name": "Machine",
+          "description": "Machine",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Machine",
+              "primary": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "name": {
+                  "type": "Text",
+                  "config": {
+                    "label": "name",
+                    "placeholder": ""
+                  }
+                },
+                "type": {
+                  "type": "Text",
+                  "config": {
+                    "label": "type",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {
+                "text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Specification",
+                    "placeholder": ""
+                  }
+                },
+                "value": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Value",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "text": "involved",
+                "value": "her"
+              }
+            ],
+            "primary": {
+              "image": {
+                "dimensions": {
+                  "width": 900,
+                  "height": 500
+                },
+                "alt": null,
+                "copyright": null,
+                "url": "https://images.unsplash.com/photo-1587840171670-8b850147754e"
+              },
+              "name": "relationship",
+              "type": "cabin"
+            },
+            "slice_type": "machine"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
       }
     }
   }

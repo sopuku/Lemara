@@ -1,0 +1,89 @@
+{
+  "id": "equipment",
+  "label": "Equipment",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "id",
+          "placeholder": ""
+        }
+      },
+      "title_turning": {
+        "type": "Text",
+        "config": {
+          "label": "title turning",
+          "placeholder": ""
+        }
+      },
+      "title_milling": {
+        "type": "Text",
+        "config": {
+          "label": "title milling",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "machine": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "styles": {
+      "text_color": {
+        "type": "Color",
+        "config": {
+          "label": "text color",
+          "placeholder": ""
+        }
+      },
+      "background_color": {
+        "type": "Color",
+        "config": {
+          "label": "background color",
+          "placeholder": ""
+        }
+      },
+      "background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title_color": {
+        "type": "Color",
+        "config": {
+          "label": "title color",
+          "placeholder": ""
+        }
+      }
+    },
+    "SEO": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

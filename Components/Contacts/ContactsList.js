@@ -1,29 +1,33 @@
 import { Heading, VStack } from "@chakra-ui/react";
 import { MdPhone, MdEmail, MdLocationOn } from "react-icons/md";
 import ContactListElement from "./ContactListElement";
-import Texts from "../Texts/Texts";
 
-export default function ContactsList() {
-  const texts = Texts();
+export default function ContactsList(props) {
   return (
     <VStack spacing="1rem" align="left" w="15rem">
       <Heading fontSize="5xl" pb="1rem">
-        {texts.footer.contacts}
+        {props.data.contact_title}
       </Heading>
       <ContactListElement
+        iconColor={props.data.icon_color}
+        hoverColor={props.data.link_hover_color}
         icon={MdPhone}
-        href="tel:+37064657845"
-        text="+370 646 57845"
+        href={props.data.contact_phone_number_link}
+        text={props.data.contact_phone_number}
       />
       <ContactListElement
+        iconColor={props.data.icon_color}
+        hoverColor={props.data.link_hover_color}
         icon={MdEmail}
-        text="info@lemara.lt"
-        href="mailto:info@lemara.lt"
+        text={props.data.contact_email}
+        href={props.data.contact_email_link}
       />
       <ContactListElement
+        iconColor={props.data.icon_color}
+        hoverColor={props.data.link_hover_color}
         icon={MdLocationOn}
         href=""
-        text="Pasagų g. 4, Riešės k. LT-14265 Vilniaus r."
+        text={props.data.contact_adress}
       />
     </VStack>
   );

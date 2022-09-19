@@ -1,0 +1,69 @@
+{
+  "id": "staff",
+  "type": "SharedSlice",
+  "name": "Staff",
+  "description": "Staff",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Staff",
+      "primary": {
+        "image": {
+          "type": "Image",
+          "config": {
+            "label": "Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "name": {
+          "type": "Text",
+          "config": {
+            "label": "Name",
+            "placeholder": ""
+          }
+        },
+        "responsibilities": {
+          "type": "Text",
+          "config": {
+            "label": "Responsibilities",
+            "placeholder": ""
+          }
+        },
+        "email": {
+          "type": "Text",
+          "config": {
+            "label": "Email",
+            "placeholder": ""
+          }
+        },
+        "phone_number": {
+          "type": "Text",
+          "config": {
+            "label": "Phone number",
+            "placeholder": ""
+          }
+        },
+        "email_link": {
+          "type": "Text",
+          "config": {
+            "label": "email link",
+            "placeholder": ""
+          }
+        },
+        "phone_link": {
+          "type": "Text",
+          "config": {
+            "label": "phone link",
+            "placeholder": ""
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

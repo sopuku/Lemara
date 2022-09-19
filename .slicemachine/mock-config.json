@@ -60,6 +60,11 @@
         "primary": {},
         "items": {}
       }
+    },
+    "Staff": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
@@ -92,6 +97,7 @@
       }
     },
     "career": {},
-    "equipment": {}
+    "equipment": {},
+    "contacts": {}
   }
 }

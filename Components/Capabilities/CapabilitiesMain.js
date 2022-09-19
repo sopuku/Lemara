@@ -1,12 +1,8 @@
 import Card from "../Capabilities/Card";
 import { Heading, SimpleGrid, Container } from "@chakra-ui/react";
-import Texts from "../Texts/Texts";
 import React from "react";
 
 export default function CapabilitiesMain(props) {
-  const texts = Texts();
-  // console.log(props.data);
-
   return (
     <Container
       px="0"

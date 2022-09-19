@@ -25,7 +25,7 @@ function InputField(props) {
             />
           )}
 
-          {props.name !== "Žinutė" ? (
+          {props.type !== "area" ? (
             <Input
               type={props.type}
               p="5"

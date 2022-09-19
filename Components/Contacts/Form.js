@@ -3,17 +3,12 @@ import React from "react";
 import InputField from "../Ui/InputField";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
-import Colors from "../Ui/Colors";
 import { useState } from "react";
-// import ReCAPTCHA from "react-google-recaptcha";
 import { useToast } from "@chakra-ui/react";
-import Texts from "../Texts/Texts";
 import HCaptcha from "react-hcaptcha";
 
 export default function Form(props) {
   const hcaptchaRef = React.createRef();
-  const colors = Colors();
-  const texts = Texts();
   const toast = useToast();
 
   const [name, setName] = useState("");
@@ -65,7 +60,7 @@ export default function Form(props) {
       if (response.ok) {
         props.sendMessage(form);
         toast({
-          title: texts.contacts.text2,
+          title: props.data.message_send,
           status: "success",
           position: "top",
           duration: 2000,
@@ -73,7 +68,7 @@ export default function Form(props) {
         });
       } else {
         toast({
-          title: texts.contacts.text3,
+          title: props.data.message_error,
           status: "error",
           position: "top",
           duration: 2000,
@@ -104,38 +99,39 @@ export default function Form(props) {
       <Stack
         direction={{ base: "column", lg: "row" }}
         spacing="3rem"
-        bg={colors.contacts.form.bg}
-        color={colors.contacts.form.color}
+        bg={props.data.form_background_color}
+        color={props.data.form_text_color}
         rounded="6px"
         p="2rem"
         shadow="0 0 10px black"
       >
         <VStack>
           <InputField
-            name={texts.contacts.text4}
+            name={props.data.form_name}
             type="text"
             onChange={handleName}
             value={name}
-            icon={<BsPerson color={colors.contacts.form.colorIcon} />}
+            icon={<BsPerson color={props.data.form_icon_color} />}
           />
           <InputField
-            name={texts.contacts.text5}
+            name={props.data.form_email}
             type="email"
             onChange={handleEmail}
             value={email}
-            icon={<MdOutlineEmail color={colors.contacts.form.colorIcon} />}
+            icon={<MdOutlineEmail color={props.data.form_icon_color} />}
           />
           <InputField
-            name={texts.contacts.text6}
+            name={props.data.form_phone}
             type="number"
             onChange={handleNumber}
             value={number}
-            icon={<MdOutlinePhone color={colors.contacts.form.colorIcon} />}
+            icon={<MdOutlinePhone color={props.data.form_icon_color} />}
           />
         </VStack>
         <VStack>
           <InputField
-            name={texts.contacts.text7}
+            type="area"
+            name={props.data.form_message}
             value={message}
             onChange={handleMessage}
           />
@@ -143,11 +139,14 @@ export default function Form(props) {
             isLoading={loading}
             type="submit"
             w="100%"
-            bg={colors.contacts.button.bg}
-            color={colors.contacts.button.color}
-            _hover={{ color: colors.contacts.button.colorHover }}
+            bg={props.data.form_button_background_color}
+            color={props.data.form_button_text_color}
+            _hover={{
+              color: props.data.form_button_hover_text_color,
+              bg: props.data.form_button_hover_background_color,
+            }}
           >
-            {texts.contacts.text8}
+            {props.data.form_button_text}
           </Button>
         </VStack>
       </Stack>

@@ -1,7 +1,8 @@
 import Head from "next/head";
 import emailjs from "@emailjs/browser";
 import Texts from "../Components/Texts/Texts";
-
+import * as prismic from "@prismicio/client";
+import sm from "../sm.json";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 
@@ -13,6 +14,7 @@ const ContactsMain = dynamic(
 );
 
 export default function Contacts(props) {
+  console.log(props.page);
   async function sendMessage(form) {
     await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
   }
@@ -20,18 +22,25 @@ export default function Contacts(props) {
   return (
     <React.Fragment>
       <Head>
-        <title>{texts.meta.text17}</title>
-        <meta name="description" content={texts.meta.text18} />
+        <title>{props.page.data.meta_title}</title>
+        <meta name="description" content={props.page.data.meta_description} />
       </Head>
       <Suspense>
-        <ContactsMain sendMessage={sendMessage} fallback={`Loading...`} />
+        <ContactsMain
+          data={props.page.data}
+          sendMessage={sendMessage}
+          fallback={`Loading...`}
+        />
       </Suspense>
     </React.Fragment>
   );
 }
 export async function getStaticProps() {
+  const client = prismic.createClient(sm.apiEndpoint);
+  const page = await client.getByUID("contacts", "contacts");
   return {
     props: {
+      page,
       SERVICE_ID: "service_nnxf4e4",
       TEMPLATE_ID: "template_vu1n99l",
       KEY: "iVNT9JCWHJMBNgFwD",

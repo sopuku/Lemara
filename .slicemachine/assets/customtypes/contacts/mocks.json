@@ -1,0 +1,85 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "contacts",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "title": "hunt",
+    "message_send": "machinery",
+    "message_error": "organization",
+    "form_name": "taken",
+    "form_email": "total",
+    "form_phone": "sat",
+    "form_message": "inside",
+    "form_button_text": "brush",
+    "contact_title": "paper",
+    "contact_email": "pack",
+    "contact_phone_number": "lower",
+    "contact_adress": "refer",
+    "contact_email_link": "gently",
+    "contact_phone_number_link": "deep",
+    "slices": [],
+    "text_color_top": "#7c2cbf",
+    "background_color_top": "#1fed1c",
+    "background_texture_top": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1607582278038-6bebbd4d7b72"
+    },
+    "text_color_bot": "#e19bac",
+    "background_color_bot": "#cbec73",
+    "background_texture_bot": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587613865763-4b8b0d19e8ab"
+    },
+    "icon_color": "#c60228",
+    "link_hover_color": "#682147",
+    "contact_card_text_color": "#d4149d",
+    "contact_card_background_color_top": "#a16829",
+    "contact_card_background_texture_top": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1494173853739-c21f58b16055"
+    },
+    "contact_card_background_color_bot": "#c7011b",
+    "contact_card_background_texture_bot": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1591012911207-0dbac31f37da"
+    },
+    "contact_card_avatar_border_color": "#b2de07",
+    "form_text_color": "#725ea8",
+    "form_background_color": "#18f51b",
+    "form_icon_color": "#749d92",
+    "form_button_text_color": "#04c113",
+    "form_button_background_color": "#3d1182",
+    "form_button_hover_text_color": "#fa2aa1",
+    "form_button_hover_background_color": "#349b3e",
+    "meta_title": "triangle",
+    "meta_description": "success"
+  }
+}

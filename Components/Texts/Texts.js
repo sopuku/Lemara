@@ -430,7 +430,7 @@ export default function Texts() {
           tel: "tel:+37064764659",
           number: "+370 647 64659",
           src: "/images/contacts/tadas.jpg",
-          alt: "Tabo Plungės, MB Lemara projektuotojo nuotrauka",
+          alt: "Tado Plungės, MB Lemara projektuotojo nuotrauka",
         },
       ],
     },

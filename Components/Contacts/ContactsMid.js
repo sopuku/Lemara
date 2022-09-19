@@ -1,33 +1,29 @@
 import { Heading, Stack, Container } from "@chakra-ui/react";
 import Form from "./Form";
-import Colors from "../Ui/Colors";
 import ContactsList from "./ContactsList";
-import Texts from "../Texts/Texts";
 
 export default function ContactsMid(props) {
-  const texts = Texts();
-  const colors = Colors();
   return (
     <Container
       maxW="100%"
       py="8rem"
       align="center"
       centerContent
-      bg={colors.contacts.bg}
-      backgroundImage={texts.images.bgTexture}
-      color={colors.contacts.color}
+      bg={props.data.background_color_bot}
+      backgroundImage={props.data.background_texture_bot.url}
+      color={props.data.text_color_bot}
       boxShadow="0 0 20px 10px grey"
     >
       <Heading as="h3" pb="5rem" fontSize="6xl">
-        {texts.contacts.text1}
+        {props.data.title}
       </Heading>
       <Stack
         direction={{ base: "column", xl: "row" }}
         spacing="5rem"
         align="center"
       >
-        <ContactsList />
-        <Form sendMessage={props.sendMessage} />
+        <ContactsList data={props.data} />
+        <Form data={props.data} sendMessage={props.sendMessage} />
       </Stack>
     </Container>
   );

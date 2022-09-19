@@ -1,0 +1,295 @@
+{
+  "id": "contacts",
+  "label": "Contacts",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "id",
+          "placeholder": ""
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "message_send": {
+        "type": "Text",
+        "config": {
+          "label": "message send",
+          "placeholder": ""
+        }
+      },
+      "message_error": {
+        "type": "Text",
+        "config": {
+          "label": "message error",
+          "placeholder": ""
+        }
+      },
+      "form_name": {
+        "type": "Text",
+        "config": {
+          "label": "form name",
+          "placeholder": ""
+        }
+      },
+      "form_email": {
+        "type": "Text",
+        "config": {
+          "label": "form email",
+          "placeholder": ""
+        }
+      },
+      "form_phone": {
+        "type": "Text",
+        "config": {
+          "label": "form phone",
+          "placeholder": ""
+        }
+      },
+      "form_message": {
+        "type": "Text",
+        "config": {
+          "label": "form message",
+          "placeholder": ""
+        }
+      },
+      "form_button_text": {
+        "type": "Text",
+        "config": {
+          "label": "form button text",
+          "placeholder": ""
+        }
+      },
+      "contact_title": {
+        "type": "Text",
+        "config": {
+          "label": "contact title",
+          "placeholder": ""
+        }
+      },
+      "contact_email": {
+        "type": "Text",
+        "config": {
+          "label": "contact email",
+          "placeholder": ""
+        }
+      },
+      "contact_phone_number": {
+        "type": "Text",
+        "config": {
+          "label": "contact phone number",
+          "placeholder": ""
+        }
+      },
+      "contact_adress": {
+        "type": "Text",
+        "config": {
+          "label": "contact adress",
+          "placeholder": ""
+        }
+      },
+      "contact_email_link": {
+        "type": "Text",
+        "config": {
+          "label": "contact email link",
+          "placeholder": ""
+        }
+      },
+      "contact_phone_number_link": {
+        "type": "Text",
+        "config": {
+          "label": "contact phone number link",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "staff": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "styles": {
+      "text_color_top": {
+        "type": "Color",
+        "config": {
+          "label": "text color top",
+          "placeholder": ""
+        }
+      },
+      "background_color_top": {
+        "type": "Color",
+        "config": {
+          "label": "background color top",
+          "placeholder": ""
+        }
+      },
+      "background_texture_top": {
+        "type": "Image",
+        "config": {
+          "label": "background texture top",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "text_color_bot": {
+        "type": "Color",
+        "config": {
+          "label": "text color bot",
+          "placeholder": ""
+        }
+      },
+      "background_color_bot": {
+        "type": "Color",
+        "config": {
+          "label": "background color bot",
+          "placeholder": ""
+        }
+      },
+      "background_texture_bot": {
+        "type": "Image",
+        "config": {
+          "label": "background texture bot",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "icon_color": {
+        "type": "Color",
+        "config": {
+          "label": "icon color",
+          "placeholder": ""
+        }
+      },
+      "link_hover_color": {
+        "type": "Color",
+        "config": {
+          "label": "link hover color",
+          "placeholder": ""
+        }
+      },
+      "contact_card_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "contact card text color",
+          "placeholder": ""
+        }
+      },
+      "contact_card_background_color_top": {
+        "type": "Color",
+        "config": {
+          "label": "contact card background color top",
+          "placeholder": ""
+        }
+      },
+      "contact_card_background_texture_top": {
+        "type": "Image",
+        "config": {
+          "label": "contact card background texture top",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "contact_card_background_color_bot": {
+        "type": "Color",
+        "config": {
+          "label": "contact card background color bot",
+          "placeholder": ""
+        }
+      },
+      "contact_card_background_texture_bot": {
+        "type": "Image",
+        "config": {
+          "label": "contact card background texture bot",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "contact_card_avatar_border_color": {
+        "type": "Color",
+        "config": {
+          "label": "contact card avatar border color",
+          "placeholder": ""
+        }
+      },
+      "form_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "form text color",
+          "placeholder": ""
+        }
+      },
+      "form_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "form background color",
+          "placeholder": ""
+        }
+      },
+      "form_icon_color": {
+        "type": "Color",
+        "config": {
+          "label": "form icon color",
+          "placeholder": ""
+        }
+      },
+      "form_button_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "form button text color",
+          "placeholder": ""
+        }
+      },
+      "form_button_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "form button background color",
+          "placeholder": ""
+        }
+      },
+      "form_button_hover_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "form button hover text color",
+          "placeholder": ""
+        }
+      },
+      "form_button_hover_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "form button hover background color",
+          "placeholder": ""
+        }
+      }
+    },
+    "SEO": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

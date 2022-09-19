@@ -1,9 +1,7 @@
 import { Stack } from "@chakra-ui/react";
 import ContactsCard from "./ContactsCard";
-import Texts from "../Texts/Texts";
 
-export default function XContactsTop() {
-  const texts = Texts();
+export default function ContactsTop(props) {
   return (
     <Stack
       h={{ base: "80rem", md: "30rem", xl: "35rem" }}
@@ -11,18 +9,22 @@ export default function XContactsTop() {
       spacing={{ base: "2rem", lg: "4rem", xl: "6rem" }}
       justify="center"
       align="center"
+      color={props.data.text_color_top}
+      bg={props.data.background_color_top}
+      backgroundImage={props.data.background_texture_top.url}
     >
-      {texts.contacts.cards.map((item) => (
+      {props.data.slices.map((item) => (
         <ContactsCard
-          key={item.name}
-          name={item.name}
-          responsibilities={item.responsibilities}
-          email={item.email}
-          number={item.number}
-          tel={item.tel}
-          src={item.src}
-          alt={item.alt}
-          href={item.href}
+          data={props.data}
+          key={item.id}
+          name={item.primary.name}
+          responsibilities={item.primary.responsibilities}
+          email={item.primary.email}
+          number={item.primary.phone_number}
+          tel={item.primary.phone_link}
+          src={item.primary.image.url}
+          alt={item.primary.image.alt}
+          href={item.primary.email_link}
         />
       ))}
     </Stack>

@@ -28,7 +28,7 @@ export default function SelectLanguageItem(props) {
         alt="Naudojamos kalbos vėliava"
         mr="12px"
       />
-      {props.currentValue}
+      {props.display}
     </MenuItem>
   );
 }

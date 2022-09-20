@@ -16,7 +16,7 @@ export default function GeneralMain(props) {
       align="justify"
       color={props.data.text_color}
       bg={props.data.background_color}
-      backgroundImage={props.data.background_texture}
+      backgroundImage={props.data.background_texture.url}
     >
       <Heading textAlign="center" fontSize="50" as="h2" pb="2rem">
         {props.data.title}

@@ -65,6 +65,21 @@
       "default": {
         "primary": {}
       }
+    },
+    "Values": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Feedback": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "NavigationLinks": {
+      "default": {
+        "primary": {}
+      }
     }
   },
   "_cts": {
@@ -98,6 +113,10 @@
     },
     "career": {},
     "equipment": {},
-    "contacts": {}
+    "contacts": {},
+    "home": {},
+    "index": {},
+    "navigation": {},
+    "footer": {}
   }
 }

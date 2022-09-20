@@ -1,0 +1,50 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "footer",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1504198070170-4ca53bb1c1fa"
+    },
+    "rights": "are",
+    "name_tab_title": "fear",
+    "company_code": "excitement",
+    "vat_code": "wonder",
+    "privacy": "bill",
+    "contatcs_tab_title": "softly",
+    "adress": "knife",
+    "email": "arrangement",
+    "phone": "outside",
+    "services_tab_title": "article",
+    "turning": "highway",
+    "milling": "business",
+    "design": "practical",
+    "text_color": "#a6bb34",
+    "background_color": "#36d8cd",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1606248897732-2c5ffe759c04"
+    },
+    "title_text_color": "#de6122",
+    "link_text_color_hover": "#deefde"
+  }
+}

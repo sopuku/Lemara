@@ -1,5 +1,5 @@
-import Card from "../Capabilities/Card";
 import { Heading, SimpleGrid, Container } from "@chakra-ui/react";
+import Card from "../Capabilities/Card";
 import React from "react";
 
 export default function CapabilitiesMain(props) {
@@ -11,7 +11,7 @@ export default function CapabilitiesMain(props) {
       boxShadow="-0 -20px 20px -10px grey"
       bg={props.data.background_color}
       color={props.data.text_color}
-      backgroundImage={props.data.background_texture}
+      backgroundImage={props.data.background_texture.url}
     >
       <Container centerContent maxW="100%" py="1rem">
         <Heading color={props.data.title_color} as="h3" pt="3rem">

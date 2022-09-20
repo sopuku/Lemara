@@ -1,0 +1,238 @@
+{
+  "id": "home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "id",
+          "placeholder": ""
+        }
+      },
+      "background_image": {
+        "type": "Image",
+        "config": {
+          "label": "Background image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "text": {
+        "type": "Text",
+        "config": {
+          "label": "Text",
+          "placeholder": ""
+        }
+      },
+      "text_link": {
+        "type": "Text",
+        "config": {
+          "label": "text link",
+          "placeholder": ""
+        }
+      },
+      "why_us_image": {
+        "type": "Image",
+        "config": {
+          "label": "Why us image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "why_us_title": {
+        "type": "Text",
+        "config": {
+          "label": "Why us title",
+          "placeholder": ""
+        }
+      },
+      "why_us_text": {
+        "type": "Text",
+        "config": {
+          "label": "Why us text",
+          "placeholder": ""
+        }
+      },
+      "about_us_image": {
+        "type": "Image",
+        "config": {
+          "label": "About us image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "about_us_title": {
+        "type": "Text",
+        "config": {
+          "label": "About us title",
+          "placeholder": ""
+        }
+      },
+      "about_us_text": {
+        "type": "Text",
+        "config": {
+          "label": "About us text",
+          "placeholder": ""
+        }
+      },
+      "feedback_title": {
+        "type": "Text",
+        "config": {
+          "label": "Feedback title",
+          "placeholder": ""
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "values": {
+              "type": "SharedSlice"
+            },
+            "feedback": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "styles": {
+      "text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Text color",
+          "placeholder": ""
+        }
+      },
+      "background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Background color",
+          "placeholder": ""
+        }
+      },
+      "text_color_link": {
+        "type": "Color",
+        "config": {
+          "label": "Text color link",
+          "placeholder": ""
+        }
+      },
+      "why_us_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Why us text color",
+          "placeholder": ""
+        }
+      },
+      "why_us_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Why us background color",
+          "placeholder": ""
+        }
+      },
+      "why_us_background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "Why us background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "about_us_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "About us text color",
+          "placeholder": ""
+        }
+      },
+      "about_us_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "About us background color",
+          "placeholder": ""
+        }
+      },
+      "about_us_background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "About us background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "feedback_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Feedback text color",
+          "placeholder": ""
+        }
+      },
+      "feedback_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Feedback background color",
+          "placeholder": ""
+        }
+      },
+      "feedback_background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "Feedback background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "values_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Values text color",
+          "placeholder": ""
+        }
+      },
+      "values_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Values background color",
+          "placeholder": ""
+        }
+      },
+      "values_background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "Values background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      }
+    },
+    "SEO": {
+      "meta_title": {
+        "type": "Text",
+        "config": {
+          "label": "meta title",
+          "placeholder": ""
+        }
+      },
+      "meta_description": {
+        "type": "Text",
+        "config": {
+          "label": "meta description",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

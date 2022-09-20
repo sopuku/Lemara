@@ -1,4 +1,5 @@
 import { Image, Heading, HStack, Text, Container, Box } from "@chakra-ui/react";
+import { v4 as uuidv4 } from "uuid";
 import React from "react";
 
 export default function Card(props) {
@@ -17,7 +18,12 @@ export default function Card(props) {
           <Box>
             {props.data.items.map((item) => {
               return (
-                <HStack py="5px" spacing="7rem" justify="space-between">
+                <HStack
+                  key={uuidv4()}
+                  py="5px"
+                  spacing="7rem"
+                  justify="space-between"
+                >
                   <Text>{item.text}</Text>
                   <Text>{item.value}</Text>
                 </HStack>

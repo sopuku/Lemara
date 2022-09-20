@@ -1,0 +1,203 @@
+{
+  "id": "navigation",
+  "label": "Navigation",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "id",
+          "placeholder": ""
+        }
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "Logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "navigation_links": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "styles": {
+      "text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Text color",
+          "placeholder": ""
+        }
+      },
+      "background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Background color",
+          "placeholder": ""
+        }
+      },
+      "background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "Background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "text_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Text color hover",
+          "placeholder": ""
+        }
+      },
+      "background_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "background color hover",
+          "placeholder": ""
+        }
+      },
+      "submenu_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Submenu text color",
+          "placeholder": ""
+        }
+      },
+      "submenu_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Submenu background color",
+          "placeholder": ""
+        }
+      },
+      "submenu_text_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Submenu text color hover",
+          "placeholder": ""
+        }
+      },
+      "submenu_background_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Submenu background color hover",
+          "placeholder": ""
+        }
+      },
+      "submenu_icon_color": {
+        "type": "Color",
+        "config": {
+          "label": "Submenu icon color",
+          "placeholder": ""
+        }
+      },
+      "hamburger_icon_color": {
+        "type": "Color",
+        "config": {
+          "label": "Hamburger icon color",
+          "placeholder": ""
+        }
+      },
+      "hamburger_icon_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Hamburger icon background color",
+          "placeholder": ""
+        }
+      },
+      "language_bar_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Language bar text color",
+          "placeholder": ""
+        }
+      },
+      "language_bar_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Language bar background color",
+          "placeholder": ""
+        }
+      },
+      "language_bar_background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "Language bar background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "language_bar_text_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Language bar text color hover",
+          "placeholder": ""
+        }
+      },
+      "language_bad_background_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Language bad background color hover",
+          "placeholder": ""
+        }
+      },
+      "language_bar_bg_texture_hover": {
+        "type": "Image",
+        "config": {
+          "label": "Language bar bg texture hover",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "language_item_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Language item text color",
+          "placeholder": ""
+        }
+      },
+      "language_item_background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Language item background color",
+          "placeholder": ""
+        }
+      },
+      "language_item_background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "Language item background texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "language_item_text_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Language item text color hover",
+          "placeholder": ""
+        }
+      },
+      "language_item_background_color_hove": {
+        "type": "Color",
+        "config": {
+          "label": "Language item background color hove",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

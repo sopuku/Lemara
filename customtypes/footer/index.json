@@ -1,0 +1,154 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "id",
+          "placeholder": ""
+        }
+      },
+      "logo": {
+        "type": "Image",
+        "config": {
+          "label": "logo",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "rights": {
+        "type": "Text",
+        "config": {
+          "label": "rights",
+          "placeholder": ""
+        }
+      },
+      "name_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Name tab title",
+          "placeholder": ""
+        }
+      },
+      "company_code": {
+        "type": "Text",
+        "config": {
+          "label": "Company code",
+          "placeholder": ""
+        }
+      },
+      "vat_code": {
+        "type": "Text",
+        "config": {
+          "label": "VAT code",
+          "placeholder": ""
+        }
+      },
+      "privacy": {
+        "type": "Text",
+        "config": {
+          "label": "privacy",
+          "placeholder": ""
+        }
+      },
+      "contatcs_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Contatcs tab title",
+          "placeholder": ""
+        }
+      },
+      "adress": {
+        "type": "Text",
+        "config": {
+          "label": "Adress",
+          "placeholder": ""
+        }
+      },
+      "email": {
+        "type": "Text",
+        "config": {
+          "label": "Email",
+          "placeholder": ""
+        }
+      },
+      "phone": {
+        "type": "Text",
+        "config": {
+          "label": "Phone",
+          "placeholder": ""
+        }
+      },
+      "services_tab_title": {
+        "type": "Text",
+        "config": {
+          "label": "Services tab title",
+          "placeholder": ""
+        }
+      },
+      "turning": {
+        "type": "Text",
+        "config": {
+          "label": "Turning",
+          "placeholder": ""
+        }
+      },
+      "milling": {
+        "type": "Text",
+        "config": {
+          "label": "Milling",
+          "placeholder": ""
+        }
+      },
+      "design": {
+        "type": "Text",
+        "config": {
+          "label": "Design",
+          "placeholder": ""
+        }
+      }
+    },
+    "styles": {
+      "text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Text color",
+          "placeholder": ""
+        }
+      },
+      "background_color": {
+        "type": "Color",
+        "config": {
+          "label": "Background color",
+          "placeholder": ""
+        }
+      },
+      "background_texture": {
+        "type": "Image",
+        "config": {
+          "label": "Background Texture",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "title_text_color": {
+        "type": "Color",
+        "config": {
+          "label": "Title text color",
+          "placeholder": ""
+        }
+      },
+      "link_text_color_hover": {
+        "type": "Color",
+        "config": {
+          "label": "Link text color hover",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

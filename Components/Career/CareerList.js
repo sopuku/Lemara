@@ -10,7 +10,7 @@ export default function CareerList(props) {
       <UnorderedList pb="2rem">
         {props.items.map((item) => {
           return (
-            <ListItem fontSize="18" key={item.text}>
+            <ListItem data={props.data} fontSize="18" key={item.text}>
               {item.text}
             </ListItem>
           );

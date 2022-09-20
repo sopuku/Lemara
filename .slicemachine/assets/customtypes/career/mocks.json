@@ -11,14 +11,14 @@
   "lang": "en-us",
   "alternate_languages": [],
   "data": {
-    "title": "ability",
-    "description_title": "young",
-    "requirments_title": "shall",
-    "offer_title": "chapter",
-    "salary_title": "express",
+    "title": "forgot",
+    "description_title": "pig",
+    "requirments_title": "diameter",
+    "offer_title": "per",
+    "salary_title": "band",
     "slices": [],
-    "text_color": "#44c9ed",
-    "background_color": "#f7fa94",
+    "text_color": "#c41904",
+    "background_color": "#c3dbc8",
     "background_texture": {
       "dimensions": {
         "width": 900,
@@ -26,17 +26,17 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+      "url": "https://images.unsplash.com/photo-1576662712957-9c79ae1280f8"
     },
-    "expanded_text_color": "#d1a24a",
-    "expanded_background_color": "#4e4f7b",
-    "button_text_color": "#f68141",
-    "button_background_color": "#4badb2",
-    "button_hover_text_color": "#3fe367",
-    "button_hover_background_color": "#f3992c",
-    "button_expanded_text_color": "#d6242e",
-    "button_expanded_background_color": "#285759",
-    "meta_title": "allow",
-    "meta_description": "learn"
+    "expanded_text_color": "#693ee5",
+    "expanded_background_color": "#f02b5f",
+    "button_text_color": "#cd3613",
+    "button_background_color": "#0bbe94",
+    "button_hover_text_color": "#edd103",
+    "button_hover_background_color": "#d18c83",
+    "button_expanded_text_color": "#34c6b3",
+    "button_expanded_background_color": "#7c776c",
+    "meta_title": "clean",
+    "meta_description": "dance"
   }
 }

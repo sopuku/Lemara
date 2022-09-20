@@ -1,0 +1,100 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "home",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "background_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1537498425277-c283d32ef9db"
+    },
+    "title": "instant",
+    "text": "particles",
+    "text_link": "leg",
+    "why_us_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853"
+    },
+    "why_us_title": "above",
+    "why_us_text": "anyone",
+    "about_us_image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1593642633279-1796119d5482"
+    },
+    "about_us_title": "outline",
+    "about_us_text": "air",
+    "feedback_title": "four",
+    "slices": [],
+    "text_color": "#a91b64",
+    "background_color": "#3b4886",
+    "text_color_link": "#0f6cfd",
+    "why_us_text_color": "#131081",
+    "why_us_background_color": "#1add03",
+    "why_us_background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b"
+    },
+    "about_us_text_color": "#d71f33",
+    "about_us_background_color": "#523681",
+    "about_us_background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1547082299-de196ea013d6"
+    },
+    "feedback_text_color": "#a88696",
+    "feedback_background_color": "#d150ed",
+    "feedback_background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1601933973783-43cf8a7d4c5f"
+    },
+    "values_text_color": "#fe8fa1",
+    "values_background_color": "#b2edfa",
+    "values_background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+    },
+    "meta_title": "cabin",
+    "meta_description": "pleasant"
+  }
+}

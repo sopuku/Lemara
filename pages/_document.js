@@ -40,7 +40,7 @@ export default function Document() {
         ></meta>
         <meta
           name="keywords"
-          content="CNC Tekinimas, Frezavimas, Degalių gamyba"
+          content="CNC Tekinimas, CNC Frezavimas, CNC Projektavimas, CNC Degalių gamyba"
         />
       </Head>
       <body>

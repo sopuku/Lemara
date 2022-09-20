@@ -1,8 +1,6 @@
-import Texts from "../Texts/Texts";
 import { Heading, Text, Container } from "@chakra-ui/react";
 import Slider from "react-slick";
 import React from "react";
-import Colors from "../Ui/Colors";
 
 const settings = {
   dots: true,
@@ -16,19 +14,18 @@ const settings = {
   slidesToScroll: 1,
 };
 
-export default function Feedback() {
-  const colors = Colors();
-  const texts = Texts();
+export default function Feedback(props) {
   return (
     <Container
       align="center"
       maxW="3xl"
       py={{ base: "4rem", md: "6rem", lg: "8rem", xl: "9rem" }}
-      color={colors.home.feedback.color}
-      bg={colors.home.feedback.bg}
+      color={props.data.feedback_text_color}
+      bg={props.data.feedback_background_color}
+      backgroundImage={props.data.feedback_background_texture.url}
     >
       <Heading as="h4" size="2xl" pb="2rem">
-        {texts.index.text4}
+        {props.data.feedback_title}
       </Heading>
       <link
         rel="stylesheet"
@@ -42,7 +39,7 @@ export default function Feedback() {
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
       <Slider {...settings}>
-        {texts.index.feedback.map((item) => {
+        {props.data.slices[1].items.map((item) => {
           return (
             <React.Fragment key={item.title}>
               <Heading as="h5" size="xl" pb="1rem">

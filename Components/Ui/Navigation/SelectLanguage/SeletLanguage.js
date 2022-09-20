@@ -8,6 +8,20 @@ import Texts from "../../../Texts/Texts";
 export default function SelectLanguage(props) {
   const colors = Colors();
   const texts = Texts();
+  let display = "";
+  switch (props.language) {
+    case "lt":
+      display = "LT";
+      break;
+    case "en-gb":
+      display = "EN";
+      break;
+    case "no":
+      display = "NO";
+      break;
+    default:
+      break;
+  }
   return (
     <Menu>
       <MenuButton
@@ -27,13 +41,10 @@ export default function SelectLanguage(props) {
         as={Button}
         rightIcon={<ChevronDownIcon />}
         leftIcon={
-          <Country
-            countryShort={props.language !== "EN" ? props.language : "GD"}
-            size="md"
-          />
+          <Country countryShort={display !== "EN" ? display : "GD"} size="md" />
         }
       >
-        {props.language}
+        {display}
       </MenuButton>
       <MenuList
         minW="8rem"
@@ -43,15 +54,18 @@ export default function SelectLanguage(props) {
         color={colors.navigation.selectLanguage.color}
       >
         <SelectLanguageItem
-          currentValue="LT"
+          display="LT"
+          currentValue="lt"
           handleLanguageSelect={props.handleLanguageSelect}
         />
         <SelectLanguageItem
-          currentValue="EN"
+          display="EN"
+          currentValue="en-gb"
           handleLanguageSelect={props.handleLanguageSelect}
         />
         <SelectLanguageItem
-          currentValue="NO"
+          display="NO"
+          currentValue="no"
           handleLanguageSelect={props.handleLanguageSelect}
         />
       </MenuList>

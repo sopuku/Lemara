@@ -17,7 +17,7 @@ export default function PrivacyMain(props) {
       align="justify"
       color={props.data.text_color}
       bg={props.data.background_color}
-      backgroundImage={props.data.background_texture}
+      backgroundImage={props.data.background_texture.url}
     >
       <Heading as="h3" textAlign="center" pb="4rem">
         {props.data.title}

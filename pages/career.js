@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Texts from "../Components/Texts/Texts";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
@@ -10,8 +9,6 @@ const CareerMain = dynamic(() => import("../Components/Career/CareerMain"), {
 });
 
 export default function Carrier({ page }) {
-  const texts = Texts();
-  console.log(page);
   return (
     <React.Fragment>
       <Head>
@@ -25,9 +22,9 @@ export default function Carrier({ page }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("career", "career");
+  const page = await client.getByUID("career", "career", { lang: locale });
 
   return {
     props: {

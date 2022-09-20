@@ -1,6 +1,5 @@
 import Head from "next/head";
 import emailjs from "@emailjs/browser";
-import Texts from "../Components/Texts/Texts";
 import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import dynamic from "next/dynamic";
@@ -14,11 +13,9 @@ const ContactsMain = dynamic(
 );
 
 export default function Contacts(props) {
-  console.log(props.page);
   async function sendMessage(form) {
     await emailjs.send(props.SERVICE_ID, props.TEMPLATE_ID, form, props.KEY);
   }
-  const texts = Texts();
   return (
     <React.Fragment>
       <Head>
@@ -35,9 +32,9 @@ export default function Contacts(props) {
     </React.Fragment>
   );
 }
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("contacts", "contacts");
+  const page = await client.getByUID("contacts", "contacts", { lang: locale });
   return {
     props: {
       page,

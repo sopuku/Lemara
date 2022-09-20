@@ -3,6 +3,7 @@ import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
+
 // import axios from "axios";
 
 const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
@@ -27,9 +28,9 @@ export default function Galery(props) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("gallery", "gallery");
+  const page = await client.getByUID("gallery", "gallery", { lang: locale });
   const picture = [];
   page.data.slices[0].items.map((item) => {
     const temp = {

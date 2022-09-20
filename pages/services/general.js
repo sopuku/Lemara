@@ -25,9 +25,9 @@ export default function General({ page }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("general", "general");
+  const page = await client.getByUID("general", "general", { lang: locale });
 
   return {
     props: {

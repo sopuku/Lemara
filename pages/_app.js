@@ -7,16 +7,17 @@ import theme from "../Components/Ui/Theme/theme";
 import "../Components/Ui/Theme/styles.css";
 import Head from "next/head";
 import GoogleAnalytics from "@bradgarropy/next-google-analytics";
+import { useRouter } from "next/router";
 
 export const CurrentSettings = React.createContext(null);
 
 export default function MyApp({ Component, pageProps }) {
-  const [language, setLanguage] = useState("LT");
+  const router = useRouter();
+  const [language, setLanguage] = useState("lt");
 
   useEffect(() => {
-    document.documentElement.lang = language.toLowerCase();
-  }),
-    [language];
+    router.push(router.asPath, router.asPath, { locale: language });
+  }, [language]);
 
   return (
     <React.Fragment>

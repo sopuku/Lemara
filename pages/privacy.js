@@ -8,7 +8,6 @@ import sm from "../sm.json";
 const PrivacyMain = dynamic(() => import("../Components/Privacy/PrivacyMain"), {
   suspense: true,
 });
-//
 export default function Privacy({ page }) {
   return (
     <React.Fragment>
@@ -23,9 +22,9 @@ export default function Privacy({ page }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("privacy", "privacy");
+  const page = await client.getByUID("privacy", "privacy", { lang: locale });
 
   return {
     props: {

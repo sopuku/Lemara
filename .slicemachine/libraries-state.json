@@ -1,6 +1,64 @@
 {
   "slices": {
     "components": {
+      "feedback": {
+        "library": "slices",
+        "id": "feedback",
+        "name": "Feedback",
+        "description": "Feedback",
+        "model": {
+          "id": "feedback",
+          "type": "SharedSlice",
+          "name": "Feedback",
+          "description": "Feedback",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Feedback",
+              "primary": {},
+              "items": {
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "title": "hard",
+                "text": "those"
+              }
+            ],
+            "primary": {},
+            "slice_type": "feedback"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "images": {
         "library": "slices",
         "id": "images",
@@ -267,6 +325,64 @@
         },
         "screenshotPaths": {}
       },
+      "navigation_links": {
+        "library": "slices",
+        "id": "navigation_links",
+        "name": "NavigationLinks",
+        "description": "NavigationLinks",
+        "model": {
+          "id": "navigation_links",
+          "type": "SharedSlice",
+          "name": "NavigationLinks",
+          "description": "NavigationLinks",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "NavigationLinks",
+              "primary": {},
+              "items": {
+                "navigation_item": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Navigation item",
+                    "placeholder": ""
+                  }
+                },
+                "navigation_link": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Navigation link",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "navigation_item": "design",
+                "navigation_link": "related"
+              }
+            ],
+            "primary": {},
+            "slice_type": "navigation_links"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "staff": {
         "library": "slices",
         "id": "staff",
@@ -366,6 +482,81 @@
               "phone_link": "show"
             },
             "slice_type": "staff"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "values": {
+        "library": "slices",
+        "id": "values",
+        "name": "Values",
+        "description": "Values",
+        "model": {
+          "id": "values",
+          "type": "SharedSlice",
+          "name": "Values",
+          "description": "Values",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Values",
+              "primary": {},
+              "items": {
+                "image": {
+                  "type": "Image",
+                  "config": {
+                    "label": "Image",
+                    "constraint": {},
+                    "thumbnails": []
+                  }
+                },
+                "title": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": ""
+                  }
+                },
+                "text": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Text",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {
+                "image": {
+                  "dimensions": {
+                    "width": 900,
+                    "height": 500
+                  },
+                  "alt": null,
+                  "copyright": null,
+                  "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43"
+                },
+                "title": "ground",
+                "text": "length"
+              }
+            ],
+            "primary": {},
+            "slice_type": "values"
           }
         },
         "meta": {

@@ -475,7 +475,7 @@ export default function Texts() {
         "Ši Privatumo politika sukurta Glimstedt doke. Advokatų kontorai Glimstedt priklauso visos autorių teisės į Privatumo politiką, ji suteikia teisę MB Lemara naudoti Privatumo politiką savo internetinėje svetainėje http://www.lemara.lt. Kopijuoti ar kitaip naudoti Privatumo politiką ar jos dalį be advokatų kontoros Glimstedt rašytinio sutikimo draudžiama.",
     },
     images: {
-      logo: "/images/logo/logo2.png",
+      logo: "/images/logo/logo.png",
       logoAlt: "MB Lemara logotipas",
       navBgTexture: "/images/background/navBg1.png",
       bgTexture: "/images/background/aboutBg.png",
@@ -991,7 +991,7 @@ export default function Texts() {
         "This Privacy Policy has been developed by Glimstedt Dock. The Glimstedt law firm owns all copyrights to the Privacy Policy, and grants MB Lemara the right to use the Privacy Policy on its website http://www.lemara.lt. Copying or otherwise using the Privacy Policy or its part is prohibited without the written consent of the law firm Glimstedt.",
     },
     images: {
-      logo: "/images/logo/logo2.png",
+      logo: "/images/logo/logo.png",
       logoAlt: "MB Lemara logo",
       navBgTexture: "/images/background/navBg1.png",
       bgTexture: "/images/background/aboutBg.png",
@@ -1510,7 +1510,7 @@ export default function Texts() {
         "Denne personvernerklæringen er utviklet av Glimstedt Dock. Advokatfirmaet Glimstedt eier alle opphavsrettigheter til personvernreglene, og gir MB Lemara rett til å bruke personvernreglene på nettstedet http://www.lemara.lt. Kopiering eller på annen måte bruk av personvernerklæringen eller dens del er forbudt uten skriftlig samtykke fra advokatfirmaet Glimstedt.",
     },
     images: {
-      logo: "/images/logo/logo2.png",
+      logo: "/images/logo/logo.png",
       logoAlt: "MB Lemara logo",
       navBgTexture: "/images/background/navBg1.png",
       bgTexture: "/images/background/aboutBg.png",
@@ -1565,11 +1565,11 @@ export default function Texts() {
   };
 
   switch (language) {
-    case "LT":
+    case "lt":
       return TEXTS_LT;
-    case "EN":
+    case "en-gb":
       return TEXTS_EN;
-    case "NO":
+    case "no":
       return TEXTS_NO;
     default:
       return TEXTS_LT;

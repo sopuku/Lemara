@@ -7,6 +7,7 @@ import sm from "../../sm.json";
 const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
   suspense: true,
 });
+
 export default function Design({ page }) {
   return (
     <React.Fragment>
@@ -25,7 +26,7 @@ export default function Design({ page }) {
           h={page.data.image.dimensions.height}
           bg={page.data.background_color}
           color={page.data.text_color}
-          bgTexture={page.data.background_texture}
+          bgTexture={page.data.background_texture.url}
           fallback={`Loading...`}
         />
       </Suspense>
@@ -33,9 +34,9 @@ export default function Design({ page }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("design", "design");
+  const page = await client.getByUID("design", "design", { lang: locale });
 
   return {
     props: {

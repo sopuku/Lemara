@@ -26,7 +26,7 @@ export default function Turning({ page }) {
           h={page.data.image.dimensions.height}
           bg={page.data.background_color}
           color={page.data.text_color}
-          bgTexture={page.data.background_texture}
+          bgTexture={page.data.background_texture.url}
           fallback={`Loading...`}
         />
       </Suspense>
@@ -34,9 +34,9 @@ export default function Turning({ page }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("turning", "turning");
+  const page = await client.getByUID("turning", "turning", { lang: locale });
 
   return {
     props: {

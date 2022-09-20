@@ -7,21 +7,15 @@ import {
   Square,
 } from "@chakra-ui/react";
 import React from "react";
-import Colors from "../Ui/Colors";
-import Texts from "../Texts/Texts";
 import Image from "next/image";
 
 export default function DefaultPage(props) {
-  const colors = Colors();
-  const texts = Texts();
-
   return (
     <Container
       maxW="100%"
       w="100%"
       bg={props.bg}
       backgroundImage={props.bgTexture}
-      color={props.color}
     >
       <Stack
         direction={{ base: "column", xl: "row" }}
@@ -30,6 +24,7 @@ export default function DefaultPage(props) {
         pb="6%"
         align="center"
         justify="center"
+        color={props.color}
       >
         {props.name !== "aboutUs" && (
           <Square maxW="40rem" boxShadow="0 0 5px 1px black">

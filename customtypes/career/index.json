@@ -22,28 +22,28 @@
       "description_title": {
         "type": "Text",
         "config": {
-          "label": "description title",
+          "label": "Description title",
           "placeholder": ""
         }
       },
       "requirments_title": {
         "type": "Text",
         "config": {
-          "label": "requirments title",
+          "label": "Requirments title",
           "placeholder": ""
         }
       },
       "offer_title": {
         "type": "Text",
         "config": {
-          "label": "offer title",
+          "label": "Offer title",
           "placeholder": ""
         }
       },
       "salary_title": {
         "type": "Text",
         "config": {
-          "label": "salary title",
+          "label": "Salary title",
           "placeholder": ""
         }
       },

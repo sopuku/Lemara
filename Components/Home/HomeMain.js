@@ -1,8 +1,6 @@
 import Values from "./Values";
 import Links from "../Ui/Navigation/Links";
-import Colors from "../Ui/Colors";
 import { VStack, Heading, Text, Show, Flex, Container } from "@chakra-ui/react";
-import Texts from "../../Components/Texts/Texts";
 import DefaultPage from "../Ui/DefaultPage";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
@@ -11,20 +9,18 @@ const Feedback = dynamic(() => import("./Feedback"), {
   suspense: true,
 });
 
-export default function HomeMain() {
-  const colors = Colors();
-  const texts = Texts();
+export default function HomeMain(props) {
   return (
     <VStack spacing="0" overflow="hidden">
       <Container
         backgroundSize="cover"
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
-        backgroundImage={texts.images.mainImage}
-        backgroundImageAlt=""
+        backgroundImage={props.data.background_image.url}
+        backgroundimagealt={props.data.background_image.alt}
         boxShadow="0 0 20px 10px grey"
-        color={colors.home.color}
-        bg={colors.home.bg}
+        color={props.data.text_color}
+        bg={props.data.background_color}
         maxW="100%"
         h="35rem"
         align="center"
@@ -37,42 +33,48 @@ export default function HomeMain() {
           fontSize={{ base: "35px", md: "45px" }}
           pb="2rem"
         >
-          {texts.index.text1}
+          {props.data.title}
         </Heading>
         <Text fontSize={{ base: "2xl", md: "3xl" }}>
-          {texts.index.text2}{" "}
-          <Links color={colors.home.colorLink} href="/contacts">
-            {texts.index.text3}
+          {props.data.text}
+          <Links color={props.data.text_color_link} href="/contacts">
+            {props.data.text_link}
           </Links>
           .
         </Text>
       </Container>
       <Show above="md">
         <Flex position="absolute" top="35rem">
-          <Values />
+          <Values data={props.data} />
         </Flex>
       </Show>
       <DefaultPage
         name="whyUs"
-        src={texts.images.whyUsImage}
-        alt={texts.images.whyUsImageAlt}
-        heading={texts.index.whyUs.text1.heading}
-        text={texts.index.whyUs.text1.text}
+        src={props.data.why_us_image.url}
+        alt={props.data.why_us_image.alt}
+        heading={props.data.why_us_title}
+        text={props.data.why_us_text}
         py="8rem"
-        w="899px"
-        h="600px"
+        w={props.data.why_us_image.dimensions.width}
+        h={props.data.why_us_image.dimensions.height}
+        bg={props.data.why_us_background_color}
+        color={props.data.why_us_text_color}
+        bgTexture={props.data.why_us_background_texture}
       />
       <DefaultPage
         name="aboutUs"
-        src={texts.images.aboutUsImage}
-        alt={texts.images.aboutUsImageAlt}
-        heading={texts.index.aboutUs.text1.heading}
-        text={texts.index.aboutUs.text1.text}
-        w="900px"
-        h="600px"
+        src={props.data.about_us_image.url}
+        alt={props.data.about_us_image.alt}
+        heading={props.data.about_us_title}
+        text={props.data.about_us_text}
+        w={props.data.about_us_image.dimensions.width}
+        h={props.data.about_us_image.dimensions.height}
+        bg={props.data.about_us_background_color}
+        color={props.data.about_us_text_color}
+        bgTexture={props.data.about_us_background_texture}
       />
       <Suspense>
-        <Feedback fallback={`Loading...`} />
+        <Feedback data={props.data} fallback={`Loading...`} />
       </Suspense>
     </VStack>
   );

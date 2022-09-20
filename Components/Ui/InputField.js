@@ -1,3 +1,4 @@
+import { SmallAddIcon } from "@chakra-ui/icons";
 import { useState } from "react";
 import {
   Box,
@@ -7,7 +8,6 @@ import {
   InputLeftElement,
   Textarea,
 } from "@chakra-ui/react";
-import { SmallAddIcon } from "@chakra-ui/icons";
 
 function InputField(props) {
   const [isActive, setIsActive] = useState(false);

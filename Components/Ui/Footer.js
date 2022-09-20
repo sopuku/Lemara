@@ -22,6 +22,7 @@ const ListHeader = ({ children }) => {
 export default function Footer() {
   const texts = Texts();
   const colors = Colors();
+
   return (
     <React.Fragment>
       <Container

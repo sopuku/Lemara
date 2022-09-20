@@ -1,0 +1,80 @@
+{
+  "id": "mock-doc-id",
+  "url": null,
+  "type": "navigation",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1545239351-1141bd82e8a6"
+    },
+    "slices": [],
+    "text_color": "#06c96b",
+    "background_color": "#50b5bd",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1493119508027-2b584f234d6c"
+    },
+    "text_color_hover": "#7ae381",
+    "background_color_hover": "#f85596",
+    "submenu_text_color": "#c23535",
+    "submenu_background_color": "#5a7b02",
+    "submenu_text_color_hover": "#4acad3",
+    "submenu_background_color_hover": "#73c31e",
+    "submenu_icon_color": "#3fa3ab",
+    "hamburger_icon_color": "#4c8db0",
+    "hamburger_icon_background_color": "#f12676",
+    "language_bar_text_color": "#8b13a7",
+    "language_bar_background_color": "#d95483",
+    "language_bar_background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
+    },
+    "language_bar_text_color_hover": "#25230e",
+    "language_bad_background_color_hover": "#dbde8d",
+    "language_bar_bg_texture_hover": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2"
+    },
+    "language_item_text_color": "#a68a3d",
+    "language_item_background_color": "#aaab86",
+    "language_item_background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5"
+    },
+    "language_item_text_color_hover": "#5764ab",
+    "language_item_background_color_hove": "#0a3840"
+  }
+}

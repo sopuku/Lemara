@@ -1,4 +1,4 @@
-import Texts from "../Texts/Texts";
+import CareerList from "./CareerList";
 import {
   Heading,
   Accordion,
@@ -8,18 +8,14 @@ import {
   AccordionPanel,
   Container,
 } from "@chakra-ui/react";
-import Colors from "../Ui/Colors";
-import CareerList from "./CareerList";
 
 export default function CareerMain(props) {
-  const texts = Texts();
-  const colors = Colors();
-
   return (
     <Container
       maxW="8xl"
       color={props.data.text_color}
       bg={props.data.background_color}
+      backgroundImage={props.data.background_texture.url}
       align="center"
       borderRadius="xl"
       py={{ sm: "1rem", md: "2rem", lg: "5rem" }}
@@ -32,15 +28,15 @@ export default function CareerMain(props) {
           return (
             <AccordionItem key={job.id} maxW="60rem">
               <AccordionButton
-                color={colors.career.button.color}
-                bg={colors.career.button.bg}
+                color={props.data.button_text_color}
+                bg={props.data.button_background_color}
                 _hover={{
-                  background: colors.career.button.bgHover,
-                  color: colors.career.button.colorHover,
+                  background: props.data.button_hover_background_color,
+                  color: props.data.button_hover_text_color,
                 }}
                 _expanded={{
-                  bg: colors.career.button.bgExpanded,
-                  color: colors.career.button.colorExpanded,
+                  bg: props.data.button_expanded_background_color,
+                  color: props.data.button_expanded_text_color,
                 }}
               >
                 <Container
@@ -58,8 +54,8 @@ export default function CareerMain(props) {
                 pb="4"
                 textAlign="left"
                 pl="3rem"
-                bg={"colors.career.bgExpanded"}
-                color={colors.career.colorExpanded}
+                bg={props.data.expanded_background_color}
+                color={props.data.expanded_text_color}
                 roundedBottom="8"
               >
                 <CareerList

@@ -9,7 +9,7 @@ import { CurrentSettings } from "../../../pages/_app";
 import SelectLanguage from "./SelectLanguage/SeletLanguage";
 import Texts from "../../Texts/Texts";
 
-export default function Navigation() {
+export default function Navigation(props) {
   const { language, setLanguage } = React.useContext(CurrentSettings);
   const [isOpen, setOpen] = useState(false);
 

@@ -1,8 +1,6 @@
 import { ChakraProvider } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
 import Layout from "../Components/Ui/Layout";
-import Navigation from "../Components/Ui/Navigation/Navigation";
-import Footer from "../Components/Ui/Footer";
 import theme from "../Components/Ui/Theme/theme";
 import "../Components/Ui/Theme/styles.css";
 import Head from "next/head";
@@ -27,11 +25,9 @@ export default function MyApp({ Component, pageProps }) {
       <GoogleAnalytics measurementId="G-QPQYS0TKC7" />
       <ChakraProvider theme={theme}>
         <CurrentSettings.Provider value={{ language, setLanguage }}>
-          <Navigation />
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
-          <Footer />
+          {/* <Layout> */}
+          <Component {...pageProps} />
+          {/* </Layout> */}
         </CurrentSettings.Provider>
       </ChakraProvider>
     </React.Fragment>

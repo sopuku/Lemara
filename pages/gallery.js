@@ -3,6 +3,7 @@ import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
+import Layout from "../Components/Ui/Layout";
 
 // import axios from "axios";
 
@@ -10,19 +11,21 @@ const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
   suspense: true,
 });
 
-export default function Galery(props) {
+export default function Galery({ page, nav, foot, picture }) {
   return (
     <React.Fragment>
       <Head>
-        <title>{props.page.data.meta_title}</title>
-        <meta name="description" content={props.page.data.meta_description} />
+        <title>{page.data.meta_title}</title>
+        <meta name="description" content={page.data.meta_description} />
       </Head>
       <Suspense>
-        <GalleryMain
-          pictures={props.pictures}
-          data={props.page.data}
-          fallback={`Loading...`}
-        />
+        <Layout footData={foot.data} navData={nav.data}>
+          <GalleryMain
+            pictures={picture}
+            data={page.data}
+            fallback={`Loading...`}
+          />
+        </Layout>
       </Suspense>
     </React.Fragment>
   );
@@ -41,11 +44,17 @@ export async function getStaticProps({ locale }) {
     };
     picture.push(temp);
   });
+  const foot = await client.getByUID("footer", "footer", { lang: locale });
+  const nav = await client.getByUID("navigation", "navigation", {
+    lang: locale,
+  });
 
   return {
     props: {
-      pictures: picture,
+      picture,
       page,
+      foot,
+      nav,
     },
   };
 }

@@ -58,10 +58,11 @@
         }
       },
       "background_texture": {
-        "type": "Color",
+        "type": "Image",
         "config": {
-          "label": "background texture",
-          "placeholder": ""
+          "label": "Background texture",
+          "constraint": {},
+          "thumbnails": []
         }
       }
     },

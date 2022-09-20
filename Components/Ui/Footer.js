@@ -19,7 +19,7 @@ const ListHeader = ({ children }) => {
   );
 };
 
-export default function Footer() {
+export default function Footer(props) {
   const texts = Texts();
   const colors = Colors();
 

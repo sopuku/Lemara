@@ -18,15 +18,23 @@
       },
       "alt": null,
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1607582278043-57198ac8da43"
+      "url": "https://images.unsplash.com/photo-1551739440-5dd934d3a94a"
     },
-    "title": "failed",
-    "text": "material",
+    "title": "village",
+    "text": "truck",
     "slices": [],
-    "text_color": "#caa15e",
-    "background_color": "#38bb82",
-    "background_texture": "#bfd9ec",
-    "meta_title": "design",
-    "meta_description": "shout"
+    "text_color": "#3d4837",
+    "background_color": "#2d5f61",
+    "background_texture": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": null,
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1587614295999-6c1c13675117"
+    },
+    "meta_title": "team",
+    "meta_description": "wrote"
   }
 }

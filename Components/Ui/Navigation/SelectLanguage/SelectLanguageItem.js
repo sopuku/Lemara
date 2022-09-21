@@ -1,4 +1,4 @@
-import { Image, MenuItem, Flex, Text } from "@chakra-ui/react";
+import { Image, MenuItem } from "@chakra-ui/react";
 
 export default function SelectLanguageItem(props) {
   return (

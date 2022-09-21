@@ -33,8 +33,9 @@ export default function Capabilities({ page, nav, foot }) {
 
 export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
-  const page = await client.getByUID("equipment", "equipment");
-
+  const page = await client.getByUID("equipment", "equipment", {
+    lang: locale,
+  });
   const foot = await client.getByUID("footer", "footer", { lang: locale });
   const nav = await client.getByUID("navigation", "navigation", {
     lang: locale,

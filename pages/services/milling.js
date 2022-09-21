@@ -4,10 +4,10 @@ import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../../sm.json";
 import Layout from "../../Components/Ui/Layout";
-
-const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
-  suspense: true,
-});
+import DefaultPage from "../../Components/Ui/DefaultPage";
+// const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
+//   suspense: true,
+// });
 
 export default function Milling({ page, nav, foot }) {
   return (
@@ -16,7 +16,7 @@ export default function Milling({ page, nav, foot }) {
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
+      {/* <Suspense> */}
         <Layout footData={foot.data} navData={nav.data}>
           <DefaultPage
             name="milling"
@@ -29,10 +29,10 @@ export default function Milling({ page, nav, foot }) {
             bg={page.data.background_color}
             color={page.data.text_color}
             bgTexture={page.data.background_texture.url}
-            fallback={`Loading...`}
+            // fallback={`Loading...`}
           />
         </Layout>
-      </Suspense>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }

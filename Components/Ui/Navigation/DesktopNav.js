@@ -28,11 +28,11 @@ export default function DesktopNav(props) {
                 }}
               >
                 {navItem.navigation_item}
-                {navItem.navigation_link === null && <ChevronDownIcon />}
+                {!navItem.navigation_link && <ChevronDownIcon />}
               </Links>
             </PopoverTrigger>
 
-            {navItem.navigation_link === null && (
+            {!navItem.navigation_link && (
               <PopoverContent
                 border={0}
                 boxShadow={"xl"}

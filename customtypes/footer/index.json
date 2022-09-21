@@ -110,20 +110,6 @@
           "label": "Design",
           "placeholder": ""
         }
-      },
-      "mail_link": {
-        "type": "Text",
-        "config": {
-          "label": "Mail link",
-          "placeholder": ""
-        }
-      },
-      "phone_link": {
-        "type": "Text",
-        "config": {
-          "label": "Phone link",
-          "placeholder": ""
-        }
       }
     },
     "styles": {

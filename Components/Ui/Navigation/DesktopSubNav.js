@@ -5,7 +5,7 @@ import { ChevronRightIcon } from "@chakra-ui/icons";
 export default function DesktopSubNav(props) {
   return (
     <Links
-      href={props.href}
+      href={props.href ?? "#"}
       role={"group"}
       display={"block"}
       p={2}

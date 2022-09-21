@@ -1,18 +1,14 @@
-import Colors from "../../Colors";
-import { Image, MenuItem } from "@chakra-ui/react";
-import Texts from "../../../Texts/Texts";
+import { Image, MenuItem, Flex, Text } from "@chakra-ui/react";
 
 export default function SelectLanguageItem(props) {
-  const colors = Colors();
-  const texts = Texts();
   return (
     <MenuItem
       px="15px"
       py="5px"
       _hover={{
-        background: colors.navigation.subBgHover,
-        backgroundImage: texts.images.navBgTexture,
-        color: colors.navigation.colorHover,
+        background: props.data.language_item_background_color_hove,
+        backgroundImage: props.data.language_item_background_texture.url,
+        color: props.data.language_item_textcolor_hover,
       }}
       _focus={{
         background: "none",
@@ -28,7 +24,7 @@ export default function SelectLanguageItem(props) {
         alt="Naudojamos kalbos vėliava"
         mr="12px"
       />
-      {props.display}
+      {props.currentValue}
     </MenuItem>
   );
 }

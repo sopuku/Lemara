@@ -60,13 +60,13 @@ export default function Footer(props) {
             <ListHeader>{props.data.contatcs_tab_title}</ListHeader>
             <Text>{props.data.adress}</Text>
             <Links
-              href={props.data.mail_link}
+              href={`mailto:${props.data.email}`}
               _hover={{ color: props.data.link_text_color_hover }}
             >
               {props.data.email}
             </Links>
             <Links
-              href={props.data.phone_link}
+              href={`tel:${props.data.phone}`}
               _hover={{ color: props.data.link_text_color_hover }}
             >
               {props.data.phone}

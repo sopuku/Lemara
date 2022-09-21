@@ -11,10 +11,24 @@ export const CurrentSettings = React.createContext(null);
 
 export default function MyApp({ Component, pageProps }) {
   const router = useRouter();
-  const [language, setLanguage] = useState("lt");
+  const [language, setLanguage] = useState("LT");
 
   useEffect(() => {
-    router.push(router.asPath, router.asPath, { locale: language });
+    let display = "";
+    switch (language) {
+      case "LT":
+        display = "lt";
+        break;
+      case "EN":
+        display = "en-gb";
+        break;
+      case "NO":
+        display = "no";
+        break;
+      default:
+        break;
+    }
+    router.push(router.asPath, router.asPath, { locale: display });
   }, [language]);
 
   return (
@@ -25,9 +39,7 @@ export default function MyApp({ Component, pageProps }) {
       <GoogleAnalytics measurementId="G-QPQYS0TKC7" />
       <ChakraProvider theme={theme}>
         <CurrentSettings.Provider value={{ language, setLanguage }}>
-          {/* <Layout> */}
           <Component {...pageProps} />
-          {/* </Layout> */}
         </CurrentSettings.Provider>
       </ChakraProvider>
     </React.Fragment>

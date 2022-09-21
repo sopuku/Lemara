@@ -1,72 +1,57 @@
 import { Menu, MenuButton, MenuList, Button } from "@chakra-ui/react";
 import Country from "flagit";
-import Colors from "../../Colors";
 import { ChevronDownIcon } from "@chakra-ui/icons";
 import SelectLanguageItem from "./SelectLanguageItem";
-import Texts from "../../../Texts/Texts";
 
 export default function SelectLanguage(props) {
-  const colors = Colors();
-  const texts = Texts();
-  let display = "";
-  switch (props.language) {
-    case "lt":
-      display = "LT";
-      break;
-    case "en-gb":
-      display = "EN";
-      break;
-    case "no":
-      display = "NO";
-      break;
-    default:
-      break;
-  }
   return (
     <Menu>
       <MenuButton
-        bg={colors.navigation.selectLanguage.bg}
-        backgroundImage={texts.images.navBgTexture}
+        bg={props.data.language_bar_background_color}
+        backgroundImage={props.data.language_bar_background_texture.url}
         border="none"
         _hover={{
-          background: colors.navigation.selectLanguage.bg,
-          backgroundImage: texts.images.navBgTexture,
+          background: props.data.language_bar_background_color_hover,
+          backgroundImage: props.data.language_bar_bg_texture_hover.url,
         }}
         _active={{
-          background: colors.navigation.selectLanguage.bg,
-          backgroundImage: texts.images.navBgTexture,
+          background: props.data.language_bar_background_color,
+          backgroundImage: props.data.language_bar_background_texture.url,
         }}
-        color={colors.navigation.selectLanguage.color}
+        color={props.data.language_bar_text_color}
         maxW="8rem"
         as={Button}
         rightIcon={<ChevronDownIcon />}
         leftIcon={
-          <Country countryShort={display !== "EN" ? display : "GD"} size="md" />
+          <Country
+            countryShort={props.language !== "EN" ? props.language : "GD"}
+            size="md"
+          />
         }
       >
-        {display}
+        {props.language}
       </MenuButton>
       <MenuList
         minW="8rem"
-        bg={colors.navigation.selectLanguage.bg}
-        backgroundImage={texts.images.navBgTexture}
+        bg={props.data.language_item_background_color}
+        backgroundImage={props.data.language_item_background_texture.url}
         border="none"
-        color={colors.navigation.selectLanguage.color}
+        color={props.data.language_item_text_color}
       >
         <SelectLanguageItem
-          display="LT"
-          currentValue="lt"
+          currentValue="LT"
           handleLanguageSelect={props.handleLanguageSelect}
+          data={props.data}
         />
         <SelectLanguageItem
-          display="EN"
-          currentValue="en-gb"
+          currentValue="EN"
           handleLanguageSelect={props.handleLanguageSelect}
+          data={props.data}
         />
         <SelectLanguageItem
-          display="NO"
-          currentValue="no"
+          currentValue="NO"
           handleLanguageSelect={props.handleLanguageSelect}
+          data={props.data}
         />
       </MenuList>
     </Menu>

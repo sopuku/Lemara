@@ -1,6 +1,6 @@
 Sitemap: https://lemara.lt/api/sitemap
 
 User-agent: *
-Allow: /*
+Allow: *
 
 Disallow: /api/*

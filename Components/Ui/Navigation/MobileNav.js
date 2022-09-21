@@ -1,13 +1,8 @@
 import { Stack } from "@chakra-ui/react";
 import MobileNavItem from "./MobileNavItem";
 import { v4 as uuidv4 } from "uuid";
-import Texts from "../../Texts/Texts";
 
 export default function MobileNav(props) {
-  console.log(props.data);
-  const test = [];
-  const texts = Texts();
-
   return (
     <Stack
       bg={props.data.background_color}
@@ -19,10 +14,11 @@ export default function MobileNav(props) {
       mt="7rem"
       zIndex={100}
     >
-      {texts.navigation.map((navItem) => (
+      {props.data.slices[0].items.map((navItem) => (
         <MobileNavItem
           closeMenu={props.closeMenu}
           key={uuidv4()}
+          data={props.data}
           {...navItem}
         />
       ))}

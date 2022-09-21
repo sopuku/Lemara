@@ -4,13 +4,13 @@ import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import Layout from "../Components/Ui/Layout";
-
-const CapabilitiesMain = dynamic(
-  () => import("../Components/Capabilities/CapabilitiesMain"),
-  {
-    suspense: true,
-  }
-);
+import CapabilitiesMain from "../Components/Capabilities/CapabilitiesMain";
+// const CapabilitiesMain = dynamic(
+//   () => import("../Components/Capabilities/CapabilitiesMain"),
+//   {
+//     suspense: true,
+//   }
+// );
 
 export default function Capabilities({ page, nav, foot }) {
   return (
@@ -19,11 +19,14 @@ export default function Capabilities({ page, nav, foot }) {
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
-        <Layout footData={foot.data} navData={nav.data}>
-          <CapabilitiesMain data={page.data} fallback={`Loading...`} />
-        </Layout>
-      </Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
+        <CapabilitiesMain
+          data={page.data}
+          //  fallback={`Loading...`}
+        />
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }

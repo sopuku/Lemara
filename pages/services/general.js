@@ -4,13 +4,13 @@ import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../../sm.json";
 import Layout from "../../Components/Ui/Layout";
-
-const GeneralMain = dynamic(
-  () => import("../../Components/General/GeneralMai"),
-  {
-    suspense: true,
-  }
-);
+import GeneralMain from "../../Components/General/GeneralMain";
+// const GeneralMain = dynamic(
+//   () => import("../../Components/General/GeneralMai"),
+//   {
+//     suspense: true,
+//   }
+// );
 
 export default function General({ page, nav, foot }) {
   return (
@@ -19,11 +19,14 @@ export default function General({ page, nav, foot }) {
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
-        <Layout footData={foot.data} navData={nav.data}>
-          <GeneralMain data={page.data} fallback={`Loading...`} />
-        </Layout>
-      </Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
+        <GeneralMain
+          data={page.data}
+          //  fallback={`Loading...`}
+        />
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }

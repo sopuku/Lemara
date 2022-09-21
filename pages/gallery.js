@@ -4,12 +4,12 @@ import sm from "../sm.json";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 import Layout from "../Components/Ui/Layout";
-
+import GalleryMain from "../Components/Gallery/GalleryMain";
 // import axios from "axios";
 
-const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
-  suspense: true,
-});
+// const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
+//   suspense: true,
+// });
 
 export default function Galery({ page, nav, foot, picture }) {
   return (
@@ -18,15 +18,15 @@ export default function Galery({ page, nav, foot, picture }) {
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
-        <Layout footData={foot.data} navData={nav.data}>
-          <GalleryMain
-            pictures={picture}
-            data={page.data}
-            fallback={`Loading...`}
-          />
-        </Layout>
-      </Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
+        <GalleryMain
+          pictures={picture}
+          data={page.data}
+          // fallback={`Loading...`}
+        />
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }

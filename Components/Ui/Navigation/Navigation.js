@@ -1,10 +1,16 @@
-import { Flex, IconButton, Stack, Collapse, Image } from "@chakra-ui/react";
+import {
+  Flex,
+  IconButton,
+  Stack,
+  Collapse,
+  Image,
+  Box,
+} from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Links from "./Links";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import React, { useState } from "react";
-
 import { CurrentSettings } from "../../../pages/_app";
 import SelectLanguage from "./SelectLanguage/SeletLanguage";
 
@@ -69,19 +75,13 @@ export default function Navigation(props) {
           </Flex>
         </Flex>
 
-        <Stack
-          justify={"flex-end"}
-          direction={"row"}
-          spacing={1}
-          width="110px"
-          align="center"
-          ml="10px"
-        >
+        <Box width="120px">
           <SelectLanguage
+            data={props.data}
             language={language}
             handleLanguageSelect={handleLanguageSelect}
           />
-        </Stack>
+        </Box>
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>

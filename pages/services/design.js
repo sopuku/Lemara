@@ -4,10 +4,10 @@ import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../../sm.json";
 import Layout from "../../Components/Ui/Layout";
-
-const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
-  suspense: true,
-});
+import DefaultPage from "../../Components/Ui/DefaultPage";
+// const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
+//   suspense: true,
+// });
 
 export default function Design({ page, nav, foot }) {
   return (
@@ -16,23 +16,23 @@ export default function Design({ page, nav, foot }) {
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
-        <Layout footData={foot.data} navData={nav.data}>
-          <DefaultPage
-            name="design"
-            src={page.data.image.url}
-            alt={page.data.image.alt}
-            heading={page.data.title}
-            text={page.data.text}
-            w={page.data.image.dimensions.width}
-            h={page.data.image.dimensions.height}
-            bg={page.data.background_color}
-            color={page.data.text_color}
-            bgTexture={page.data.background_texture.url}
-            fallback={`Loading...`}
-          />
-        </Layout>
-      </Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
+        <DefaultPage
+          name="design"
+          src={page.data.image.url}
+          alt={page.data.image.alt}
+          heading={page.data.title}
+          text={page.data.text}
+          w={page.data.image.dimensions.width}
+          h={page.data.image.dimensions.height}
+          bg={page.data.background_color}
+          color={page.data.text_color}
+          bgTexture={page.data.background_texture.url}
+          // fallback={`Loading...`}
+        />
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }

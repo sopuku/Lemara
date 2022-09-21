@@ -4,17 +4,13 @@ import Links from "./Links";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import React, { useState } from "react";
-import Colors from "../Colors";
+
 import { CurrentSettings } from "../../../pages/_app";
 import SelectLanguage from "./SelectLanguage/SeletLanguage";
-import Texts from "../../Texts/Texts";
 
 export default function Navigation(props) {
   const { language, setLanguage } = React.useContext(CurrentSettings);
   const [isOpen, setOpen] = useState(false);
-
-  const colors = Colors();
-  const texts = Texts();
 
   function handleLanguageSelect(e) {
     setLanguage(e.target.value);
@@ -28,7 +24,7 @@ export default function Navigation(props) {
     <React.Fragment>
       <Flex
         boxShadow="0 0 20px black"
-        bg={colors.navigation.bg}
+        bg={props.data.background_color}
         h="7rem"
         w="100%"
         py={{ base: 1 }}
@@ -36,7 +32,7 @@ export default function Navigation(props) {
         px={{ base: "5%", xl: "10%" }}
         position="fixed"
         zIndex="100"
-        backgroundImage={texts.images.navBgTexture}
+        backgroundImage={props.data.background_texture.url}
       >
         <Flex
           flex={{ base: "0", lg: "auto" }}
@@ -44,9 +40,9 @@ export default function Navigation(props) {
           display={{ base: "flex", lg: "none" }}
         >
           <IconButton
-            _hover={{ background: colors.navigation.hamburgerIconBg }}
+            _hover={{ background: props.data.hamburger_icon_background_color }}
             onClick={() => setOpen((prev) => !prev)}
-            color={colors.navigation.hamburgerIcon}
+            color={props.data.hamburger_icon_color}
             icon={
               isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />
             }
@@ -57,8 +53,8 @@ export default function Navigation(props) {
         <Flex flex={{ base: 1 }} justify={{ base: "center", lg: "start" }}>
           <Links href="/">
             <Image
-              src={texts.images.logo}
-              alt={texts.images.logoAlt}
+              src={props.data.logo.url}
+              alt={props.data.logo.alt}
               w="100px"
               h="100%"
             />
@@ -69,7 +65,7 @@ export default function Navigation(props) {
             ml={{ lg: 5, xl: 20 }}
             align="center"
           >
-            <DesktopNav colors={colors} />
+            <DesktopNav data={props.data} />
           </Flex>
         </Flex>
 
@@ -89,7 +85,7 @@ export default function Navigation(props) {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity>
-        <MobileNav closeMenu={closeMenu} />
+        <MobileNav closeMenu={closeMenu} data={props.data} />
       </Collapse>
     </React.Fragment>
   );

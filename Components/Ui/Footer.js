@@ -7,8 +7,6 @@ import {
   Center,
 } from "@chakra-ui/react";
 import Links from "./Navigation/Links";
-import Colors from "./Colors";
-import Texts from "../Texts/Texts";
 import React from "react";
 
 const ListHeader = ({ children }) => {
@@ -20,16 +18,13 @@ const ListHeader = ({ children }) => {
 };
 
 export default function Footer(props) {
-  const texts = Texts();
-  const colors = Colors();
-
   return (
     <React.Fragment>
       <Container
         overflow="hidden"
-        bg={colors.footer.bg}
-        color={colors.footer.color}
-        backgroundImage={texts.images.navBgTexture}
+        bg={props.data.background_color}
+        color={props.data.text_color}
+        backgroundImage={props.data.background_texture.url}
         as={Stack}
         maxW="100%"
         py={10}
@@ -42,59 +37,60 @@ export default function Footer(props) {
           <Stack spacing={6} align="center">
             <Center>
               <Image
-                src={texts.images.logo}
-                alt={texts.images.logoAlt}
+                src={props.data.logo.url}
+                alt={props.data.logo.alt}
                 w="100px"
                 h="100%"
               />
             </Center>
-            <Text fontSize="sm" color={colors.footer.color}>
-              {texts.footer.rights}
-            </Text>
+            <Text fontSize="sm">{props.data.rights}</Text>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
-            <ListHeader>MB „Lemara“</ListHeader>
-            <Text>{texts.footer.code}</Text>
-            <Text>{texts.footer.pvmCode}</Text>
-            <Links href="/privacy" _hover={{ color: colors.footer.colorHover }}>
-              {texts.footer.privacy}
-            </Links>
-          </Stack>
-          <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
-            <ListHeader>{texts.footer.contacts}</ListHeader>
-            <Text>Pasagų g. 4, Riešės k., LT-14265 Vilniaus r.</Text>
+            <ListHeader>{props.data.name_tab_title}</ListHeader>
+            <Text>{props.data.company_code}</Text>
+            <Text>{props.data.vat_code}</Text>
             <Links
-              href="mailto:info@lemara.lt"
-              _hover={{ color: colors.footer.colorHover }}
+              href="/privacy"
+              _hover={{ color: props.data.link_text_color_hover }}
             >
-              info@lemara.lt
-            </Links>
-            <Links
-              href="tel:+37064657845"
-              _hover={{ color: colors.footer.colorHover }}
-            >
-              +370 646 57845
+              {props.data.privacy}
             </Links>
           </Stack>
           <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
-            <ListHeader>{texts.footer.services}</ListHeader>
+            <ListHeader>{props.data.contatcs_tab_title}</ListHeader>
+            <Text>{props.data.adress}</Text>
+            <Links
+              href={props.data.mail_link}
+              _hover={{ color: props.data.link_text_color_hover }}
+            >
+              {props.data.email}
+            </Links>
+            <Links
+              href={props.data.phone_link}
+              _hover={{ color: props.data.link_text_color_hover }}
+            >
+              {props.data.phone}
+            </Links>
+          </Stack>
+          <Stack align={"flex-start"} mt={{ sm: 10, md: 0 }}>
+            <ListHeader>{props.data.services_tab_title}</ListHeader>
             <Links
               href="/services/turning"
-              _hover={{ color: colors.footer.colorHover }}
+              _hover={{ color: props.data.link_text_color_hover }}
             >
-              {texts.footer.turning}
+              {props.data.turning}
             </Links>
             <Links
               href="/services/milling"
-              _hover={{ color: colors.footer.colorHover }}
+              _hover={{ color: props.data.link_text_color_hover }}
             >
-              {texts.footer.milling}
+              {props.data.milling}
             </Links>
             <Links
               href="/services/design"
-              _hover={{ color: colors.footer.colorHover }}
+              _hover={{ color: props.data.link_text_color_hover }}
             >
-              {texts.footer.design}
+              {props.data.design}
             </Links>
           </Stack>
         </SimpleGrid>

@@ -10,13 +10,13 @@ export default function DesktopSubNav(props) {
       display={"block"}
       p={2}
       rounded={"md"}
-      _hover={{ bg: props.colors.navigation.subBgHover }}
+      _hover={{ bg: props.data.submenu_background_color_hover }}
     >
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
             transition={"all .3s ease"}
-            _groupHover={{ color: props.colors.navigation.colorHover }}
+            _groupHover={{ color: props.data.submenu_text_color_hover }}
             fontWeight={500}
           >
             {props.label}
@@ -32,7 +32,7 @@ export default function DesktopSubNav(props) {
           flex={1}
         >
           <Icon
-            color={props.colors.navigation.subIcon}
+            color={props.data.submenu_icon_color}
             w={5}
             h={5}
             as={ChevronRightIcon}

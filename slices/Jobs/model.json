@@ -11,6 +11,15 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "Jobs",
       "primary": {
+        "published": {
+          "type": "Boolean",
+          "config": {
+            "label": "Published",
+            "default_value": false,
+            "placeholder_true": "true",
+            "placeholder_false": "false"
+          }
+        },
         "title": {
           "type": "Text",
           "config": {

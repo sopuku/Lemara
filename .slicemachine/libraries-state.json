@@ -136,6 +136,15 @@
               "version": "sktwi1xtmkfgx8626",
               "description": "Jobs",
               "primary": {
+                "published": {
+                  "type": "Boolean",
+                  "config": {
+                    "label": "Published",
+                    "default_value": false,
+                    "placeholder_true": "true",
+                    "placeholder_false": "false"
+                  }
+                },
                 "title": {
                   "type": "Text",
                   "config": {
@@ -193,32 +202,33 @@
               {}
             ],
             "primary": {
-              "title": "success",
+              "published": true,
+              "title": "park",
               "description": [
                 {
                   "type": "paragraph",
-                  "text": "Elit duis occaecat occaecat.",
+                  "text": "Velit dolore est sit.",
                   "spans": []
                 }
               ],
               "requirments": [
                 {
                   "type": "paragraph",
-                  "text": "Ipsum elit mollit id occaecat.",
+                  "text": "Excepteur qui tempor cupidatat eu fugiat voluptate ex Lorem nisi do sunt minim nulla. Veniam mollit sunt do occaecat. Deserunt ut duis eiusmod dolore.",
                   "spans": []
                 }
               ],
               "offer": [
                 {
                   "type": "paragraph",
-                  "text": "Duis magna officia magna aliquip reprehenderit in minim veniam. Dolore ex cupidatat ut voluptate nostrud occaecat voluptate non veniam eu incididunt tempor id.",
+                  "text": "Ipsum Lorem quis fugiat adipisicing consequat eiusmod sunt consequat. Minim ex ea exercitation veniam aliquip consequat sint. Voluptate nisi dolor officia proident laboris consectetur eiusmod amet proident.",
                   "spans": []
                 }
               ],
               "salary": [
                 {
                   "type": "paragraph",
-                  "text": "In ullamco aliquip quis. Laborum ex deserunt in occaecat minim tempor cupidatat velit aliquip pariatur do commodo et magna deserunt. Duis velit culpa irure qui labore aliquip ad labore velit consequat ad id in adipisicing.",
+                  "text": "Eu eu anim voluptate nulla est do commodo do deserunt incididunt velit quis aliqua fugiat commodo. Irure ea pariatur veniam consectetur minim anim ad dolor non.",
                   "spans": []
                 }
               ]

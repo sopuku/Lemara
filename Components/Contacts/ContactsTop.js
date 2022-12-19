@@ -1,14 +1,16 @@
-import { Stack } from "@chakra-ui/react";
+import { Stack, wrap } from "@chakra-ui/react";
 import ContactsCard from "./ContactsCard";
 
 export default function ContactsTop(props) {
   return (
     <Stack
-      h={{ base: "80rem", md: "30rem", xl: "35rem" }}
+      py={{ base: "2rem", md: "5rem", xl: "10rem" }}
       direction={{ base: "column", md: "row" }}
-      spacing={{ base: "2rem", lg: "4rem", xl: "6rem" }}
+      // spacing={{ base: "2rem", lg: "4rem", xl: "6rem" }}
+      gap={{ base: "2rem", md: "4rem", xl: "6rem" }}
       justify="center"
       align="center"
+      wrap="wrap"
       color={props.data.text_color_top}
       bg={props.data.background_color_top}
       backgroundImage={props.data.background_texture_top.url}

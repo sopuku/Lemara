@@ -47,9 +47,9 @@ export async function getStaticProps({ locale }) {
       page,
       foot,
       nav,
-      SERVICE_ID: "service_nnxf4e4",
-      TEMPLATE_ID: "template_vu1n99l",
-      KEY: "iVNT9JCWHJMBNgFwD",
+      SERVICE_ID: process.env.SERVICE_ID,
+      TEMPLATE_ID: process.env.TEMPLATE_ID,
+      KEY: process.env.KEY,
     },
   };
 }

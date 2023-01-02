@@ -4,14 +4,12 @@ import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
-import Layout from "../Components/Ui/Layout";
-import ContactsMain from "../Components/Contacts/ContactsMain";
-// const ContactsMain = dynamic(
-//   () => import("../Components/Contacts/ContactsMain"),
-//   {
-//     suspense: true,
-//   }
-// );
+const ContactsMain = dynamic(
+  () => import("../Components/Contacts/ContactsMain"),
+  {
+    suspense: true,
+  }
+);
 
 export default function Contacts(props) {
   async function sendMessage(form) {
@@ -23,15 +21,13 @@ export default function Contacts(props) {
         <title>{props.page.data.meta_title}</title>
         <meta name="description" content={props.page.data.meta_description} />
       </Head>
-      {/* <Suspense> */}
-      <Layout navData={props.nav.data} footData={props.foot.data}>
+      <Suspense>
         <ContactsMain
           data={props.page.data}
           sendMessage={sendMessage}
-          // fallback={`Loading...`}
+          fallback={`Loading...`}
         />
-      </Layout>
-      {/* </Suspense> */}
+      </Suspense>
     </React.Fragment>
   );
 }
@@ -47,9 +43,9 @@ export async function getStaticProps({ locale }) {
       page,
       foot,
       nav,
-      SERVICE_ID: "service_nnxf4e4",
-      TEMPLATE_ID: "template_vu1n99l",
-      KEY: "iVNT9JCWHJMBNgFwD",
+      SERVICE_ID: process.env.SERVICE_ID,
+      TEMPLATE_ID: process.env.TEMPLATE_ID,
+      KEY: process.env.KEY,
     },
   };
 }

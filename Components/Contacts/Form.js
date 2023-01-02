@@ -154,7 +154,7 @@ export default function Form(props) {
         id="test"
         ref={hcaptchaRef}
         size="invisible"
-        sitekey="8f6fc59f-8b70-422f-9e78-0ce325c1fb6f"
+        sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITEKEY}
         onVerify={onHCaptchaChange}
       />
     </form>

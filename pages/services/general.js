@@ -3,23 +3,30 @@ import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../../sm.json";
-const GeneralMain = dynamic(
-  () => import("../../Components/General/GeneralMain"),
-  {
-    suspense: true,
-  }
-);
+import Layout from "../../Components/Ui/Layout";
+import GeneralMain from "../../Components/General/GeneralMain";
+// const GeneralMain = dynamic(
+//   () => import("../../Components/General/GeneralMai"),
+//   {
+//     suspense: true,
+//   }
+// );
 
-export default function General({ page }) {
+export default function General({ page, nav, foot }) {
   return (
     <React.Fragment>
       <Head>
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
-        <GeneralMain data={page.data} fallback={`Loading...`} />
-      </Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
+        <GeneralMain
+          data={page.data}
+          //  fallback={`Loading...`}
+        />
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }
@@ -27,6 +34,7 @@ export default function General({ page }) {
 export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
   const page = await client.getByUID("general", "general", { lang: locale });
+
   const foot = await client.getByUID("footer", "footer", { lang: locale });
   const nav = await client.getByUID("navigation", "navigation", {
     lang: locale,

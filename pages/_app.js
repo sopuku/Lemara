@@ -39,9 +39,7 @@ export default function MyApp({ Component, pageProps }) {
       <GoogleAnalytics measurementId="G-QPQYS0TKC7" />
       <ChakraProvider theme={theme}>
         <CurrentSettings.Provider value={{ language, setLanguage }}>
-          <Layout footData={pageProps.foot.data} navData={pageProps.nav.data}>
-            <Component {...pageProps} />
-          </Layout>
+          <Component {...pageProps} />
         </CurrentSettings.Provider>
       </ChakraProvider>
     </React.Fragment>

@@ -3,23 +3,30 @@ import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
-const CapabilitiesMain = dynamic(
-  () => import("../Components/Capabilities/CapabilitiesMain"),
-  {
-    suspense: true,
-  }
-);
+import Layout from "../Components/Ui/Layout";
+import CapabilitiesMain from "../Components/Capabilities/CapabilitiesMain";
+// const CapabilitiesMain = dynamic(
+//   () => import("../Components/Capabilities/CapabilitiesMain"),
+//   {
+//     suspense: true,
+//   }
+// );
 
-export default function Capabilities({ page }) {
+export default function Capabilities({ page, nav, foot }) {
   return (
     <React.Fragment>
       <Head>
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
-        <CapabilitiesMain data={page.data} fallback={`Loading...`} />
-      </Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
+        <CapabilitiesMain
+          data={page.data}
+          //  fallback={`Loading...`}
+        />
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }

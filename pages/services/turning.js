@@ -3,18 +3,21 @@ import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../../sm.json";
-const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
-  suspense: true,
-});
+import Layout from "../../Components/Ui/Layout";
+import DefaultPage from "../../Components/Ui/DefaultPage";
+// const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
+//   suspense: true,
+// });
 
-export default function Turning({ page }) {
+export default function Turning({ page, nav, foot }) {
   return (
     <React.Fragment>
       <Head>
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
         <DefaultPage
           name="turning"
           src={page.data.image.url}
@@ -26,9 +29,10 @@ export default function Turning({ page }) {
           bg={page.data.background_color}
           color={page.data.text_color}
           bgTexture={page.data.background_texture.url}
-          fallback={`Loading...`}
+          // fallback={`Loading...`}
         />
-      </Suspense>
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }
@@ -36,6 +40,7 @@ export default function Turning({ page }) {
 export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
   const page = await client.getByUID("turning", "turning", { lang: locale });
+
   const foot = await client.getByUID("footer", "footer", { lang: locale });
   const nav = await client.getByUID("navigation", "navigation", {
     lang: locale,

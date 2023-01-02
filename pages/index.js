@@ -3,15 +3,18 @@ import React from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import HomeMain from "../Components/Home/HomeMain";
+import Layout from "../Components/Ui/Layout";
 
-export default function HomePage({ page }) {
+export default function HomePage({ page, nav, foot }) {
   return (
     <main>
       <Head>
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <HomeMain data={page.data} />
+      <Layout footData={foot.data} navData={nav.data}>
+        <HomeMain data={page.data} />
+      </Layout>
     </main>
   );
 }

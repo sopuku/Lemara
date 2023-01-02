@@ -3,24 +3,30 @@ import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import dynamic from "next/dynamic";
 import React, { Suspense } from "react";
-const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
-  suspense: true,
-});
+import Layout from "../Components/Ui/Layout";
+import GalleryMain from "../Components/Gallery/GalleryMain";
+// import axios from "axios";
 
-export default function Galery({ page, picture }) {
+// const GalleryMain = dynamic(() => import("../Components/Gallery/GalleryMain"), {
+//   suspense: true,
+// });
+
+export default function Galery({ page, nav, foot, picture }) {
   return (
     <React.Fragment>
       <Head>
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      <Suspense>
+      {/* <Suspense> */}
+      <Layout footData={foot.data} navData={nav.data}>
         <GalleryMain
           pictures={picture}
           data={page.data}
-          fallback={`Loading...`}
+          // fallback={`Loading...`}
         />
-      </Suspense>
+      </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }
@@ -52,3 +58,19 @@ export async function getStaticProps({ locale }) {
     },
   };
 }
+
+//========== import from google photos ================
+// const url = "https://photos.app.goo.gl/7Zh7P55oAKDmuN2W6";
+// const regex = /\["(https:\/\/lh3\.googleusercontent\.com\/[a-zA-Z0-9\-_]*)"/g;
+// const response = await axios.get(url);
+// const links = [];
+// let match;
+// while ((match = regex.exec(response.data))) {
+//   links.push(match[1]);
+// }
+// return {
+//   props: {
+//     pictures: links,
+//   },
+// };
+//=====================================================

@@ -1,13 +1,9 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
-import React, { Suspense } from "react";
+import React from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../../sm.json";
 import Layout from "../../Components/Ui/Layout";
 import DefaultPage from "../../Components/Ui/DefaultPage";
-// const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
-//   suspense: true,
-// });
 
 export default function Milling({ page, nav, foot }) {
   return (
@@ -16,7 +12,6 @@ export default function Milling({ page, nav, foot }) {
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
-      {/* <Suspense> */}
       <Layout footData={foot.data} navData={nav.data}>
         <DefaultPage
           name="milling"
@@ -29,10 +24,8 @@ export default function Milling({ page, nav, foot }) {
           bg={page.data.background_color}
           color={page.data.text_color}
           bgTexture={page.data.background_texture.url}
-          // fallback={`Loading...`}
         />
       </Layout>
-      {/* </Suspense> */}
     </React.Fragment>
   );
 }
@@ -40,7 +33,6 @@ export default function Milling({ page, nav, foot }) {
 export async function getStaticProps({ locale }) {
   const client = prismic.createClient(sm.apiEndpoint);
   const page = await client.getByUID("milling", "milling", { lang: locale });
-
   const foot = await client.getByUID("footer", "footer", { lang: locale });
   const nav = await client.getByUID("navigation", "navigation", {
     lang: locale,

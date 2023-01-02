@@ -1,17 +1,10 @@
 import Head from "next/head";
+import React from "react";
 import emailjs from "@emailjs/browser";
 import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
-import dynamic from "next/dynamic";
-import React, { Suspense } from "react";
 import Layout from "../Components/Ui/Layout";
 import ContactsMain from "../Components/Contacts/ContactsMain";
-// const ContactsMain = dynamic(
-//   () => import("../Components/Contacts/ContactsMain"),
-//   {
-//     suspense: true,
-//   }
-// );
 
 export default function Contacts(props) {
   async function sendMessage(form) {
@@ -23,15 +16,9 @@ export default function Contacts(props) {
         <title>{props.page.data.meta_title}</title>
         <meta name="description" content={props.page.data.meta_description} />
       </Head>
-      {/* <Suspense> */}
       <Layout navData={props.nav.data} footData={props.foot.data}>
-        <ContactsMain
-          data={props.page.data}
-          sendMessage={sendMessage}
-          // fallback={`Loading...`}
-        />
+        <ContactsMain data={props.page.data} sendMessage={sendMessage} />
       </Layout>
-      {/* </Suspense> */}
     </React.Fragment>
   );
 }

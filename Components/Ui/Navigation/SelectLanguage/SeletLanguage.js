@@ -22,13 +22,13 @@ export default function SelectLanguage(props) {
         maxW="8rem"
         as={Button}
         rightIcon={<ChevronDownIcon />}
-        leftIcon={
-          // <Country
-          //   countryShort={props.language !== "EN" ? props.language : "GD"}
-          //   size="md"
-          // />
-          <img src="`/images/flags/LT_flag.png`" />
-        }
+        // leftIcon={
+        // <Country
+        //   countryShort={props.language !== "EN" ? props.language : "GD"}
+        //   size="md"
+        // />
+
+        // }
       >
         {props.language}
       </MenuButton>

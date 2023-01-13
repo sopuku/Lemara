@@ -1,5 +1,5 @@
 {
-  "name": "lemara",
+  "name": "Lemara",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -21,14 +21,12 @@
     "@prismicio/next": "^0.1.5",
     "@prismicio/react": "^2.5.0",
     "@prismicio/slice-simulator-react": "^0.2.2",
-    "axios": "^0.27.2",
     "flagit": "^2.0.3",
     "framer-motion": "^7.2.1",
     "next": "12.2.5",
     "node-fetch": "^2.6.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-google-recaptcha": "^2.1.0",
     "react-hcaptcha": "^0.1.1",
     "react-icons": "^4.4.0",
     "react-photo-album": "^1.16.1",

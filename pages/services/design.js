@@ -1,9 +1,13 @@
 import Head from "next/head";
-import React from "react";
+import dynamic from "next/dynamic";
+import React, { Suspense } from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../../sm.json";
 import Layout from "../../Components/Ui/Layout";
 import DefaultPage from "../../Components/Ui/DefaultPage";
+// const DefaultPage = dynamic(() => import("../../Components/Ui/DefaultPage"), {
+//   suspense: true,
+// });
 
 export default function Design({ page, nav, foot }) {
   return (
@@ -12,6 +16,7 @@ export default function Design({ page, nav, foot }) {
         <title>{page.data.meta_title}</title>
         <meta name="description" content={page.data.meta_description} />
       </Head>
+      {/* <Suspense> */}
       <Layout footData={foot.data} navData={nav.data}>
         <DefaultPage
           name="design"
@@ -24,8 +29,10 @@ export default function Design({ page, nav, foot }) {
           bg={page.data.background_color}
           color={page.data.text_color}
           bgTexture={page.data.background_texture.url}
+          // fallback={`Loading...`}
         />
       </Layout>
+      {/* </Suspense> */}
     </React.Fragment>
   );
 }

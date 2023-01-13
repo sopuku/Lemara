@@ -1,4 +1,5 @@
 import Head from "next/head";
+import React from "react";
 import * as prismic from "@prismicio/client";
 import sm from "../sm.json";
 import HomeMain from "../Components/Home/HomeMain";
